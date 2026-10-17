@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.stevenslab.gradis",
+        "sha256_cert_fingerprints": ["03:69:D6:A6:3D:C0:10:ED:3A:FA:DB:EB:D1:F0:DF:F6:C7:F7:B8:42:8D:55:24:4D:19:76:2B:9C:28:C3:37:D9"]
+      }
+    }]

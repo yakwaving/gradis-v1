@@ -1,0 +1,80 @@
+{
+  "title": "Numeric Answer",
+  "description": "Type a number. Some questions also need the unit.",
+  "difficulty": "Test",
+  "level": "Sample",
+  "topic": "Numeric Answer",
+  "timerType": "wholeQuiz",
+  "totalTime": 300,
+  "confidence": false,
+  "instructions": [
+    "Every question in this quiz is of one type: Numeric Answer.",
+    "Use it to test how this question type looks and is marked."
+  ],
+  "questions": [
+    {
+      "type": "numeric",
+      "marks": 2,
+      "question": "A car accelerates uniformly from rest at 2.5 m/s² for 8.0 s. Find its final speed.",
+      "correct": 20,
+      "tolerance": {
+        "mode": "percent",
+        "value": 1
+      },
+      "unit": "m/s",
+      "acceptedUnits": [
+        "m/s",
+        "m s^-1",
+        "ms-1"
+      ],
+      "explanation": "v = u + at = 0 + 2.5 × 8.0 = 20 m/s.",
+      "id": "q051"
+    },
+    {
+      "type": "numeric",
+      "marks": 1,
+      "question": "Convert the binary number `10110101` to denary.",
+      "correct": 181,
+      "tolerance": {
+        "mode": "absolute",
+        "value": 0
+      },
+      "explanation": "128 + 32 + 16 + 4 + 1 = 181.",
+      "id": "q052"
+    },
+    {
+      "type": "numeric",
+      "marks": 2,
+      "question": "How many moles are in 11 g of carbon dioxide? (Mr of CO₂ = 44)",
+      "correct": 0.25,
+      "tolerance": {
+        "mode": "absolute",
+        "value": 0.01
+      },
+      "unit": "mol",
+      "acceptedUnits": [
+        "mol",
+        "moles"
+      ],
+      "explanation": "n = mass ÷ Mr = 11 ÷ 44 = 0.25 mol.",
+      "id": "q053"
+    },
+    {
+      "type": "numeric",
+      "marks": 2,
+      "question": "A 12 Ω resistor carries a current of 0.50 A. Find the potential difference across it.",
+      "correct": 6,
+      "tolerance": {
+        "mode": "percent",
+        "value": 1
+      },
+      "unit": "V",
+      "acceptedUnits": [
+        "V",
+        "volts"
+      ],
+      "explanation": "V = IR = 0.50 × 12 = 6.0 V.",
+      "id": "q054"
+    }
+  ]
+}

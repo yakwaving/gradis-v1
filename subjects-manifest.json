@@ -1,0 +1,25 @@
+{
+  "subjects": {
+    "Quiz Types": {
+      "description": "One quiz for each question type",
+      "color": "#5b8cff",
+      "dark": "#3a5fc4",
+      "icon": "check",
+      "quizzes": [
+        "quiz00",
+        "quiz01",
+        "quiz02",
+        "quiz03",
+        "quiz04",
+        "quiz05",
+        "quiz06",
+        "quiz07",
+        "quiz08",
+        "quiz09",
+        "quiz10",
+        "quiz11",
+        "quiz12"
+      ]
+    }
+  }
+}

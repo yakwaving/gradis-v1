@@ -1,0 +1,72 @@
+{
+  "title": "Confidence Based",
+  "description": "Rate how sure you are before you check each answer. Marks and confidence score are shown separately.",
+  "difficulty": "Test",
+  "level": "Sample",
+  "topic": "Confidence Based",
+  "timerType": "wholeQuiz",
+  "totalTime": 300,
+  "confidence": true,
+  "instructions": [
+    "Every question in this quiz is of one type: Confidence Based.",
+    "Use it to test how this question type looks and is marked."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which file format uses **lossless** compression?",
+      "options": [
+        "MP3",
+        "JPEG",
+        "PNG",
+        "MPEG-4"
+      ],
+      "correct": 2,
+      "explanation": "PNG keeps all the original image data.",
+      "id": "q111"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "What is the value of 2¹⁰?",
+      "options": [
+        "512",
+        "1000",
+        "1024",
+        "2048"
+      ],
+      "correct": 2,
+      "explanation": "2¹⁰ = 1024.",
+      "id": "q112"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which particle has a negative charge?",
+      "options": [
+        "Proton",
+        "Electron",
+        "Neutron",
+        "Nucleus"
+      ],
+      "correct": 1,
+      "explanation": "Electrons carry a charge of −1.",
+      "id": "q113"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "What is the SI unit of power?",
+      "options": [
+        "Joule",
+        "Newton",
+        "Watt",
+        "Pascal"
+      ],
+      "correct": 2,
+      "explanation": "Power is measured in watts (joules per second).",
+      "id": "q114"
+    }
+  ]
+}
