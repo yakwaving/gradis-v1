@@ -1,8 +1,12 @@
 [{
-      "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": ["delegate_permission/common.handle_all_urls"],
       "target": {
-        "namespace": "android_app",
-        "package_name": "com.stevenslab.gradis",
-        "sha256_cert_fingerprints": ["03:69:D6:A6:3D:C0:10:ED:3A:FA:DB:EB:D1:F0:DF:F6:C7:F7:B8:42:8D:55:24:4D:19:76:2B:9C:28:C3:37:D9"]
-      }
-    }]
+          "namespace": "android_app",
+          "package_name": "com.stevenslab.gradis",
+          "sha256_cert_fingerprints": [
+          "27:4A:A3:24:65:F6:9B:7B:78:5E:61:CE:88:3C:7F:0B:FA:1D:C8:C0:F3:7B:FD:E9:80:15:14:09:67:DE:59:5D",
+                              "03:69:D6:A6:3D:C0:10:ED:3A:FA:DB:EB:D1:F0:DF:F6:C7:F7:B8:42:8D:55:24:4D:19:76:2B:9C:28:C3:37:D9"
+                                  ]
+                                    }
+                                    }]
+
