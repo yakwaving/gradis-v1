@@ -1,0 +1,186 @@
+{
+ "title": "Chapter 4 Quiz 7",
+ "description": "Rows and columns: arrays with two indexes.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Two-dimensional arrays",
+ "timerType": "wholeQuiz",
+ "totalTime": 900,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: Two-dimensional arrays.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **two-dimensional array**?",
+   "options": [
+    "An array with two names",
+    "An array with rows and columns, like a matrix",
+    "Two arrays of different types",
+    "A file with two records"
+   ],
+   "correct": 1,
+   "explanation": "It uses two indexes: row and column.",
+   "id": "q40701"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "What are 2D arrays good for?",
+   "options": [
+    "Storing one single value",
+    "Tables",
+    "Grids and matrices",
+    "Game boards such as chess"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "Tables, grids, matrices and games.",
+   "id": "q40702"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which declaration creates a 2×2 array of integers (Pascal)?",
+   "options": [
+    "array[1..2, 1..2] of integer",
+    "array[2] of array",
+    "array[1..2] of integer",
+    "record of integer"
+   ],
+   "correct": 0,
+   "explanation": "One range per dimension.",
+   "id": "q40703"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many cells does an array [1..3, 1..4] have?",
+   "correct": 12,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "3 rows × 4 columns = 12.",
+   "id": "q40704"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "M is the matrix [1 2 3 / 4 5 6 / 7 8 9] (row, column). Give each value.",
+   "columns": [
+    "Expression",
+    "Value"
+   ],
+   "rows": [
+    [
+     {
+      "given": "M[1,1]"
+     },
+     {
+      "answer": [
+       "1"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "M[2,3]"
+     },
+     {
+      "answer": [
+       "6"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "M[3,1]"
+     },
+     {
+      "answer": [
+       "7"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "M[2,2] + M[3,3]"
+     },
+     {
+      "answer": [
+       "14"
+      ]
+     }
+    ]
+   ],
+   "explanation": "M[row, column].",
+   "id": "q40705"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is the sum of all the values of the matrix above?",
+   "correct": 45,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "1 + 2 + ... + 9 = 45.",
+   "id": "q40706"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "How do we visit every cell of a 2D array?",
+   "options": [
+    "With two nested loops",
+    "With a function",
+    "With a Case",
+    "With one If"
+   ],
+   "correct": 0,
+   "explanation": "One loop for the rows, one inside it for the columns.",
+   "id": "q40707"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the algorithm that sums a 3×3 matrix.",
+   "code": "sum ← 0\nFor i From 0 To 2\n    For j From {{1}} To 2\n        Read(matrix[i][j])\n        sum ← sum + {{2}}\n    EndFor\nEndFor\nDisplay(sum)",
+   "blocks": [
+    "0",
+    "matrix[i][j]",
+    "matrix[j][i]",
+    "1",
+    "i"
+   ],
+   "answers": [
+    "0",
+    "matrix[i][j]"
+   ],
+   "explanation": "The inner loop starts at 0, like the outer one, and adds the cell just read.",
+   "id": "q40708"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many times does the inner loop body run for a 3×3 matrix?",
+   "correct": 9,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "3 rows × 3 columns.",
+   "id": "q40709"
+  }
+ ]
+}

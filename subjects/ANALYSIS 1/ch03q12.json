@@ -1,0 +1,223 @@
+{
+ "title": "Chapter 3 Quiz 12",
+ "description": "Variables that add up values and variables that count.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Accumulators and counters",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Accumulators and counters.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is an **accumulator** (totalizer)?",
+   "options": [
+    "A constant",
+    "A loop",
+    "A variable that successively receives the content of another variable, building a total",
+    "A variable that never changes"
+   ],
+   "correct": 2,
+   "explanation": "Example: TotalPay ← TotalPay + Pay.",
+   "id": "q31201"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **counter**?",
+   "options": [
+    "A kind of procedure",
+    "A comparison",
+    "A variable that counts how many times an action is performed",
+    "A variable that stores text"
+   ],
+   "correct": 2,
+   "explanation": "Example: Count ← Count + 1.",
+   "id": "q31202"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which statement is the standard way to add Pay to the total?",
+   "options": [
+    "TotalPay = Pay",
+    "TotalPay ← TotalPay + Pay",
+    "Pay ← TotalPay",
+    "TotalPay ← Pay"
+   ],
+   "correct": 1,
+   "explanation": "The new total is the old total plus the new payment.",
+   "id": "q31203"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which statement increases a counter by 1?",
+   "options": [
+    "Count ← 0",
+    "Count ← Count * 1",
+    "Count ← Count + 1",
+    "Count ← 1"
+   ],
+   "correct": 2,
+   "explanation": "Incrementation adds the step (1 by default).",
+   "id": "q31204"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A counter can decrease, which is called decrementation.",
+   "correct": true,
+   "explanation": "Count ← Count - step is a decrementation.",
+   "id": "q31205"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "Accumulators and counters must be initialized before use.",
+   "correct": true,
+   "explanation": "They must be declared and given a starting value, such as TotalPay ← 0 and Count ← 0.",
+   "id": "q31206"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "What starting value should TotalPay have before adding payments?",
+   "accepted": [
+    "0",
+    "zero"
+   ],
+   "explanation": "A sum starts at 0 so it does not change the first payment.",
+   "id": "q31207"
+  },
+  {
+   "type": "grid",
+   "marks": 8,
+   "question": "A student pays 100 000, then 50 000, then 75 000. Complete the table.",
+   "columns": [
+    "Payment",
+    "Pay",
+    "TotalPay before",
+    "TotalPay after",
+    "Count before",
+    "Count after"
+   ],
+   "rows": [
+    [
+     {
+      "given": "Payment 1"
+     },
+     {
+      "given": "100000"
+     },
+     {
+      "given": "0"
+     },
+     {
+      "answer": [
+       "100000"
+      ]
+     },
+     {
+      "given": "0"
+     },
+     {
+      "answer": [
+       "1"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "Payment 2"
+     },
+     {
+      "given": "50000"
+     },
+     {
+      "answer": [
+       "100000"
+      ]
+     },
+     {
+      "answer": [
+       "150000"
+      ]
+     },
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "2"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "Payment 3"
+     },
+     {
+      "given": "75000"
+     },
+     {
+      "answer": [
+       "150000"
+      ]
+     },
+     {
+      "answer": [
+       "225000"
+      ]
+     },
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Each payment is added to the total and Count goes up by 1. Final: TotalPay = 225 000 and Count = 3.",
+   "id": "q31208"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the loop that totals 5 payments and counts them.",
+   "code": "TotalPay ← 0\nCount ← 0\nFor i From 1 To 5 Do\n    Read(Pay)\n    TotalPay ← {{1}} + Pay\n    Count ← {{2}} + 1\nEndDo",
+   "blocks": [
+    "TotalPay",
+    "Count",
+    "Pay",
+    "i"
+   ],
+   "answers": [
+    "TotalPay",
+    "Count"
+   ],
+   "explanation": "Each accumulator updates itself: its old value plus something.",
+   "id": "q31209"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Count ← 10. Then Count ← Count - 2 is done 3 times. What is Count?",
+   "correct": 4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "10 - 2 - 2 - 2 = 4.",
+   "id": "q31210"
+  }
+ ]
+}

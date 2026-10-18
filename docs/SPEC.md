@@ -38,6 +38,8 @@ Every question has `id`, `type`, `marks`, `question` (text, Markdown and `$maths
 | `grid` | Fills blank cells in a table | `columns`, `rows` of cells: `{given}` or `{answer: [...], choices?}` | Marks split per blank cell. `choices` turns a cell into a dropdown |
 | `assertion` | Picks A–E | `assertion`, `reason`, `correct` | Full or 0 |
 | `structured` | Answers parts (a), (b), (c) | `parts [{label, marks, question, markScheme}]`, `aiMarking: "later"` | For now: student self-marks against the mark scheme. Later: AI marking |
+| `code` | Taps blocks into the gaps of a code listing | `code` (gaps `{{1}}`, `{{2}}`…), `blocks` (answers plus decoys), `answers` (one block per gap, in order), optional `language` | Marks split per gap. A block can be used once; list it twice if it is needed twice. Indentation comes from the `code` text |
+| `flowchart` | Places shapes and/or types text in a flowchart drawn from data | `nodes`, `edges`, optional `height`, `shapes` | Marks split across every asked item (each shape and each text box) |
 
 **Confidence** is a layer over any question, not a separate type. It is on when the quiz says `confidence: true`.
 
@@ -105,3 +107,32 @@ Not built yet: automatic marking of structured questions (planned AI step), impo
 - App name and icon (current icon is a placeholder in the app's own style).
 - Whether labelling questions should include decoy labels (extra labels that match no target).
 - Which AI service will mark structured questions, and whether answers may leave the device.
+
+
+## 6. Flowchart format
+
+```json
+{ "type": "flowchart", "marks": 3, "question": "…",
+  "nodes": [
+    { "id": "s", "shape": "terminator", "text": "Start", "x": 50, "y": 8 },
+    { "id": "d", "shape": "decision", "x": 50, "y": 44, "ask": ["text"], "accepted": ["n > 0", "n > 0?"] },
+    { "id": "p", "shape": "process", "text": "Print positive", "x": 22, "y": 70, "ask": ["shape"] }
+  ],
+  "edges": [ { "from": "s", "to": "d" }, { "from": "d", "to": "p", "label": "Yes", "via": [[22, 44]] } ] }
+```
+
+- The drawing is 100 units wide. `x`, `y` are the centre of a node in those units. The height is worked out, or set with `height`.
+- `shape`: `terminator` (start/end), `process`, `decision`, `io` (input/output). Default sizes can be changed with `w` and `h`.
+- `ask` makes a node part of the question: `["text"]` shows the shape and a box to type in; `["shape"]` shows the text and an empty dashed slot; `["shape","text"]` asks for both. Nodes without `ask` are drawn as given.
+- Typed text ignores capitals and spaces. List every accepted wording in `accepted`.
+- Edges run from one node to another with a straight or stepped line. For a line that must go around other nodes (a loop back), add `via`, a list of `[x, y]` points to pass through. `label` adds "Yes"/"No" text.
+
+## 7. Code blocks format
+
+```json
+{ "type": "code", "marks": 3, "language": "Python", "question": "…",
+  "code": "total = 0\nfor i in range({{1}}, 6):\n    total = total + {{2}}\nprint({{3}})",
+  "blocks": ["1", "i", "total", "6", "0", "5"], "answers": ["1", "i", "total"] }
+```
+
+A gap can hold a short piece of code (`i`) or a whole line (`print("Even")`). Put the gap on its own line with the indentation you want to test.

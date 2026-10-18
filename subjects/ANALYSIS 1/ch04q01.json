@@ -1,0 +1,201 @@
+{
+ "title": "Chapter 4 Quiz 1",
+ "description": "Storing many values of the same type, and finding each by its position.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Arrays and the index",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: Arrays and the index.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is an **array**?",
+   "options": [
+    "A single variable",
+    "A kind of loop",
+    "A file on a disk",
+    "A linear structure that stores values of the same type in memory, each found by an index"
+   ],
+   "correct": 3,
+   "explanation": "An array groups data of the same type in reserved areas of RAM.",
+   "id": "q40101"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the **index** of an array?",
+   "options": [
+    "The name of the array",
+    "The type of the data",
+    "A pointer that gives the position of a cell",
+    "The total of the values"
+   ],
+   "correct": 2,
+   "explanation": "The index locates each cell of the array.",
+   "id": "q40102"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "All the elements of an array have the same type.",
+   "correct": true,
+   "explanation": "That is the difference with a record, whose fields can have different types.",
+   "id": "q40103"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "An index can be a constant or a variable of integer type.",
+   "correct": true,
+   "explanation": "Either one can be used to select a cell.",
+   "id": "q40104"
+  },
+  {
+   "type": "multiple",
+   "marks": 4,
+   "scoring": "partial",
+   "question": "What does an array declaration need?",
+   "options": [
+    "A loop",
+    "A name",
+    "The type of the stored data",
+    "A function",
+    "A minimum index",
+    "A maximum index"
+   ],
+   "correct": [
+    1,
+    2,
+    4,
+    5
+   ],
+   "explanation": "Name, minimum index, maximum index and data type.",
+   "id": "q40105"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which declaration creates an array of 10 averages (real numbers) numbered 1 to 10?",
+   "options": [
+    "Declare Averages : FILE OF real",
+    "Declare [10] Averages",
+    "Declare Averages As real",
+    "Declare Averages [1..10] : ARRAY OF real"
+   ],
+   "correct": 3,
+   "explanation": "The syntax gives the index range between brackets, then ARRAY OF and the type.",
+   "id": "q40106"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many cells does an array [1..10] have?",
+   "correct": 10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "10 - 1 + 1 = 10 cells.",
+   "id": "q40107"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many cells does an array [0..9] have?",
+   "correct": 10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Indexes 0 to 9 make 10 cells.",
+   "id": "q40108"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many cells does an array [5..12] have?",
+   "correct": 8,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "12 - 5 + 1 = 8.",
+   "hint": "Count both ends.",
+   "id": "q40109"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Array T has the values 12, 7, 30, 4 in cells 1 to 4. Give the value of each expression.",
+   "columns": [
+    "Expression",
+    "Value"
+   ],
+   "rows": [
+    [
+     {
+      "given": "T[1]"
+     },
+     {
+      "answer": [
+       "12"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "T[3]"
+     },
+     {
+      "answer": [
+       "30"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "T[2] + T[4]"
+     },
+     {
+      "answer": [
+       "11"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "T[1] - T[2]"
+     },
+     {
+      "answer": [
+       "5"
+      ]
+     }
+    ]
+   ],
+   "explanation": "T[i] is the value in cell i.",
+   "id": "q40110"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "Arrays are stored in {{1}}, the volatile memory of the computer.",
+   "blanks": [
+    {
+     "answers": [
+      "RAM",
+      "ram"
+     ]
+    }
+   ],
+   "explanation": "Arrays live in RAM, so their content is lost when the program ends.",
+   "id": "q40111"
+  }
+ ]
+}

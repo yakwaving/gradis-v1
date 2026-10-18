@@ -8,7 +8,7 @@ function fit(){const iw=innerWidth,ih=innerHeight,st=$("st");let W,H,k,x=0,y=0;
  const cs=getComputedStyle(p),root=document.documentElement.style;root.setProperty("--sat",(parseFloat(cs.paddingTop)||0)/k+"px");root.setProperty("--sab",(parseFloat(cs.paddingBottom)||0)/k+"px");p.remove()}
 function applyUpdate(){closeModal();const m=document.createElement("div");m.className="modal";m.innerHTML=`<div class="card" style="display:grid;justify-items:center;gap:18px;padding:34px 20px"><b>Updating…</b>${loaderHtml()}</div>`;$("st").appendChild(m);
  navigator.serviceWorker.getRegistration().then(r=>{if(r&&r.waiting)r.waiting.postMessage("skip");setTimeout(()=>location.reload(),1200)})}
-function registerSW(){if(!("serviceWorker" in navigator))return;
+function registerSW(){if(!("serviceWorker" in navigator)||isNative())return;   /* the Android app already carries all its files */
  navigator.serviceWorker.register("sw.js").then(reg=>{
   const offer=()=>modal(`<h3>New version ready</h3><p>Reload to get the latest Gradis. Your results are kept.</p><button class="btn" data-a="reload">RELOAD</button><button class="btn w" data-a="keep" style="margin-bottom:0">LATER</button>`);
   if(reg.waiting&&navigator.serviceWorker.controller)offer();
@@ -24,7 +24,17 @@ async function boot(){
  if(err){S.err=err;return scr("error")}
  loadHist();
  if(S.warn)setTimeout(()=>toast(S.warn+" QUESTION"+(S.warn>1?"S":"")+" SKIPPED · SEE CONSOLE"),600);
- render();registerSW()}
+ render();registerSW();Ads.init()}
+/* Android back button: close a dialog, step back one screen, or leave the app from Home */
+function goBack(){
+ if(document.querySelector(".modal")){closeModal();return true}
+ if(S.scr==="q"){quitModal();return true}
+ const b=document.querySelector('[data-a="backlist"],[data-a="back-list"],[data-a="backres"]');if(b){b.click();return true}
+ if(S.scr==="review"){scr("result");return true}
+ if(["result","done","subjects","hist","subres","list","landing","error"].includes(S.scr)){S.tab="home";scr("home");return true}
+ return false}
+function nativeBack(){const A=window.Capacitor&&window.Capacitor.Plugins&&window.Capacitor.Plugins.App;if(!isNative()||!A)return;A.addListener("backButton",()=>{if(!goBack())A.exitApp()})}
+nativeBack();
 addEventListener("resize",fit);
 addEventListener("online",()=>{});
 boot();

@@ -1,0 +1,284 @@
+{
+ "title": "Chapter 3 Quiz 7",
+ "description": "The three kinds of control structure, and the simplest one: sequence.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Control structures: the sequence",
+ "timerType": "wholeQuiz",
+ "totalTime": 780,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Control structures: the sequence.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "matching",
+   "marks": 3,
+   "question": "Match each control structure to what it does.",
+   "left": [
+    "Sequence",
+    "Conditional",
+    "Iterative"
+   ],
+   "right": [
+    "Actions one after the other",
+    "Chooses actions depending on a condition",
+    "Repeats actions under control of a condition"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "explanation": "The three families of control structures.",
+   "id": "q30701"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "In a **sequence** structure, execution goes…",
+   "options": [
+    "Back to the start after each line",
+    "Only if a condition is true",
+    "Randomly",
+    "From top to bottom, one statement after the other"
+   ],
+   "correct": 3,
+   "explanation": "Statements are placed one after the other and executed from top to bottom.",
+   "id": "q30702"
+  },
+  {
+   "type": "ordering",
+   "marks": 5,
+   "scoring": "adjacent",
+   "question": "Put the steps of the algorithm that multiplies two numbers in order.",
+   "items": [
+    "Stop",
+    "Input a, b",
+    "Display(p)",
+    "Start",
+    "Declare a, b As Integer",
+    "Let p ← a * b"
+   ],
+   "correctOrder": [
+    3,
+    4,
+    1,
+    5,
+    2,
+    0
+   ],
+   "explanation": "Declare, read, calculate, show, stop.",
+   "id": "q30703"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "a ← 6, b ← 7, p ← a * b. What does Display(p) show?",
+   "correct": 42,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "6 × 7 = 42.",
+   "id": "q30704"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "If we write a ← b and then b ← a, the two values are swapped.",
+   "correct": false,
+   "explanation": "After a ← b both variables hold b's value, because a's old value is lost. We need a temporary variable.",
+   "id": "q30705"
+  },
+  {
+   "type": "grid",
+   "marks": 9,
+   "question": "Swap with a temporary variable. Start with a = 3 and b = 7. Fill in the table.",
+   "columns": [
+    "Step",
+    "a",
+    "b",
+    "temp"
+   ],
+   "rows": [
+    [
+     {
+      "given": "Start"
+     },
+     {
+      "given": "3"
+     },
+     {
+      "given": "7"
+     },
+     {
+      "given": "-"
+     }
+    ],
+    [
+     {
+      "given": "temp ← a"
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     },
+     {
+      "answer": [
+       "7"
+      ]
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "a ← b"
+     },
+     {
+      "answer": [
+       "7"
+      ]
+     },
+     {
+      "answer": [
+       "7"
+      ]
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "b ← temp"
+     },
+     {
+      "answer": [
+       "7"
+      ]
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     }
+    ]
+   ],
+   "explanation": "temp keeps a's old value (3), a takes b (7), then b takes temp (3).",
+   "id": "q30706"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the algorithm that swaps a and b.",
+   "code": "temp ← a\na ← {{1}}\nb ← {{2}}",
+   "blocks": [
+    "b",
+    "temp",
+    "a",
+    "0"
+   ],
+   "answers": [
+    "b",
+    "temp"
+   ],
+   "explanation": "Save a in temp, copy b into a, then put the saved value into b.",
+   "id": "q30707"
+  },
+  {
+   "type": "flowchart",
+   "marks": 3,
+   "question": "Place the correct shape on each slot of this sequence flowchart.",
+   "nodes": [
+    {
+     "id": "s",
+     "shape": "terminator",
+     "x": 50,
+     "y": 6,
+     "text": "Start"
+    },
+    {
+     "id": "i",
+     "shape": "io",
+     "x": 50,
+     "y": 26,
+     "text": "Input a, b",
+     "ask": [
+      "shape"
+     ]
+    },
+    {
+     "id": "c",
+     "shape": "process",
+     "x": 50,
+     "y": 46,
+     "text": "p ← a * b",
+     "ask": [
+      "shape"
+     ]
+    },
+    {
+     "id": "o",
+     "shape": "io",
+     "x": 50,
+     "y": 66,
+     "text": "Display p",
+     "ask": [
+      "shape"
+     ]
+    },
+    {
+     "id": "e",
+     "shape": "terminator",
+     "x": 50,
+     "y": 88,
+     "text": "End"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "i"
+    },
+    {
+     "from": "i",
+     "to": "c"
+    },
+    {
+     "from": "c",
+     "to": "o"
+    },
+    {
+     "from": "o",
+     "to": "e"
+    }
+   ],
+   "explanation": "Input and output are parallelograms. A calculation is a rectangle.",
+   "id": "q30708"
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "title": "Chapter 1 Quiz 6",
+ "description": "A mixed review of Chapter 1. This time, say how sure you are.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Chapter 1 review",
+ "timerType": "wholeQuiz",
+ "totalTime": 780,
+ "confidence": true,
+ "instructions": [
+  "Chapter 1: Chapter 1 review.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which of these is **not** required of an algorithm?",
+   "options": [
+    "It must give at least one result",
+    "It must always need an input",
+    "Its instructions must be clear",
+    "It must end after a finite number of steps"
+   ],
+   "correct": 1,
+   "explanation": "An algorithm may or may not need input. It must be finite, definite and give at least one output.",
+   "id": "q10601"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A program that runs but gives wrong results has a syntax error.",
+   "correct": false,
+   "explanation": "Wrong results from a program that runs point to a semantic (design) error. Syntax errors stop the program from running at all.",
+   "id": "q10602"
+  },
+  {
+   "type": "ordering",
+   "marks": 4,
+   "scoring": "adjacent",
+   "question": "Put these stages in order.",
+   "items": [
+    "Compiling",
+    "Coding",
+    "Algorithm",
+    "Running",
+    "Analysis"
+   ],
+   "correctOrder": [
+    4,
+    2,
+    1,
+    0,
+    3
+   ],
+   "explanation": "Analysis, algorithm, coding, compiling, running.",
+   "id": "q10603"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each symbol to its function.",
+   "left": [
+    "Oval",
+    "Rectangle",
+    "Diamond",
+    "Parallelogram"
+   ],
+   "right": [
+    "Start / end",
+    "Processing",
+    "Decision",
+    "Input / output"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "The four main flowchart symbols.",
+   "id": "q10604"
+  },
+  {
+   "type": "flowchart",
+   "marks": 3,
+   "question": "Place the shapes on the flowchart that tests whether a number is positive.",
+   "nodes": [
+    {
+     "id": "s",
+     "shape": "terminator",
+     "x": 50,
+     "y": 6,
+     "text": "Start"
+    },
+    {
+     "id": "i",
+     "shape": "io",
+     "x": 50,
+     "y": 24,
+     "text": "Input x",
+     "ask": [
+      "shape"
+     ]
+    },
+    {
+     "id": "d",
+     "shape": "decision",
+     "x": 50,
+     "y": 46,
+     "text": "x > 0 ?",
+     "ask": [
+      "shape"
+     ],
+     "w": 44,
+     "h": 22
+    },
+    {
+     "id": "p",
+     "shape": "io",
+     "x": 50,
+     "y": 72,
+     "text": "Display 'Positive'",
+     "ask": [
+      "shape"
+     ],
+     "w": 44
+    },
+    {
+     "id": "e",
+     "shape": "terminator",
+     "x": 50,
+     "y": 92,
+     "text": "End"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "i"
+    },
+    {
+     "from": "i",
+     "to": "d"
+    },
+    {
+     "from": "d",
+     "to": "p",
+     "label": "Yes"
+    },
+    {
+     "from": "p",
+     "to": "e"
+    }
+   ],
+   "explanation": "Input and output are parallelograms, and the question x > 0 ? is a diamond.",
+   "id": "q10605"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Using coefficients 3, 2 and 5, grades 8, 12 and 10, find (8×3 + 12×2 + 10×5) / (3 + 2 + 5).",
+   "correct": 9.8,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.01
+   },
+   "explanation": "(24 + 24 + 50) / 10 = 98 / 10 = 9.8.",
+   "id": "q10606"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "A {{1}} error is reported by the {{2}}, and no executable program is produced.",
+   "blanks": [
+    {
+     "answers": [
+      "syntax"
+     ]
+    },
+    {
+     "answers": [
+      "compiler"
+     ]
+    }
+   ],
+   "explanation": "Syntax errors break the rules of the language, so the compiler cannot translate the program.",
+   "id": "q10607"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which stages are done automatically by the machine?",
+   "options": [
+    "Execution",
+    "Coding",
+    "Analysis",
+    "Compilation"
+   ],
+   "correct": [
+    0,
+    3
+   ],
+   "explanation": "Analysis and coding are human work. Compilation and running are automatic.",
+   "id": "q10608"
+  }
+ ]
+}

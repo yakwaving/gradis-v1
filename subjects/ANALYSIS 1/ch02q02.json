@@ -1,0 +1,160 @@
+{
+ "title": "Chapter 2 Quiz 2",
+ "description": "Algorithms that repeat, and algorithms that call themselves.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Iterative and recursive algorithms",
+ "timerType": "wholeQuiz",
+ "totalTime": 780,
+ "confidence": false,
+ "instructions": [
+  "Chapter 2: Iterative and recursive algorithms.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which type of algorithm uses a **loop** to repeat an action until a condition is met?",
+   "options": [
+    "Conditional",
+    "Linear",
+    "Iterative",
+    "Greedy"
+   ],
+   "correct": 2,
+   "explanation": "Iterative algorithms use loops (while, for, repeat).",
+   "id": "q20201"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "You must add up all the elements of an array. Which type of algorithm fits this task?",
+   "options": [
+    "Linear",
+    "Iterative",
+    "Conditional",
+    "Recursive"
+   ],
+   "correct": 1,
+   "explanation": "Repeating the same action for each element is the job of a loop.",
+   "id": "q20202"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does a **recursive** algorithm do?",
+   "options": [
+    "It repeats a block with a loop",
+    "It solves a problem by calling itself on smaller sub-problems",
+    "It always sorts data",
+    "It chooses between two branches"
+   ],
+   "correct": 1,
+   "explanation": "Recursion solves a problem by calling itself on smaller versions of the same problem.",
+   "id": "q20203"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which problems fit a **recursive** algorithm well?",
+   "options": [
+    "Validating one input value",
+    "The Fibonacci sequence",
+    "Tree traversals",
+    "Navigating folders inside folders",
+    "Adding two numbers"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "Recursion suits problems that break down into smaller, identical problems: trees, sequences, directories.",
+   "id": "q20204"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each algorithm type to a typical use.",
+   "left": [
+    "Linear",
+    "Conditional",
+    "Iterative",
+    "Recursive"
+   ],
+   "right": [
+    "Adding two numbers",
+    "Validating user input",
+    "Summing the elements of an array",
+    "Computing the Fibonacci sequence"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Each family has its natural use case.",
+   "id": "q20205"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "An iterative algorithm repeats a block of instructions until a condition is met.",
+   "correct": true,
+   "explanation": "That is the definition of an iterative algorithm.",
+   "id": "q20206"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "Iterative algorithms use loops such as while, for and {{1}}.",
+   "blanks": [
+    {
+     "answers": [
+      "repeat",
+      "repeat until",
+      "repeat...until"
+     ]
+    }
+   ],
+   "explanation": "The three kinds of loop: while, for, repeat.",
+   "id": "q20207"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the loop that adds the numbers 1 to 5.",
+   "code": "Let total ← 0\nFor i From 1 To 5 Do\n    total ← total + {{1}}\n{{2}}\nDisplay(total)",
+   "blocks": [
+    "i",
+    "total",
+    "EndDo",
+    "EndIf",
+    "5"
+   ],
+   "answers": [
+    "i",
+    "EndDo"
+   ],
+   "explanation": "Each pass adds the loop counter i. EndDo closes the loop.",
+   "hint": "What changes on each pass of the loop?",
+   "id": "q20208"
+  }
+ ]
+}

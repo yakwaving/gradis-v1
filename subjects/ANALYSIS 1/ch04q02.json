@@ -1,0 +1,213 @@
+{
+ "title": "Chapter 4 Quiz 2",
+ "description": "Filling an array with a loop and visiting every cell.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Creating and traversing a one-dimensional array",
+ "timerType": "wholeQuiz",
+ "totalTime": 900,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: Creating and traversing a one-dimensional array.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which loop is the natural choice to visit every cell of an array of 5 cells?",
+   "options": [
+    "Case i Of",
+    "Call i",
+    "If i = 5",
+    "For i From 1 To 5"
+   ],
+   "correct": 3,
+   "explanation": "We know the number of cells, so For is ideal.",
+   "id": "q40201"
+  },
+  {
+   "type": "code",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "Complete the algorithm that fills an array of 10 averages.",
+   "code": "Declare averages [1..10] : ARRAY OF real\nDeclare i As integer\nFor i From 1 To 10 Do\n    Write('Enter the average of student: ', i)\n    Read({{1}})\nEndFor",
+   "blocks": [
+    "averages[i]",
+    "averages",
+    "i",
+    "averages[10]"
+   ],
+   "answers": [
+    "averages[i]"
+   ],
+   "explanation": "Each pass reads one value into cell i.",
+   "id": "q40202"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the algorithm that adds the elements of E[1..5].",
+   "code": "Declare sum ← 0\nFor i From 1 To 5 Do\n    Read(E[i])\n    sum ← {{1}} + E[i]\nEndFor\nWrite('The sum is: ', {{2}})",
+   "blocks": [
+    "sum",
+    "sum",
+    "i",
+    "E[i]",
+    "0"
+   ],
+   "answers": [
+    "sum",
+    "sum"
+   ],
+   "explanation": "The accumulator adds each element, then we show it. 'sum' is needed twice, so it appears twice in the list.",
+   "id": "q40203"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "E = [3, 8, 2, 7, 5]. What is the sum of the elements?",
+   "correct": 25,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "3 + 8 + 2 + 7 + 5 = 25.",
+   "id": "q40204"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Trace the sum of E = [4, 6, 1, 9, 5]. Give the sum after each pass.",
+   "columns": [
+    "i",
+    "E[i]",
+    "sum after"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "4"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "given": "6"
+     },
+     {
+      "answer": [
+       "10"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "11"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "given": "9"
+     },
+     {
+      "answer": [
+       "20"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "5"
+     },
+     {
+      "given": "5"
+     },
+     {
+      "answer": [
+       "25"
+      ]
+     }
+    ]
+   ],
+   "explanation": "A running total: 4, 10, 11, 20, 25.",
+   "id": "q40205"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is the product of [2, 3, 4, 5, 6]? (start with product ← 1)",
+   "correct": 720,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "2 × 3 = 6; × 4 = 24; × 5 = 120; × 6 = 720.",
+   "id": "q40206"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Why does the product start at 1 and not 0?",
+   "options": [
+    "Multiplying by 1 changes nothing, but multiplying by 0 always gives 0",
+    "Arrays start at 1",
+    "Because the sum starts at 1",
+    "It does not matter"
+   ],
+   "correct": 0,
+   "explanation": "1 is the neutral element for multiplication.",
+   "id": "q40207"
+  },
+  {
+   "type": "ordering",
+   "marks": 3,
+   "scoring": "adjacent",
+   "question": "Put the steps of the sum algorithm in order.",
+   "items": [
+    "Traverse each element",
+    "Add each element to sum",
+    "Display sum",
+    "Initialize sum to 0"
+   ],
+   "correctOrder": [
+    3,
+    0,
+    1,
+    2
+   ],
+   "explanation": "Initialize, traverse and add, then display.",
+   "id": "q40208"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "To compute the sum, each element of the array must be visited.",
+   "correct": true,
+   "explanation": "The sum needs every value.",
+   "id": "q40209"
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "title": "Chapter 3 Quiz 1",
+ "description": "The kinds of data a program can handle, and the difference between a constant and a variable.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Data types",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Data types.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which data type can only hold the value **True** or **False**?",
+   "options": [
+    "Boolean",
+    "Real",
+    "Integer",
+    "Character"
+   ],
+   "correct": 0,
+   "explanation": "A Boolean holds one of two values: True or False.",
+   "id": "q30101"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which data type holds whole numbers such as 97 or -20?",
+   "options": [
+    "Real",
+    "Boolean",
+    "String",
+    "Integer"
+   ],
+   "correct": 3,
+   "explanation": "Integers are whole numeric values, signed or unsigned.",
+   "id": "q30102"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which data type fits the value 2.15?",
+   "options": [
+    "Real",
+    "Boolean",
+    "Character",
+    "Integer"
+   ],
+   "correct": 0,
+   "explanation": "Real numbers have a fractional part. They are stored with a mantissa and an exponent.",
+   "id": "q30103"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **String**?",
+   "options": [
+    "A single byte",
+    "A set of characters",
+    "A value that is True or False",
+    "A set of numbers of the same type"
+   ],
+   "correct": 1,
+   "explanation": "A string is a set of characters, for example 'COURSE'. A single character is one byte matching an ASCII code.",
+   "id": "q30104"
+  },
+  {
+   "type": "matching",
+   "marks": 5,
+   "question": "Match each value to its data type.",
+   "left": [
+    "True",
+    "-15",
+    "3.14",
+    "'b'",
+    "'COURSE'"
+   ],
+   "right": [
+    "Boolean",
+    "Integer",
+    "Real",
+    "Character",
+    "String"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "explanation": "Each value has a natural type: True is Boolean, -15 whole, 3.14 real, 'b' one character, 'COURSE' a string.",
+   "id": "q30105"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **constant**?",
+   "options": [
+    "A name given to a function",
+    "A set of data of the same type",
+    "Data that can change while the program runs",
+    "Data used by a program that cannot be modified"
+   ],
+   "correct": 3,
+   "explanation": "A constant keeps its value for the whole program. Pi is a classic example.",
+   "id": "q30106"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **variable**?",
+   "options": [
+    "Data that never changes",
+    "Data used by a program that can be modified",
+    "A kind of loop",
+    "A rule of the language"
+   ],
+   "correct": 1,
+   "explanation": "A variable can receive new values while the program runs.",
+   "id": "q30107"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "A variable can hold which of these?",
+   "options": [
+    "Input data",
+    "An intermediate calculation result",
+    "The final result of a calculation",
+    "The name of the compiler",
+    "A rule of syntax"
+   ],
+   "correct": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "The course lists three roles: input data, intermediate results and final results.",
+   "id": "q30108"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A data array is a set of data of the same type.",
+   "correct": true,
+   "explanation": "An array groups values of one type, such as an array of integers.",
+   "id": "q30109"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "All data is encoded in {{1}} in the computer's memory.",
+   "blanks": [
+    {
+     "answers": [
+      "bytes"
+     ]
+    }
+   ],
+   "explanation": "Everything in memory is encoded in bytes.",
+   "id": "q30110"
+  }
+ ]
+}

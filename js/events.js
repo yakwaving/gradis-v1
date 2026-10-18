@@ -3,8 +3,10 @@ document.addEventListener("scroll",e=>{const t=e.target;if(t.id==="slr"){const i
 function bind(){const g=$("gi");if(g)requestAnimationFrame(()=>{const R=S.run,m=R.qz.questions.length*2;g.style.left=Math.max(0,Math.min(100,(R.cal+m)/(2*m)*100))+"%"})}
 function save(){const b=document.querySelector(".body");if(b)S.run.keepScroll=b.scrollTop}
 document.addEventListener("input",e=>{if(e.target.id==="sq"){S.q=e.target.value;$("sl").innerHTML=subRows();return}const R=S.run;if(!R||S.scr!=="q")return;const q=curQ(),t=e.target;
- if(t.dataset.gap!=null)R.ans[R.i][+t.dataset.gap]=t.value;else if(t.id==="sh")R.ans[R.i]=t.value;else if(t.id==="nv")R.ans[R.i].v=t.value;else if(t.id==="nu")R.ans[R.i].u=t.value;else if(t.dataset.g!=null)R.ans[R.i][t.dataset.g]=t.value;else if(t.dataset.st!=null)R.ans[R.i].x[+t.dataset.st]=t.value;
+ if(t.dataset.gap!=null)R.ans[R.i][+t.dataset.gap]=t.value;else if(t.id==="sh")R.ans[R.i]=t.value;else if(t.id==="nv")R.ans[R.i].v=t.value;else if(t.id==="nu")R.ans[R.i].u=t.value;else if(t.dataset.g!=null)R.ans[R.i][t.dataset.g]=t.value;else if(t.dataset.st!=null)R.ans[R.i].x[+t.dataset.st]=t.value;else if(t.dataset.fc!=null)R.ans[R.i].text[t.dataset.fc]=t.value;
  refreshBtn()});
+/* tapping the text box of a node that also asks for its shape selects that node's slot, so the next shape tapped lands there */
+document.addEventListener("focusin",e=>{const t=e.target,R=S.run;if(!R||S.scr!=="q"||R.checked||t.dataset.fc==null)return;const q=curQ(),n=q.nodes.find(x=>x.id===t.dataset.fc);if(!n||!fcAsk(n).includes("shape"))return;R.ui.n=n.id;document.querySelectorAll(".fn.sel").forEach(x=>x.classList.remove("sel"));t.closest(".fn").classList.add("sel")});
 document.addEventListener("change",e=>{const R=S.run;if(R&&S.scr==="q"&&e.target.dataset.g!=null){R.ans[R.i][e.target.dataset.g]=e.target.value;refreshBtn()}});
 function refreshBtn(){const R=S.run,q=curQ(),b=$("main");if(!b)return;const conf=R.qz.confidence&&R.mode!=="study";b.classList.toggle("off",!(answered(q,R.ans[R.i])&&(!conf||R.conf[R.i]!=null)))}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b)return;const [k,...r]=b.dataset.a.split(":"),v=r.join(":"),R=S.run;
@@ -54,6 +56,10 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b
  case"up":case"dn":{const p=+v,t=k==="up"?p-1:p+1;if(t<0||t>=a.length)return;[a[p],a[t]]=[a[t],a[p]];break}
  case"lab":R.ui.l=R.ui.l===v?null:v;if(R.ui.l&&R.ui.t!=null){a[R.ui.t]=v;R.ui.l=null;R.ui.t=null}break;
  case"dot":{const i=+v;if(a[i]){delete a[i];break}if(R.ui.l){Object.keys(a).forEach(x=>{if(a[x]===R.ui.l)delete a[x]});a[i]=R.ui.l;R.ui.l=null}else{R.ui.t=R.ui.t===i?null:i;toast("NOW PICK A LABEL")}break}
+ case"cb":{const i=+v;if(R.ui.g!=null){Object.keys(a).forEach(x=>{if(a[x]===i)delete a[x]});a[R.ui.g]=i;R.ui.g=null;R.ui.b=null}else R.ui.b=R.ui.b===i?null:i;break}
+ case"cg":{const i=+v;if(a[i]!=null){delete a[i];break}if(R.ui.b!=null){a[i]=R.ui.b;R.ui.b=null}else{R.ui.g=R.ui.g===i?null:i;toast("NOW PICK A BLOCK")}break}
+ case"fcn":{if(a.shapes[v]){delete a.shapes[v];break}R.ui.n=R.ui.n===v?null:v;break}
+ case"fcs":{let id=R.ui.n;if(!id){const f=q.nodes.filter(n=>fcAsk(n).includes("shape")&&!a.shapes[n.id]);if(f.length===1)id=f[0].id}if(!id){toast("TAP A DASHED SLOT FIRST");return}a.shapes[id]=v;R.ui.n=null;break}
  case"scheme":a.show=true;break;
  case"tick":{const[i,kk]=v.split(":").map(Number);a.t[i][kk]=!a.t[i][kk];break}
  default:return}

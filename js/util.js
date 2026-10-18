@@ -1,18 +1,20 @@
-const APP_VERSION="1.1.1";
+const APP_VERSION="1.5.0";
+/* true inside the Android app (Capacitor); false in a normal browser */
+const isNative=()=>{const C=window.Capacitor;return !!(C&&(C.isNativePlatform?C.isNativePlatform():(C.getPlatform&&C.getPlatform()!=="web")))};
 const loaderHtml=()=>'<div class="ldr" role="status" aria-label="Loading"><i class="ldp"></i><i class="ldq"></i></div>';
 const $=id=>document.getElementById(id);
-const TYPES={single:"SINGLE CHOICE",multiple:"MULTIPLE CHOICE",truefalse:"TRUE / FALSE",fill:"FILL IN THE GAPS",short:"SHORT ANSWER",numeric:"NUMERIC",matching:"MATCHING",ordering:"ORDERING",labelling:"LABELLING",grid:"TABLE",assertion:"ASSERTION–REASON",structured:"STRUCTURED"};
+const TYPES={single:"SINGLE CHOICE",multiple:"MULTIPLE CHOICE",truefalse:"TRUE / FALSE",fill:"FILL IN THE GAPS",short:"SHORT ANSWER",numeric:"NUMERIC",matching:"MATCHING",ordering:"ORDERING",labelling:"LABELLING",grid:"TABLE",assertion:"ASSERTION–REASON",structured:"STRUCTURED",code:"CODE BLOCKS",flowchart:"FLOWCHART"};
 const ASR={A:"Both true, and the reason explains the assertion",B:"Both true, but the reason does not explain it",C:"Assertion true, reason false",D:"Assertion false, reason true",E:"Both false"};
 const PC=["#5b8cff","#ff7a59","#2fb5a3","#c58bff","#ffb400"];
 const MODES=[["exam","EXAM","Timer · no hints · answers at the end"],["practice","PRACTICE","Feedback after every answer"],["study","STUDY","Explanations first · not graded"]];
 const GRADES=[[85,"A*","Outstanding work!"],[75,"A","Excellent. You really know this."],[65,"B","Well done. Nearly there."],[50,"C","Good effort. Review the misses."],[35,"D","Keep practising, it is coming together."],[0,"E","Tough one. Try Study mode, then retry."]];
 const grade=p=>GRADES.find(g=>p>=g[0]);
-const icoX='<svg viewBox="0 0 24 24" fill="none" stroke="#1c2a5e" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
-const icoB='<svg viewBox="0 0 24 24" fill="none" stroke="#1c2a5e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>';
-const icoClock='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg>';
-const icoBook='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5"/></svg>';
-const icoHome='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8M5 9.5V21h14V9.5"/></svg>';
-const icoChart='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>';
+const icoX=gicon("close");
+const icoB=gicon("arrow_back");
+const icoClock=gicon("schedule","width:16px;height:16px");
+const icoBook=gicon("menu_book");
+const icoHome=gicon("home");
+const icoChart=gicon("bar_chart");
 function toast(t){const e=document.createElement("div");e.className="toast";e.textContent=t;$("st").appendChild(e);setTimeout(()=>e.remove(),1800)}
 /* ---------- text helpers ---------- */
 function mx(s){return s.replace(/\$([^$]+)\$/g,(_,m)=>'<span class="mx">'+m.replace(/\\ /g,' ').replace(/\\text\{([^}]*)\}/g,'$1').replace(/\\times/g,'×').replace(/\^\{([^}]*)\}/g,'<sup>$1</sup>').replace(/\^(-?\w)/g,'<sup>$1</sup>')+'</span>')}

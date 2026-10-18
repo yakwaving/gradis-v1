@@ -1,0 +1,174 @@
+{
+ "title": "Chapter 3 Quiz 2",
+ "description": "Naming things, declaring variables, and what a data structure is.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Declarations, identifiers and data structures",
+ "timerType": "wholeQuiz",
+ "totalTime": 900,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Declarations, identifiers and data structures.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is an **identifier**?",
+   "options": [
+    "A mathematical operator",
+    "A type of loop",
+    "The value stored in a variable",
+    "The explicit name of a constant, variable or function"
+   ],
+   "correct": 3,
+   "explanation": "Result, Letter and Conversion_BCD are identifiers: names chosen by the programmer.",
+   "id": "q30201"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these are identifiers?",
+   "options": [
+    "Letter",
+    "Result",
+    "10",
+    "+",
+    "Conversion_BCD"
+   ],
+   "correct": [
+    0,
+    1,
+    4
+   ],
+   "explanation": "Identifiers are names. 10 is a value and + is an operator.",
+   "id": "q30202"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "To declare a variable A of type Integer we write: Declare A {{1}} Integer",
+   "blanks": [
+    {
+     "answers": [
+      "As"
+     ]
+    }
+   ],
+   "explanation": "The course syntax is Declare VariableName As VariableType.",
+   "id": "q30203"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which line correctly declares a string variable called StudentName?",
+   "options": [
+    "StudentName ← String",
+    "Declare StudentName As String",
+    "Declare String As StudentName",
+    "Let String StudentName"
+   ],
+   "correct": 1,
+   "explanation": "Declare VariableName As VariableType.",
+   "id": "q30204"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "In the declaration Declare Age As Integer, which word is the name of the variable?",
+   "accepted": [
+    "Age",
+    "age"
+   ],
+   "explanation": "Age is the identifier. Integer is the type.",
+   "id": "q30205"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the main difference between a **function** and a **procedure**?",
+   "options": [
+    "A function has no parameters",
+    "A procedure is always longer",
+    "A procedure can only be called once",
+    "A function returns a result, a procedure does not"
+   ],
+   "correct": 3,
+   "explanation": "Both perform a set of actions, but only a function provides a result.",
+   "id": "q30206"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A **data structure** is…",
+   "options": [
+    "A kind of loop",
+    "A file on disk",
+    "A single variable",
+    "Organized data together with operations on that data"
+   ],
+   "correct": 3,
+   "explanation": "Data Structure = Organized Data + Operations on the data.",
+   "id": "q30207"
+  },
+  {
+   "type": "matching",
+   "marks": 5,
+   "question": "Match each operation on data structures to what it does.",
+   "left": [
+    "Traversal",
+    "Search",
+    "Insertion",
+    "Deletion",
+    "Merging"
+   ],
+   "right": [
+    "Access each element exactly once",
+    "Find the location of an element",
+    "Add a new element",
+    "Remove an element",
+    "Combine two sorted files into one sorted file"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "explanation": "These are operations listed in the course.",
+   "id": "q30208"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which operation arranges elements in ascending or alphabetical order?",
+   "options": [
+    "Merging",
+    "Insertion",
+    "Traversal",
+    "Sorting"
+   ],
+   "correct": 3,
+   "explanation": "Sorting puts the elements in a certain order.",
+   "id": "q30209"
+  }
+ ]
+}

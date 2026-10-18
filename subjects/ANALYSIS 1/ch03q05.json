@@ -1,0 +1,312 @@
+{
+ "title": "Chapter 3 Quiz 5",
+ "description": "Comparing values, combining conditions with AND, OR, NOT, and evaluating them.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Comparison, logical operators and conditions",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Comparison, logical operators and conditions.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "matching",
+   "marks": 5,
+   "question": "Match each comparison symbol to its meaning.",
+   "left": [
+    "=",
+    "<>",
+    "<",
+    ">=",
+    "<="
+   ],
+   "right": [
+    "Equal",
+    "Different",
+    "Less than",
+    "Greater than or equal",
+    "Less than or equal"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "explanation": "These are the comparison operators of the course.",
+   "id": "q30501"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does the operator **<>** mean?",
+   "options": [
+    "Assignment",
+    "Different (not equal)",
+    "Equal",
+    "Less than"
+   ],
+   "correct": 1,
+   "explanation": "<> tests that two values are different.",
+   "id": "q30502"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "(5 > 3) AND (2 > 4) is True.",
+   "correct": false,
+   "explanation": "AND needs both sides True. 2 > 4 is False, so the whole condition is False.",
+   "id": "q30503"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "(5 > 3) OR (2 > 4) is True.",
+   "correct": true,
+   "explanation": "OR needs only one side True. 5 > 3 is True.",
+   "id": "q30504"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "NOT (3 = 3) is True.",
+   "correct": false,
+   "explanation": "3 = 3 is True, and NOT turns True into False.",
+   "id": "q30505"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which condition means 1 ≤ Index ≤ 10?",
+   "options": [
+    "(Index >= 1) AND (Index <= 10)",
+    "(Index >= 1) OR (Index <= 10)",
+    "NOT (Index = 5)",
+    "(Index > 10) AND (Index < 1)"
+   ],
+   "correct": 0,
+   "explanation": "Both limits must hold at the same time, so we use AND. With OR, almost any number would pass.",
+   "id": "q30506"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is a **simple** condition?",
+   "options": [
+    "(x > 0) AND ((y > 0) OR (z > 0))",
+    "(x > 0) AND (y > 0)",
+    "x <> 0",
+    "(Index >= 1) AND (Index <= 10)"
+   ],
+   "correct": 2,
+   "explanation": "A simple condition has one comparison. The others combine several.",
+   "id": "q30507"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Let x = 4 and y = -2. Say whether each condition is True or False.",
+   "columns": [
+    "Condition",
+    "Result"
+   ],
+   "rows": [
+    [
+     {
+      "given": "x > 0"
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "x <> y"
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(x > 0) AND (y > 0)"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(x > 0) OR (y > 0)"
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "NOT (x = y)"
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ]
+   ],
+   "explanation": "x > 0 is True; x <> y is True; AND needs y > 0, which is False; OR is True because x > 0; NOT (x = y) is True.",
+   "id": "q30508"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Let x = 0 and y = 0. Say whether each condition is True or False.",
+   "columns": [
+    "Condition",
+    "Result"
+   ],
+   "rows": [
+    [
+     {
+      "given": "x > 0"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "x <> y"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(x > 0) AND (y > 0)"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(x > 0) OR (y > 0)"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "NOT (x = y)"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ]
+   ],
+   "explanation": "With x = 0 and y = 0: x > 0 is False; x <> y is False; AND is False; OR is False; NOT (x = y) is False because x = y.",
+   "id": "q30509"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "A condition with AND is True only when {{1}} sides are True. A condition with OR is True when {{2}} one side is True.",
+   "blanks": [
+    {
+     "answers": [
+      "both",
+      "all"
+     ]
+    },
+    {
+     "answers": [
+      "at least",
+      "at-least"
+     ]
+    }
+   ],
+   "explanation": "AND is strict (both). OR is flexible (at least one).",
+   "id": "q30510"
+  }
+ ]
+}

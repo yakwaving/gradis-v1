@@ -1,0 +1,302 @@
+{
+ "title": "Chapter 3 Quiz 15",
+ "description": "A mix of everything in Chapter 3. Say how sure you are before you check each answer.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Chapter 3 review",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": true,
+ "instructions": [
+  "Chapter 3: Chapter 3 review.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which data type fits the value 'A'?",
+   "options": [
+    "String of 5 characters",
+    "Character",
+    "Boolean",
+    "Integer"
+   ],
+   "correct": 1,
+   "explanation": "A single letter is a character.",
+   "id": "q31501"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which part of the program comes just before the main program?",
+   "options": [
+    "Declaration of constants",
+    "Definition of types",
+    "Input",
+    "Definition of functions and procedures"
+   ],
+   "correct": 3,
+   "explanation": "Order: types, constants, variables, functions/procedures, main program.",
+   "id": "q31502"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is 29 MOD 6?",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "29 = 6 × 4 + 5.",
+   "id": "q31503"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is 29 DIV 6?",
+   "correct": 4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "6 × 4 = 24 and 29 - 24 = 5, so the quotient is 4.",
+   "id": "q31504"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "(x > 0) AND (x < 10) is True when x = 10.",
+   "correct": false,
+   "explanation": "10 < 10 is False, so the AND is False.",
+   "id": "q31505"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A program must run its body at least once before testing. Which loop?",
+   "options": [
+    "Case",
+    "While",
+    "For with a negative range",
+    "Repeat...Until"
+   ],
+   "correct": 3,
+   "explanation": "Repeat...Until tests after the body.",
+   "id": "q31506"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "fact ← 1; For i From 1 To 4: fact ← fact * i. What is fact?",
+   "correct": 24,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "1 × 2 × 3 × 4 = 24.",
+   "id": "q31507"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Trace: total ← 0; For i From 1 To 4: total ← total + i * 2.",
+   "columns": [
+    "i",
+    "total after"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "2"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "6"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "12"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "20"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Add 2, 4, 6, 8 in turn: 2, 6, 12, 20.",
+   "id": "q31508"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the difference between a function and a procedure?",
+   "options": [
+    "A function returns a value, a procedure does not",
+    "A function has no name",
+    "A procedure is recursive",
+    "A procedure has no parameters"
+   ],
+   "correct": 0,
+   "explanation": "Only functions provide a result.",
+   "id": "q31509"
+  },
+  {
+   "type": "flowchart",
+   "marks": 4,
+   "question": "Place the shapes on the flowchart.",
+   "nodes": [
+    {
+     "id": "s",
+     "shape": "terminator",
+     "x": 50,
+     "y": 6,
+     "text": "Start"
+    },
+    {
+     "id": "i",
+     "shape": "io",
+     "x": 50,
+     "y": 22,
+     "text": "Input n",
+     "ask": [
+      "shape"
+     ]
+    },
+    {
+     "id": "d",
+     "shape": "decision",
+     "x": 50,
+     "y": 44,
+     "text": "n MOD 2 = 0 ?",
+     "ask": [
+      "shape"
+     ],
+     "w": 50,
+     "h": 22
+    },
+    {
+     "id": "p1",
+     "shape": "io",
+     "x": 22,
+     "y": 70,
+     "text": "Display 'Even'",
+     "ask": [
+      "shape"
+     ],
+     "w": 34
+    },
+    {
+     "id": "p2",
+     "shape": "io",
+     "x": 78,
+     "y": 70,
+     "text": "Display 'Odd'",
+     "ask": [
+      "shape"
+     ],
+     "w": 34
+    },
+    {
+     "id": "e",
+     "shape": "terminator",
+     "x": 50,
+     "y": 92,
+     "text": "End"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "i"
+    },
+    {
+     "from": "i",
+     "to": "d"
+    },
+    {
+     "from": "d",
+     "to": "p1",
+     "label": "Yes",
+     "via": [
+      [
+       22,
+       44
+      ]
+     ]
+    },
+    {
+     "from": "d",
+     "to": "p2",
+     "label": "No",
+     "via": [
+      [
+       78,
+       44
+      ]
+     ]
+    },
+    {
+     "from": "p1",
+     "to": "e"
+    },
+    {
+     "from": "p2",
+     "to": "e"
+    }
+   ],
+   "explanation": "Input and output are parallelograms; the question is a diamond.",
+   "id": "q31510"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The recursive factorial needs a base case because…",
+   "options": [
+    "It adds a loop",
+    "Without it the function would call itself forever",
+    "It declares the variable",
+    "It makes the answer a real number"
+   ],
+   "correct": 1,
+   "explanation": "The base case stops the chain of calls.",
+   "id": "q31511"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is F(6)? (Fibonacci: 0, 1, 1, 2, 3, 5, 8)",
+   "correct": 8,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "F(6) = F(5) + F(4) = 5 + 3 = 8.",
+   "id": "q31512"
+  }
+ ]
+}

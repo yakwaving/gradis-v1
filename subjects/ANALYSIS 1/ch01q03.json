@@ -1,0 +1,165 @@
+{
+ "title": "Chapter 1 Quiz 3",
+ "description": "The design process, the two kinds of error, and the parts of an algorithm.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "From problem to program",
+ "timerType": "wholeQuiz",
+ "totalTime": 900,
+ "confidence": false,
+ "instructions": [
+  "Chapter 1: From problem to program.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "ordering",
+   "marks": 6,
+   "scoring": "adjacent",
+   "question": "Put the stages of designing a program in order.",
+   "items": [
+    "Problem statement",
+    "Algorithm",
+    "Result",
+    "Running",
+    "Coding",
+    "Analysis",
+    "Compiling"
+   ],
+   "correctOrder": [
+    0,
+    5,
+    1,
+    4,
+    6,
+    3,
+    2
+   ],
+   "explanation": "Problem statement, analysis, algorithm, coding (source program), compiling (executable program), running, result.",
+   "id": "q10301"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which stages are carried out **automatically by the machine**?",
+   "options": [
+    "Execution",
+    "Compilation",
+    "Translation of the algorithm into code",
+    "Analysis"
+   ],
+   "correct": [
+    0,
+    1
+   ],
+   "explanation": "Analysis and translation are intellectual human operations. Compilation and execution are done automatically by the machine.",
+   "id": "q10302"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A program compiles and runs, but it does not do what the user wanted because the method was badly designed. What kind of error is this?",
+   "options": [
+    "A semantic error",
+    "A syntax error",
+    "A compiler error",
+    "A spelling error"
+   ],
+   "correct": 0,
+   "explanation": "A semantic error comes from a poor design of the method (the analysis phase). It is a logic problem.",
+   "id": "q10303"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The compiler cannot understand an instruction, so no executable program is produced. This is a…",
+   "options": [
+    "Semantic error",
+    "Running error",
+    "Syntax error",
+    "Logic error"
+   ],
+   "correct": 2,
+   "explanation": "A syntax error is a spelling or grammar mistake made during coding. The compiler reports it and the program cannot run.",
+   "id": "q10304"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A semantic error must be corrected starting from the analysis phase.",
+   "correct": true,
+   "explanation": "Because it is a design fault, the algorithm itself must be corrected, beginning with the analysis.",
+   "id": "q10305"
+  },
+  {
+   "type": "ordering",
+   "marks": 4,
+   "scoring": "adjacent",
+   "question": "Put the parts of an algorithm in order.",
+   "items": [
+    "Algorithm name",
+    "Initialization",
+    "Declarative part",
+    "Execution",
+    "Returning results"
+   ],
+   "correctOrder": [
+    0,
+    2,
+    1,
+    3,
+    4
+   ],
+   "explanation": "Name first, then the declarations, then the body: initialization, execution, and returning results.",
+   "id": "q10306"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "Every algorithm has three parts: the algorithm {{1}}, the declarative part and the algorithm {{2}}.",
+   "blanks": [
+    {
+     "answers": [
+      "name",
+      "title"
+     ]
+    },
+    {
+     "answers": [
+      "body"
+     ]
+    }
+   ],
+   "explanation": "The three parts are the name, the declarative part and the body.",
+   "id": "q10307"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The name of an algorithm is always preceded by which word?",
+   "options": [
+    "DECLARE",
+    "BEGIN",
+    "ALGORITHM",
+    "PROGRAM"
+   ],
+   "correct": 2,
+   "explanation": "Example from the course: ALGORITHM Factorial.",
+   "id": "q10308"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "An algorithm uses these coefficients and grades: coef1 = 3, coef2 = 2, coef3 = 5 and grade1 = 10, grade2 = 14, grade3 = 11. Calculate Avg = (grade1×coef1 + grade2×coef2 + grade3×coef3) / (coef1 + coef2 + coef3).",
+   "correct": 11.3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.01
+   },
+   "explanation": "(10×3 + 14×2 + 11×5) / (3+2+5) = (30 + 28 + 55) / 10 = 113 / 10 = 11.3. The brackets around the sum of coefficients are essential.",
+   "hint": "Work out the top line first, then divide by the sum of the coefficients.",
+   "id": "q10309"
+  }
+ ]
+}

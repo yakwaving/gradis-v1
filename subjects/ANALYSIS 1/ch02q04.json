@@ -1,0 +1,148 @@
+{
+ "title": "Chapter 2 Quiz 4",
+ "description": "Top-down, bottom-up, and other ways to classify algorithms.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Design approaches",
+ "timerType": "wholeQuiz",
+ "totalTime": 720,
+ "confidence": false,
+ "instructions": [
+  "Chapter 2: Design approaches.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which design approach breaks a complex problem into simpler sub-problems?",
+   "options": [
+    "Top-down",
+    "Greedy",
+    "Randomized",
+    "Bottom-up"
+   ],
+   "correct": 0,
+   "explanation": "The top-down approach decomposes a problem until elementary solutions are reached.",
+   "id": "q20401"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The bottom-up approach first solves the simplest sub-problems, then combines them to solve the whole problem.",
+   "correct": true,
+   "explanation": "Bottom-up works from the small pieces up to the full solution.",
+   "id": "q20402"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "In the {{1}} approach a problem is broken down into smaller parts, and in the {{2}} approach the simplest sub-problems are solved first.",
+   "blanks": [
+    {
+     "answers": [
+      "top-down",
+      "top down",
+      "topdown"
+     ]
+    },
+    {
+     "answers": [
+      "bottom-up",
+      "bottom up",
+      "bottomup"
+     ]
+    }
+   ],
+   "explanation": "Top-down decomposes, bottom-up combines.",
+   "id": "q20403"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each classification to what it describes.",
+   "left": [
+    "Randomized algorithm",
+    "Complexity classification",
+    "Research domain classification",
+    "Enumeration and backtracking"
+   ],
+   "right": [
+    "Uses random choices to speed up the solution",
+    "Compares algorithms by execution time, such as O(n)",
+    "Groups algorithms by field, such as artificial intelligence",
+    "Explores a large space of possible solutions"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "These are the 'other classifications' presented in the course.",
+   "id": "q20404"
+  },
+  {
+   "type": "multiple",
+   "marks": 4,
+   "scoring": "partial",
+   "question": "Which of these factors help us **choose** an algorithm?",
+   "options": [
+    "The colour of the screen",
+    "Efficiency in time and memory",
+    "Hardware constraints (serial, parallel, distributed)",
+    "The nature of the problem",
+    "The name of the programmer",
+    "Whether an exact or approximate solution is needed"
+   ],
+   "correct": [
+    1,
+    2,
+    3,
+    5
+   ],
+   "explanation": "Algorithms are chosen according to efficiency, the nature of the problem, hardware constraints and the guarantee of the solution.",
+   "id": "q20405"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Randomized quicksort is an example of…",
+   "options": [
+    "A linear algorithm",
+    "A bottom-up approach",
+    "A conditional algorithm",
+    "A randomized algorithm"
+   ],
+   "correct": 3,
+   "explanation": "It picks random choices to speed up the resolution.",
+   "id": "q20406"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which classification lets us compare algorithms by their execution time, for example O(n) or exponential?",
+   "options": [
+    "Randomized algorithms",
+    "Top-down design",
+    "Complexity classification",
+    "Research domain classification"
+   ],
+   "correct": 2,
+   "explanation": "Complexity analysis compares the theoretical efficiency of algorithms.",
+   "id": "q20407"
+  }
+ ]
+}

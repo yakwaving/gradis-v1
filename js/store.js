@@ -6,7 +6,7 @@ const K_RES="gradis.v1.results",K_RUN="gradis.v1.run";
 const PAL=[["#5b8cff","#3a5fc4"],["#2fb5a3","#1d8174"],["#ff7a59","#c4492b"],["#ffcb3d","#c98a00"],["#4cc46a","#2e8f48"],["#c58bff","#8f56d6"],["#2fa8e0","#1d79a8"],["#ff9f43","#c4701c"],["#ff6fa5","#c43d73"],["#6c7bd6","#4553a8"]];
 const SV=(p)=>`<svg viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
 const ICONS={check:SV('<rect x="7" y="7" width="26" height="26" rx="6"/><path d="M13 20l5 5 9-10"/>'),book:SV('<path d="M8 9a3 3 0 0 1 3-3h20v26H11a3 3 0 0 0-3 3zM8 32V9"/>'),flask:SV('<path d="M15 5h10M17 5v11L8 32a3 3 0 0 0 2.6 4.5h18.8A3 3 0 0 0 32 32L23 16V5"/>'),chip:SV('<rect x="10" y="10" width="20" height="20" rx="3"/><path d="M16 4v6M24 4v6M16 30v6M24 30v6M4 16h6M4 24h6M30 16h6M30 24h6"/>'),calc:SV('<rect x="9" y="5" width="22" height="30" rx="4"/><path d="M14 12h12M14 20h2M20 20h2M14 27h2M20 27h2"/>')};
-const REQ={single:["options","correct"],multiple:["options","correct"],truefalse:["correct"],fill:["blanks"],short:["accepted"],numeric:["correct"],matching:["left","right","pairs"],ordering:["items","correctOrder"],labelling:["image","labels","targets"],grid:["columns","rows"],assertion:["assertion","reason","correct"],structured:["parts"]};
+const REQ={single:["options","correct"],multiple:["options","correct"],truefalse:["correct"],fill:["blanks"],short:["accepted"],numeric:["correct"],matching:["left","right","pairs"],ordering:["items","correctOrder"],labelling:["image","labels","targets"],grid:["columns","rows"],assertion:["assertion","reason","correct"],structured:["parts"],code:["code","blocks","answers"],flowchart:["nodes"]};
 const sub=n=>SUBJ.find(s=>s.n===n)||{n,c:"#8a94a6",d:"#5d6678",g:(n||"?")[0].toUpperCase()};
 const real=n=>!!(DATA[n]&&DATA[n].length);
 
@@ -16,6 +16,7 @@ function normQ(q,i,where){
   if(!TYPES[q.type]){console.warn(where,"question",i+1,"unknown type",q.type);return null}
   const miss=REQ[q.type].filter(k=>q[k]==null);
   if(miss.length){console.warn(where,"question",i+1,"("+q.type+") is missing",miss.join(", "));return null}
+  const bad=qcheck(q);if(bad){console.warn(where,"question",i+1,"("+q.type+")",bad);return null}
   if(q.type==="grid"&&!q.rows.some(r=>r.some(c=>c.answer))){console.warn(where,"question",i+1,"table has no blank cells");return null}
   return q}
 function normQuiz(raw,name,file){
@@ -45,7 +46,11 @@ function hydrate(h){const d=new Date(h.ts),t=new Date();const a=Math.max(0,Math.
 function saveHist(){try{localStorage.setItem(K_RES,JSON.stringify(HIST.map(({ago,d,...r})=>r)))}catch(e){}}
 function loadHist(){try{const a=JSON.parse(localStorage.getItem(K_RES)||"[]");HIST=a.filter(h=>h&&h.ts&&h.p!=null).map(hydrate).sort((x,y)=>y.ts-x.ts)}catch(e){HIST=[]}}
 function addResult(r){r.ts=Date.now();HIST.unshift(hydrate(r));if(HIST.length>500)HIST.length=500;saveHist()}
-function exportResults(){const blob=new Blob([JSON.stringify({app:"gradis",version:1,exported:new Date().toISOString(),results:HIST.map(({ago,d,...r})=>r)},null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="gradis-results-"+new Date().toISOString().slice(0,10)+".json";document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}
+function exportResults(){const text=JSON.stringify({app:"gradis",version:1,exported:new Date().toISOString(),results:HIST.map(({ago,d,...r})=>r)},null,2),name="gradis-results-"+new Date().toISOString().slice(0,10)+".json";
+ const download=()=>{const blob=new Blob([text],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)};
+ const P=window.Capacitor&&window.Capacitor.Plugins;
+ if(isNative()&&P&&P.Filesystem&&P.Share){P.Filesystem.writeFile({path:name,data:text,directory:"CACHE",encoding:"utf8"}).then(r=>P.Share.share({title:"Gradis results",files:[r.uri]})).catch(e=>{if(!(e&&/cancel/i.test(e.message||"")))download()});return}
+ download()}
 
 /* Quiz in progress: saved so it can be resumed */
 function persistRun(){const R=S.run;if(!R||S.scr!=="q")return;try{localStorage.setItem(K_RUN,JSON.stringify({subj:S.subj,qid:R.qz.qid,mode:R.mode,i:R.i,ans:R.ans,res:R.res,conf:R.conf,checked:R.checked,left:R.left,t:R.t,ts:Date.now()}))}catch(e){}}

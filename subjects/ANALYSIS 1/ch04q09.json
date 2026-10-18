@@ -1,0 +1,185 @@
+{
+ "title": "Chapter 4 Quiz 9",
+ "description": "Keeping data after the program ends.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "File structures",
+ "timerType": "wholeQuiz",
+ "totalTime": 900,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: File structures.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Why do we need **files**?",
+   "options": [
+    "RAM is volatile; files keep data on a lasting medium",
+    "Arrays cannot be used",
+    "RAM is too large",
+    "Files are faster than RAM"
+   ],
+   "correct": 0,
+   "explanation": "Data in arrays, records and variables lives only as long as the program.",
+   "id": "q40901"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which are non-volatile media?",
+   "options": [
+    "USB key",
+    "Magnetic tape",
+    "RAM",
+    "Hard disk"
+   ],
+   "correct": [
+    0,
+    1,
+    3
+   ],
+   "explanation": "RAM is volatile; the others keep data.",
+   "id": "q40902"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **file** in the course?",
+   "options": [
+    "A single variable",
+    "A set of loops",
+    "An index",
+    "A set of records stored on a physical medium, with a name"
+   ],
+   "correct": 3,
+   "explanation": "A file groups records describing the same entity.",
+   "id": "q40903"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **record** of a file?",
+   "options": [
+    "The combination of values of each attribute of one entity",
+    "A type of loop",
+    "A whole disk",
+    "The name of the file"
+   ],
+   "correct": 0,
+   "explanation": "A record completely defines one entity: one student, one product…",
+   "id": "q40904"
+  },
+  {
+   "type": "ordering",
+   "marks": 5,
+   "scoring": "adjacent",
+   "question": "Put the steps in order for writing a line to a file and reading it back.",
+   "items": [
+    "Close the file",
+    "Read and display the content",
+    "Close the file",
+    "Write a line of text",
+    "Open the file for writing",
+    "Reopen the file for reading"
+   ],
+   "correctOrder": [
+    4,
+    3,
+    0,
+    5,
+    1,
+    2
+   ],
+   "explanation": "Write mode, write, close, read mode, read, close.",
+   "id": "q40905"
+  },
+  {
+   "type": "matching",
+   "marks": 5,
+   "question": "Match each Pascal instruction to what it does.",
+   "left": [
+    "assign",
+    "rewrite",
+    "reset",
+    "close",
+    "eof"
+   ],
+   "right": [
+    "Links the file variable to a file name",
+    "Opens for writing (creates or overwrites)",
+    "Opens for reading",
+    "Closes the file",
+    "Tells whether the end of the file is reached"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "explanation": "These are the instructions of the course example.",
+   "id": "q40906"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does rewrite(MyFile) do if the file already exists?",
+   "options": [
+    "It deletes the program",
+    "It overwrites it",
+    "It adds to the end",
+    "It reads it"
+   ],
+   "correct": 1,
+   "explanation": "rewrite creates the file if it does not exist, otherwise overwrites it.",
+   "id": "q40907"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the reading loop.",
+   "code": "reset(MyFile)\nwhile {{1}} eof(MyFile) do\n    readln(MyFile, TextToRead)\n    writeln('File content: ', TextToRead)\nEndDo\n{{2}}(MyFile)",
+   "blocks": [
+    "not",
+    "close",
+    "assign",
+    "rewrite"
+   ],
+   "answers": [
+    "not",
+    "close"
+   ],
+   "explanation": "We loop while the end is not reached, then close the file.",
+   "id": "q40908"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A file must be closed after use.",
+   "correct": true,
+   "explanation": "The course closes the file after writing and after reading.",
+   "id": "q40909"
+  }
+ ]
+}
