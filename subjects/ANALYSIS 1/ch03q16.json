@@ -1,0 +1,278 @@
+{
+ "title": "Chapter 3 Quiz 16",
+ "description": "Traps in every question. Read the code line by line and do not trust the first impression.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: loops, recursion and hidden errors",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": true,
+ "instructions": [
+  "Chapter 3: Difficult: loops, recursion and hidden errors.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This recursive function should return N!. One line breaks it. Find it and choose the fix.",
+   "code": "Function Fact(N) Returns integer\nBegin\n    If N = 0 Then\n        Fact ← 1\n    Else\n        Fact ← N * Fact(N + 1)\n    EndIf\nEnd Function",
+   "bug": 6,
+   "options": [
+    "Fact ← N * Fact(N) - 1",
+    "Fact ← N + Fact(N - 1)",
+    "Fact ← (N - 1) * Fact(N)",
+    "Fact ← N * Fact(N - 1)"
+   ],
+   "correct": 3,
+   "explanation": "The call must use a smaller value to reach the base case N = 0. With N + 1 the values grow and the function never stops.",
+   "id": "q31601"
+  },
+  {
+   "type": "bugline",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should display the smallest of the 5 values in tab. Two lines have an error.",
+   "code": "Let min ← 0\nFor i From 1 To 5 Do\n    If tab[i] > min Then\n        min ← tab[i]\n    EndIf\nEndDo\nDisplay(min)",
+   "bugs": [
+    1,
+    3
+   ],
+   "explanation": "Line 1: min must start with the first element, tab[1] (0 could be smaller than every value). Line 3: we replace min when the new value is smaller, so the test is tab[i] < min.",
+   "id": "q31602"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many times does the body run?\n```\nFor i From 1 To 4 Do\n    For j From i To 4 Do\n        Display(i, j)\n    EndDo\nEndDo\n```",
+   "correct": 10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "i = 1 gives 4 passes, i = 2 gives 3, i = 3 gives 2 and i = 4 gives 1. The total is 4 + 3 + 2 + 1 = 10.",
+   "hint": "The inner loop starts at i, not at 1.",
+   "id": "q31603"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "How many numbers does this algorithm display?\n```\nLet i ← 10\nRepeat\n    Display(i)\n    i ← i + 1\nUntil i > 5\n```",
+   "options": [
+    "0",
+    "6",
+    "5",
+    "1"
+   ],
+   "correct": 3,
+   "explanation": "Repeat...Until tests after the body, so 10 is displayed once. Then i = 11 and 11 > 5 is true, so the loop stops.",
+   "id": "q31604"
+  },
+  {
+   "type": "grid",
+   "marks": 6,
+   "question": "Trace this loop: i ← 20, then While i > 3 Do i ← i - 6. Fill in the table.",
+   "columns": [
+    "Pass",
+    "i after the pass",
+    "Is i > 3 ?"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "14"
+      ]
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "8"
+      ]
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "2"
+      ]
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ]
+   ],
+   "explanation": "20 → 14 → 8 → 2. After the third pass i = 2, so 2 > 3 is False and the loop ends after 3 passes.",
+   "id": "q31605"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This selection sort swaps tab[i] and tab[minIndex]. One line of the swap is wrong. Find it and choose the fix.",
+   "code": "temp ← tab[i]\ntab[i] ← tab[minIndex]\ntab[minIndex] ← tab[i]",
+   "bug": 3,
+   "options": [
+    "tab[temp] ← tab[minIndex]",
+    "tab[minIndex] ← tab[j]",
+    "tab[minIndex] ← temp",
+    "temp ← tab[minIndex]"
+   ],
+   "correct": 2,
+   "explanation": "After line 2, tab[i] already holds the new value, so the old value of tab[i] would be lost. The saved old value is in temp.",
+   "id": "q31606"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "The recursive Fibonacci F(n) = F(n-1) + F(n-2), with F(0) = 0 and F(1) = 1, is written without memoization. How many calls of F are made in total to compute F(5), counting the first call?",
+   "correct": 15,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Calls: c(0) = c(1) = 1, and c(n) = 1 + c(n-1) + c(n-2). That gives 1, 1, 3, 5, 9, 15. This is why memoization matters.",
+   "hint": "Count calls, not the value of F.",
+   "id": "q31607"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these statements are **true**?",
+   "options": [
+    "A While loop tests its condition after the first pass",
+    "For i From 5 To 1 does not run when the step is +1",
+    "A Repeat loop whose Until test is true at the start still runs once",
+    "A While loop whose test is false at the start runs 0 times",
+    "For i From 1 To 0 runs the body one time"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "While tests first (0 times is possible). A For loop with the start above the end does not run. Repeat...Until always runs once before testing. For i From 1 To 0 is an empty range, and While never tests after the body.",
+   "id": "q31608"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Evaluate each expression (the brackets show the order).",
+   "columns": [
+    "Expression",
+    "Value"
+   ],
+   "rows": [
+    [
+     {
+      "given": "(17 MOD 5) + 2"
+     },
+     {
+      "answer": [
+       "4"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(17 DIV 5) * 2"
+     },
+     {
+      "answer": [
+       "6"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2 + ((17 MOD 5) * 3)"
+     },
+     {
+      "answer": [
+       "8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(17 DIV 5) MOD 2"
+     },
+     {
+      "answer": [
+       "1"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(20 DIV 3) - (20 MOD 3)"
+     },
+     {
+      "answer": [
+       "4"
+      ]
+     }
+    ]
+   ],
+   "explanation": "17 MOD 5 = 2 and 17 DIV 5 = 3; 20 DIV 3 = 6 and 20 MOD 3 = 2.",
+   "id": "q31609"
+  },
+  {
+   "type": "bugline",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "This should display the sum 1 + 2 + 3 + 4 + 5. One line makes the loop run for ever. Find it.",
+   "code": "Let i ← 1\nLet total ← 0\nWhile i <= 5 Do\n    total ← total + i\n    i ← i - 1\nEndDo\nDisplay(total)",
+   "bugs": [
+    5
+   ],
+   "explanation": "i must go up so that i <= 5 eventually becomes false. With i ← i - 1 the test is true for ever.",
+   "id": "q31610"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "In For i From 1 To N, when N = 0 the body runs once.",
+   "reason": "The initial and final values of a For loop are both included.",
+   "correct": "D",
+   "explanation": "The assertion is false: the range 1 to 0 is empty, so the body does not run. The reason is true, but it does not make the assertion hold.",
+   "id": "q31611"
+  }
+ ]
+}

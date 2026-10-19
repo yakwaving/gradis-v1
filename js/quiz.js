@@ -1,7 +1,7 @@
 function startRun(){const qz=S.quiz,whole=qz.timerType==="wholeQuiz";
  S.run={qz,mode:S.mode,i:0,ans:qz.questions.map(q=>initA(q)),res:[],conf:[],checked:false,left:qz.totalTime,hint:false,ui:{},t:0};
  clearInterval(S.tm);S.tm=setInterval(tick,1000);scr("q")}
-function initA(q){switch(q.type){case"multiple":return[];case"fill":return q.blanks.map(()=>"");case"numeric":return{v:"",u:q.unit||""};case"matching":return{};case"ordering":return q.items.map((_,i)=>q.items.length-1-i);case"labelling":return{};case"grid":return{};case"code":return{};case"flowchart":return{shapes:{},text:{}};case"structured":return{x:q.parts.map(()=>""),t:q.parts.map(p=>p.markScheme.map(()=>false)),show:false};default:return null}}
+function initA(q){switch(q.type){case"multiple":return[];case"fill":return q.blanks.map(()=>"");case"numeric":return{v:"",u:q.unit||""};case"matching":return{};case"ordering":return q.items.map((_,i)=>q.items.length-1-i);case"labelling":return{};case"grid":return{};case"code":return{};case"bugline":return[];case"bugfix":return{l:null,f:null};case"flowchart":return{shapes:{},text:{}};case"structured":return{x:q.parts.map(()=>""),t:q.parts.map(p=>p.markScheme.map(()=>false)),show:false};default:return null}}
 function tick(){const R=S.run;if(!R||S.scr!=="q"||R.mode==="study")return;R.t++;R.left--;if(R.t%5===0)persistRun();const e=$("tm");if(e){e.lastChild.textContent=fmtT(Math.max(0,R.left));e.classList.toggle("u",R.left<=10)}
  if(R.left<=0){if(R.qz.timerType==="perQuestion"){toast("TIME UP");next(true)}else{toast("TIME UP");finish()}}}
 const curQ=()=>S.run.qz.questions[S.run.i];
@@ -49,6 +49,7 @@ function typeUI(q,a,ch,R){const lock=ch?" lock":"";
  case"labelling":return labUI(q,a,ch,R);
  case"grid":return gridUI(q,a,ch);
  case"code":return codeUI(q,a,ch,R);
+ case"bugline":case"bugfix":return bugUI(q,a,ch,R);
  case"flowchart":return flowUI(q,a,ch,R);
  case"assertion":return `<div class="assert"><div class="qq"><b>ASSERTION</b>${md(q.assertion)}</div><div class="qq r"><b>REASON</b>${md(q.reason)}</div></div>`+Object.keys(ASR).map(k=>{let c=a===k?" sel":"";if(ch)c=k===q.correct?" ok":a===k?" bad":"";return `<button class="opt${c}${lock}" data-a="as:${k}"><span class="k">${k}</span>${ASR[k]}</button>`}).join("");
  case"structured":return structUI(q,a,R)}return""}

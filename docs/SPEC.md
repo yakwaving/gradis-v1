@@ -40,6 +40,8 @@ Every question has `id`, `type`, `marks`, `question` (text, Markdown and `$maths
 | `structured` | Answers parts (a), (b), (c) | `parts [{label, marks, question, markScheme}]`, `aiMarking: "later"` | For now: student self-marks against the mark scheme. Later: AI marking |
 | `code` | Taps blocks into the gaps of a code listing | `code` (gaps `{{1}}`, `{{2}}`…), `blocks` (answers plus decoys), `answers` (one block per gap, in order), optional `language` | Marks split per gap. A block can be used once; list it twice if it is needed twice. Indentation comes from the `code` text |
 | `flowchart` | Places shapes and/or types text in a flowchart drawn from data | `nodes`, `edges`, optional `height`, `shapes` | Marks split across every asked item (each shape and each text box) |
+| `bugline` | Taps the line(s) of a code listing that hold an error | `code`, `bugs` (line numbers, 1-based), optional `language` | One mark per bug. +1 per right line, −1 per wrong line, never below 0. One bug: a new tap replaces the old one. Several bugs: taps toggle, and the screen says how many there are |
+| `bugfix` | Taps the faulty line, then chooses (or types) the corrected line | `code`, `bug` (line number), then `options` + `correct` (index) or `accepted` (typed fixes), optional `language` | Default 2 marks: 1 for the line, the rest for the fix. The chosen fix is previewed in the listing |
 
 **Confidence** is a layer over any question, not a separate type. It is on when the quiz says `confidence: true`.
 
@@ -136,3 +138,18 @@ Not built yet: automatic marking of structured questions (planned AI step), impo
 ```
 
 A gap can hold a short piece of code (`i`) or a whole line (`print("Even")`). Put the gap on its own line with the indentation you want to test.
+
+## 8. Code panel and the error types
+All code in the app (code blocks, the two error types, and fenced code written in any question) sits in one panel: a header with the language, line numbers, colours for keywords, input/output words, types, function calls, numbers, strings and comments, indentation kept exactly, and sideways scrolling for long lines (no wrapping). Inline code in text or in options uses the same colours in a lighter style.
+
+Write fenced code in any text field as three backticks, optional language name, a new line, the code, three backticks.
+
+```json
+{ "type": "bugline", "marks": 2, "language": "Algorithm",
+  "question": "This should add the 5 elements of E. Two lines have an error.",
+  "code": "Declare sum As Integer\nLet sum ← 1\n…", "bugs": [2, 5], "explanation": "…" }
+
+{ "type": "bugfix", "marks": 2, "question": "…", "code": "Let i ← 1\nWhile i < 10 Do\n…",
+  "bug": 2, "options": ["While i <= 10 Do", "…"], "correct": 0, "explanation": "…" }
+```
+A typed fix uses `"accepted": ["count ← count + 1", "count = count + 1"]` instead of `options` and `correct`. Typed answers ignore capitals and spaces.
