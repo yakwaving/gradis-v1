@@ -335,3 +335,8 @@ code .tk-k{color:#d6452a}code .tk-i{color:#0f8f7d}code .tk-t{color:#7a4bd6}code 
 .adlab{font:800 10px 'DM Sans';letter-spacing:.14em;color:var(--ink2);margin-bottom:6px}
 #adbox ins.adsbygoogle{min-height:50px}
 #adbox:has(ins[data-ad-status="unfilled"]){display:none}
+/* maths (KaTeX) */
+.katex{font-size:1.08em;white-space:nowrap}
+.mxd{overflow-x:auto;overflow-y:hidden;padding:6px 0;margin:4px 0;text-align:center;max-width:100%}
+.mxd .katex-display{margin:0}
+.opt .katex,.cell .katex{font-size:1.02em}

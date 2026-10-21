@@ -1,4 +1,4 @@
-const APP_VERSION="1.7.1";
+const APP_VERSION="1.8.0";
 /* true inside the Android app (Capacitor); false in a normal browser */
 const isNative=()=>{const C=window.Capacitor;return !!(C&&(C.isNativePlatform?C.isNativePlatform():(C.getPlatform&&C.getPlatform()!=="web")))};
 const loaderHtml=()=>'<div class="ldr" role="status" aria-label="Loading"><i class="ldp"></i><i class="ldq"></i></div>';
@@ -17,12 +17,15 @@ const icoHome=gicon("home");
 const icoChart=gicon("bar_chart");
 function toast(t){const e=document.createElement("div");e.className="toast";e.textContent=t;$("st").appendChild(e);setTimeout(()=>e.remove(),1800)}
 /* ---------- text helpers ---------- */
-function mx(s){return s.replace(/\$([^$]+)\$/g,(_,m)=>'<span class="mx">'+m.replace(/\\ /g,' ').replace(/\\text\{([^}]*)\}/g,'$1').replace(/\\times/g,'×').replace(/\^\{([^}]*)\}/g,'<sup>$1</sup>').replace(/\^(-?\w)/g,'<sup>$1</sup>')+'</span>')}
+function mx(s){return s}
+function kx(m,disp){try{if(window.katex)return katex.renderToString(m,{displayMode:disp,throwOnError:false,strict:"ignore",trust:false})}catch(_){}return '<span class="mx">'+esc(m)+'</span>'}
 function md(s){const hold=[],keep=h=>"\u0001"+(hold.push(h)-1)+"\u0001";
  s=String(s).replace(/```([A-Za-z]*)\n([\s\S]*?)```/g,(_,l,c)=>keep(codePanel(c.replace(/\n$/,""),{lang:l})))
   .replace(/```([\s\S]*?)```/g,(_,c)=>keep(codePanel(c.replace(/\n$/,""))))
-  .replace(/`([^`\n]+)`/g,(_,c)=>keep("<code>"+hl(c)+"</code>"));
- s=s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');s=mx(s).replace(/\n/g,'<br>');
+  .replace(/`([^`\n]+)`/g,(_,c)=>keep("<code>"+hl(c)+"</code>"))
+  .replace(/\$\$([\s\S]+?)\$\$/g,(_,m)=>keep('<div class="mxd">'+kx(m,true)+'</div>'))
+  .replace(/\$([^$\n]+)\$/g,(_,m)=>keep(kx(m,false)));
+ s=s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/\n/g,'<br>');
  return s.replace(/\u0001(\d+)\u0001/g,(_,i)=>hold[+i])}
 const esc=s=>String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
 const norm=s=>String(s==null?"":s).trim().toLowerCase().replace(/\s+/g," ");

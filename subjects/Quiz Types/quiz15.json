@@ -1,0 +1,42 @@
+{
+ "title": "Maths display",
+ "description": "Fractions, powers, roots and limits shown as real maths.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Maths display",
+ "timerType": "wholeQuiz",
+ "totalTime": 300,
+ "confidence": false,
+ "instructions": [
+  "Maths is written between dollar signs and drawn with the KaTeX library."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the value of $\\dfrac{3}{2+\\sqrt{2}}\\times\\dfrac{2-\\sqrt{2}}{2-\\sqrt{2}}$ ?",
+   "options": [
+    "$\\dfrac{6-3\\sqrt{2}}{2}$",
+    "$\\dfrac{6+3\\sqrt{2}}{2}$",
+    "$\\dfrac{6-3\\sqrt{2}}{4}$",
+    "$\\dfrac{3}{2}$"
+   ],
+   "correct": 0,
+   "explanation": "The denominator becomes $4-2=2$. Watch out: $(2+\\sqrt2)(2-\\sqrt2)=4-2$, not $4+2$."
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "For $a>0$: $$\\log_b(xy)=\\log_b x+\\log_b y$$",
+   "explanation": "This is the product rule. Watch out: it does not hold for $x<0$ and $y<0$.",
+   "correct": true
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Compute $27^{2/3}$.",
+   "explanation": "$27^{2/3}=(\\sqrt[3]{27})^2=9$.",
+   "correct": 9
+  }
+ ]
+}
