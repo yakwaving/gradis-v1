@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260" role="img" aria-label="Computer processor block diagram"><rect width="400" height="260" fill="#ffffff"/>
+<rect x="30" y="30" width="220" height="200" rx="14" fill="#f4f7ff" stroke="#1f2933" stroke-width="3"/>
+<rect x="50" y="50" width="180" height="50" rx="8" fill="#ffe3dc" stroke="#1f2933" stroke-width="2.5"/>
+<rect x="50" y="120" width="90" height="80" rx="8" fill="#d9f5f0" stroke="#1f2933" stroke-width="2.5"/>
+<rect x="150" y="120" width="80" height="80" rx="8" fill="#fff1c2" stroke="#1f2933" stroke-width="2.5"/>
+<rect x="290" y="60" width="90" height="60" rx="8" fill="#e6dcff" stroke="#1f2933" stroke-width="2.5"/>
+<path d="M250 150 H270 V90 H290" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round"/>
+</svg>

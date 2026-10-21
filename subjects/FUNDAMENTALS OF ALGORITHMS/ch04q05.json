@@ -1,0 +1,192 @@
+{
+ "title": "Chapter 4 Quiz 5",
+ "description": "Sorting by swapping neighbours that are out of order.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Bubble sort",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: Bubble sort.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does **bubble sort** do?",
+   "options": [
+    "Splits the array into halves",
+    "Swaps neighbours in the wrong order",
+    "Removes the duplicate values",
+    "Picks the smallest value each time"
+   ],
+   "correct": 1,
+   "explanation": "Neighbouring pairs are compared and swapped when needed. Watch out: picking the smallest value is selection sort.",
+   "id": "q40501"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "In ascending bubble sort, when are two neighbours swapped?",
+   "options": [
+    "When the left one is greater",
+    "When both values are equal",
+    "When the left one is smaller",
+    "Every time they are compared"
+   ],
+   "correct": 0,
+   "explanation": "array[j] > array[j+1] means the pair is in the wrong order. Watch out: equal values need no swap.",
+   "id": "q40502"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the bubble sort of 5 elements.",
+   "code": "For i From 1 To 4 Do\n    For j From 1 To {{1}} Do\n        If array[j] {{2}} array[j + 1] Then\n            temp ← array[j]\n            array[j] ← array[j + 1]\n            array[j + 1] ← temp\n        EndIf\n    EndFor\nEndFor",
+   "blocks": [
+    "5 - i",
+    ">",
+    "<",
+    "5",
+    "4 + i"
+   ],
+   "answers": [
+    "5 - i",
+    ">"
+   ],
+   "explanation": "The inner loop stops at 5 - i because the end is already sorted. We swap when the left is greater.",
+   "id": "q40503"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Sort [5, 1, 4, 2, 8] with bubble sort. Give the array after each pass.",
+   "columns": [
+    "Pass i",
+    "Array after the pass"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "1 4 2 5 8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "1 2 4 5 8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "1 2 4 5 8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "1 2 4 5 8"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Each pass moves the largest remaining value to the right end. Watch out: after pass 1 the array is not sorted yet, only the last cell is final.",
+   "id": "q40504"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "After the first pass of bubble sort, where is the largest element?",
+   "options": [
+    "At the beginning",
+    "At the end",
+    "In the middle",
+    "Unchanged"
+   ],
+   "correct": 1,
+   "explanation": "The big value bubbles up to the last position.",
+   "id": "q40505"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many comparisons does the first pass of bubble sort make on 5 elements?",
+   "correct": 4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "A pass compares pairs (1,2), (2,3), (3,4), (4,5): 4 comparisons. Watch out: 5 elements give 4 pairs.",
+   "id": "q40506"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many comparisons does the whole bubble sort make on 5 elements, with the loop above?",
+   "correct": 10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The passes compare 4, 3, 2 and 1 pairs: 4 + 3 + 2 + 1 = 10. Watch out: the inner loop gets shorter on every pass.",
+   "id": "q40507"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "Bubble sort is rarely used in production.",
+   "correct": true,
+   "explanation": "It is simple and educational, but slow: O(n²).",
+   "id": "q40508"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This bubble sort works on 5 elements. One line is wrong because it reads outside the array. Find it and choose the fix.",
+   "code": "For i From 1 To 4 Do\n    For j From 1 To 5 Do\n        If array[j] > array[j + 1] Then\n            Swap(array[j], array[j + 1])\n        EndIf\n    EndFor\nEndFor",
+   "bug": 2,
+   "options": [
+    "For j From 1 To 5 + i Do",
+    "For j From 1 To 5 - i Do",
+    "For j From 2 To 5 - i Do",
+    "For j From 1 To 4 + i Do"
+   ],
+   "correct": 1,
+   "explanation": "When j = 5, array[j + 1] is array[6], which does not exist. Watch out: the bound 5 - i is also shorter, since the end is already sorted.",
+   "id": "q40509"
+  },
+  {
+   "type": "bugline",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "This should sort in ascending order. One line has an error.",
+   "code": "For i From 1 To 4 Do\n    For j From 1 To 5 - i Do\n        If array[j] < array[j + 1] Then\n            Swap(array[j], array[j + 1])\n        EndIf\n    EndFor\nEndFor",
+   "bugs": [
+    3
+   ],
+   "explanation": "We swap when the left value is greater. Watch out: with < the code sorts in descending order.",
+   "id": "q40510"
+  }
+ ]
+}

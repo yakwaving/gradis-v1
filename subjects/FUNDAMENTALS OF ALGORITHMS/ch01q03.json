@@ -1,0 +1,170 @@
+{
+ "title": "Chapter 1 Quiz 3",
+ "description": "The design process, the two kinds of error, and the parts of an algorithm.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "From problem to program",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 1: From problem to program.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "ordering",
+   "marks": 6,
+   "scoring": "adjacent",
+   "question": "Put the stages of designing a program in order.",
+   "items": [
+    "Problem statement",
+    "Algorithm",
+    "Result",
+    "Running",
+    "Coding",
+    "Analysis",
+    "Compiling"
+   ],
+   "correctOrder": [
+    0,
+    5,
+    1,
+    4,
+    6,
+    3,
+    2
+   ],
+   "explanation": "Problem statement, analysis, algorithm, coding (source program), compiling (executable program), running, result.",
+   "id": "q10301"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which stages are carried out **automatically by the machine**?",
+   "options": [
+    "Execution of the executable program",
+    "Compilation of the source program",
+    "Translation of the algorithm into code",
+    "Analysis of the problem statement"
+   ],
+   "correct": [
+    0,
+    1
+   ],
+   "explanation": "Analysis and translation are intellectual human operations. Watch out: coding is human work. Only compilation and execution are done automatically.",
+   "id": "q10302"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A program compiles and runs, but it prints 12 for 5 + 3. What kind of error is this?",
+   "options": [
+    "A compiler error",
+    "A syntax error",
+    "A typing error",
+    "A semantic error"
+   ],
+   "correct": 3,
+   "explanation": "A semantic error comes from a poor design of the method, so the program runs but gives wrong results. Watch out: if it runs, there is no syntax error.",
+   "id": "q10303"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The compiler cannot understand an instruction, so no executable program is produced. This is a…",
+   "options": [
+    "Semantic error",
+    "Running error",
+    "Syntax error",
+    "Logic error"
+   ],
+   "correct": 2,
+   "explanation": "A syntax error is a spelling or grammar mistake made during coding. The compiler reports it and the program cannot run.",
+   "id": "q10304"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A semantic error must be corrected starting from the analysis phase.",
+   "correct": true,
+   "explanation": "Because it is a design fault, the algorithm itself must be corrected, beginning with the analysis.",
+   "id": "q10305"
+  },
+  {
+   "type": "ordering",
+   "marks": 4,
+   "scoring": "adjacent",
+   "question": "Put the parts of an algorithm in order.",
+   "items": [
+    "Algorithm name",
+    "Initialization",
+    "Declarative part",
+    "Execution",
+    "Returning results"
+   ],
+   "correctOrder": [
+    0,
+    2,
+    1,
+    3,
+    4
+   ],
+   "explanation": "Name first, then the declarations, then the body: initialization, execution, and returning results.",
+   "id": "q10306"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The name of an algorithm is always preceded by which word?",
+   "options": [
+    "DECLARE",
+    "BEGIN",
+    "ALGORITHM",
+    "PROGRAM"
+   ],
+   "correct": 2,
+   "explanation": "Example from the course: ALGORITHM Factorial.",
+   "id": "q10307"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "The course writes: Avg ← grade1 * coef1 + grade2 * coef2 + grade3 * coef3 / (coef1 + coef2 + coef3). With grades 10, 14, 11 and coefficients 3, 2, 5, what value does a computer really calculate?",
+   "correct": 63.5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.01
+   },
+   "explanation": "The division is done first: 11 × 5 = 55, 55 / 10 = 5.5. Then 30 + 28 + 5.5 = 63.5. Watch out: the whole sum needs brackets, otherwise only the last product is divided. The weighted average needs (30 + 28 + 55) / 10 = 11.3.",
+   "hint": "Division comes before addition.",
+   "id": "q10308"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This algorithm should compute the weighted average of three grades. One line is wrong. Find it and choose the fix.",
+   "code": "Declare grade1, grade2, grade3, Avg As Real\nRead(grade1, grade2, grade3)\nAvg ← grade1 * 3 + grade2 * 2 + grade3 * 5 / (3 + 2 + 5)\nDisplay(Avg)",
+   "bug": 3,
+   "options": [
+    "Avg ← grade1 * 3 + grade2 * 2 + (grade3 * 5 / 3 + 2 + 5)",
+    "Avg ← (grade1 * 3 + grade2 * 2 + grade3 * 5) / (3 + 2 + 5)",
+    "Avg ← (grade1 * 3 + grade2 * 2 + grade3 * 5) / 3 + 2 + 5",
+    "Avg ← (grade1 + grade2 + grade3) * 10 / (3 + 2 + 5)"
+   ],
+   "correct": 1,
+   "explanation": "The brackets must cover the whole sum of products before dividing. Watch out: brackets around the denominator alone are not enough.",
+   "id": "q10309"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A program that does not compile can still contain a semantic error.",
+   "correct": true,
+   "explanation": "Syntax and semantic errors are independent. Watch out: a program with a syntax error cannot run, so the semantic error stays hidden until the syntax error is fixed.",
+   "id": "q10310"
+  }
+ ]
+}

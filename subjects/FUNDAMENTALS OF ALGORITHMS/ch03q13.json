@@ -1,0 +1,197 @@
+{
+ "title": "Chapter 3 Quiz 13",
+ "description": "Splitting a program into smaller parts and calling them.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Subprograms: functions and procedures",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Subprograms: functions and procedures.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **subprogram**?",
+   "options": [
+    "A kind of variable with a name",
+    "A named part run when called",
+    "A type of file stored on disk",
+    "A program that runs on its own"
+   ],
+   "correct": 1,
+   "explanation": "A subprogram has a name, variables, instructions, a beginning and an end. Watch out: unlike a program, it cannot execute independently.",
+   "id": "q31301"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which instruction asks for the execution of a subprogram?",
+   "options": [
+    "Read",
+    "Return",
+    "Call",
+    "Declare"
+   ],
+   "correct": 2,
+   "explanation": "The main program (or another subprogram) uses CALL.",
+   "id": "q31302"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which are advantages of subprograms?",
+   "options": [
+    "Bigger program size",
+    "Modularity of the program",
+    "Reusability of the code",
+    "Clarity of the code",
+    "Shorter typing time"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "The course lists reusability, modularity and clarity. Watch out: a program with subprograms is not necessarily shorter to type.",
+   "id": "q31303"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each subprogram word to its description.",
+   "left": [
+    "Function",
+    "Procedure",
+    "Return",
+    "Call"
+   ],
+   "right": [
+    "Returns a value",
+    "Does actions with no returned value",
+    "Sends the result back to the caller",
+    "Requests the execution of a subprogram"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "These are the key words of subprograms.",
+   "id": "q31304"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is a **function**?",
+   "options": [
+    "Clear_Screen, which only wipes the screen",
+    "DisplayArea(radius), which only displays the area",
+    "GetCircumference(radius), which returns 2 × PI × radius",
+    "Display('Hello'), which only shows a text"
+   ],
+   "correct": 2,
+   "explanation": "A function provides a result. The others only perform an action. Watch out: DisplayArea calculates, but it displays the result instead of returning it.",
+   "id": "q31305"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which call makes **no sense**, since the subprogram returns no value?",
+   "options": [
+    "Let c ← GetCircumference(r)",
+    "Call GetCircumference(r)",
+    "Let a ← DisplayArea(r)",
+    "Call DisplayArea(r)"
+   ],
+   "correct": 2,
+   "explanation": "DisplayArea is a procedure, so there is nothing to store in a. Watch out: Call GetCircumference(r) is allowed, but its result would be lost.",
+   "id": "q31306"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "In GetCircumference with PI = 3.14, what is returned for radius = 5? (2 × PI × radius)",
+   "correct": 31.4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "2 × 3.14 × 5 = 31.4.",
+   "id": "q31307"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "In DisplayArea with PI = 3.14, what area is displayed for radius = 5? (PI × radius × radius)",
+   "correct": 78.5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "3.14 × 25 = 78.5. Watch out: it is radius × radius, not radius × 2.",
+   "id": "q31308"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the function that returns the sum of two numbers.",
+   "code": "Function Sum(a, b) {{1}} Integer\nBegin\n    {{2}} a + b\nEnd Function",
+   "blocks": [
+    "Returns",
+    "Return",
+    "Call",
+    "Display"
+   ],
+   "answers": [
+    "Returns",
+    "Return"
+   ],
+   "explanation": "A function declares the type it returns with Returns and sends the value back with Return.",
+   "id": "q31309"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This function should return the circumference of a circle (2 × PI × radius). One line is wrong. Find it and choose the fix.",
+   "code": "Function GetCircumference(radius) Returns Real\nBegin\n    Constant PI ← 3.14\n    Return 2 * PI + radius\nEnd Function",
+   "bug": 4,
+   "options": [
+    "Return 2 * PI * radius",
+    "Return 2 * PI / radius",
+    "Return 2 + PI * radius",
+    "Return PI * radius"
+   ],
+   "correct": 0,
+   "explanation": "The circumference is 2 × PI × radius. Watch out: with + the function would return 8.14 for radius 5 instead of 31.4.",
+   "id": "q31310"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A procedure can be called only once in a program.",
+   "correct": false,
+   "explanation": "A subprogram can be called as many times as needed. That is the point of reusing it. Watch out: the number of calls is not limited.",
+   "id": "q31311"
+  }
+ ]
+}

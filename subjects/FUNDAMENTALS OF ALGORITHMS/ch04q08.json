@@ -1,0 +1,196 @@
+{
+ "title": "Chapter 4 Quiz 8",
+ "description": "Grouping values of different types under one name.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Structure types and records",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: Structure types and records.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **record**?",
+   "options": [
+    "A group of cells of one type",
+    "A table of rows and columns",
+    "A set of records on a disk drive",
+    "A group of fields of mixed types"
+   ],
+   "correct": 3,
+   "explanation": "A record groups related fields, for example a student's name, age and average. Watch out: a group of cells of one type is an array.",
+   "id": "q40801"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "How is a record different from an array?",
+   "options": [
+    "A record is read by an index number",
+    "A record can hold only strings",
+    "A record's fields can differ in type",
+    "A record is always larger than an array"
+   ],
+   "correct": 2,
+   "explanation": "Array: same type, access by index. Record: possible different types, access by field name.",
+   "id": "q40802"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "How do we access the field Name of the record variable Student?",
+   "options": [
+    "Student[Name]",
+    "Student.Name",
+    "Student->Name",
+    "Name.Student"
+   ],
+   "correct": 1,
+   "explanation": "Fields are reached with the dot operator. Watch out: square brackets are for array indexes.",
+   "id": "q40803"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the declaration of a record type.",
+   "code": "TYPE STUDENTS = {{1}}\n    Name: string\n    TD, TP: Real\n{{2}} RECORD",
+   "blocks": [
+    "RECORD",
+    "END",
+    "ARRAY",
+    "FILE"
+   ],
+   "answers": [
+    "RECORD",
+    "END"
+   ],
+   "explanation": "TYPE name = RECORD ... END RECORD.",
+   "id": "q40804"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "Elements that make up a record are called {{1}}.",
+   "blanks": [
+    {
+     "answers": [
+      "fields",
+      "field"
+     ]
+    }
+   ],
+   "explanation": "The elements of a record are its fields.",
+   "id": "q40805"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Why use a record for a student (name, first name, two grades) rather than four separate arrays?",
+   "options": [
+    "Four arrays are not allowed in a program",
+    "One structure keeps a student's data together",
+    "Records are always faster than arrays",
+    "Arrays cannot store strings at all"
+   ],
+   "correct": 1,
+   "explanation": "With several arrays, the data of one entity is scattered. Watch out: arrays can store strings, and four arrays are allowed, but they are awkward.",
+   "id": "q40806"
+  },
+  {
+   "type": "multiple",
+   "marks": 4,
+   "scoring": "partial",
+   "question": "Which of these can be fields of a record?",
+   "options": [
+    "A boolean",
+    "A procedure call",
+    "A string",
+    "A real number",
+    "An integer"
+   ],
+   "correct": [
+    0,
+    2,
+    3,
+    4
+   ],
+   "explanation": "Fields can be of any data type.",
+   "id": "q40807"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which declares an array of 4 students of record type Student?",
+   "options": [
+    "students : array of Student[1..4]",
+    "students : Student array[1..4]",
+    "students : array[4] of Student",
+    "students : array[1..4] of Student"
+   ],
+   "correct": 3,
+   "explanation": "The array's element type is the record type.",
+   "id": "q40808"
+  },
+  {
+   "type": "matching",
+   "marks": 3,
+   "question": "Match each structure to its main feature.",
+   "left": [
+    "Array",
+    "Record",
+    "File"
+   ],
+   "right": [
+    "Same type, accessed by index",
+    "Different types, accessed by field name",
+    "Data kept on disk after the program ends"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "explanation": "The three kinds of structure in this chapter.",
+   "id": "q40809"
+  },
+  {
+   "type": "bugline",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "This should read the name and the age of a student. One line has an error.",
+   "code": "TYPE STUDENT = RECORD\n    Name: string\n    Age: integer\nEND RECORD\nDeclare Student As STUDENT\nRead(Student.Name)\nRead(Student[Age])",
+   "bugs": [
+    7
+   ],
+   "explanation": "A field is reached with the dot: Student.Age. Watch out: Student[Age] is the syntax of an array index.",
+   "id": "q40810"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "A class has 20 students, and each record has 4 fields. How many values are stored in total?",
+   "correct": 80,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "20 records × 4 fields = 80. Watch out: the values are multiplied, not added (24).",
+   "id": "q40811"
+  }
+ ]
+}

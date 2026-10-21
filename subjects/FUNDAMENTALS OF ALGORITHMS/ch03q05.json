@@ -1,0 +1,317 @@
+{
+ "title": "Chapter 3 Quiz 5",
+ "description": "Comparing values, combining conditions with AND, OR and NOT, and evaluating them.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Comparison, logical operators and conditions",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Comparison, logical operators and conditions.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "matching",
+   "marks": 5,
+   "question": "Match each comparison symbol to its meaning.",
+   "left": [
+    "=",
+    "<>",
+    "<",
+    ">=",
+    "<="
+   ],
+   "right": [
+    "Equal",
+    "Different",
+    "Less than",
+    "Greater or equal",
+    "Less or equal"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "explanation": "These are the comparison operators of the course.",
+   "id": "q30501"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does the operator **<>** mean?",
+   "options": [
+    "Equal to",
+    "Not equal to",
+    "Greater than",
+    "Less or equal"
+   ],
+   "correct": 1,
+   "explanation": "<> tests that two values are different. Watch out: it is not 'less than or greater than' in one go.",
+   "id": "q30502"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "(5 > 3) AND (2 > 4) is True.",
+   "correct": false,
+   "explanation": "AND needs both sides True. Watch out: 2 > 4 is False, so the whole condition is False.",
+   "id": "q30503"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "(5 > 3) OR (2 > 4) is True.",
+   "correct": true,
+   "explanation": "OR needs only one side True, and 5 > 3 is True.",
+   "id": "q30504"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "NOT (3 = 3) is True.",
+   "correct": false,
+   "explanation": "3 = 3 is True, and NOT turns True into False. Watch out: NOT reverses the result.",
+   "id": "q30505"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which condition means 1 ≤ Index ≤ 10?",
+   "options": [
+    "(Index >= 1) AND (Index <= 10)",
+    "(Index >= 1) OR (Index <= 10)",
+    "(Index <= 1) AND (Index >= 10)",
+    "(Index > 1) AND (Index < 10)"
+   ],
+   "correct": 0,
+   "explanation": "Both limits must hold, and the limits themselves are included. Watch out: OR lets almost any number pass, and > or < would exclude 1 and 10.",
+   "id": "q30506"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Let x = 4 and y = -2. Say whether each condition is True or False.",
+   "columns": [
+    "Condition",
+    "Result"
+   ],
+   "rows": [
+    [
+     {
+      "given": "x > 0"
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "x <> y"
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(x > 0) AND (y > 0)"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(x > 0) OR (y > 0)"
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "NOT (x = y)"
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ]
+   ],
+   "explanation": "x > 0 is True; x <> y is True; AND needs y > 0, which is False; OR is True because x > 0; NOT (x = y) is True. Watch out: y is negative.",
+   "id": "q30507"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Let x = 0 and y = 0. Say whether each condition is True or False.",
+   "columns": [
+    "Condition",
+    "Result"
+   ],
+   "rows": [
+    [
+     {
+      "given": "x > 0"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "x <> y"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(x > 0) AND (y > 0)"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(x > 0) OR (y > 0)"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "NOT (x = y)"
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ]
+   ],
+   "explanation": "With x = 0 and y = 0 all five conditions are False: x > 0 is False, x <> y is False, AND and OR are False, and NOT (x = y) is False because x = y. Watch out: zero is not greater than zero.",
+   "id": "q30508"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Let x = 5. Which condition is **True**?",
+   "options": [
+    "(x < 5) AND (x > 0)",
+    "NOT (x >= 5)",
+    "(x <> 5) OR (x < 5)",
+    "(x > 5) OR (x = 5)"
+   ],
+   "correct": 3,
+   "explanation": "x = 5 makes the second half of the first condition True. Watch out: x > 5 is False, but OR only needs one True side.",
+   "id": "q30509"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should display Pass when grade is from 10 to 20 (both included). One line is wrong. Find it and choose the fix.",
+   "code": "Read(grade)\nIf (grade >= 10) OR (grade <= 20) Then\n    Display(\"Pass\")\nEndIf",
+   "bug": 2,
+   "options": [
+    "If (grade >= 10) AND (grade >= 20) Then",
+    "If (grade <= 10) AND (grade <= 20) Then",
+    "If (grade > 10) AND (grade <= 20) Then",
+    "If (grade >= 10) AND (grade <= 20) Then"
+   ],
+   "correct": 3,
+   "explanation": "Both limits must hold, so we need AND. Watch out: with OR every number passes, and the limit 10 must be included.",
+   "id": "q30510"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "(x > 0) OR (y > 0) is True when x = 3 and y = 0.",
+   "reason": "OR is True when at least one side is True.",
+   "correct": "A",
+   "explanation": "x > 0 is True, so the whole OR is True, which is what the rule says. Watch out: y > 0 is False, but it does not matter.",
+   "id": "q30511"
+  }
+ ]
+}

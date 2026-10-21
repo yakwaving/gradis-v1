@@ -1,6 +1,6 @@
 {
   "subjects": {
-    "ANALYSIS 1": {
+    "FUNDAMENTALS OF ALGORITHMS": {
       "description": "Fundamentals of Algorithms \u00b7 Software Engineering Level I",
       "color": "#2fb5a3",
       "dark": "#1d8174",
@@ -12,11 +12,13 @@
         "ch01q04",
         "ch01q05",
         "ch01q06",
+        "ch01q07",
         "ch02q01",
         "ch02q02",
         "ch02q03",
         "ch02q04",
         "ch02q05",
+        "ch02q06",
         "ch03q01",
         "ch03q02",
         "ch03q03",
@@ -33,6 +35,7 @@
         "ch03q14",
         "ch03q15",
         "ch03q16",
+        "ch03q17",
         "ch04q01",
         "ch04q02",
         "ch04q03",
@@ -42,7 +45,9 @@
         "ch04q07",
         "ch04q08",
         "ch04q09",
-        "ch04q10"
+        "ch04q10",
+        "ch04q11",
+        "ch04q12"
       ]
     },
     "Quiz Types": {

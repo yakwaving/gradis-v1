@@ -1,0 +1,165 @@
+{
+ "title": "Chapter 3 Quiz 6",
+ "description": "How a program reads data from the user and shows results.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Input and output instructions",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Input and output instructions.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which instruction **reads** a value typed on the keyboard?",
+   "options": [
+    "DISPLAY(grade1)",
+    "CALL(grade1)",
+    "READ(grade1)",
+    "WRITE(grade1)"
+   ],
+   "correct": 2,
+   "explanation": "READ or INPUT retrieves a value from an input device.",
+   "id": "q30601"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which instruction **shows** a value on the screen?",
+   "options": [
+    "READ(Age)",
+    "INPUT(Age)",
+    "Declare Age",
+    "DISPLAY(Age)"
+   ],
+   "correct": 3,
+   "explanation": "WRITE or DISPLAY sends a value to the screen. Watch out: INPUT sounds like output but it reads.",
+   "id": "q30602"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which of these are **input** instructions?",
+   "options": [
+    "DISPLAY",
+    "INPUT",
+    "READ",
+    "WRITE"
+   ],
+   "correct": [
+    1,
+    2
+   ],
+   "explanation": "READ and INPUT bring data in. WRITE and DISPLAY send data out.",
+   "id": "q30603"
+  },
+  {
+   "type": "multiple",
+   "marks": 4,
+   "scoring": "partial",
+   "question": "What can the value of a WRITE or DISPLAY instruction be?",
+   "options": [
+    "A variable",
+    "An expression",
+    "A string of text",
+    "A syntax error",
+    "A data type",
+    "A constant"
+   ],
+   "correct": [
+    0,
+    1,
+    2,
+    5
+   ],
+   "explanation": "It can be an identifier, a constant, an expression or a string.",
+   "id": "q30604"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "READ(grade1, grade2) reads two values.",
+   "correct": true,
+   "explanation": "Several identifiers can be read in one instruction.",
+   "id": "q30605"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The identifier used in READ must be declared before.",
+   "correct": true,
+   "explanation": "The identifier must be an object previously declared in the VAR section.",
+   "id": "q30606"
+  },
+  {
+   "type": "ordering",
+   "marks": 3,
+   "scoring": "adjacent",
+   "question": "Put these lines in a sensible order to read two grades and show their average.",
+   "items": [
+    "Avg ← (Grade1 + Grade2) / 2",
+    "WRITE(Avg)",
+    "Declare Grade1, Grade2, Avg As Real",
+    "READ(Grade1, Grade2)"
+   ],
+   "correctOrder": [
+    2,
+    3,
+    0,
+    1
+   ],
+   "explanation": "Declare first, read the data, calculate, then display.",
+   "id": "q30607"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Grade1 = 12 and Grade2 = 15. What does Avg ← (Grade1 + Grade2) / 2 give?",
+   "correct": 13.5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "(12 + 15) / 2 = 27 / 2 = 13.5. Watch out: the brackets make the sum happen before the division.",
+   "id": "q30608"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the algorithm that reads a name and greets the user.",
+   "code": "Declare name As String\n{{1}}(name)\n{{2}}('Hello ', name)",
+   "blocks": [
+    "READ",
+    "WRITE",
+    "Declare",
+    "Call"
+   ],
+   "answers": [
+    "READ",
+    "WRITE"
+   ],
+   "explanation": "READ takes the name in; WRITE sends the greeting out.",
+   "id": "q30609"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Avg holds 13.5. What does WRITE('Avg') display?",
+   "options": [
+    "Avg",
+    "13.5",
+    "Nothing",
+    "Avg = 13.5"
+   ],
+   "correct": 0,
+   "explanation": "Text between quotes is displayed as it is. Watch out: to display the value, write WRITE(Avg) without quotes.",
+   "id": "q30610"
+  }
+ ]
+}

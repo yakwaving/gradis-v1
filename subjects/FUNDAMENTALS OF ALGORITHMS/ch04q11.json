@@ -1,0 +1,194 @@
+{
+ "title": "Chapter 4 Quiz 11",
+ "description": "Traps in every question. Rows, columns, fields and files are easy to mix up.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: tables, records and hidden errors",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": true,
+ "instructions": [
+  "Chapter 4: Difficult: tables, records and hidden errors.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should read a matrix declared as [1..3][1..3]. One line is wrong. Find it and choose the fix.",
+   "code": "Declare M [1..3][1..3] : ARRAY OF integer\nFor i From 1 To 3 Do\n    For j From 1 To 4 Do\n        Read(M[i][j])\n    EndFor\nEndFor",
+   "bug": 3,
+   "options": [
+    "For j From 1 To 3 Do",
+    "For j From 2 To 4 Do",
+    "For j From 0 To 3 Do",
+    "For j From 1 To 2 Do"
+   ],
+   "correct": 0,
+   "explanation": "The columns are numbered 1 to 3. Watch out: To 4 would read M[i][4], which does not exist.",
+   "id": "q41101"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many times does the inner body run?\n```\nFor i From 1 To 4 Do\n    For j From i To 4 Do\n        Display(M[i][j])\n    EndFor\nEndFor\n```",
+   "correct": 10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "i = 1 gives 4 passes, i = 2 gives 3, i = 3 gives 2 and i = 4 gives 1: 10. Watch out: the inner loop starts at i, so it is not 4 × 4 = 16.",
+   "id": "q41102"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Give the sum of each row and each column of the matrix [2 5 1 / 4 0 3 / 6 2 2].",
+   "columns": [
+    "Sum of",
+    "Value"
+   ],
+   "rows": [
+    [
+     {
+      "given": "Row 1"
+     },
+     {
+      "answer": [
+       "8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "Row 3"
+     },
+     {
+      "answer": [
+       "10"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "Column 1"
+     },
+     {
+      "answer": [
+       "12"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "Column 2"
+     },
+     {
+      "answer": [
+       "7"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Row 1 = 2 + 5 + 1 = 8; row 3 = 6 + 2 + 2 = 10; column 1 = 2 + 4 + 6 = 12; column 2 = 5 + 0 + 2 = 7. Watch out: a row runs across, and a column runs down.",
+   "id": "q41103"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "In the matrix [2 5 1 / 4 0 3 / 6 2 2], which value is M[3][2]?",
+   "options": [
+    "5",
+    "6",
+    "2",
+    "3"
+   ],
+   "correct": 2,
+   "explanation": "M[3][2] is row 3, column 2: the value 2. Watch out: the first index is the row. M[2][3] would be 3.",
+   "id": "q41104"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does students[3].age mean?",
+   "options": [
+    "The age of the third student",
+    "The age of student number 30",
+    "All the ages of 3 students",
+    "The third letter of age"
+   ],
+   "correct": 0,
+   "explanation": "The index picks the record, and the dot picks the field. Watch out: the index comes before the dot.",
+   "id": "q41105"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should read the name of each of 4 students stored in an array of records. One line is wrong. Find it and type the corrected line.",
+   "code": "TYPE STUDENT = RECORD\n    Name: string\n    Average: real\nEND RECORD\nDeclare students [1..4] : ARRAY OF STUDENT\nFor i From 1 To 4 Do\n    Read(students.Name[i])\nEndFor",
+   "bug": 7,
+   "accepted": [
+    "Read(students[i].Name)"
+   ],
+   "explanation": "We first pick the record with the index, then the field with the dot: students[i].Name. Watch out: students.Name[i] puts the index on the field, which is a string.",
+   "id": "q41106"
+  },
+  {
+   "type": "bugline",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "This should find the largest value of a 3×3 matrix. One line has an error.",
+   "code": "Let max ← M[1][1]\nFor i From 1 To 3 Do\n    For j From 1 To 3 Do\n        If M[i][j] < max Then\n            max ← M[i][j]\n        EndIf\n    EndFor\nEndFor",
+   "bugs": [
+    4
+   ],
+   "explanation": "We replace max when the new value is larger. Watch out: with < the code finds the smallest value.",
+   "id": "q41107"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A record can store a string and a real number together.",
+   "correct": true,
+   "explanation": "Fields can have different types. Watch out: an array could not mix a string and a real number.",
+   "id": "q41108"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which statement about reset and rewrite is true?",
+   "options": [
+    "reset creates the file when it is missing",
+    "reset erases the old content of the file",
+    "rewrite creates the file or erases an old one",
+    "rewrite opens a file only for reading"
+   ],
+   "correct": 2,
+   "explanation": "rewrite opens for writing, and erases an existing file. Watch out: reset opens an existing file for reading and erases nothing.",
+   "id": "q41109"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "A staff file stores 20 records, each with 3 fields. How many values does it hold?",
+   "correct": 60,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "20 × 3 = 60. Watch out: the values are multiplied, not added (23).",
+   "id": "q41110"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "A record can hold fields of different types.",
+   "reason": "All the cells of an array have the same type.",
+   "correct": "B",
+   "explanation": "Both are true, but the reason does not explain the assertion: it states what an array does, as a contrast. Watch out: the reason is true, yet it is about arrays, not about records.",
+   "id": "q41111"
+  }
+ ]
+}

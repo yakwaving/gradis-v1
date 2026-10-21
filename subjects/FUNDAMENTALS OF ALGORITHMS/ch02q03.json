@@ -1,0 +1,164 @@
+{
+ "title": "Chapter 2 Quiz 3",
+ "description": "More families of algorithms and the problems they solve.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Sorting, searching and more",
+ "timerType": "wholeQuiz",
+ "totalTime": 900,
+ "confidence": false,
+ "instructions": [
+  "Chapter 2: Sorting, searching and more.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which kind of algorithm is designed to put data in **ascending or descending order**?",
+   "options": [
+    "Recursive algorithm",
+    "Greedy algorithm",
+    "Sorting algorithm",
+    "Searching algorithm"
+   ],
+   "correct": 2,
+   "explanation": "Sorting algorithms arrange data in a given order. Watch out: a searching algorithm only finds an element, it does not reorder anything.",
+   "id": "q20301"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each family of algorithms to how it works.",
+   "left": [
+    "Sorting",
+    "Searching",
+    "Greedy",
+    "Divide and conquer"
+   ],
+   "right": [
+    "Arranges data in a specific order",
+    "Finds the position of an element in a data set",
+    "Makes the best local choice at each step",
+    "Splits a problem into sub-problems, solves them and combines the results"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Sorting orders, searching locates, greedy chooses the best immediate option, divide and conquer splits and combines.",
+   "id": "q20302"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Merge sort and quick sort are best described by which design idea?",
+   "options": [
+    "Random choice only",
+    "Greedy choice",
+    "Linear sequence",
+    "Divide and conquer"
+   ],
+   "correct": 3,
+   "explanation": "They split the data into smaller parts, solve each part and combine the results. Watch out: they are also sorting algorithms, but the question asks about the design idea.",
+   "id": "q20303"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Autocomplete and looking up records in a database use mainly…",
+   "options": [
+    "Linear algorithms",
+    "Sorting algorithms",
+    "Greedy algorithms",
+    "Searching algorithms"
+   ],
+   "correct": 3,
+   "explanation": "Searching algorithms find a given element quickly in a data set.",
+   "id": "q20304"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Scheduling and shortest-path problems are typical uses of…",
+   "options": [
+    "Linear algorithms",
+    "Sorting algorithms",
+    "Recursive algorithms",
+    "Greedy algorithms"
+   ],
+   "correct": 3,
+   "explanation": "Optimization problems like these use the best immediate choice at each step. Watch out: sorting may help, but it is not what these problems are about.",
+   "id": "q20305"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A greedy algorithm makes the locally best choice at each step.",
+   "correct": true,
+   "explanation": "That is the definition of a greedy algorithm.",
+   "id": "q20306"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these are **sorting** algorithms?",
+   "options": [
+    "Merge sort",
+    "Linear search",
+    "Selection sort",
+    "Binary search",
+    "Bubble sort"
+   ],
+   "correct": [
+    0,
+    2,
+    4
+   ],
+   "explanation": "Selection, bubble and merge sort order data. Watch out: binary search works best on sorted data, but it searches and does not sort.",
+   "id": "q20307"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "Sorting data is often done to prepare it for searching.",
+   "reason": "Ordered data lets a search algorithm find an element more efficiently.",
+   "correct": "A",
+   "explanation": "Both are true, and the reason explains the assertion: sorted data can be searched much faster.",
+   "id": "q20308"
+  },
+  {
+   "type": "ordering",
+   "marks": 2,
+   "scoring": "adjacent",
+   "question": "Put the steps of a divide and conquer algorithm in order.",
+   "items": [
+    "Solve each sub-problem",
+    "Split the problem into sub-problems",
+    "Combine the partial results"
+   ],
+   "correctOrder": [
+    1,
+    0,
+    2
+   ],
+   "explanation": "Divide, solve, then combine: that gives the name of the method.",
+   "id": "q20309"
+  }
+ ]
+}

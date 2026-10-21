@@ -1,0 +1,203 @@
+{
+ "title": "Chapter 4 Quiz 7",
+ "description": "Rows and columns: arrays with two indexes.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Two-dimensional arrays",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: Two-dimensional arrays.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **two-dimensional array**?",
+   "options": [
+    "A pair of two named arrays",
+    "A table of rows and columns",
+    "A record with two fields",
+    "A file with two records"
+   ],
+   "correct": 1,
+   "explanation": "It uses two indexes: row and column. Watch out: it is one structure, not two separate arrays.",
+   "id": "q40701"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "What are 2D arrays good for?",
+   "options": [
+    "Storing a single value",
+    "Tables of values",
+    "Grids and matrices",
+    "Game boards like chess"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "Tables, grids, matrices and games.",
+   "id": "q40702"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which Pascal declaration creates a 2×2 array of integers?",
+   "options": [
+    "array[1..2, 1..2] integer",
+    "array[1..4] of integer 2",
+    "array[1..2; 1..2] of integer",
+    "array[1..2, 1..2] of integer"
+   ],
+   "correct": 3,
+   "explanation": "One range per dimension, separated by a comma. Watch out: array[1..4] has four cells but only one index.",
+   "id": "q40703"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many cells does an array [1..3, 1..4] have?",
+   "correct": 12,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "3 rows × 4 columns = 12. Watch out: the cells are multiplied, not added (3 + 4 = 7).",
+   "id": "q40704"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "M is the matrix [1 2 3 / 4 5 6 / 7 8 9] (row, column). Give each value.",
+   "columns": [
+    "Expression",
+    "Value"
+   ],
+   "rows": [
+    [
+     {
+      "given": "M[1,1]"
+     },
+     {
+      "answer": [
+       "1"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "M[2,3]"
+     },
+     {
+      "answer": [
+       "6"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "M[3,2]"
+     },
+     {
+      "answer": [
+       "8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "M[2,2] + M[3,3]"
+     },
+     {
+      "answer": [
+       "14"
+      ]
+     }
+    ]
+   ],
+   "explanation": "M[row, column]. Watch out: M[2,3] is row 2, column 3 (6), and M[3,2] is row 3, column 2 (8).",
+   "id": "q40705"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is the sum of all the values of the matrix above?",
+   "correct": 45,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "1 + 2 + ... + 9 = 45.",
+   "id": "q40706"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "How do we visit every cell of a 2D array?",
+   "options": [
+    "With two nested loops",
+    "With a Case structure",
+    "With a single If test",
+    "With a single plain loop"
+   ],
+   "correct": 0,
+   "explanation": "One loop for the rows, one inside it for the columns.",
+   "id": "q40707"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the algorithm that sums a 3×3 matrix.",
+   "code": "sum ← 0\nFor i From 0 To 2\n    For j From {{1}} To 2\n        Read(matrix[i][j])\n        sum ← sum + {{2}}\n    EndFor\nEndFor\nDisplay(sum)",
+   "blocks": [
+    "0",
+    "matrix[i][j]",
+    "matrix[j][i]",
+    "1",
+    "i"
+   ],
+   "answers": [
+    "0",
+    "matrix[i][j]"
+   ],
+   "explanation": "The inner loop starts at 0, like the outer one, and adds the cell just read.",
+   "id": "q40708"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many times does the inner body run?\n```\nFor i From 1 To 3 Do\n    For j From 1 To i Do\n        Display(i, j)\n    EndFor\nEndFor\n```",
+   "correct": 6,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "i = 1 gives 1 pass, i = 2 gives 2, i = 3 gives 3: 1 + 2 + 3 = 6. Watch out: the inner loop depends on i, so it is not 3 × 3 = 9.",
+   "id": "q40709"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should add every cell of a 3×3 matrix. One line is wrong. Find it and choose the fix.",
+   "code": "Let sum ← 0\nFor i From 1 To 3 Do\n    For j From 1 To 3 Do\n        sum ← sum + M[i][i]\n    EndFor\nEndFor",
+   "bug": 4,
+   "options": [
+    "sum ← sum + M[i][1]",
+    "sum ← sum + M[1][j]",
+    "sum ← sum + M[i][j]",
+    "sum ← sum + M[j][j]"
+   ],
+   "correct": 2,
+   "explanation": "Each cell is M[i][j]. Watch out: M[i][i] adds only the diagonal cells, and each of them three times.",
+   "id": "q40710"
+  }
+ ]
+}

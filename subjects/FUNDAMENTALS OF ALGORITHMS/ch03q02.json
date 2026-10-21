@@ -1,0 +1,182 @@
+{
+ "title": "Chapter 3 Quiz 2",
+ "description": "Naming things, declaring variables, and what a data structure is.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Declarations, identifiers and data structures",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Declarations, identifiers and data structures.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is an **identifier**?",
+   "options": [
+    "The operator that gives a value to a name",
+    "The data type of a variable or function",
+    "The value stored in a constant or variable",
+    "The name of a constant, variable or function"
+   ],
+   "correct": 3,
+   "explanation": "Result, Letter and Conversion_BCD are identifiers: names chosen by the programmer.",
+   "id": "q30201"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these are identifiers (names) and not values?",
+   "options": [
+    "Avg_Grade",
+    "3.14",
+    "'John'",
+    "Total",
+    "StudentName"
+   ],
+   "correct": [
+    0,
+    3,
+    4
+   ],
+   "explanation": "Identifiers are names. Watch out: 'John' is a string value and 3.14 is a number, even though they look like words or digits.",
+   "id": "q30202"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "To declare a variable A of type Integer we write: Declare A {{1}} Integer",
+   "blanks": [
+    {
+     "answers": [
+      "As"
+     ]
+    }
+   ],
+   "explanation": "The syntax is Declare VariableName As VariableType.",
+   "id": "q30203"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which line correctly declares a string variable called StudentName?",
+   "options": [
+    "Let StudentName As String",
+    "Declare StudentName As String",
+    "Declare String As StudentName",
+    "Declare StudentName ← String"
+   ],
+   "correct": 1,
+   "explanation": "Declare VariableName As VariableType. Watch out: the name comes first, then the type.",
+   "id": "q30204"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "In Declare Age As Integer, which word is the name of the variable?",
+   "accepted": [
+    "Age",
+    "age"
+   ],
+   "explanation": "Age is the identifier. Integer is the type.",
+   "id": "q30205"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the main difference between a **function** and a **procedure**?",
+   "options": [
+    "A function has no parameters; a procedure has",
+    "A procedure is longer; a function is shorter",
+    "A procedure runs once; a function runs often",
+    "A function returns a result; a procedure does not"
+   ],
+   "correct": 3,
+   "explanation": "Both perform a set of actions, but only a function provides a result.",
+   "id": "q30206"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A **data structure** is…",
+   "options": [
+    "A group of loops used to repeat code",
+    "A file saved on the hard disk drive",
+    "A single variable holding one number",
+    "Organized data together with operations on it"
+   ],
+   "correct": 3,
+   "explanation": "Data Structure = Organized Data + Operations on the data.",
+   "id": "q30207"
+  },
+  {
+   "type": "matching",
+   "marks": 5,
+   "question": "Match each operation on data structures to what it does.",
+   "left": [
+    "Traversal",
+    "Search",
+    "Insertion",
+    "Deletion",
+    "Merging"
+   ],
+   "right": [
+    "Access each element once",
+    "Find where an element is",
+    "Add a new element",
+    "Remove an element",
+    "Combine two sorted files"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "explanation": "These are operations listed in the course.",
+   "id": "q30208"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which operation adds a **new element** to an existing collection?",
+   "options": [
+    "Traversal",
+    "Merging",
+    "Deletion",
+    "Insertion"
+   ],
+   "correct": 3,
+   "explanation": "Insertion adds an element. Watch out: merging combines two whole sorted files, it does not add one element.",
+   "id": "q30209"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "Sorting only applies to numbers.",
+   "correct": false,
+   "explanation": "Numbers are sorted in ascending or descending order, and text in alphabetical order. Watch out: alphabetical order is sorting too.",
+   "id": "q30210"
+  }
+ ]
+}

@@ -1,0 +1,276 @@
+{
+ "title": "Chapter 1 Quiz 7",
+ "description": "A mixed review of Chapter 1. Say how sure you are before you check.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Chapter 1 review",
+ "timerType": "wholeQuiz",
+ "totalTime": 1440,
+ "confidence": true,
+ "instructions": [
+  "Chapter 1: Chapter 1 review.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which of these is **not** required of an algorithm?",
+   "options": [
+    "It must give at least one result",
+    "It must always need input data",
+    "Its instructions must be clear",
+    "It must end after finite steps"
+   ],
+   "correct": 1,
+   "explanation": "An algorithm may or may not need input. It must be finite, definite and give at least one output. Watch out: the question asks for what is not required.",
+   "id": "q10701"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A program that runs but gives wrong results has a syntax error.",
+   "correct": false,
+   "explanation": "Wrong results from a program that runs point to a semantic (design) error. Watch out: syntax errors stop the program from running at all.",
+   "id": "q10702"
+  },
+  {
+   "type": "ordering",
+   "marks": 4,
+   "scoring": "adjacent",
+   "question": "Put these stages in order.",
+   "items": [
+    "Compiling",
+    "Coding",
+    "Algorithm",
+    "Running",
+    "Analysis"
+   ],
+   "correctOrder": [
+    4,
+    2,
+    1,
+    0,
+    3
+   ],
+   "explanation": "Analysis, algorithm, coding, compiling, running. Watch out: the algorithm is written before the coding, not after.",
+   "id": "q10703"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each symbol to its function.",
+   "left": [
+    "Oval",
+    "Rectangle",
+    "Diamond",
+    "Parallelogram"
+   ],
+   "right": [
+    "Start / end",
+    "Processing",
+    "Decision",
+    "Input / output"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "The four main flowchart symbols. Watch out: the rectangle is for processing, not for input and output.",
+   "id": "q10704"
+  },
+  {
+   "type": "flowchart",
+   "marks": 3,
+   "question": "Place the shapes on the flowchart that tests whether a number is positive.",
+   "nodes": [
+    {
+     "id": "s",
+     "shape": "terminator",
+     "x": 50,
+     "y": 6,
+     "text": "Start"
+    },
+    {
+     "id": "i",
+     "shape": "io",
+     "x": 50,
+     "y": 24,
+     "text": "Input x",
+     "ask": [
+      "shape"
+     ]
+    },
+    {
+     "id": "d",
+     "shape": "decision",
+     "x": 50,
+     "y": 46,
+     "text": "x > 0 ?",
+     "ask": [
+      "shape"
+     ],
+     "w": 44,
+     "h": 22
+    },
+    {
+     "id": "p",
+     "shape": "io",
+     "x": 50,
+     "y": 72,
+     "text": "Display 'Positive'",
+     "ask": [
+      "shape"
+     ],
+     "w": 44
+    },
+    {
+     "id": "e",
+     "shape": "terminator",
+     "x": 50,
+     "y": 92,
+     "text": "End"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "i"
+    },
+    {
+     "from": "i",
+     "to": "d"
+    },
+    {
+     "from": "d",
+     "to": "p",
+     "label": "Yes"
+    },
+    {
+     "from": "p",
+     "to": "e"
+    }
+   ],
+   "explanation": "Input and output are parallelograms, and the question x > 0 ? is a diamond. Watch out: the display is an output, so it is also a parallelogram.",
+   "id": "q10705"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "The course writes Avg ← g1 * c1 + g2 * c2 + g3 * c3 / (c1 + c2 + c3). With grades 8, 12, 10 and coefficients 3, 2, 5, what does a computer calculate?",
+   "correct": 53.0,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.01
+   },
+   "explanation": "The division comes first: 10 × 5 = 50, 50 / 10 = 5. Then 24 + 24 + 5 = 53. Watch out: the correct weighted average is (24 + 24 + 50) / 10 = 9.8, and it needs brackets around the sum.",
+   "id": "q10706"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "A {{1}} error is reported by the {{2}}, and no executable program is produced.",
+   "blanks": [
+    {
+     "answers": [
+      "syntax"
+     ]
+    },
+    {
+     "answers": [
+      "compiler"
+     ]
+    }
+   ],
+   "explanation": "Syntax errors break the rules of the language, so the compiler cannot translate the program. Watch out: a semantic error is not reported by the compiler.",
+   "id": "q10707"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which stages are done automatically by the machine?",
+   "options": [
+    "Execution",
+    "Coding",
+    "Analysis",
+    "Compilation"
+   ],
+   "correct": [
+    0,
+    3
+   ],
+   "explanation": "Analysis and coding are human work. Compilation and running are automatic. Watch out: coding is writing the source, which a human does.",
+   "id": "q10708"
+  },
+  {
+   "type": "bugline",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "This algorithm should display the perimeter of a square. One line has an error.",
+   "code": "Declare side, perimeter As Integer\nRead(side)\nperimeter ← 2 * side\nDisplay(perimeter)",
+   "bugs": [
+    3
+   ],
+   "explanation": "A square has four equal sides, so perimeter = 4 × side. Watch out: 2 × side is half of the perimeter, a number that looks plausible.",
+   "id": "q10709"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the structure of the algorithm in the correct order of its parts.",
+   "code": "{{1}} Average\nDeclare g1, g2, g3, Avg As Real\nStart\n    Read(g1, g2, g3)\n    Avg ← (g1 + g2 + g3) / 3\n    Display(Avg)\n{{2}}",
+   "blocks": [
+    "ALGORITHM",
+    "Stop",
+    "Start",
+    "PROGRAM",
+    "End"
+   ],
+   "answers": [
+    "ALGORITHM",
+    "Stop"
+   ],
+   "explanation": "The name is preceded by ALGORITHM, and the body that begins with Start ends with Stop. Watch out: Start is already used to open the body, so it cannot close it.",
+   "id": "q10710"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "The compiler produces an executable program for any source program.",
+   "reason": "Syntax errors prevent translation into machine language.",
+   "correct": "D",
+   "explanation": "The assertion is false: with a syntax error no executable program is produced. The reason is true. Watch out: the reason explains why the assertion is false.",
+   "id": "q10711"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which of these tasks is done by the **programmer** and not by the machine?",
+   "options": [
+    "Reporting the syntax errors found in the source",
+    "Compiling the source program into machine language",
+    "Translating the algorithm into a programming language",
+    "Executing the executable program on a computer"
+   ],
+   "correct": 2,
+   "explanation": "Translation of the algorithm into code is a human intellectual operation. Watch out: the compiler reports errors, but writing the code is not its job.",
+   "id": "q10712"
+  }
+ ]
+}

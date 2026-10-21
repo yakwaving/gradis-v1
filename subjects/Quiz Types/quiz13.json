@@ -1,0 +1,348 @@
+{
+  "title": "Code & Flowcharts",
+  "description": "Complete code with blocks and fill in flowcharts. Tap to place, type to fill.",
+  "difficulty": "Test",
+  "level": "Sample",
+  "topic": "Code & Flowcharts",
+  "timerType": "wholeQuiz",
+  "totalTime": 600,
+  "confidence": false,
+  "instructions": [
+    "Code questions: tap a block, then the gap it belongs in.",
+    "Flowcharts: tap a dashed slot then a shape, and type into the numbered boxes."
+  ],
+  "questions": [
+    {
+      "type": "code",
+      "marks": 3,
+      "language": "Python",
+      "question": "Complete the program so that it adds up the numbers 1 to 5 and prints the total.",
+      "code": "total = 0\nfor i in range({{1}}, 6):\n    total = total + {{2}}\nprint({{3}})",
+      "blocks": [
+        "1",
+        "i",
+        "total",
+        "6",
+        "0",
+        "5"
+      ],
+      "answers": [
+        "1",
+        "i",
+        "total"
+      ],
+      "explanation": "The loop must start at 1 (range stops before 6), each pass adds the loop variable `i`, and the finished sum `total` is printed.",
+      "id": "q131"
+    },
+    {
+      "type": "code",
+      "marks": 2,
+      "language": "Python",
+      "question": "Place the correct statements so that the program says whether the number is even or odd.",
+      "code": "number = int(input(\"Enter a number: \"))\nif number % 2 == 0:\n    {{1}}\nelse:\n    {{2}}",
+      "blocks": [
+        "print(\"Even\")",
+        "print(\"Odd\")",
+        "print(\"Zero\")"
+      ],
+      "answers": [
+        "print(\"Even\")",
+        "print(\"Odd\")"
+      ],
+      "explanation": "A remainder of 0 when dividing by 2 means the number is even; otherwise it is odd.",
+      "id": "q132"
+    },
+    {
+      "type": "flowchart",
+      "marks": 3,
+      "question": "The flowchart tells the user whether a number is positive. The shapes are drawn: type the missing text into each numbered box.",
+      "nodes": [
+        {
+          "id": "s",
+          "shape": "terminator",
+          "text": "Start",
+          "x": 50,
+          "y": 8
+        },
+        {
+          "id": "i",
+          "shape": "io",
+          "text": "Input n",
+          "x": 50,
+          "y": 26
+        },
+        {
+          "id": "d",
+          "shape": "decision",
+          "x": 50,
+          "y": 46,
+          "ask": [
+            "text"
+          ],
+          "accepted": [
+            "n > 0",
+            "n > 0?",
+            "n>0"
+          ]
+        },
+        {
+          "id": "p1",
+          "shape": "process",
+          "x": 22,
+          "y": 70,
+          "ask": [
+            "text"
+          ],
+          "accepted": [
+            "print positive",
+            "output positive",
+            "display positive"
+          ]
+        },
+        {
+          "id": "p2",
+          "shape": "process",
+          "x": 78,
+          "y": 70,
+          "ask": [
+            "text"
+          ],
+          "accepted": [
+            "print not positive",
+            "output not positive",
+            "display not positive"
+          ],
+          "w": 36
+        },
+        {
+          "id": "e",
+          "shape": "terminator",
+          "text": "End",
+          "x": 50,
+          "y": 92
+        }
+      ],
+      "edges": [
+        {
+          "from": "s",
+          "to": "i"
+        },
+        {
+          "from": "i",
+          "to": "d"
+        },
+        {
+          "from": "d",
+          "to": "p1",
+          "label": "Yes",
+          "via": [
+            [
+              22,
+              46
+            ]
+          ]
+        },
+        {
+          "from": "d",
+          "to": "p2",
+          "label": "No",
+          "via": [
+            [
+              78,
+              46
+            ]
+          ]
+        },
+        {
+          "from": "p1",
+          "to": "e"
+        },
+        {
+          "from": "p2",
+          "to": "e"
+        }
+      ],
+      "explanation": "The decision asks `n > 0 ?`. Yes prints that it is positive, No prints that it is not.",
+      "id": "q133"
+    },
+    {
+      "type": "flowchart",
+      "marks": 3,
+      "question": "The steps are written in the flowchart. Place the right shape on each dashed slot.",
+      "nodes": [
+        {
+          "id": "s",
+          "shape": "terminator",
+          "text": "Start",
+          "x": 50,
+          "y": 8
+        },
+        {
+          "id": "i",
+          "shape": "io",
+          "text": "Input radius",
+          "x": 50,
+          "y": 26,
+          "ask": [
+            "shape"
+          ]
+        },
+        {
+          "id": "p",
+          "shape": "process",
+          "text": "area = 3.14 × radius × radius",
+          "x": 50,
+          "y": 44,
+          "w": 48,
+          "ask": [
+            "shape"
+          ]
+        },
+        {
+          "id": "o",
+          "shape": "io",
+          "text": "Output area",
+          "x": 50,
+          "y": 62,
+          "ask": [
+            "shape"
+          ]
+        },
+        {
+          "id": "e",
+          "shape": "terminator",
+          "text": "End",
+          "x": 50,
+          "y": 80
+        }
+      ],
+      "edges": [
+        {
+          "from": "s",
+          "to": "i"
+        },
+        {
+          "from": "i",
+          "to": "p"
+        },
+        {
+          "from": "p",
+          "to": "o"
+        },
+        {
+          "from": "o",
+          "to": "e"
+        }
+      ],
+      "explanation": "Input and output use the parallelogram, a calculation is a process rectangle.",
+      "id": "q134"
+    },
+    {
+      "type": "flowchart",
+      "marks": 3,
+      "question": "This flowchart prints 1, 2, 3. Complete the numbered parts: choose the shape of box 1 and type the text for boxes 1 and 2.",
+      "nodes": [
+        {
+          "id": "s",
+          "shape": "terminator",
+          "text": "Start",
+          "x": 38,
+          "y": 6
+        },
+        {
+          "id": "i",
+          "shape": "process",
+          "text": "count = 1",
+          "x": 38,
+          "y": 21
+        },
+        {
+          "id": "d",
+          "shape": "decision",
+          "x": 38,
+          "y": 41,
+          "ask": [
+            "shape",
+            "text"
+          ],
+          "accepted": [
+            "count <= 3",
+            "count <= 3?",
+            "count<=3",
+            "count < 4"
+          ]
+        },
+        {
+          "id": "pr",
+          "shape": "io",
+          "text": "Print count",
+          "x": 38,
+          "y": 65
+        },
+        {
+          "id": "inc",
+          "shape": "process",
+          "x": 38,
+          "y": 84,
+          "ask": [
+            "text"
+          ],
+          "accepted": [
+            "count = count + 1",
+            "count += 1",
+            "count=count+1"
+          ],
+          "w": 44
+        },
+        {
+          "id": "e",
+          "shape": "terminator",
+          "text": "End",
+          "x": 86,
+          "y": 41,
+          "w": 24
+        }
+      ],
+      "edges": [
+        {
+          "from": "s",
+          "to": "i"
+        },
+        {
+          "from": "i",
+          "to": "d"
+        },
+        {
+          "from": "d",
+          "to": "pr",
+          "label": "Yes"
+        },
+        {
+          "from": "pr",
+          "to": "inc"
+        },
+        {
+          "from": "inc",
+          "to": "d",
+          "via": [
+            [
+              8,
+              84
+            ],
+            [
+              8,
+              41
+            ]
+          ]
+        },
+        {
+          "from": "d",
+          "to": "e",
+          "label": "No"
+        }
+      ],
+      "explanation": "The loop keeps going while `count <= 3`. Each pass prints the value then adds 1.",
+      "id": "q135"
+    }
+  ]
+}

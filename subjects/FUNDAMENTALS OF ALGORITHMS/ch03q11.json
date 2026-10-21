@@ -1,0 +1,233 @@
+{
+ "title": "Chapter 3 Quiz 11",
+ "description": "Repeating a known number of times with a counter.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Loops: For",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Loops: For.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "When do we normally use a **For** loop?",
+   "options": [
+    "When we store data on a disk",
+    "When the number of passes is known",
+    "When the passes depend on a user answer",
+    "When we choose between two actions"
+   ],
+   "correct": 1,
+   "explanation": "For repeats a given number of times, from an initial to a final value. Watch out: a While or Repeat loop suits an unknown number of passes.",
+   "id": "q31101"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "In For i From 1 To 5, the final value 5 is included.",
+   "correct": true,
+   "explanation": "Initial and final values are both included.",
+   "id": "q31102"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "For i From 1 To 80 Do Display('*') EndDo. How many stars are displayed?",
+   "correct": 80,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "One star per value of i from 1 to 80 inclusive.",
+   "id": "q31103"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "For i From 3 To 7 Do. How many times does the body run?",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "i = 3, 4, 5, 6, 7. Watch out: 7 - 3 = 4, but both ends are included, so there are 5 passes.",
+   "id": "q31104"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "For i From 10 To 1 Do, with the default step +1. How many times does the body run?",
+   "correct": 0,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The start is already above the end, so the range is empty. Watch out: the loop does not count down unless the step is -1.",
+   "id": "q31105"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Can the step be different from 1?",
+   "options": [
+    "Only when it is negative",
+    "Yes, for example +2 or -1",
+    "No, it is always +1",
+    "Only inside a While loop"
+   ],
+   "correct": 1,
+   "explanation": "The course says a different increment step can be specified.",
+   "id": "q31106"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the loop that displays the stars.",
+   "code": "Declare i As Integer\nFor i {{1}} 1 To 80\nDo\n    Display('*')\n{{2}}",
+   "blocks": [
+    "From",
+    "EndDo",
+    "Until",
+    "EndIf",
+    "In"
+   ],
+   "answers": [
+    "From",
+    "EndDo"
+   ],
+   "explanation": "For i From 1 To 80 ... EndDo.",
+   "id": "q31107"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the factorial of N.",
+   "code": "Read(n)\nLet fact ← 1\nFor i From 1 To {{1}} Do\n    fact ← fact {{2}} i\nEndDo\nDisplay(fact)",
+   "blocks": [
+    "n",
+    "*",
+    "+",
+    "1",
+    "0"
+   ],
+   "answers": [
+    "n",
+    "*"
+   ],
+   "explanation": "N! is the product of 1 to N. The accumulator starts at 1 and is multiplied by i.",
+   "hint": "Product, not sum.",
+   "id": "q31108"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Using the factorial algorithm, what is the value of fact for n = 5?",
+   "correct": 120,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "1 × 2 × 3 × 4 × 5 = 120.",
+   "id": "q31109"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What does the factorial algorithm give for n = 0?",
+   "correct": 1,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The For loop does not run (1 to 0), so fact stays 1. Watch out: it is 1, not 0, because the product starts at 1. By definition 0! = 1.",
+   "id": "q31110"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This algorithm should calculate N!. One line is wrong. Find it and choose the fix.",
+   "code": "Read(n)\nLet fact ← 0\nFor i From 1 To n Do\n    fact ← fact * i\nEndDo\nDisplay(fact)",
+   "bug": 2,
+   "options": [
+    "Let fact ← n",
+    "Let fact ← i",
+    "Let fact ← 1",
+    "Let fact ← -1"
+   ],
+   "correct": 2,
+   "explanation": "A product must start at 1. Watch out: with fact ← 0 every product stays 0.",
+   "id": "q31111"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Trace this loop: total ← 0, then For i From 1 To 9 step 2: total ← total + i.",
+   "columns": [
+    "i",
+    "total after"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "1"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "4"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "5"
+     },
+     {
+      "answer": [
+       "9"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "7"
+     },
+     {
+      "answer": [
+       "16"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "9"
+     },
+     {
+      "answer": [
+       "25"
+      ]
+     }
+    ]
+   ],
+   "explanation": "The values of i are 1, 3, 5, 7, 9 and the running total is 1, 4, 9, 16, 25. Watch out: the step is 2, so i skips the even numbers.",
+   "id": "q31112"
+  }
+ ]
+}

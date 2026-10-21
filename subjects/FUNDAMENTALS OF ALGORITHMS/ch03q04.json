@@ -1,0 +1,247 @@
+{
+ "title": "Chapter 3 Quiz 4",
+ "description": "Giving values to variables and calculating with + - * / DIV MOD.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Assignment and arithmetic operators",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Assignment and arithmetic operators.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which symbol **gives a value** to a variable?",
+   "options": [
+    "→",
+    "←",
+    "?",
+    "="
+   ],
+   "correct": 1,
+   "explanation": "The assignment is written VariableName ← Expression. Watch out: = is a comparison, not an assignment.",
+   "id": "q30401"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does **Total ← Total + Pay** do?",
+   "options": [
+    "Displays Total after adding Pay to it",
+    "Compares Total with the sum of Total and Pay",
+    "Sets Pay to the old value of Total",
+    "Replaces Total by the old Total plus Pay"
+   ],
+   "correct": 3,
+   "explanation": "The right side is calculated first, then the result is stored in Total. Watch out: it is not an equation. Total cannot equal Total + Pay.",
+   "id": "q30402"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is 17 DIV 5? (integer division)",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "17 = 5 × 3 + 2, so the integer quotient is 3. Watch out: DIV gives the quotient, MOD gives the remainder.",
+   "id": "q30403"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is 17 MOD 5? (remainder)",
+   "correct": 2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "17 = 5 × 3 + 2, so the remainder is 2. Watch out: MOD is the remainder, not the quotient.",
+   "id": "q30404"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is 20 MOD 4?",
+   "correct": 0,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "4 divides 20 exactly, so the remainder is 0. Watch out: an exact division leaves a remainder of 0, not 4.",
+   "id": "q30405"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is 7 / 2 with the real division?",
+   "correct": 3.5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "The / operator gives a real result: 3.5. Watch out: with DIV the answer would be 3.",
+   "id": "q30406"
+  },
+  {
+   "type": "matching",
+   "marks": 5,
+   "question": "Match each operator to its meaning.",
+   "left": [
+    "+",
+    "*",
+    "/",
+    "DIV",
+    "MOD"
+   ],
+   "right": [
+    "Addition",
+    "Multiplication",
+    "Real division",
+    "Integer division",
+    "Remainder"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "explanation": "These are the arithmetic operators of the course.",
+   "id": "q30407"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "x ← 10. Then x ← x + 5, then x ← x * 2. What is x?",
+   "correct": 30,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "10 + 5 = 15, then 15 × 2 = 30. Watch out: each line uses the value left by the line before.",
+   "id": "q30408"
+  },
+  {
+   "type": "grid",
+   "marks": 6,
+   "question": "Trace this program: a ← 5, b ← 3, then a ← a + b, b ← a - b, a ← a - b. Fill in the values.",
+   "columns": [
+    "Step",
+    "a",
+    "b"
+   ],
+   "rows": [
+    [
+     {
+      "given": "Start"
+     },
+     {
+      "given": "5"
+     },
+     {
+      "given": "3"
+     }
+    ],
+    [
+     {
+      "given": "a ← a + b"
+     },
+     {
+      "answer": [
+       "8"
+      ]
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "b ← a - b"
+     },
+     {
+      "answer": [
+       "8"
+      ]
+     },
+     {
+      "answer": [
+       "5"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "a ← a - b"
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     },
+     {
+      "answer": [
+       "5"
+      ]
+     }
+    ]
+   ],
+   "explanation": "The three lines swap the two values without a temporary variable. Watch out: a changes first, so b ← a - b uses the new a.",
+   "id": "q30409"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should swap a and b with a temporary variable. One line is wrong. Find it and choose the fix.",
+   "code": "Let a ← 5\nLet b ← 3\nLet temp ← a\na ← b\nb ← a\nDisplay(a, b)",
+   "bug": 5,
+   "options": [
+    "temp ← b",
+    "a ← temp",
+    "b ← temp",
+    "b ← b + a"
+   ],
+   "correct": 2,
+   "explanation": "After a ← b, the old value of a is only kept in temp, so b must receive temp. Watch out: b ← a would copy the new a and both variables would hold 3.",
+   "id": "q30410"
+  },
+  {
+   "type": "bugline",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should display the quotient and then the remainder of a divided by b. Two lines have an error.",
+   "code": "Read(a, b)\nLet q ← a MOD b\nLet r ← a DIV b\nDisplay(q, r)",
+   "bugs": [
+    2,
+    3
+   ],
+   "explanation": "The quotient needs DIV and the remainder needs MOD, so lines 2 and 3 are swapped. Watch out: both lines look right at first glance.",
+   "id": "q30411"
+  }
+ ]
+}

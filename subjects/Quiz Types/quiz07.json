@@ -1,0 +1,100 @@
+{
+  "title": "Ordering",
+  "description": "Put the items in the correct order.",
+  "difficulty": "Test",
+  "level": "Sample",
+  "topic": "Ordering",
+  "timerType": "wholeQuiz",
+  "totalTime": 300,
+  "confidence": false,
+  "instructions": [
+    "Every question in this quiz is of one type: Ordering.",
+    "Use it to test how this question type looks and is marked."
+  ],
+  "questions": [
+    {
+      "type": "ordering",
+      "marks": 3,
+      "scoring": "adjacent",
+      "question": "Put these steps for making a soluble salt from an insoluble base in order.",
+      "items": [
+        "Warm the dilute acid",
+        "Add the insoluble base until some stays undissolved",
+        "Filter off the excess base",
+        "Heat the filtrate to evaporate some water",
+        "Leave to crystallise, then dry the crystals"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "explanation": "The base is added in excess so all the acid reacts.",
+      "id": "q071"
+    },
+    {
+      "type": "ordering",
+      "marks": 3,
+      "scoring": "adjacent",
+      "question": "Put the planets in order from the Sun.",
+      "items": [
+        "Mercury",
+        "Venus",
+        "Earth",
+        "Mars",
+        "Jupiter"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "explanation": "Mercury, Venus, Earth, Mars, Jupiter.",
+      "id": "q072"
+    },
+    {
+      "type": "ordering",
+      "marks": 3,
+      "scoring": "exact",
+      "question": "Put the fetch–decode–execute cycle in order. (Exact order only.)",
+      "items": [
+        "Fetch the instruction from memory",
+        "Decode the instruction",
+        "Execute the instruction",
+        "Store the result"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "The CPU repeats this cycle for every instruction.",
+      "id": "q073"
+    },
+    {
+      "type": "ordering",
+      "marks": 3,
+      "scoring": "adjacent",
+      "question": "Put the steps for solving 3x + 5 = 20 in order.",
+      "items": [
+        "Start with 3x + 5 = 20",
+        "Subtract 5 from both sides: 3x = 15",
+        "Divide both sides by 3",
+        "x = 5"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Undo the addition first, then the multiplication.",
+      "id": "q074"
+    }
+  ]
+}

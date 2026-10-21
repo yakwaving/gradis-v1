@@ -1,0 +1,239 @@
+{
+ "title": "Chapter 3 Quiz 10",
+ "description": "Repeating actions under the control of a condition, and where the condition is checked.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Loops: While and Repeat...Until",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Loops: While and Repeat...Until.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "In a **While** loop, when is the condition checked?",
+   "options": [
+    "Only before the very first pass",
+    "Only after the very last pass",
+    "After each pass of the body",
+    "Before each pass of the body"
+   ],
+   "correct": 3,
+   "explanation": "The condition is checked before the actions, so they may never run. Watch out: it is the Repeat...Until loop that checks afterwards.",
+   "id": "q31001"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "In a **Repeat...Until** loop, when is the condition checked?",
+   "options": [
+    "Only before the very first pass",
+    "Only once, at the end of the program",
+    "Before each pass of the body",
+    "After each pass of the body"
+   ],
+   "correct": 3,
+   "explanation": "The condition is checked after the actions, so they run at least once. Watch out: it is the While loop that checks first.",
+   "id": "q31002"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A While loop may never execute its actions.",
+   "correct": true,
+   "explanation": "If the condition is false at the start, the actions are skipped.",
+   "id": "q31003"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A Repeat...Until loop always executes its actions at least once.",
+   "correct": true,
+   "explanation": "The test comes after the first pass.",
+   "id": "q31004"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A While loop runs **as long as** its condition is…",
+   "options": [
+    "Empty",
+    "False",
+    "True",
+    "Zero"
+   ],
+   "correct": 2,
+   "explanation": "While = as long as true. Watch out: Repeat...Until stops when the condition becomes true.",
+   "id": "q31005"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the loop that displays the numbers from 1 to 10.",
+   "code": "Let i ← 1\n{{1}} i <= 10 Do\n    Display(i)\n    i ← {{2}}\nEndDo",
+   "blocks": [
+    "While",
+    "i + 1",
+    "If",
+    "i - 1",
+    "Until"
+   ],
+   "answers": [
+    "While",
+    "i + 1"
+   ],
+   "explanation": "The loop runs while i <= 10. We must increase i, otherwise the loop never ends.",
+   "hint": "What must change on every pass?",
+   "id": "q31006"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the loop that repeats a calculation until the user types N.",
+   "code": "Repeat\n    Read(a, b)\n    Let p ← a * b\n    Display(p)\n    Input(c)\n{{1}} c {{2}} 'N'",
+   "blocks": [
+    "Until",
+    "=",
+    "<>",
+    "While",
+    "Do"
+   ],
+   "answers": [
+    "Until",
+    "="
+   ],
+   "explanation": "Repeat...Until c = 'N' stops when the user answers N.",
+   "id": "q31007"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What does the loop display? Count the values displayed.\n```\nLet i ← 1\nWhile i < 10 Do\n    Display(i)\n    i ← i + 3\nEndDo\n```",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "i takes 1, 4, 7. Then i = 10, and 10 < 10 is false, so the loop stops. Watch out: 10 is not displayed, because the test uses < and not <=.",
+   "id": "q31008"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many numbers does this algorithm display?\n```\nLet i ← 10\nRepeat\n    Display(i)\n    i ← i + 1\nUntil i > 5\n```",
+   "correct": 1,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Repeat...Until tests after the body, so 10 is displayed once. Then i = 11 and 11 > 5 is true. Watch out: with a While loop it would display nothing.",
+   "id": "q31009"
+  },
+  {
+   "type": "grid",
+   "marks": 6,
+   "question": "The right PIN is 1234. The user types 1111, 4321, 1234. Trace the loop.",
+   "columns": [
+    "Typed",
+    "Trials so far",
+    "Stop?"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1111"
+     },
+     {
+      "answer": [
+       "1"
+      ]
+     },
+     {
+      "answer": [
+       "No"
+      ],
+      "choices": [
+       "Yes",
+       "No"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4321"
+     },
+     {
+      "answer": [
+       "2"
+      ]
+     },
+     {
+      "answer": [
+       "No"
+      ],
+      "choices": [
+       "Yes",
+       "No"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "1234"
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     },
+     {
+      "answer": [
+       "Yes"
+      ],
+      "choices": [
+       "Yes",
+       "No"
+      ]
+     }
+    ]
+   ],
+   "explanation": "The counter goes up on every try, and the loop stops when the typed PIN equals the right one. Watch out: the counter counts the successful try too.",
+   "id": "q31010"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This loop should display the numbers 1 to 5. One line makes it run for ever. Find it and choose the fix.",
+   "code": "Let i ← 1\nWhile i <= 5 Do\n    Display(i)\n    i ← i - 1\nEndDo",
+   "bug": 4,
+   "options": [
+    "i ← 1 - i",
+    "i ← i * 2",
+    "i ← i + 1",
+    "i ← i + 0"
+   ],
+   "correct": 2,
+   "explanation": "The counter must go up so that i <= 5 eventually becomes false. Watch out: with i ← i - 1 the test is true for ever.",
+   "id": "q31011"
+  },
+  {
+   "type": "bugline",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "This loop should stop when n reaches 5. One line is wrong.",
+   "code": "Let n ← 0\nRepeat\n    n ← n + 1\n    Display(n)\nUntil n < 5",
+   "bugs": [
+    5
+   ],
+   "explanation": "Repeat...Until stops when its condition becomes true. Watch out: n < 5 is already true after the first pass, so the loop would stop at once. It must be n = 5 (or n >= 5).",
+   "id": "q31012"
+  }
+ ]
+}

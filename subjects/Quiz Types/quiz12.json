@@ -1,0 +1,89 @@
+{
+  "title": "Structured (Extended)",
+  "description": "Multi-part questions. Write your answer, then tick the points you earned. AI marking comes later.",
+  "difficulty": "Test",
+  "level": "Sample",
+  "topic": "Structured (Extended)",
+  "timerType": "wholeQuiz",
+  "totalTime": 600,
+  "confidence": false,
+  "instructions": [
+    "Every question in this quiz is of one type: Structured (Extended).",
+    "Use it to test how this question type looks and is marked."
+  ],
+  "questions": [
+    {
+      "type": "structured",
+      "marks": 6,
+      "aiMarking": "later",
+      "question": "A compiler and an interpreter both translate high-level code.",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2,
+          "question": "State **two** differences between a compiler and an interpreter.",
+          "markScheme": [
+            "Compiler translates the whole program before it runs; interpreter translates line by line as it runs",
+            "Compiler produces a separate executable file; interpreter does not"
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 2,
+          "question": "Give **one** advantage of using a compiler.",
+          "markScheme": [
+            "Compiled code runs faster",
+            "The program can run without the translator being installed"
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 2,
+          "question": "Give **one** advantage of using an interpreter during development.",
+          "markScheme": [
+            "Part of the program can be tested without compiling it all",
+            "Errors are reported immediately, which helps debugging"
+          ]
+        }
+      ],
+      "explanation": "Marked against the mark scheme.",
+      "id": "q121"
+    },
+    {
+      "type": "structured",
+      "marks": 5,
+      "aiMarking": "later",
+      "question": "A ball is thrown vertically upwards at 12 m/s. Take g = 9.8 m/s² and ignore air resistance.",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1,
+          "question": "State the acceleration of the ball at its highest point.",
+          "markScheme": [
+            "9.8 m/s² (accept 9.81) downwards"
+          ]
+        },
+        {
+          "label": "b",
+          "marks": 2,
+          "question": "Calculate the time taken to reach the highest point.",
+          "markScheme": [
+            "Uses v = u + at with v = 0, giving 0 = 12 − 9.8t",
+            "t = 1.2 s (accept 1.22 s)"
+          ]
+        },
+        {
+          "label": "c",
+          "marks": 2,
+          "question": "Calculate the maximum height reached.",
+          "markScheme": [
+            "Uses v² = u² + 2as, giving 0 = 144 − 19.6s",
+            "s = 7.3 m (accept 7.35 m)"
+          ]
+        }
+      ],
+      "explanation": "Use the equations of motion with a = −9.8 m/s².",
+      "id": "q122"
+    }
+  ]
+}

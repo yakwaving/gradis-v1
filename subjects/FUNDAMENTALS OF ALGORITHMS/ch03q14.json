@@ -1,0 +1,262 @@
+{
+ "title": "Chapter 3 Quiz 14",
+ "description": "Functions that call themselves, with factorial and Fibonacci.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Recursion and memoization",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Recursion and memoization.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **recursive** function?",
+   "options": [
+    "A function with a loop",
+    "A function that calls itself",
+    "A function with no parameters",
+    "A function that returns text"
+   ],
+   "correct": 1,
+   "explanation": "Recursion is used when the definition of a concept refers to the same concept. Watch out: a loop repeats too, but a recursive function repeats by calling itself.",
+   "id": "q31401"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "In the factorial function, what is the **base case**?",
+   "options": [
+    "N = 10, where Fact = 10",
+    "N = 1, where Fact = 0",
+    "N = 0, where Fact = 1",
+    "N > 0, where Fact = N"
+   ],
+   "correct": 2,
+   "explanation": "The base case stops the recursion. Without it the function would call itself for ever.",
+   "id": "q31402"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the **recursive case** of the factorial?",
+   "options": [
+    "Fact(N) = N * Fact(N - 1)",
+    "Fact(N) = N - Fact(N - 1)",
+    "Fact(N) = N * Fact(N + 1)",
+    "Fact(N) = N + Fact(N)"
+   ],
+   "correct": 0,
+   "explanation": "Fact(N) = N × Fact(N-1) when N is not 0. Watch out: the call must use a smaller value to reach the base case.",
+   "id": "q31403"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is Fact(3)?",
+   "correct": 6,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "3 × Fact(2) = 3 × 2 × Fact(1) = 3 × 2 × 1 × Fact(0) = 6.",
+   "id": "q31404"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is Fact(5)?",
+   "correct": 120,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "5 × 4 × 3 × 2 × 1 = 120.",
+   "id": "q31405"
+  },
+  {
+   "type": "ordering",
+   "marks": 3,
+   "scoring": "adjacent",
+   "question": "Put the expansion of Fact(3) in order.",
+   "items": [
+    "Fact(0) = 1",
+    "Fact(3) = 3 * Fact(2)",
+    "Fact(1) = 1 * Fact(0)",
+    "Fact(2) = 2 * Fact(1)"
+   ],
+   "correctOrder": [
+    1,
+    3,
+    2,
+    0
+   ],
+   "explanation": "The calls go down to the base case, then the results are multiplied back up.",
+   "id": "q31406"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the recursive factorial.",
+   "code": "Function Fact(N : integer) Returns integer\nBegin\n    If N = {{1}} Then\n        Fact ← 1\n    Else\n        Fact ← N * {{2}}\n    EndIf\nEnd Function",
+   "blocks": [
+    "0",
+    "Fact(N - 1)",
+    "Fact(N)",
+    "1",
+    "Fact(N + 1)"
+   ],
+   "answers": [
+    "0",
+    "Fact(N - 1)"
+   ],
+   "explanation": "The base case is N = 0. The recursive call must use a smaller value: N - 1.",
+   "id": "q31407"
+  },
+  {
+   "type": "grid",
+   "marks": 7,
+   "question": "Fibonacci: F(0) = 0, F(1) = 1, F(n) = F(n-1) + F(n-2). Fill in the values.",
+   "columns": [
+    "n",
+    "F(n)"
+   ],
+   "rows": [
+    [
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "1"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "2"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "5"
+     },
+     {
+      "answer": [
+       "5"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "6"
+     },
+     {
+      "answer": [
+       "8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "7"
+     },
+     {
+      "answer": [
+       "13"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "8"
+     },
+     {
+      "answer": [
+       "21"
+      ]
+     }
+    ]
+   ],
+   "explanation": "0, 1, 1, 2, 3, 5, 8, 13, 21. Each term is the sum of the two before. Watch out: the sequence starts at F(0) = 0.",
+   "id": "q31408"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is F(5)?",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "F(5) = F(4) + F(3) = 3 + 2 = 5.",
+   "id": "q31409"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Why is the simple recursive Fibonacci slow for large n?",
+   "options": [
+    "It never reaches a base case",
+    "It repeats the same calculations",
+    "It only works for even numbers",
+    "It uses a loop inside the function"
+   ],
+   "correct": 1,
+   "explanation": "F(n-1) and F(n-2) both recompute smaller terms again and again. Watch out: it does have base cases, the problem is the repeated work.",
+   "id": "q31410"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does **memoization** do?",
+   "options": [
+    "It turns a function into a procedure",
+    "It removes the base case of the function",
+    "It sorts the values before the call",
+    "It stores computed results for later reuse"
+   ],
+   "correct": 3,
+   "explanation": "A table remembers results already found, which avoids recalculating.",
+   "id": "q31411"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This recursive Fibonacci should return F(n). One line is wrong. Find it and choose the fix.",
+   "code": "Function F(n) Returns integer\nBegin\n    If n <= 1 Then\n        F ← n\n    Else\n        F ← F(n - 1) + F(n)\n    EndIf\nEnd Function",
+   "bug": 6,
+   "options": [
+    "F ← F(n - 1) + F(n - 2)",
+    "F ← F(n - 2) + F(n - 2)",
+    "F ← F(n - 1) * F(n - 2)",
+    "F ← F(n - 1) + F(n + 1)"
+   ],
+   "correct": 0,
+   "explanation": "Each term is the sum of the two terms before it. Watch out: F(n) inside F(n) calls itself with the same value and never stops.",
+   "id": "q31412"
+  }
+ ]
+}

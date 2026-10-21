@@ -1,0 +1,216 @@
+{
+ "title": "Chapter 2 Quiz 5",
+ "description": "Traps in every question. Several families look alike, so read each situation carefully.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: algorithm families",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": true,
+ "instructions": [
+  "Chapter 2: Difficult: algorithm families.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A program reads a number. If it is negative it displays an error and stops. Otherwise it displays the double of the number. Which family describes it best?",
+   "options": [
+    "Recursive",
+    "Conditional",
+    "Iterative",
+    "Linear"
+   ],
+   "correct": 1,
+   "explanation": "The program takes a decision between two outcomes. Watch out: doubling a number is a linear step, but the decision makes the whole algorithm conditional.",
+   "id": "q20501"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A function Fact(n) returns 1 when n = 0, and otherwise returns n × Fact(n - 1). Which family describes it best?",
+   "options": [
+    "Recursive",
+    "Iterative",
+    "Conditional",
+    "Linear"
+   ],
+   "correct": 0,
+   "explanation": "The function calls itself on a smaller value. Watch out: it contains a test (n = 0), but the self-call is what defines recursion.",
+   "id": "q20502"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which of these tasks need **repetition** (an iterative algorithm)?",
+   "options": [
+    "Printing each name in a list",
+    "Adding the two marks of one student",
+    "Choosing the larger of two marks",
+    "Summing every mark in a class"
+   ],
+   "correct": [
+    0,
+    3
+   ],
+   "explanation": "Going through a whole collection needs a loop. Watch out: adding two marks is one step, and choosing the larger of two is a single decision.",
+   "id": "q20503"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This loop should display the numbers 1 to 5. One line is wrong. Find it and choose the fix.",
+   "code": "Let i ← 1\nWhile i < 5 Do\n    Display(i)\n    i ← i + 1\nEndDo",
+   "bug": 2,
+   "options": [
+    "While i <= 4 Do",
+    "While i > 5 Do",
+    "While i <= 5 Do",
+    "While i = 5 Do"
+   ],
+   "correct": 2,
+   "explanation": "The last value, 5, must be displayed, so the test is i <= 5. Watch out: with i < 5 the loop stops after 4.",
+   "id": "q20504"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This recursive function should return 1 + 2 + ... + n. One line is wrong. Find it and choose the fix.",
+   "code": "Function Sum(n) Returns integer\nBegin\n    If n = 0 Then\n        Sum ← 0\n    Else\n        Sum ← n + Sum(n)\n    EndIf\nEnd Function",
+   "bug": 6,
+   "options": [
+    "Sum ← n + Sum(n - 1)",
+    "Sum ← n + Sum(n + 1)",
+    "Sum ← Sum(n - 1)",
+    "Sum ← n * Sum(n - 1)"
+   ],
+   "correct": 0,
+   "explanation": "The call must use a smaller value so that n reaches 0. Watch out: Sum(n) calls itself with the same value and never stops.",
+   "id": "q20505"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "A greedy algorithm always gives the best overall solution.",
+   "reason": "A greedy algorithm makes the locally best choice at each step.",
+   "correct": "D",
+   "explanation": "The assertion is false: the best choice at each step does not always give the best overall result. Watch out: the reason is true, and it is exactly why the assertion is tempting.",
+   "id": "q20506"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Merge sort splits a list, sorts each half and merges the results. Which labels both apply?",
+   "options": [
+    "Divide and conquer and sorting",
+    "Randomized and bottom-up only",
+    "Linear and conditional steps",
+    "Greedy and a searching method"
+   ],
+   "correct": 0,
+   "explanation": "It is a sorting algorithm built on divide and conquer. Watch out: the labels are not exclusive, a single algorithm can belong to several families.",
+   "id": "q20507"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Choose the best family for each situation.",
+   "columns": [
+    "Situation",
+    "Best family"
+   ],
+   "rows": [
+    [
+     {
+      "given": "Double a number and display it"
+     },
+     {
+      "answer": [
+       "Linear"
+      ],
+      "choices": [
+       "Linear",
+       "Conditional",
+       "Iterative",
+       "Recursive"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "Check whether an age is valid"
+     },
+     {
+      "answer": [
+       "Conditional"
+      ],
+      "choices": [
+       "Linear",
+       "Conditional",
+       "Iterative",
+       "Recursive"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "Add up all the elements of an array"
+     },
+     {
+      "answer": [
+       "Iterative"
+      ],
+      "choices": [
+       "Linear",
+       "Conditional",
+       "Iterative",
+       "Recursive"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "List the folders inside folders"
+     },
+     {
+      "answer": [
+       "Recursive"
+      ],
+      "choices": [
+       "Linear",
+       "Conditional",
+       "Iterative",
+       "Recursive"
+      ]
+     }
+    ]
+   ],
+   "explanation": "No decision, no repetition: linear. A decision: conditional. The same action for every element: iterative. A problem that contains smaller copies of itself: recursive. Watch out: folders inside folders look like a list, but the nesting calls for recursion.",
+   "id": "q20508"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A recursive algorithm never needs a conditional test.",
+   "correct": false,
+   "explanation": "A recursive function needs a test to know when to stop. Watch out: without a base case it would call itself for ever.",
+   "id": "q20509"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many times does the body run?\n```\nFor i From 2 To 9 Do\n    Display(i)\nEndDo\n```",
+   "correct": 8,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "i takes the values 2, 3, 4, 5, 6, 7, 8, 9. Watch out: both bounds are included, so it is 9 - 2 + 1 = 8, not 7.",
+   "id": "q20510"
+  }
+ ]
+}

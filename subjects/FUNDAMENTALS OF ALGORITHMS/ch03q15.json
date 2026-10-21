@@ -1,0 +1,291 @@
+{
+ "title": "Chapter 3 Quiz 15",
+ "description": "Traps in every question. Read each loop line by line and do not trust the first impression.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: loops and hidden errors",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": true,
+ "instructions": [
+  "Chapter 3: Difficult: loops and hidden errors.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "bugline",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should display the smallest of the 5 values in tab. Two lines have an error.",
+   "code": "Let min ← 0\nFor i From 1 To 5 Do\n    If tab[i] > min Then\n        min ← tab[i]\n    EndIf\nEndDo\nDisplay(min)",
+   "bugs": [
+    1,
+    3
+   ],
+   "explanation": "Line 1: min must start with the first element, tab[1]. Line 3: we replace min when the new value is smaller, so the test is tab[i] < min. Watch out: starting at 0 fails when every value is positive, and > finds the largest value.",
+   "id": "q31501"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many times does the body run?\n```\nFor i From 1 To 4 Do\n    For j From i To 4 Do\n        Display(i, j)\n    EndDo\nEndDo\n```",
+   "correct": 10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "i = 1 gives 4 passes, i = 2 gives 3, i = 3 gives 2 and i = 4 gives 1. The total is 4 + 3 + 2 + 1 = 10. Watch out: the inner loop starts at i, not at 1.",
+   "hint": "The inner loop starts at i, not at 1.",
+   "id": "q31502"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many numbers does this algorithm display?\n```\nLet i ← 3\nRepeat\n    Display(i)\n    i ← i - 1\nUntil i <= 0\n```",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "It displays 3, 2 and 1. When i becomes 0 the test is true and the loop stops. Watch out: 0 is never displayed, because the test comes after the display and i is changed before the test.",
+   "id": "q31503"
+  },
+  {
+   "type": "grid",
+   "marks": 8,
+   "question": "Trace this loop: i ← 25, then While i > 3 Do i ← i - 7. Fill in the table.",
+   "columns": [
+    "Pass",
+    "i after the pass",
+    "Is i > 3 ?"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "18"
+      ]
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "11"
+      ]
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "4"
+      ]
+     },
+     {
+      "answer": [
+       "True"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "-3"
+      ]
+     },
+     {
+      "answer": [
+       "False"
+      ],
+      "choices": [
+       "True",
+       "False"
+      ]
+     }
+    ]
+   ],
+   "explanation": "25 → 18 → 11 → 4 → -3. Watch out: after pass 3, i = 4 and 4 > 3 is still true, so there is a fourth pass. i can end below zero.",
+   "id": "q31504"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should display the sum 1 + 2 + ... + n. One line is wrong. Find it and choose the fix.",
+   "code": "Read(n)\nLet total ← 0\nFor i From 1 To n - 1 Do\n    total ← total + i\nEndDo\nDisplay(total)",
+   "bug": 3,
+   "options": [
+    "For i From 1 To n + 1 Do",
+    "For i From 1 To n Do",
+    "For i From 0 To n Do",
+    "For i From 2 To n Do"
+   ],
+   "correct": 1,
+   "explanation": "The last value, n, must be included. Watch out: To n - 1 stops one value too early, and From 0 or To n + 1 would change the result.",
+   "id": "q31505"
+  },
+  {
+   "type": "bugline",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "This loop should display the even numbers from 1 to 5, then stop. One line is in the wrong place.",
+   "code": "Let i ← 1\nWhile i <= 5 Do\n    If i MOD 2 = 0 Then\n        Display(i)\n        i ← i + 1\n    EndIf\nEndDo",
+   "bugs": [
+    5
+   ],
+   "explanation": "The increase of i must happen on every pass, so it belongs after EndIf. Watch out: inside the If it only runs for even numbers, so with i = 1 the loop never ends.",
+   "id": "q31506"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many times does the body run?\n```\nFor i From 2 To 20 Step 4 Do\n    Display(i)\nEndDo\n```",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "i takes 2, 6, 10, 14, 18. The next value, 22, is above 20. Watch out: 20 is not reached with a step of 4.",
+   "id": "q31507"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these statements are **true**?",
+   "options": [
+    "A While loop tests its condition after the first pass",
+    "For i From 5 To 1 does not run when the step is +1",
+    "A Repeat loop whose Until test starts true still runs once",
+    "A While loop whose test is false at the start runs 0 times",
+    "For i From 1 To 0 runs the body exactly one time"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "While tests first (0 times is possible). A For loop with the start above the end does not run. Repeat...Until always runs once before testing. Watch out: For i From 1 To 0 is an empty range, and While never tests after the body.",
+   "id": "q31508"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A program must ask for numbers until the user types 0, and the user may type 0 straight away. Which structure fits best?",
+   "options": [
+    "A For loop",
+    "A Case structure",
+    "A Repeat loop",
+    "A While loop"
+   ],
+   "correct": 3,
+   "explanation": "Read first, then test, so a first 0 does no work. Watch out: with Repeat...Until the first 0 would be processed as if it were a value.",
+   "id": "q31509"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Evaluate each expression (the brackets show the order).",
+   "columns": [
+    "Expression",
+    "Value"
+   ],
+   "rows": [
+    [
+     {
+      "given": "(17 MOD 5) + 2"
+     },
+     {
+      "answer": [
+       "4"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(17 DIV 5) * 2"
+     },
+     {
+      "answer": [
+       "6"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2 + ((17 MOD 5) * 3)"
+     },
+     {
+      "answer": [
+       "8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(17 DIV 5) MOD 2"
+     },
+     {
+      "answer": [
+       "1"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "(20 DIV 3) - (20 MOD 3)"
+     },
+     {
+      "answer": [
+       "4"
+      ]
+     }
+    ]
+   ],
+   "explanation": "17 MOD 5 = 2 and 17 DIV 5 = 3; 20 DIV 3 = 6 and 20 MOD 3 = 2. Watch out: DIV gives the quotient and MOD the remainder, and they are easy to swap.",
+   "id": "q31510"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "In For i From 1 To N, when N = 0 the body runs once.",
+   "reason": "The initial and final values of a For loop are both included.",
+   "correct": "D",
+   "explanation": "The assertion is false: the range 1 to 0 is empty, so the body does not run. Watch out: the reason is true, but it does not make the assertion hold.",
+   "id": "q31511"
+  }
+ ]
+}

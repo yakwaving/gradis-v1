@@ -1,0 +1,56 @@
+{
+  "title": "True / False",
+  "description": "Decide whether each statement is true or false.",
+  "difficulty": "Test",
+  "level": "Sample",
+  "topic": "True / False",
+  "timerType": "wholeQuiz",
+  "totalTime": 300,
+  "confidence": false,
+  "instructions": [
+    "Every question in this quiz is of one type: True / False.",
+    "Use it to test how this question type looks and is marked."
+  ],
+  "questions": [
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "Solid ionic compounds conduct electricity.",
+      "correct": false,
+      "explanation": "The ions are fixed in the lattice. They conduct only when molten or dissolved.",
+      "id": "q021"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "Light travels faster in a vacuum than in glass.",
+      "correct": true,
+      "explanation": "Glass slows light down, which is why it refracts.",
+      "id": "q022"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "A byte contains 8 bits.",
+      "correct": true,
+      "explanation": "1 byte = 8 bits.",
+      "id": "q023"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "In most programming languages, 0.1 + 0.2 is exactly equal to 0.3.",
+      "correct": false,
+      "explanation": "Binary floating point cannot store 0.1 or 0.2 exactly, so the sum is slightly different from 0.3.",
+      "id": "q024"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "Water boils at a lower temperature at high altitude.",
+      "correct": true,
+      "explanation": "Lower air pressure means a lower boiling point.",
+      "id": "q025"
+    }
+  ]
+}

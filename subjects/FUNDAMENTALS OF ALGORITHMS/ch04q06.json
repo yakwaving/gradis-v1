@@ -1,0 +1,169 @@
+{
+ "title": "Chapter 4 Quiz 6",
+ "description": "Shifting values to close the gap.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Deleting an element",
+ "timerType": "wholeQuiz",
+ "totalTime": 900,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: Deleting an element.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "ordering",
+   "marks": 2,
+   "scoring": "adjacent",
+   "question": "Put the steps to delete an element in order.",
+   "items": [
+    "Reduce the size of the array by 1",
+    "Ask for the position to delete",
+    "Shift the following elements one place to the left"
+   ],
+   "correctOrder": [
+    1,
+    2,
+    0
+   ],
+   "explanation": "Ask, shift, then shrink.",
+   "id": "q40601"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "How is an element removed from the middle of an array?",
+   "options": [
+    "The next values move left",
+    "The cell is skipped for ever",
+    "The cell is cleared with a zero",
+    "The array is sorted again"
+   ],
+   "correct": 0,
+   "explanation": "Shifting closes the gap; then the size is reduced. Watch out: leaving a zero would keep a hole in the data.",
+   "id": "q40602"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the deletion of position pos in an array of N elements.",
+   "code": "For i From pos To {{1}} Do\n    array[i] ← array[{{2}}]\nEndFor\nN ← N - 1",
+   "blocks": [
+    "N - 1",
+    "i + 1",
+    "N",
+    "i - 1"
+   ],
+   "answers": [
+    "N - 1",
+    "i + 1"
+   ],
+   "explanation": "We copy each element from its right neighbour, up to N - 1. Then N shrinks by 1.",
+   "id": "q40603"
+  },
+  {
+   "type": "grid",
+   "marks": 3,
+   "question": "The array is [10, 20, 30, 40, 50]. We delete position 2. Give the array after each shift.",
+   "columns": [
+    "i",
+    "Array after array[i] ← array[i+1]"
+   ],
+   "rows": [
+    [
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "10 30 30 40 50"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "10 30 40 40 50"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "10 30 40 50 50"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Each shift moves a value left. The last 50 is left over and ignored once N becomes 4. Watch out: the last cell still holds 50, but it is no longer part of the array.",
+   "id": "q40604"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "After the deletion, what is the new size N? (N was 5)",
+   "correct": 4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "N ← N - 1 = 4.",
+   "id": "q40605"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "After deleting position 2 of [10, 20, 30, 40, 50], which value is now in position 2?",
+   "accepted": [
+    "30"
+   ],
+   "explanation": "30 moved from position 3 to position 2. Watch out: position 2 held 20 before, and 20 is the value that was deleted.",
+   "id": "q40606"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "When deleting, the loop must run over all N cells including the last one.",
+   "correct": false,
+   "explanation": "The last shift copies array[N] into array[N-1], so the loop stops at N - 1. Watch out: going to N would read array[N + 1], outside the array.",
+   "id": "q40607"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should delete the element at position pos from an array of N elements. One line is wrong. Find it and choose the fix.",
+   "code": "For i From pos To N Do\n    array[i] ← array[i + 1]\nEndFor\nN ← N - 1",
+   "bug": 1,
+   "options": [
+    "For i From pos + 1 To N Do",
+    "For i From 1 To N - 1 Do",
+    "For i From pos To N - 1 Do",
+    "For i From pos To N + 1 Do"
+   ],
+   "correct": 2,
+   "explanation": "On the last pass i = N - 1 copies array[N]. Watch out: with To N, array[N + 1] is read, and it does not exist.",
+   "id": "q40608"
+  },
+  {
+   "type": "bugline",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "This should delete the element at position pos. One line has an error.",
+   "code": "For i From pos To N - 1 Do\n    array[i + 1] ← array[i]\nEndFor\nN ← N - 1",
+   "bugs": [
+    2
+   ],
+   "explanation": "We must copy from the right neighbour into the cell: array[i] ← array[i + 1]. Watch out: the reversed copy spreads the value to the right and deletes nothing.",
+   "id": "q40609"
+  }
+ ]
+}

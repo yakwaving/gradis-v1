@@ -1,0 +1,305 @@
+{
+ "title": "Chapter 1 Quiz 6",
+ "description": "Every question hides a trap. Read slowly and check each step.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: algorithm basics",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": true,
+ "instructions": [
+  "Chapter 1: Difficult: algorithm basics.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This algorithm should display the area and the perimeter of a square. One line is wrong. Find it and choose the fix.",
+   "code": "Start\nInput L\nAREA ← L + L\nPERIMETER ← 4 * L\nDisplay(AREA, PERIMETER)\nStop",
+   "bug": 3,
+   "options": [
+    "AREA ← L * L",
+    "AREA ← L * L * L",
+    "AREA ← L * 4",
+    "AREA ← 2 * L"
+   ],
+   "correct": 0,
+   "explanation": "The area of a square is L × L. Watch out: L + L equals L × L only when L = 2, so the algorithm looks right for L = 2 and is wrong for every other side.",
+   "id": "q10601"
+  },
+  {
+   "type": "bugline",
+   "marks": 1,
+   "language": "Algorithm",
+   "question": "This algorithm should display the area of a rectangle. One line has an error.",
+   "code": "Declare height, width, area As Integer\nRead(height)\narea ← height * width\nDisplay(area)",
+   "bugs": [
+    2
+   ],
+   "explanation": "width is never read, so its value is unknown when the area is calculated. Watch out: the calculation itself, line 3, is correct; the error is the missing input.",
+   "id": "q10602"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What does this algorithm display?\n```\nLet g1 ← 9\nLet g2 ← 12\nLet g3 ← 6\nLet Avg ← g1 + g2 + g3 / 3\nDisplay(Avg)\n```",
+   "correct": 23.0,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.01
+   },
+   "explanation": "Only g3 is divided by 3: 9 + 12 + 2 = 23. Watch out: the intended average, (9 + 12 + 6) / 3 = 9, needs brackets around the sum.",
+   "id": "q10603"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Trace this algorithm and fill in the values after each line.\n```\nLet a ← 4\nLet b ← a * 2\nLet a ← b - a\nLet b ← a + b\n```",
+   "columns": [
+    "After line",
+    "a",
+    "b"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "4"
+      ]
+     },
+     {
+      "given": "-"
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "4"
+      ]
+     },
+     {
+      "given": "8"
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "12"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Line 1: a = 4. Line 2: b = 8. Line 3: a = 8 − 4 = 4. Line 4: b = 4 + 8 = 12. Watch out: the right side uses the values the variables hold at that moment, not the values from the start.",
+   "id": "q10604"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A program runs and the client says the total is wrong. The cause is a badly designed method, a semantic error. Where must the correction start?",
+   "options": [
+    "The coding phase",
+    "The running phase",
+    "The analysis phase",
+    "The compiling phase"
+   ],
+   "correct": 2,
+   "explanation": "A semantic error is a fault of the method, so it is corrected from the analysis phase. Watch out: recompiling or retyping the code does not repair a wrong method.",
+   "id": "q10605"
+  },
+  {
+   "type": "ordering",
+   "marks": 4,
+   "scoring": "adjacent",
+   "question": "A student writes a program that has a syntax error. Put the steps in order.",
+   "items": [
+    "Correct the source program",
+    "Run the executable program",
+    "Compile and receive an error message",
+    "Compile again",
+    "Write the source program"
+   ],
+   "correctOrder": [
+    4,
+    2,
+    0,
+    3,
+    1
+   ],
+   "explanation": "The error message stops the process, so the source is corrected and compiled again before the program can run. Watch out: the program cannot run until the compilation succeeds.",
+   "id": "q10606"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "A semantic error is reported by the compiler.",
+   "reason": "A semantic error comes from a poor design of the method.",
+   "correct": "D",
+   "explanation": "The assertion is false: the compiler reports syntax errors. The reason is true, but it explains why the compiler cannot see the error. Watch out: a true reason does not make a false assertion true.",
+   "id": "q10607"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "An algorithm that reads data and calculates a result, but never displays anything, still satisfies the output rule.",
+   "correct": false,
+   "explanation": "An algorithm must produce at least one result: it has to display or return it. Watch out: a calculation that stays hidden inside the algorithm is not an output.",
+   "id": "q10608"
+  },
+  {
+   "type": "flowchart",
+   "marks": 2,
+   "question": "This flowchart tests an age. For box 1, choose the shape and type the condition that sends an adult (18 or older) to the Yes branch.",
+   "nodes": [
+    {
+     "id": "s",
+     "shape": "terminator",
+     "x": 50,
+     "y": 6,
+     "text": "Start"
+    },
+    {
+     "id": "i",
+     "shape": "io",
+     "x": 50,
+     "y": 22,
+     "text": "Input age",
+     "w": 40
+    },
+    {
+     "id": "d",
+     "shape": "decision",
+     "x": 50,
+     "y": 44,
+     "ask": [
+      "shape",
+      "text"
+     ],
+     "accepted": [
+      "age >= 18",
+      "age ≥ 18",
+      "age >= 18 ?",
+      "age ≥ 18 ?",
+      "18 <= age",
+      "18 ≤ age",
+      "18 <= age ?",
+      "18 ≤ age ?"
+     ],
+     "w": 46,
+     "h": 22
+    },
+    {
+     "id": "p1",
+     "shape": "io",
+     "x": 22,
+     "y": 70,
+     "text": "Display 'Adult'",
+     "w": 34
+    },
+    {
+     "id": "p2",
+     "shape": "io",
+     "x": 78,
+     "y": 70,
+     "text": "Display 'Minor'",
+     "w": 34
+    },
+    {
+     "id": "e",
+     "shape": "terminator",
+     "x": 50,
+     "y": 92,
+     "text": "End"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "i"
+    },
+    {
+     "from": "i",
+     "to": "d"
+    },
+    {
+     "from": "d",
+     "to": "p1",
+     "label": "Yes",
+     "via": [
+      [
+       22,
+       44
+      ]
+     ]
+    },
+    {
+     "from": "d",
+     "to": "p2",
+     "label": "No",
+     "via": [
+      [
+       78,
+       44
+      ]
+     ]
+    },
+    {
+     "from": "p1",
+     "to": "e"
+    },
+    {
+     "from": "p2",
+     "to": "e"
+    }
+   ],
+   "explanation": "The condition is age >= 18. Watch out: with age > 18 an 18-year-old would be called a minor.",
+   "id": "q10609"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which statements are **true**?",
+   "options": [
+    "Execution of a program is done by the programmer",
+    "The compiler reports the syntax errors found",
+    "A flowchart is translated by the compiler",
+    "Analysis and translation are done by humans",
+    "A semantic error can exist in a program that runs"
+   ],
+   "correct": [
+    1,
+    3,
+    4
+   ],
+   "explanation": "The compiler finds syntax errors only. A program with a semantic error runs but gives wrong results. Analysis and translation are human operations. Watch out: execution is automatic, and a flowchart is not source code.",
+   "id": "q10610"
+  }
+ ]
+}

@@ -1,0 +1,515 @@
+{
+ "title": "Chapter 1 Quiz 4",
+ "description": "Learn the flowchart symbols, then complete small flowcharts.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Flowcharts",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 1: Flowcharts.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "matching",
+   "marks": 5,
+   "question": "Match each flowchart symbol to its use.",
+   "left": [
+    "Oval",
+    "Rectangle",
+    "Diamond",
+    "Parallelogram",
+    "Arrow"
+   ],
+   "right": [
+    "Start and end of the flowchart",
+    "Processing: calculations and data handling",
+    "Decision with alternatives such as true or false",
+    "Input and output",
+    "Flow line connecting the symbols"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "explanation": "Oval = start/end, rectangle = processing, diamond = decision, parallelogram = input/output, arrow = flow of logic.",
+   "id": "q10401"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A flowchart is a graphical translation of an algorithm.",
+   "correct": true,
+   "explanation": "A flowchart (flow diagram) shows the steps of an algorithm with symbols and arrows.",
+   "id": "q10402"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which symbol do you use for the instruction AREA ← L × L ?",
+   "options": [
+    "Rectangle (process)",
+    "Diamond (decision)",
+    "Oval (start/end)",
+    "Parallelogram (I/O)"
+   ],
+   "correct": 0,
+   "explanation": "A calculation is a processing step, drawn as a rectangle. Watch out: the result is a value, but that does not make it input or output.",
+   "id": "q10403"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which symbol do you use for the instruction Display AVG ?",
+   "options": [
+    "Diamond (decision)",
+    "Oval (start/end)",
+    "Parallelogram (I/O)",
+    "Rectangle (process)"
+   ],
+   "correct": 2,
+   "explanation": "Displaying a value is an output, drawn as a parallelogram. Watch out: Display is not a calculation, so it is not a rectangle.",
+   "id": "q10404"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A flowchart can only show an algorithm that has no decision.",
+   "correct": false,
+   "explanation": "The diamond is used for decisions, so a flowchart can show branches. Watch out: the diamond exists for exactly this purpose.",
+   "id": "q10405"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Who designed the first flowchart in 1945, according to the course?",
+   "options": [
+    "Charles Babbage",
+    "Niklaus Wirth",
+    "Donald Knuth",
+    "John von Neumann"
+   ],
+   "correct": 3,
+   "explanation": "The course says the first design of a flowchart goes back to 1945 and was made by John von Neumann. Watch out: Niklaus Wirth is known for Pascal.",
+   "id": "q10406"
+  },
+  {
+   "type": "flowchart",
+   "marks": 4,
+   "question": "Place the correct shape on each dashed slot. The text is already written.",
+   "nodes": [
+    {
+     "id": "s",
+     "shape": "terminator",
+     "x": 50,
+     "y": 6,
+     "text": "Start"
+    },
+    {
+     "id": "i",
+     "shape": "io",
+     "x": 50,
+     "y": 24,
+     "text": "Input L",
+     "ask": [
+      "shape"
+     ]
+    },
+    {
+     "id": "a",
+     "shape": "process",
+     "x": 50,
+     "y": 42,
+     "text": "AREA = L × L",
+     "ask": [
+      "shape"
+     ],
+     "w": 44
+    },
+    {
+     "id": "p",
+     "shape": "process",
+     "x": 50,
+     "y": 60,
+     "text": "PERIMETER = 4 × L",
+     "ask": [
+      "shape"
+     ],
+     "w": 48
+    },
+    {
+     "id": "d",
+     "shape": "io",
+     "x": 50,
+     "y": 78,
+     "text": "Display AREA, PERIMETER",
+     "ask": [
+      "shape"
+     ],
+     "w": 54
+    },
+    {
+     "id": "e",
+     "shape": "terminator",
+     "x": 50,
+     "y": 95,
+     "text": "End"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "i"
+    },
+    {
+     "from": "i",
+     "to": "a"
+    },
+    {
+     "from": "a",
+     "to": "p"
+    },
+    {
+     "from": "p",
+     "to": "d"
+    },
+    {
+     "from": "d",
+     "to": "e"
+    }
+   ],
+   "explanation": "Input and output use the parallelogram. Calculations use the rectangle. Watch out: the two calculations look like results, but they are still processing.",
+   "id": "q10407"
+  },
+  {
+   "type": "flowchart",
+   "marks": 2,
+   "question": "This flowchart finds the area of a rectangle. The shapes are drawn: type the missing text in the numbered boxes.",
+   "nodes": [
+    {
+     "id": "s",
+     "shape": "terminator",
+     "x": 50,
+     "y": 6,
+     "text": "Start"
+    },
+    {
+     "id": "i",
+     "shape": "io",
+     "x": 50,
+     "y": 24,
+     "text": "Input HEIGHT, WIDTH",
+     "w": 50
+    },
+    {
+     "id": "a",
+     "shape": "process",
+     "x": 50,
+     "y": 42,
+     "ask": [
+      "text"
+     ],
+     "accepted": [
+      "area = height * width",
+      "area ← height * width",
+      "area <- height * width",
+      "area := height * width",
+      "area = height x width",
+      "area ← height x width",
+      "area <- height x width",
+      "area := height x width",
+      "area = height × width",
+      "area ← height × width",
+      "area <- height × width",
+      "area := height × width"
+     ],
+     "w": 50
+    },
+    {
+     "id": "o",
+     "shape": "io",
+     "x": 50,
+     "y": 60,
+     "ask": [
+      "text"
+     ],
+     "accepted": [
+      "display area",
+      "print area",
+      "output area",
+      "write area"
+     ],
+     "w": 44
+    },
+    {
+     "id": "e",
+     "shape": "terminator",
+     "x": 50,
+     "y": 78,
+     "text": "End"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "i"
+    },
+    {
+     "from": "i",
+     "to": "a"
+    },
+    {
+     "from": "a",
+     "to": "o"
+    },
+    {
+     "from": "o",
+     "to": "e"
+    }
+   ],
+   "explanation": "AREA = HEIGHT × WIDTH is the calculation, then Display AREA outputs the result.",
+   "hint": "Box 1 is the calculation. Box 2 shows the result.",
+   "id": "q10408"
+  },
+  {
+   "type": "flowchart",
+   "marks": 2,
+   "question": "This flowchart says whether a number is even or odd. For box 1, choose the shape and type the condition.",
+   "nodes": [
+    {
+     "id": "s",
+     "shape": "terminator",
+     "x": 50,
+     "y": 6,
+     "text": "Start"
+    },
+    {
+     "id": "i",
+     "shape": "io",
+     "x": 50,
+     "y": 22,
+     "text": "Input number",
+     "w": 40
+    },
+    {
+     "id": "d",
+     "shape": "decision",
+     "x": 50,
+     "y": 44,
+     "ask": [
+      "shape",
+      "text"
+     ],
+     "accepted": [
+      "number mod 2 = 0",
+      "number mod 2 == 0",
+      "number % 2 = 0",
+      "number % 2 == 0",
+      "number mod 2 = 0 ?",
+      "number mod 2 == 0 ?",
+      "number % 2 = 0 ?",
+      "number % 2 == 0 ?"
+     ],
+     "w": 46,
+     "h": 22
+    },
+    {
+     "id": "p1",
+     "shape": "io",
+     "x": 22,
+     "y": 70,
+     "text": "Display 'Even'",
+     "w": 34
+    },
+    {
+     "id": "p2",
+     "shape": "io",
+     "x": 78,
+     "y": 70,
+     "text": "Display 'Odd'",
+     "w": 34
+    },
+    {
+     "id": "e",
+     "shape": "terminator",
+     "x": 50,
+     "y": 92,
+     "text": "End"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "i"
+    },
+    {
+     "from": "i",
+     "to": "d"
+    },
+    {
+     "from": "d",
+     "to": "p1",
+     "label": "Yes",
+     "via": [
+      [
+       22,
+       44
+      ]
+     ]
+    },
+    {
+     "from": "d",
+     "to": "p2",
+     "label": "No",
+     "via": [
+      [
+       78,
+       44
+      ]
+     ]
+    },
+    {
+     "from": "p1",
+     "to": "e"
+    },
+    {
+     "from": "p2",
+     "to": "e"
+    }
+   ],
+   "explanation": "A decision uses the diamond. A number is even when the remainder of its division by 2 is 0: number mod 2 = 0. Watch out: the test must give 0 for even numbers, not 1.",
+   "hint": "MOD gives the remainder of an integer division.",
+   "id": "q10409"
+  },
+  {
+   "type": "flowchart",
+   "marks": 2,
+   "question": "This flowchart tests an age. For box 1, choose the shape and type the condition that sends an adult (18 or older) to the Yes branch.",
+   "nodes": [
+    {
+     "id": "s",
+     "shape": "terminator",
+     "x": 50,
+     "y": 6,
+     "text": "Start"
+    },
+    {
+     "id": "i",
+     "shape": "io",
+     "x": 50,
+     "y": 22,
+     "text": "Input age",
+     "w": 40
+    },
+    {
+     "id": "d",
+     "shape": "decision",
+     "x": 50,
+     "y": 44,
+     "ask": [
+      "shape",
+      "text"
+     ],
+     "accepted": [
+      "age >= 18",
+      "age ≥ 18",
+      "age >= 18 ?",
+      "age ≥ 18 ?",
+      "18 <= age",
+      "18 ≤ age",
+      "18 <= age ?",
+      "18 ≤ age ?"
+     ],
+     "w": 46,
+     "h": 22
+    },
+    {
+     "id": "p1",
+     "shape": "io",
+     "x": 22,
+     "y": 70,
+     "text": "Display 'Adult'",
+     "w": 34
+    },
+    {
+     "id": "p2",
+     "shape": "io",
+     "x": 78,
+     "y": 70,
+     "text": "Display 'Minor'",
+     "w": 34
+    },
+    {
+     "id": "e",
+     "shape": "terminator",
+     "x": 50,
+     "y": 92,
+     "text": "End"
+    }
+   ],
+   "edges": [
+    {
+     "from": "s",
+     "to": "i"
+    },
+    {
+     "from": "i",
+     "to": "d"
+    },
+    {
+     "from": "d",
+     "to": "p1",
+     "label": "Yes",
+     "via": [
+      [
+       22,
+       44
+      ]
+     ]
+    },
+    {
+     "from": "d",
+     "to": "p2",
+     "label": "No",
+     "via": [
+      [
+       78,
+       44
+      ]
+     ]
+    },
+    {
+     "from": "p1",
+     "to": "e"
+    },
+    {
+     "from": "p2",
+     "to": "e"
+    }
+   ],
+   "explanation": "The condition is age >= 18. Watch out: a person who is exactly 18 is an adult, so the test must include 18, which age > 18 does not.",
+   "hint": "Does exactly 18 count as an adult?",
+   "id": "q10410"
+  }
+ ]
+}

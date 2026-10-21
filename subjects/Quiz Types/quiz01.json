@@ -1,0 +1,96 @@
+{
+  "title": "Multiple Select",
+  "description": "Tick every correct option. Partial marks are given.",
+  "difficulty": "Test",
+  "level": "Sample",
+  "topic": "Multiple Select",
+  "timerType": "wholeQuiz",
+  "totalTime": 300,
+  "confidence": false,
+  "instructions": [
+    "Every question in this quiz is of one type: Multiple Select.",
+    "Use it to test how this question type looks and is marked."
+  ],
+  "questions": [
+    {
+      "type": "multiple",
+      "marks": 3,
+      "scoring": "partial",
+      "question": "Select **all** the SI base units.",
+      "options": [
+        "kilogram",
+        "newton",
+        "ampere",
+        "joule",
+        "kelvin"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "The kilogram, ampere and kelvin are base units. The newton and joule are derived.",
+      "id": "q011"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "scoring": "partial",
+      "question": "Select **all** the noble gases.",
+      "options": [
+        "Helium",
+        "Nitrogen",
+        "Neon",
+        "Oxygen",
+        "Argon"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "Helium, neon and argon are in Group 18.",
+      "id": "q012"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "scoring": "all",
+      "question": "Select **all** examples of secondary storage. (All or nothing.)",
+      "options": [
+        "SSD",
+        "RAM",
+        "Hard disk drive",
+        "Cache",
+        "USB flash drive"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "RAM and cache are primary, volatile memory.",
+      "id": "q013"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "scoring": "partial",
+      "question": "Select **all** the prime numbers.",
+      "options": [
+        "2",
+        "9",
+        "11",
+        "15",
+        "17"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "9 = 3 × 3 and 15 = 3 × 5 are not prime.",
+      "id": "q014"
+    }
+  ]
+}

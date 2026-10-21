@@ -1,0 +1,149 @@
+{
+ "title": "Chapter 3 Quiz 3",
+ "description": "The parts of a program, in order, and how constants and procedures are written.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Organizing a program",
+ "timerType": "wholeQuiz",
+ "totalTime": 900,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Organizing a program.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "ordering",
+   "marks": 4,
+   "scoring": "adjacent",
+   "question": "Put the parts of a program in the order given by the course.",
+   "items": [
+    "Definition of functions and procedures",
+    "Definition of the main program",
+    "Definition of types",
+    "Declaration of constants",
+    "Declaration of variables"
+   ],
+   "correctOrder": [
+    2,
+    3,
+    4,
+    0,
+    1
+   ],
+   "explanation": "Types, constants, variables, subprograms, then the main program.",
+   "hint": "The main program comes last.",
+   "id": "q30301"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which keywords delimit the **main program**?",
+   "options": [
+    "Call and Return",
+    "If and EndIf",
+    "For and EndDo",
+    "Begin and End"
+   ],
+   "correct": 3,
+   "explanation": "The main program is delimited by Begin and End.",
+   "id": "q30302"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which line declares a **constant**?",
+   "options": [
+    "Call PI ← 3.14",
+    "Declare PI As Real",
+    "Constant PI ← 3.14",
+    "Display PI ← 3.14"
+   ],
+   "correct": 2,
+   "explanation": "A constant is declared with the word Constant (or CONST), then its name and value. Watch out: Declare ... As is for variables.",
+   "id": "q30303"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The main program can call functions and procedures.",
+   "correct": true,
+   "explanation": "The main program is a sequence of operations that often calls functions or procedures.",
+   "id": "q30304"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is an **output parameter** of a function?",
+   "options": [
+    "A variable typed by the user",
+    "The value returned by the function",
+    "The name of the main program",
+    "A comment written in the code"
+   ],
+   "correct": 1,
+   "explanation": "An input parameter refers to a variable handled by the subprogram. An output parameter is the value the function returns.",
+   "id": "q30305"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "A {{1}} performs actions but returns no value, while a {{2}} performs calculations and returns a value.",
+   "blanks": [
+    {
+     "answers": [
+      "procedure"
+     ]
+    },
+    {
+     "answers": [
+      "function"
+     ]
+    }
+   ],
+   "explanation": "Procedure: actions only. Function: returns a value.",
+   "id": "q30306"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the declaration of a constant and a variable.",
+   "code": "Constant PI {{1}} 3.14\nDeclare radius {{2}} Real",
+   "blocks": [
+    "←",
+    "As",
+    "Call",
+    "Return"
+   ],
+   "answers": [
+    "←",
+    "As"
+   ],
+   "explanation": "A constant receives its value with ←, and a variable is declared with As and its type.",
+   "id": "q30307"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which part of a program comes **just before** the main program?",
+   "options": [
+    "Declaration of constants",
+    "Declaration of variables",
+    "Functions and procedures",
+    "Definition of types"
+   ],
+   "correct": 2,
+   "explanation": "Order: types, constants, variables, functions and procedures, main program. Watch out: variables come before the subprograms, not right before the main program.",
+   "id": "q30308"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "In the course layout, functions and procedures are written after the main program.",
+   "correct": false,
+   "explanation": "They are defined before the main program, which then calls them. Watch out: the main program is last.",
+   "id": "q30309"
+  }
+ ]
+}

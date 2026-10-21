@@ -1,0 +1,195 @@
+{
+ "title": "Chapter 4 Quiz 9",
+ "description": "Keeping data after the program ends.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "File structures",
+ "timerType": "wholeQuiz",
+ "totalTime": 900,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: File structures.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Why do we need **files**?",
+   "options": [
+    "Files keep data after the program ends",
+    "Files are smaller than arrays in memory",
+    "Files make the program run faster",
+    "Files replace the need for variables"
+   ],
+   "correct": 0,
+   "explanation": "Arrays, records and variables live only as long as the program. Watch out: RAM is volatile, so its content is lost.",
+   "id": "q40901"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which are non-volatile media?",
+   "options": [
+    "RAM memory",
+    "A magnetic tape",
+    "A CPU register",
+    "A USB key",
+    "A hard disk"
+   ],
+   "correct": [
+    1,
+    3,
+    4
+   ],
+   "explanation": "RAM is volatile; the others keep data. Watch out: RAM is fast, but it forgets everything when the power goes off.",
+   "id": "q40902"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **file** in the course?",
+   "options": [
+    "A single variable stored on disk",
+    "A set of loops stored with a name",
+    "An index kept inside the memory of RAM",
+    "A set of records with a name on a medium"
+   ],
+   "correct": 3,
+   "explanation": "A file groups records describing the same entity.",
+   "id": "q40903"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is a **record** of a file?",
+   "options": [
+    "The values of one entity's attributes",
+    "A loop that reads the whole file",
+    "The name of the file on the disk",
+    "The medium where the file is stored"
+   ],
+   "correct": 0,
+   "explanation": "A record completely defines one entity: one student, one product…",
+   "id": "q40904"
+  },
+  {
+   "type": "ordering",
+   "marks": 5,
+   "scoring": "adjacent",
+   "question": "Put the steps in order for writing a line to a file and reading it back.",
+   "items": [
+    "Close the file",
+    "Read and display the content",
+    "Close the file",
+    "Write a line of text",
+    "Open the file for writing",
+    "Reopen the file for reading"
+   ],
+   "correctOrder": [
+    4,
+    3,
+    0,
+    5,
+    1,
+    2
+   ],
+   "explanation": "Write mode, write, close, read mode, read, close.",
+   "id": "q40905"
+  },
+  {
+   "type": "matching",
+   "marks": 5,
+   "question": "Match each Pascal instruction to what it does.",
+   "left": [
+    "assign",
+    "rewrite",
+    "reset",
+    "close",
+    "eof"
+   ],
+   "right": [
+    "Links the file variable to a file name",
+    "Opens for writing (creates or overwrites)",
+    "Opens for reading",
+    "Closes the file",
+    "Tells whether the end of the file is reached"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "explanation": "These are the instructions of the course example.",
+   "id": "q40906"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does rewrite(MyFile) do if the file already exists?",
+   "options": [
+    "It opens the file for reading",
+    "It overwrites the old content",
+    "It adds text to the end",
+    "It refuses to open the file"
+   ],
+   "correct": 1,
+   "explanation": "rewrite creates the file if it does not exist, otherwise overwrites it. Watch out: it does not append, the old content is lost.",
+   "id": "q40907"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the reading loop.",
+   "code": "reset(MyFile)\nwhile {{1}} eof(MyFile) do\n    readln(MyFile, TextToRead)\n    writeln('File content: ', TextToRead)\nEndDo\n{{2}}(MyFile)",
+   "blocks": [
+    "not",
+    "close",
+    "assign",
+    "rewrite"
+   ],
+   "answers": [
+    "not",
+    "close"
+   ],
+   "explanation": "We loop while the end is not reached, then close the file.",
+   "id": "q40908"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should read back a text that was written to the file. One line is wrong. Find it and choose the fix.",
+   "code": "assign(MyFile, 'myfile.txt')\nrewrite(MyFile)\nreadln(MyFile, TextToRead)\nclose(MyFile)",
+   "bug": 2,
+   "options": [
+    "reset(MyFile)",
+    "eof(MyFile)",
+    "close(MyFile)",
+    "assign(MyFile)"
+   ],
+   "correct": 0,
+   "explanation": "To read a file we open it with reset. Watch out: rewrite opens for writing and erases the old content.",
+   "id": "q40909"
+  }
+ ]
+}

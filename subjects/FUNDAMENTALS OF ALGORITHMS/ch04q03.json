@@ -1,0 +1,256 @@
+{
+ "title": "Chapter 4 Quiz 3",
+ "description": "Three classic calculations on an array.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Average, minimum and maximum",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Chapter 4: Average, minimum and maximum.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "tab = [8, 12, 10]. What is the average?",
+   "correct": 10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "(8 + 12 + 10) / 3 = 30 / 3 = 10.",
+   "id": "q40301"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "tab = [3, 4, 4], and average ← sum DIV 3 is used. What is average?",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The sum is 11, and 11 DIV 3 = 3. Watch out: DIV drops the fraction (the real average is 3.67).",
+   "hint": "DIV is integer division.",
+   "id": "q40302"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "To search for the minimum, what should we start with?",
+   "options": [
+    "The index of the first cell",
+    "The value 0 as a start",
+    "The first element of the array",
+    "The average of all the elements"
+   ],
+   "correct": 2,
+   "explanation": "Starting with the first element works for any values. Watch out: starting at 0 fails when all values are positive, because nothing is smaller.",
+   "id": "q40303"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Where does the loop start when min and max begin as tab[1]?",
+   "options": [
+    "At cell number 0",
+    "At the last cell",
+    "At the first cell",
+    "At the second cell"
+   ],
+   "correct": 3,
+   "explanation": "The first cell is already in min and max, so the loop can start at 2. Watch out: starting at 1 would only repeat the first comparison.",
+   "id": "q40304"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the search for the minimum.",
+   "code": "min ← tab[1]\nFor i From 2 To 5 Do\n    If tab[i] {{1}} min Then\n        min ← {{2}}\n    EndIf\nEndFor",
+   "blocks": [
+    "<",
+    ">",
+    "tab[i]",
+    "tab[1]",
+    "i"
+   ],
+   "answers": [
+    "<",
+    "tab[i]"
+   ],
+   "explanation": "If the new element is smaller, it becomes the new min.",
+   "id": "q40305"
+  },
+  {
+   "type": "grid",
+   "marks": 8,
+   "question": "tab = [15, 7, 22, 3, 19]. Trace min and max from i = 2.",
+   "columns": [
+    "i",
+    "tab[i]",
+    "min",
+    "max"
+   ],
+   "rows": [
+    [
+     {
+      "given": "Start"
+     },
+     {
+      "given": "-"
+     },
+     {
+      "given": "15"
+     },
+     {
+      "given": "15"
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "given": "7"
+     },
+     {
+      "answer": [
+       "7"
+      ]
+     },
+     {
+      "answer": [
+       "15"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "given": "22"
+     },
+     {
+      "answer": [
+       "7"
+      ]
+     },
+     {
+      "answer": [
+       "22"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     },
+     {
+      "answer": [
+       "22"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "5"
+     },
+     {
+      "given": "19"
+     },
+     {
+      "answer": [
+       "3"
+      ]
+     },
+     {
+      "answer": [
+       "22"
+      ]
+     }
+    ]
+   ],
+   "explanation": "min is replaced when the element is smaller, max when it is larger. Watch out: a value can leave min and max unchanged.",
+   "id": "q40306"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "tab = [15, 7, 22, 3, 19]. What is the maximum?",
+   "correct": 22,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The largest value is 22.",
+   "id": "q40307"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "tab = [15, 7, 22, 3, 19]. What is the minimum?",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The smallest value is 3.",
+   "id": "q40308"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "In the minimum search, the test is If tab[i] > min.",
+   "correct": false,
+   "explanation": "For the minimum we test tab[i] < min. Watch out: the > test is for the maximum.",
+   "id": "q40309"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should find the minimum of tab[1..5]. One line is wrong. Find it and choose the fix.",
+   "code": "min ← tab[1]\nFor i From 2 To 5 Do\n    If tab[i] > min Then\n        min ← tab[i]\n    EndIf\nEndFor",
+   "bug": 3,
+   "options": [
+    "If tab[i] < min Then",
+    "If tab[i] = min Then",
+    "If tab[i] <= max Then",
+    "If tab[i] <> min Then"
+   ],
+   "correct": 0,
+   "explanation": "We replace min when the new value is smaller. Watch out: with > the code finds the maximum, and <> would take the last different value.",
+   "id": "q40310"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should read 10 values into array [1..10]. One line is wrong. Find it and choose the fix.",
+   "code": "Declare array [1..10] : ARRAY OF integer\nFor i From 0 To 9 Do\n    Read(array[i])\nEndFor\nLet min ← array[1]",
+   "bug": 2,
+   "options": [
+    "For i From 1 To 9 Do",
+    "For i From 2 To 10 Do",
+    "For i From 1 To 10 Do",
+    "For i From 0 To 10 Do"
+   ],
+   "correct": 2,
+   "explanation": "The cells are numbered 1 to 10. Watch out: the course mixes 0-based and 1-based loops here, and array[0] does not exist.",
+   "id": "q40311"
+  }
+ ]
+}

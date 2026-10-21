@@ -1,0 +1,228 @@
+{
+ "title": "Chapter 3 Quiz 17",
+ "description": "A mix of everything in Chapter 3. Say how sure you are before you check each answer.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Chapter 3 review",
+ "timerType": "wholeQuiz",
+ "totalTime": 1560,
+ "confidence": true,
+ "instructions": [
+  "Chapter 3: Chapter 3 review.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which data type fits the value 'A', written between quotes?",
+   "options": [
+    "Boolean",
+    "Character",
+    "String",
+    "Integer"
+   ],
+   "correct": 1,
+   "explanation": "A single letter is a character. Watch out: a string is a set of characters, but one letter alone is a character.",
+   "id": "q31701"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which part of the program comes just before the main program?",
+   "options": [
+    "Declaration of constants",
+    "Declaration of variables",
+    "Definition of types",
+    "Functions and procedures"
+   ],
+   "correct": 3,
+   "explanation": "Order: types, constants, variables, functions and procedures, then the main program. Watch out: variables come earlier, not just before the main program.",
+   "id": "q31702"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is 29 MOD 6?",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "29 = 6 × 4 + 5, so the remainder is 5. Watch out: the quotient would be 4.",
+   "id": "q31703"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is 29 DIV 6?",
+   "correct": 4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "6 × 4 = 24 and 29 - 24 = 5, so the integer quotient is 4. Watch out: the remainder would be 5.",
+   "id": "q31704"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "(x > 0) AND (x < 10) is True when x = 10.",
+   "correct": false,
+   "explanation": "10 < 10 is False, so the AND is False. Watch out: the bound 10 is excluded by the sign <.",
+   "id": "q31705"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A program must run its body at least once before testing its condition. Which structure?",
+   "options": [
+    "While ... Do",
+    "For ... From ... To",
+    "Repeat ... Until",
+    "Case ... Of"
+   ],
+   "correct": 2,
+   "explanation": "Repeat...Until tests after the body. Watch out: While tests before, so it may never run.",
+   "id": "q31706"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "fact ← 1; For i From 1 To 4: fact ← fact * i. What is fact?",
+   "correct": 24,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "1 × 2 × 3 × 4 = 24. Watch out: the product starts at 1, not at 0.",
+   "id": "q31707"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Trace: total ← 0; For i From 1 To 4: total ← total + i * 2.",
+   "columns": [
+    "i",
+    "total after"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "2"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "6"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "12"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "20"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Add 2, 4, 6, 8 in turn: 2, 6, 12, 20. Watch out: i is multiplied by 2 before being added.",
+   "id": "q31708"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the difference between a function and a procedure?",
+   "options": [
+    "A function returns a value",
+    "A function has no name",
+    "A procedure is recursive",
+    "A procedure has no parameters"
+   ],
+   "correct": 0,
+   "explanation": "Only functions provide a result. Watch out: both can have parameters, and a procedure is not recursive by nature.",
+   "id": "q31709"
+  },
+  {
+   "type": "bugline",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should display the larger of a and b. Two lines are swapped by mistake.",
+   "code": "Read(a, b)\nIf a > b Then\n    Let max ← b\nElse\n    Let max ← a\nEndIf\nDisplay(max)",
+   "bugs": [
+    3,
+    5
+   ],
+   "explanation": "When a > b the larger value is a, so the Then branch gives max ← a and the Else branch gives max ← b. Watch out: the test is right, but both assignments are crossed.",
+   "id": "q31710"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should calculate N!. One line is wrong. Find it and type the corrected line.",
+   "code": "Read(n)\nLet fact ← 0\nFor i From 1 To n Do\n    fact ← fact * i\nEndDo\nDisplay(fact)",
+   "bug": 2,
+   "accepted": [
+    "Let fact = 1",
+    "Let fact ← 1",
+    "Let fact <- 1",
+    "Let fact := 1",
+    "fact = 1",
+    "fact ← 1",
+    "fact <- 1",
+    "fact := 1"
+   ],
+   "explanation": "A product must start at 1. Watch out: with fact ← 0 every product stays 0.",
+   "id": "q31711"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The recursive factorial needs a base case because…",
+   "options": [
+    "A loop must be added first",
+    "The calls would never stop",
+    "The variable must be declared",
+    "The result must be a real"
+   ],
+   "correct": 1,
+   "explanation": "The base case stops the chain of calls. Watch out: without it, Fact(3) would call Fact(2), Fact(1), Fact(0), Fact(-1) and so on, for ever.",
+   "id": "q31712"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is F(6)? (Fibonacci: 0, 1, 1, 2, 3, 5, 8)",
+   "correct": 8,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "F(6) = F(5) + F(4) = 5 + 3 = 8. Watch out: the sequence starts at F(0) = 0.",
+   "id": "q31713"
+  }
+ ]
+}

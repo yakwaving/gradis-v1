@@ -1,0 +1,230 @@
+{
+ "title": "Chapter 4 Quiz 10",
+ "description": "Traps in every question. Trace each loop one pass at a time.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: arrays, sorting and traces",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": true,
+ "instructions": [
+  "Chapter 4: Difficult: arrays, sorting and traces.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "bugline",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should display the product of the 5 elements of tab. Two lines have an error.",
+   "code": "Declare tab [1..5] : ARRAY OF integer\nLet product ← 0\nFor i From 1 To 5 Do\n    product ← product + tab[i]\nEndFor\nDisplay(product)",
+   "bugs": [
+    2,
+    4
+   ],
+   "explanation": "Line 2: a product must start at 1. Line 4: we must multiply, not add. Watch out: starting at 0 would make the product 0 even with the right operator, and the wrong operator gives the sum.",
+   "id": "q41001"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Sort [29, 10, 14, 37, 13] with selection sort. Give the array after each pass.",
+   "columns": [
+    "Pass i",
+    "Array after the swap"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "10 29 14 37 13"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "10 13 14 37 29"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "10 13 14 37 29"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "4"
+     },
+     {
+      "answer": [
+       "10 13 14 29 37"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Each pass swaps the smallest remaining value into position i. Watch out: pass 3 swaps 14 with 13, and pass 4 makes a swap too, even though the order is already right after it.",
+   "id": "q41002"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many swaps does bubble sort make in total on [5, 1, 4, 2, 8]?",
+   "correct": 4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Pass 1 makes 3 swaps (5 passes 1, 4, 2), pass 2 makes 1 swap (4 and 2), and passes 3 and 4 make none: 4 swaps. Watch out: we count swaps, not comparisons (that would be 10).",
+   "id": "q41003"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This should give the exact average of the 5 values, with decimals. One line is wrong. Find it and choose the fix.",
+   "code": "Let sum ← 0\nFor i From 1 To 5 Do\n    sum ← sum + tab[i]\nEndFor\nLet average ← sum DIV 5\nDisplay(average)",
+   "bug": 5,
+   "options": [
+    "Let average ← sum DIV 4",
+    "Let average ← sum / 5",
+    "Let average ← 5 / sum",
+    "Let average ← sum MOD 5"
+   ],
+   "correct": 1,
+   "explanation": "The / operator gives the real division. Watch out: DIV drops the decimals, and MOD gives the remainder.",
+   "id": "q41004"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "In the minimum search on [15, 7, 22, 3, 19], starting with min ← tab[1], how many times is min replaced by a smaller value?",
+   "correct": 2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "min changes at 7 and at 3: 2 times. Watch out: the first assignment min ← tab[1] is not a replacement, and 22 and 19 are not smaller.",
+   "id": "q41005"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the array after pass 2 of selection sort on [9, 4, 7, 1]?",
+   "options": [
+    "4 9 7 1",
+    "1 4 7 9",
+    "1 4 7 9",
+    "1 4 7 9"
+   ],
+   "correct": 2,
+   "explanation": "Pass 1 swaps 9 with 1: 1 4 7 9. Pass 2 finds that 4 is already the smallest of the rest, so nothing changes. Watch out: a pass can leave the array as it is.",
+   "id": "q41006"
+  },
+  {
+   "type": "grid",
+   "marks": 3,
+   "question": "Delete position 1 of [5, 6, 7, 8]. Give the array after each shift.",
+   "columns": [
+    "i",
+    "Array after array[i] ← array[i+1]"
+   ],
+   "rows": [
+    [
+     {
+      "given": "1"
+     },
+     {
+      "answer": [
+       "6 6 7 8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "2"
+     },
+     {
+      "answer": [
+       "6 7 7 8"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "3"
+     },
+     {
+      "answer": [
+       "6 7 8 8"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Each value moves one place left. The last cell still holds 8, but the new size is 3. Watch out: the shifts start at pos, so the first shift copies 6 over 5.",
+   "id": "q41007"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "Selection sort makes exactly one swap per pass, even when the smallest value is already in place.",
+   "correct": true,
+   "explanation": "The algorithm always swaps tab[i] with tab[minIndex]; if they are the same cell nothing changes. Watch out: a swap does not always move something.",
+   "id": "q41008"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these statements are **true**?",
+   "options": [
+    "A sum can start at any value",
+    "Deleting a value shifts others left",
+    "T[i] and T[i + 1] are neighbours",
+    "An array [0..9] has 10 cells",
+    "The index is the stored value too"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "[0..9] has 10 cells, deleting shifts the next values left, and consecutive indexes are neighbouring cells. Watch out: the index is the position and the value is the content, and a sum must start at 0.",
+   "id": "q41009"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "Starting a minimum search with min ← 0 always works.",
+   "reason": "No element of an array can be smaller than 0.",
+   "correct": "E",
+   "explanation": "Both are false: when all values are positive, 0 stays the minimum and is not in the array, and negative values exist. Watch out: 0 looks like a safe starting value, but the first element is the safe one.",
+   "id": "q41010"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This bubble sort compares neighbours, and one line reads outside the array on the first pass. Find it and type the corrected line.",
+   "code": "For i From 1 To 4 Do\n    For j From 1 To 5 - i Do\n        If tab[j] > tab[j - 1] Then\n            Swap(tab[j], tab[j + 1])\n        EndIf\n    EndFor\nEndFor",
+   "bug": 3,
+   "accepted": [
+    "If tab[j] > tab[j + 1] Then"
+   ],
+   "explanation": "The pair compared must be the one that is swapped: tab[j] and tab[j + 1]. Watch out: tab[j - 1] is tab[0] on the first pass, and it does not exist.",
+   "id": "q41011"
+  }
+ ]
+}

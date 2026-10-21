@@ -1,0 +1,245 @@
+{
+ "title": "Chapter 3 Quiz 9",
+ "description": "Comparing one value with several constants.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Choice structures: Case",
+ "timerType": "wholeQuiz",
+ "totalTime": 1020,
+ "confidence": false,
+ "instructions": [
+  "Chapter 3: Choice structures: Case.",
+  "Take your time: read each question carefully, then check your answer."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "When is a **Case** structure useful?",
+   "options": [
+    "One array filled several times",
+    "One loop repeated several times",
+    "One function called several times",
+    "One value compared with several constants"
+   ],
+   "correct": 3,
+   "explanation": "The data is successively compared to constant values.",
+   "id": "q30901"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "In a Case structure, what does the **Default** part do?",
+   "options": [
+    "It runs first, before any value is tested",
+    "It ends the program after the Case",
+    "It repeats the Case until a match is found",
+    "It runs when no listed value matches"
+   ],
+   "correct": 3,
+   "explanation": "Default actions run when none of the listed values matches. This part may be missing. Watch out: it is a safety net, not the first step.",
+   "id": "q30902"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "Several values can be grouped on the same line if their actions are identical.",
+   "correct": true,
+   "explanation": "The course notes this: values with identical actions can be grouped.",
+   "id": "q30903"
+  },
+  {
+   "type": "code",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "Complete the algorithm that displays the nature of a character.",
+   "code": "Declare c As Character\nInput(c)\n{{1}} c Of\n    'A'..'Z': Display('Uppercase letter')\n    'a'..'z': Display('Lowercase letter')\n    '0'..'9': Display('Digit')\n    {{2}}: Display('Neither letter nor digit')\nEndCase",
+   "blocks": [
+    "Case",
+    "Default",
+    "If",
+    "While",
+    "Then"
+   ],
+   "answers": [
+    "Case",
+    "Default"
+   ],
+   "explanation": "Case introduces the structure. Default handles every other character.",
+   "id": "q30904"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Run the character algorithm for each input.",
+   "columns": [
+    "c",
+    "Displayed"
+   ],
+   "rows": [
+    [
+     {
+      "given": "'G'"
+     },
+     {
+      "answer": [
+       "Uppercase letter"
+      ],
+      "choices": [
+       "Uppercase letter",
+       "Lowercase letter",
+       "Digit",
+       "Neither letter nor digit"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "'g'"
+     },
+     {
+      "answer": [
+       "Lowercase letter"
+      ],
+      "choices": [
+       "Uppercase letter",
+       "Lowercase letter",
+       "Digit",
+       "Neither letter nor digit"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "'7'"
+     },
+     {
+      "answer": [
+       "Digit"
+      ],
+      "choices": [
+       "Uppercase letter",
+       "Lowercase letter",
+       "Digit",
+       "Neither letter nor digit"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "'#'"
+     },
+     {
+      "answer": [
+       "Neither letter nor digit"
+      ],
+      "choices": [
+       "Uppercase letter",
+       "Lowercase letter",
+       "Digit",
+       "Neither letter nor digit"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "'Z'"
+     },
+     {
+      "answer": [
+       "Uppercase letter"
+      ],
+      "choices": [
+       "Uppercase letter",
+       "Lowercase letter",
+       "Digit",
+       "Neither letter nor digit"
+      ]
+     }
+    ]
+   ],
+   "explanation": "The ranges 'A'..'Z', 'a'..'z' and '0'..'9' select the first three; everything else is Default. Watch out: '7' is a character here, not a number, and 'Z' is the last uppercase letter.",
+   "id": "q30905"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which structure is the most natural to test whether a menu choice is 1, 2, 3 or 4?",
+   "options": [
+    "Function",
+    "Repeat",
+    "For",
+    "Case"
+   ],
+   "correct": 3,
+   "explanation": "One value compared with several constants is the job of Case. Watch out: a chain of If tests would also work, but Case is built for this.",
+   "id": "q30906"
+  },
+  {
+   "type": "ordering",
+   "marks": 4,
+   "scoring": "adjacent",
+   "question": "Put the lines of this Case algorithm in order.",
+   "items": [
+    "Case c Of",
+    "EndCase",
+    "Input(c)",
+    "Declare c As Character",
+    "'0'..'9': Display('Digit')"
+   ],
+   "correctOrder": [
+    3,
+    2,
+    0,
+    4,
+    1
+   ],
+   "explanation": "Declare, read, open Case, list the values, close Case.",
+   "id": "q30907"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "A Case structure ends with {{1}}.",
+   "blanks": [
+    {
+     "answers": [
+      "EndCase",
+      "End Case"
+     ]
+    }
+   ],
+   "explanation": "Case ... EndCase.",
+   "id": "q30908"
+  },
+  {
+   "type": "bugfix",
+   "marks": 2,
+   "language": "Algorithm",
+   "question": "This algorithm should display 'Neither letter nor digit' for any other character. One line is wrong. Find it and choose the fix.",
+   "code": "Input(c)\nCase c Of\n    'A'..'Z': Display('Uppercase letter')\n    'a'..'z': Display('Lowercase letter')\n    '0'..'9': Display('Digit')\n    'A'..'Z': Display('Neither letter nor digit')\nEndCase",
+   "bug": 6,
+   "options": [
+    "'*': Display('Neither letter nor digit')",
+    "'A'..'z': Display('Neither letter nor digit')",
+    "End: Display('Neither letter nor digit')",
+    "Default: Display('Neither letter nor digit')"
+   ],
+   "correct": 3,
+   "explanation": "The catch-all branch of a Case is Default. Watch out: a repeated 'A'..'Z' can never be reached, because the first branch already takes those characters.",
+   "id": "q30909"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many characters does the range '0'..'9' contain?",
+   "correct": 10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Watch out: both ends are included.",
+   "id": "q30910"
+  }
+ ]
+}
