@@ -3,7 +3,7 @@ document.addEventListener("scroll",e=>{const t=e.target;if(t.id==="slr"){const i
 function bind(){const g=$("gi");if(g)requestAnimationFrame(()=>{const R=S.run,m=R.qz.questions.length*2;g.style.left=Math.max(0,Math.min(100,(R.cal+m)/(2*m)*100))+"%"})}
 function save(){const b=document.querySelector(".body");if(b)S.run.keepScroll=b.scrollTop}
 document.addEventListener("input",e=>{if(e.target.id==="sq"){S.q=e.target.value;$("sl").innerHTML=subRows();return}const R=S.run;if(!R||S.scr!=="q")return;const q=curQ(),t=e.target;
- if(t.dataset.gap!=null)R.ans[R.i][+t.dataset.gap]=t.value;else if(t.id==="sh")R.ans[R.i]=t.value;else if(t.id==="nv")R.ans[R.i].v=t.value;else if(t.id==="nu")R.ans[R.i].u=t.value;else if(t.dataset.g!=null)R.ans[R.i][t.dataset.g]=t.value;else if(t.dataset.st!=null)R.ans[R.i].x[+t.dataset.st]=t.value;else if(t.dataset.fc!=null)R.ans[R.i].text[t.dataset.fc]=t.value;else if(t.dataset.bf!=null)R.ans[R.i].f=t.value;
+ if(t.dataset.gap!=null)R.ans[R.i][+t.dataset.gap]=t.value;else if(t.id==="sh")R.ans[R.i]=t.value;else if(t.id==="nv")R.ans[R.i].v=t.value;else if(t.id==="nu")R.ans[R.i].u=t.value;else if(t.dataset.g!=null)R.ans[R.i][t.dataset.g]=t.value;else if(t.dataset.st!=null)R.ans[R.i].x[+t.dataset.st]=t.value;else if(t.dataset.fc!=null)R.ans[R.i].text[t.dataset.fc]=t.value;else if(t.dataset.bf!=null)R.ans[R.i].f=t.value;else if(t.dataset.mt!=null){mathInput(t,R.ans[R.i]);return}
  refreshBtn()});
 /* tapping the text box of a node that also asks for its shape selects that node's slot, so the next shape tapped lands there */
 document.addEventListener("focusin",e=>{const t=e.target,R=S.run;if(!R||S.scr!=="q"||R.checked||t.dataset.fc==null)return;const q=curQ(),n=q.nodes.find(x=>x.id===t.dataset.fc);if(!n||!fcAsk(n).includes("shape"))return;R.ui.n=n.id;document.querySelectorAll(".fn.sel").forEach(x=>x.classList.remove("sel"));t.closest(".fn").classList.add("sel")});
@@ -60,7 +60,9 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b
  case"cg":{const i=+v;if(a[i]!=null){delete a[i];break}if(R.ui.b!=null){a[i]=R.ui.b;R.ui.b=null}else{R.ui.g=R.ui.g===i?null:i;toast("NOW PICK A BLOCK")}break}
  case"fcn":{if(a.shapes[v]){delete a.shapes[v];break}R.ui.n=R.ui.n===v?null:v;break}
  case"fcs":{let id=R.ui.n;if(!id){const f=q.nodes.filter(n=>fcAsk(n).includes("shape")&&!a.shapes[n.id]);if(f.length===1)id=f[0].id}if(!id){toast("TAP A DASHED SLOT FIRST");return}a.shapes[id]=v;R.ui.n=null;break}
- case"bl":{const n=+v;if(q.type==="bugfix")a.l=a.l===n?null:n;else{const s=a.indexOf(n);if(s>=0)a.splice(s,1);else{if(q.bugs.length===1)a.length=0;a.push(n)}}break}
+ case"mk":mathKey(v,a);return;
+ case"prev":return prev();
+ case"bl":{const n=+v;if(q.type==="bugfix"||q.type==="stepfix")a.l=a.l===n?null:n;else{const s=a.indexOf(n);if(s>=0)a.splice(s,1);else{if(q.bugs.length===1)a.length=0;a.push(n)}}break}
  case"bf":a.f=+v;break;
  case"scheme":a.show=true;break;
  case"tick":{const[i,kk]=v.split(":").map(Number);a.t[i][kk]=!a.t[i][kk];break}
@@ -74,3 +76,5 @@ function redrawOrd(){const R=S.run,q=curQ();$("ol").innerHTML=ordHtml(q,R.ans[R.
 document.addEventListener("pointermove",e=>{if(!drag)return;const R=S.run,a=R.ans[R.i],rows=[...document.querySelectorAll("#ol .ord")];const y=e.clientY;let t=drag.pos;rows.forEach((r,i)=>{const b=r.getBoundingClientRect();if(y>=b.top&&y<=b.bottom)t=i});if(t!==drag.pos){const [it]=a.splice(drag.pos,1);a.splice(t,0,it);drag.pos=t;redrawOrd()}});
 ["pointerup","pointercancel"].forEach(ev=>document.addEventListener(ev,()=>{if(drag){drag=null;redrawOrd()}}));
 function settingsModal(){modal(`<h3>Settings</h3><p>Gradis ${APP_VERSION} · ${navigator.onLine?"online":"offline"}${HIST.length?" · "+HIST.length+" result"+(HIST.length>1?"s":"")+" saved":""}</p>${deferredPrompt?'<button class="btn" data-a="install">INSTALL APP</button>':""}<button class="btn w" data-a="export">EXPORT RESULTS</button><button class="btn w" data-a="clear">CLEAR RESULTS</button><button class="btn w" data-a="keep" style="margin-bottom:0">CLOSE</button>`)}
+/* maths keypad: keep the cursor in the text box while keys are tapped */
+document.addEventListener("pointerdown",e=>{if(e.target.closest&&e.target.closest(".mk"))e.preventDefault()});

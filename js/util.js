@@ -1,9 +1,9 @@
-const APP_VERSION="1.8.0";
+const APP_VERSION="1.10.0";
 /* true inside the Android app (Capacitor); false in a normal browser */
 const isNative=()=>{const C=window.Capacitor;return !!(C&&(C.isNativePlatform?C.isNativePlatform():(C.getPlatform&&C.getPlatform()!=="web")))};
 const loaderHtml=()=>'<div class="ldr" role="status" aria-label="Loading"><i class="ldp"></i><i class="ldq"></i></div>';
 const $=id=>document.getElementById(id);
-const TYPES={single:"SINGLE CHOICE",multiple:"MULTIPLE CHOICE",truefalse:"TRUE / FALSE",fill:"FILL IN THE GAPS",short:"SHORT ANSWER",numeric:"NUMERIC",matching:"MATCHING",ordering:"ORDERING",labelling:"LABELLING",grid:"TABLE",assertion:"ASSERTION–REASON",structured:"STRUCTURED",code:"CODE BLOCKS",bugline:"FIND THE ERROR",bugfix:"FIX THE CODE",flowchart:"FLOWCHART"};
+const TYPES={single:"SINGLE CHOICE",multiple:"MULTIPLE CHOICE",truefalse:"TRUE / FALSE",fill:"FILL IN THE GAPS",short:"SHORT ANSWER",numeric:"NUMERIC",matching:"MATCHING",ordering:"ORDERING",labelling:"LABELLING",grid:"TABLE",assertion:"ASSERTION–REASON",structured:"STRUCTURED",code:"CODE BLOCKS",bugline:"FIND THE ERROR",bugfix:"FIX THE CODE",flowchart:"FLOWCHART",summary:"SUMMARY",math:"MATHS ANSWER",stepline:"FIND THE FAULTY STEP",stepfix:"FIX THE STEP"};
 const ASR={A:"Both true, and the reason explains the assertion",B:"Both true, but the reason does not explain it",C:"Assertion true, reason false",D:"Assertion false, reason true",E:"Both false"};
 const PC=["#5b8cff","#ff7a59","#2fb5a3","#c58bff","#ffb400"];
 const MODES=[["exam","EXAM","Timer · no hints · answers at the end"],["practice","PRACTICE","Feedback after every answer"],["study","STUDY","Explanations first · not graded"]];

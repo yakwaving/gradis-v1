@@ -16,5 +16,20 @@ Tricks are about the idea, never about wording. One defensible answer per questi
 - Error questions: one clear fix per faulty line. Use realistic bugs: counter not increased, sum starting at 1, product starting at 0, `<` for `<=`, missing base case, wrong loop end, swapped `DIV`/`MOD`.
 - Compute every trace and number in code. Never by hand.
 
-## Summary cards (planned)
-3 to 6 short points, one idea each, a "Remember" line, only facts that the course states. Until the card exists, put it in the quiz `instructions`.
+## Summary pages (v1.10.0)
+
+A summary is a page between quizzes, shown **only in Study mode** (Practice and Exam skip it). It prepares the questions that follow.
+- File `subjects/<Subject>/sumNN.json`, listed in the manifest `quizzes` array just before the first quiz it prepares: `{"kind":"summary","title","intro","builds","at","blocks":[{"kind","title","body" or "items"}]}`.
+- Block kinds: `remember`, `formula`, `dont` (Don't forget), `hint`, `format` (The format of), `example`. Maths with `$...$`, code with backticks or fences.
+- One summary covers a whole group of quizzes (all the trig formulae once, before the first sin question). Never repeat: a later page is written only if it adds something new, and `builds` names the earlier page it builds on. A single very hard quiz may get its own page.
+- `at` (default 1): the question number the page appears before (inside that quiz).
+- Not graded, not counted as a question. Study mode has a Previous button; Practice and Exam can go back to review a checked question read-only.
+
+## Maths questions (v1.9.0)
+
+Write maths between dollar signs (`$x^2$`, `$$\frac{a}{b}$$`); it is drawn with KaTeX.
+
+- `math` — typed answer on a maths keypad, marked by **equivalence** (`(x-1)(x+1)` = `x^2-1`). Fields: `answer` (text, e.g. `"x^2-1"`), optional `accepted` (more forms), `form` (`"expanded"` or `"factorised"`: the form is checked too), `set: true` (answer is a list of numbers such as `"2, -3"`, order free, partial marks), `keys` (keypad keys to show). Typed syntax: `^` power, `/` fraction, `sqrt(`, `cbrt(`, `ln(`, `log(` (base 10), `log_2(x)`, `sin(`, `pi`, `e`, `abs`/`|x|`, `y=` prefixes are ignored, equations compare up to a constant factor.
+- `stepline` — a worked solution (`steps`: TeX strings, optional `labels`); tap the faulty step(s) (`bugs`: step numbers).
+- `stepfix` — tap the faulty step (`bug`), then choose the replacement step (`options` TeX, `correct`). Marks: 1 for the step, the rest for the fix.
+- Every tricky maths question still gets a "Watch out:" sentence (sign errors, lost ±, domain limits, chain rule...).

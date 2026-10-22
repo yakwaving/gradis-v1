@@ -1,0 +1,94 @@
+{
+ "title": "Maths answers and steps",
+ "description": "Type maths on the keypad, and find the faulty step in a worked solution.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Maths answer entry",
+ "timerType": "wholeQuiz",
+ "totalTime": 480,
+ "confidence": false,
+ "instructions": [
+  "Any equivalent answer is accepted: (x-1)(x+1) and x^2-1 are the same.",
+  "Use the keypad, or type: ^ for powers, / for fractions, sqrt( for roots."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Expand $(x-1)(x+1)$.",
+   "answer": "x^2-1",
+   "form": "expanded",
+   "explanation": "Difference of two squares: $(a-b)(a+b)=a^2-b^2$. Watch out: the middle terms cancel, there is no $-2x$."
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Factorise $x^2-9$.",
+   "answer": "(x-3)(x+3)",
+   "form": "factorised",
+   "explanation": "$x^2-3^2=(x-3)(x+3)$. Watch out: $(x-3)^2$ would give $x^2-6x+9$."
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Rationalise the denominator of $\\dfrac{3}{2+\\sqrt{2}}$.",
+   "answer": "(6-3sqrt(2))/2",
+   "explanation": "Multiply top and bottom by $2-\\sqrt2$: the denominator becomes $4-2=2$. Watch out: write the conjugate with the sign changed."
+  },
+  {
+   "type": "math",
+   "marks": 2,
+   "set": true,
+   "question": "Solve $x^2+x-6=0$. Give all the solutions.",
+   "answer": "2, -3",
+   "explanation": "$(x-2)(x+3)=0$. Watch out: the roots are $2$ and $-3$, not $-2$ and $3$."
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $f(x)=\\sin(x^2)$.",
+   "answer": "2x cos(x^2)",
+   "explanation": "Chain rule: $\\cos(x^2)\\cdot 2x$. Watch out: forgetting the factor $2x$ gives $\\cos(x^2)$."
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Solve $2x+3=11$. One step is wrong. Find it and choose the correct step.",
+   "steps": [
+    "2x+3=11",
+    "2x=11+3",
+    "2x=14",
+    "x=7"
+   ],
+   "labels": [
+    "Start",
+    "",
+    "",
+    ""
+   ],
+   "bug": 2,
+   "options": [
+    "2x=11-3",
+    "2x=11\\times 3",
+    "2x=8-3"
+   ],
+   "correct": 0,
+   "explanation": "We subtract $3$ from both sides: $2x=8$, so $x=4$. Watch out: moving a term across the equals sign changes its sign."
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "A student differentiates $y=x^2\\ln x$. Tap the faulty step.",
+   "steps": [
+    "y=x^2\\ln x",
+    "y'=2x\\ln x+x^2\\cdot\\frac{1}{x}",
+    "y'=2x\\ln x+x",
+    "y'=2x\\ln x+1"
+   ],
+   "bugs": [
+    4
+   ],
+   "explanation": "$x^2\\cdot\\frac1x=x$, so the last step should keep $x$. Watch out: the last line drops the factor $x$."
+  }
+ ]
+}

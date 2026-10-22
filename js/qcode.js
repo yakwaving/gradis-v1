@@ -60,7 +60,7 @@ function qcheck(q){
     if(k==="text"&&(!Array.isArray(n.accepted)||!n.accepted.length))return"node "+n.id+": accepted is needed when text is asked"}}
   if(!asks)return'at least one node needs "ask"';
   for(const e of q.edges||[])if(!ids.has(e.from)||!ids.has(e.to))return"an edge points to a node that does not exist"}
- return null}
+ return typeof mcheck==="function"?mcheck(q):null}
 
 /* ---------- marking ---------- */
 const codeOk=(q,a,i)=>a[i]!=null&&String(q.blocks[a[i]]).trim()===String(q.answers[i]).trim();

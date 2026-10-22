@@ -1,0 +1,35 @@
+{
+ "kind": "summary",
+ "title": "Typing maths answers",
+ "intro": "Read this once before the maths answer questions.",
+ "blocks": [
+  {
+   "kind": "format",
+   "title": "typed answers",
+   "items": [
+    "Powers with `^`: $x^2$ is `x^2`",
+    "Fractions with `/`: $\\frac{a}{b}$ is `a/(b)`",
+    "Roots with `sqrt(`: $\\sqrt{2}$ is `sqrt(2)`",
+    "Several solutions: separate with commas, `2, -3`"
+   ]
+  },
+  {
+   "kind": "remember",
+   "title": "equivalent answers",
+   "body": "Any equal form is accepted: $(x-1)(x+1)$ and $x^2-1$ are the same. When a question says **expand** or **factorise**, the form counts too."
+  },
+  {
+   "kind": "formula",
+   "title": "difference of two squares",
+   "body": "$$a^2-b^2=(a-b)(a+b)$$"
+  },
+  {
+   "kind": "dont",
+   "body": "Brackets matter: `1/2x` means $\\frac{1}{2}x$, but `1/(2x)` means $\\frac{1}{2x}$."
+  },
+  {
+   "kind": "hint",
+   "body": "Check the preview above the box. If it does not look like your maths, fix the typing before you check."
+  }
+ ]
+}
