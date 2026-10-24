@@ -1,0 +1,42 @@
+{
+ "kind": "summary",
+ "title": "Solving exponential and logarithmic equations",
+ "intro": "Read this once before the equation quizzes. It covers both methods.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "exponential equations",
+   "items": [
+    "Same base on both sides: if $b^{x}=b^{y}$ then $x=y$",
+    "Different bases: take logarithms, $\\log_b a^{r}=r\\log_b a$",
+    "Write numbers as powers of one base: $9=3^{2}$, $\\dfrac18=2^{-3}$"
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "logarithm equations",
+   "items": [
+    "Two logs with coefficient $1$: if $\\log_b x=\\log_b y$ then $x=y$",
+    "Combine first with the laws, then write $\\log_b x=y\\Rightarrow x=b^{y}$"
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "always check",
+   "items": [
+    "After solving a log equation, **put every answer back**: the number inside each log must be positive.",
+    "A root that makes a log argument negative or zero is **rejected**."
+   ]
+  },
+  {
+   "kind": "hint",
+   "body": "Solving $2^{x}=7$ is not a job for dividing by $2$. Take a logarithm of both sides: $x\\ln2=\\ln7$."
+  },
+  {
+   "kind": "format",
+   "title": "typed answers",
+   "body": "Exact answers such as $\\dfrac{\\ln9}{\\ln7}$ are written `ln(9)/ln(7)`. Several solutions are separated by commas, `2, -3`."
+  }
+ ],
+ "builds": "Logarithms"
+}

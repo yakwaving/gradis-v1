@@ -1,0 +1,43 @@
+{
+ "kind": "summary",
+ "title": "Laws of indices",
+ "intro": "Read this before the first questions. The same rules come back in surds and logarithms.",
+ "blocks": [
+  {
+   "kind": "remember",
+   "title": "what an index is",
+   "body": "$a^m=a\\times a\\times\\cdots\\times a$ ($m$ times). $a$ is the **base** and $m$ is the **index** (also called the power or exponent)."
+  },
+  {
+   "kind": "formula",
+   "title": "the laws",
+   "items": [
+    "$a^0=1$ for any base $a\\neq0$",
+    "$a^{-p}=\\dfrac{1}{a^{p}}$",
+    "$a^{p}\\cdot a^{q}=a^{p+q}$",
+    "$\\dfrac{a^{p}}{a^{q}}=a^{p-q}$",
+    "$(a^{p})^{q}=a^{pq}$",
+    "$a^{p}b^{p}=(ab)^{p}$ and $\\dfrac{a^{p}}{b^{p}}=\\left(\\dfrac{a}{b}\\right)^{p}$",
+    "$a^{p/q}=\\sqrt[q]{a^{p}}$"
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "the usual slips",
+   "items": [
+    "Same base: **add** the indices when multiplying, **subtract** when dividing.",
+    "A negative index gives a **reciprocal**, not a negative number: $5^{-1}=\\frac15$.",
+    "$a^{p}b^{p}=(ab)^{p}$ only works when the **indices are equal**."
+   ]
+  },
+  {
+   "kind": "hint",
+   "body": "For a fractional index, take the root first, then the power: $27^{2/3}=(\\sqrt[3]{27})^{2}=9$."
+  },
+  {
+   "kind": "format",
+   "title": "typed answers",
+   "body": "Type powers with `^`: $x^{10}$ is `x^10`. Products of letters are written side by side: `x^5 y^8 z`."
+  }
+ ]
+}

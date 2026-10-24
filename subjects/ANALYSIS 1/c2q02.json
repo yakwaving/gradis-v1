@@ -1,0 +1,147 @@
+{
+ "title": "Partial Fractions Quiz 2",
+ "description": "Find the constants by substituting the roots. The sign of each constant is the usual trap.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Distinct linear factors",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Partial Fractions: Distinct linear factors.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "$\\dfrac{7x+5}{(x+1)(x+2)}=\\dfrac{A}{x+1}+\\dfrac{B}{x+2}$. Find $A$ = {{1}} and $B$ = {{2}}.",
+   "blanks": [
+    {
+     "answers": [
+      "-2"
+     ]
+    },
+    {
+     "answers": [
+      "9"
+     ]
+    }
+   ],
+   "explanation": "$7x+5=A(x+2)+B(x+1)$. At $x=-1$: $-2=A$. At $x=-2$: $-9=-B$, so $B=9$. Watch out: $A$ goes with $x+1$, so you substitute $x=-1$.",
+   "id": "q20201"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "$\\dfrac{4x-1}{x(x+1)}=\\dfrac{A}{x}+\\dfrac{B}{x+1}$. Find $A$ = {{1}} and $B$ = {{2}}.",
+   "blanks": [
+    {
+     "answers": [
+      "-1"
+     ]
+    },
+    {
+     "answers": [
+      "5"
+     ]
+    }
+   ],
+   "explanation": "$4x-1=A(x+1)+Bx$. At $x=0$: $A=-1$. At $x=-1$: $-5=-B$, so $B=5$. Watch out: $x=0$ is a valid substitution for the factor $x$.",
+   "id": "q20202"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $A$ in $\\dfrac{5x-1}{(x-1)(x+2)}=\\dfrac{A}{x-1}+\\dfrac{B}{x+2}$. Type it as a fraction.",
+   "answer": "4/3",
+   "explanation": "At $x=1$: $5-1=A(1+2)$, so $A=\\dfrac43$. Watch out: you set the factor you are finding to zero ($x=1$), then use the **other** factor's value.",
+   "id": "q20203"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $B$ in $\\dfrac{5x-1}{(x-1)(x+2)}=\\dfrac{A}{x-1}+\\dfrac{B}{x+2}$. Type it as a fraction.",
+   "answer": "11/3",
+   "explanation": "At $x=-2$: $-10-1=B(-2-1)$, so $-11=-3B$ and $B=\\dfrac{11}{3}$. Watch out: two negatives give a positive $B$.",
+   "id": "q20204"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the partial fraction form of $\\dfrac{3x+1}{(x-1)(x+3)}$?",
+   "options": [
+    "$\\dfrac{3}{x-1}+\\dfrac{1}{x+3}$",
+    "$\\dfrac{1}{x-1}+\\dfrac{2}{x+3}$",
+    "$\\dfrac{2}{x-1}+\\dfrac{1}{x+3}$",
+    "$\\dfrac{1}{x-1}-\\dfrac{2}{x+3}$"
+   ],
+   "correct": 1,
+   "explanation": "$A=\\dfrac{3+1}{1+3}=1$ and $B=\\dfrac{-9+1}{-3-1}=2$. Watch out: swapping $A$ and $B$ gives the second option, which is wrong.",
+   "id": "q20205"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Write $-\\dfrac1x+\\dfrac{5}{x+1}$ as a single fraction.",
+   "answer": "(4x-1)/(x(x+1))",
+   "explanation": "Common denominator $x(x+1)$: $\\dfrac{-(x+1)+5x}{x(x+1)}=\\dfrac{4x-1}{x(x+1)}$. Watch out: the minus sign applies to the whole bracket, $-(x+1)=-x-1$.",
+   "id": "q20206"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "In $\\dfrac{7x+5}{(x+1)(x+2)}$ the constants are $A=2$ and $B=-9$.",
+   "correct": false,
+   "explanation": "They are $A=-2$ and $B=9$: the signs are the other way round. Watch out: check the result by substituting $x=0$: $\\dfrac52=\\dfrac{-2}{1}+\\dfrac92$.",
+   "id": "q20207"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Decompose $\\dfrac{2x+3}{(x-1)(x+2)}$. One step is wrong. Tap it.",
+   "steps": [
+    "\\dfrac{2x+3}{(x-1)(x+2)}=\\dfrac{A}{x-1}+\\dfrac{B}{x+2}",
+    "2x+3=A(x+2)+B(x-1)",
+    "x=1:\\ 5=3A\\ \\Rightarrow\\ A=\\dfrac53",
+    "x=-2:\\ -1=-3B\\ \\Rightarrow\\ B=-\\dfrac13"
+   ],
+   "bugs": [
+    4
+   ],
+   "explanation": "$-1=-3B$ gives $B=\\dfrac13$. Watch out: dividing $-1$ by $-3$ gives a positive number.",
+   "id": "q20208"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "For $\\dfrac{7x+5}{(x+1)(x+2)}=\\dfrac{A}{x+1}+\\dfrac{B}{x+2}$, compare the coefficients of $x$. What is $A+B$?",
+   "correct": 7,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$A(x+2)+B(x+1)=(A+B)x+(2A+B)$, so $A+B=7$. Watch out: the coefficient of $x$ gives $A+B$ directly, and $-2+9=7$ confirms it.",
+   "id": "q20209"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which substitutions find the constants in $7x+5=A(x+2)+B(x+1)$?",
+   "options": [
+    "$x=0$ gives $B$",
+    "$x=-1$ gives $A$",
+    "$x=-2$ gives $B$",
+    "$x=1$ gives $A$"
+   ],
+   "correct": [
+    1,
+    2
+   ],
+   "explanation": "At $x=-1$ the $B$ term vanishes, leaving $A$; at $x=-2$ the $A$ term vanishes. Watch out: choose the value that makes the **other** bracket zero.",
+   "id": "q20210"
+  }
+ ]
+}

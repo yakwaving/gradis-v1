@@ -1,0 +1,159 @@
+{
+ "title": "Trigonometry Quiz 2",
+ "description": "Use the identities, but watch signs, squares and the quadrant.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Identities",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Trigonometry: Identities.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Simplify $1-\\sin^{2}x$.",
+   "answer": "cos(x)^2",
+   "explanation": "From $\\sin^2x+\\cos^2x=1$, $1-\\sin^2x=\\cos^2x$. Watch out: the answer is a square, not $\\cos x$.",
+   "id": "q40201"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Simplify $\\dfrac{\\sin x}{\\cos x}\\cdot\\cos x$.",
+   "answer": "sin(x)",
+   "explanation": "The $\\cos x$ cancels, leaving $\\sin x$. Watch out: cancel the factor, do not change $\\sin x$ into $\\tan x$.",
+   "id": "q40202"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "If $\\sin x=\\dfrac35$ and $x$ is acute, find $\\tan x$ as a decimal.",
+   "correct": 0.75,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$\\cos x=\\dfrac45$, so $\\tan x=\\dfrac{3/5}{4/5}=\\dfrac34=0.75$. Watch out: $\\tan$ is sine over cosine, not the reverse.",
+   "id": "q40203"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which expression equals $1+\\tan^{2}x$?",
+   "options": [
+    "$\\sec^{2}x$",
+    "$\\cos^{2}x$",
+    "$\\cot^{2}x$",
+    "$\\csc^{2}x$"
+   ],
+   "correct": 0,
+   "explanation": "Divide $\\sin^2x+\\cos^2x=1$ by $\\cos^2x$. Watch out: $\\csc^2x=1+\\cot^2x$ is the other version.",
+   "id": "q40204"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is $\\sin(\\pi-x)$?",
+   "options": [
+    "$\\cos x$",
+    "$-\\cos x$",
+    "$-\\sin x$",
+    "$\\sin x$"
+   ],
+   "correct": 3,
+   "explanation": "Sine is symmetric about $90^\\circ$, so $\\sin(\\pi-x)=\\sin x$. Watch out: it is $\\cos(\\pi-x)$ that changes sign.",
+   "id": "q40205"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is $\\cos(\\pi-x)$?",
+   "options": [
+    "$\\sin x$",
+    "$-\\sin x$",
+    "$\\cos x$",
+    "$-\\cos x$"
+   ],
+   "correct": 3,
+   "explanation": "Cosine changes sign across $90^\\circ$. Watch out: compare it with $\\sin(\\pi-x)=\\sin x$.",
+   "id": "q40206"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\sin(x^{2})=\\sin^{2}x$.",
+   "correct": false,
+   "explanation": "$\\sin^2x=(\\sin x)^2$ but $\\sin(x^2)$ squares the angle first. Watch out: try $x=\\dfrac{\\pi}{2}$.",
+   "id": "q40207"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\sqrt{\\sin^{2}x}=\\sin x$ for every $x$.",
+   "correct": false,
+   "explanation": "$\\sqrt{\\sin^2x}=|\\sin x|$; for $x=-\\dfrac{\\pi}{2}$ it gives $1$, not $-1$. Watch out: square roots are never negative.",
+   "id": "q40208"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Simplify $\\dfrac{1-\\cos^{2}x}{\\sin x}$. One step is wrong. Tap it.",
+   "steps": [
+    "\\dfrac{1-\\cos^{2}x}{\\sin x}",
+    "=\\dfrac{\\sin^{2}x}{\\sin x}",
+    "=\\sin^{2}x",
+    "\\text{for }\\sin x\\neq0"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "$\\dfrac{\\sin^2x}{\\sin x}=\\sin x$. Watch out: cancel one factor, not both.",
+   "id": "q40209"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which identities are **true**?",
+   "options": [
+    "$\\cos^{2}x-\\sin^{2}x=1$",
+    "$\\sin^{2}x+\\cos^{2}x=1$",
+    "$\\sin(A+B)=\\sin A+\\sin B$",
+    "$\\sin(90^\\circ-x)=\\cos x$",
+    "$\\tan x=\\dfrac{\\sin x}{\\cos x}$"
+   ],
+   "correct": [
+    1,
+    3,
+    4
+   ],
+   "explanation": "The first three are standard. But $\\sin(A+B)$ expands to $\\sin A\\cos B+\\cos A\\sin B$, and $\\cos^2x-\\sin^2x=\\cos2x$. Watch out: a sum inside does not split.",
+   "id": "q40210"
+  },
+  {
+   "type": "ordering",
+   "marks": 3,
+   "scoring": "adjacent",
+   "question": "Put the steps in order to show $\\tan^{2}x+1=\\sec^{2}x$.",
+   "items": [
+    "Divide every term by $\\cos^2x$",
+    "Write $\\dfrac{1}{\\cos^2x}=\\sec^2x$",
+    "Use $\\tan x=\\dfrac{\\sin x}{\\cos x}$",
+    "Start from $\\sin^2x+\\cos^2x=1$"
+   ],
+   "correctOrder": [
+    3,
+    0,
+    2,
+    1
+   ],
+   "explanation": "Divide first, then rewrite each ratio. Watch out: divide **every** term, including the right side.",
+   "id": "q40211"
+  }
+ ]
+}

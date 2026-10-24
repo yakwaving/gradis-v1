@@ -1,0 +1,29 @@
+{
+ "kind": "summary",
+ "title": "Tangents, stationary points and optimisation",
+ "intro": "Read this before the questions on gradients and turning points.",
+ "blocks": [
+  {
+   "kind": "remember",
+   "title": "gradient and tangent",
+   "body": "The gradient of the curve at $x=a$ is $f'(a)$. The tangent is $y-f(a)=f'(a)(x-a)$."
+  },
+  {
+   "kind": "formula",
+   "title": "stationary points",
+   "items": [
+    "Solve $f'(x)=0$.",
+    "If $f''(a)>0$: minimum. If $f''(a)<0$: maximum.",
+    "If $f''(a)=0$: the test fails, check the sign of $f'$ either side."
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "Do not stop at $f'(x)=0$: also find the $y$-value if the point is asked for.",
+    "A stationary point need not be a maximum or minimum."
+   ]
+  }
+ ]
+}

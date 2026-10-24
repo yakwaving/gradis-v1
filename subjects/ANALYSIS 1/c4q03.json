@@ -1,0 +1,199 @@
+{
+ "title": "Trigonometry Quiz 3",
+ "description": "Find all solutions in the range. Missing the second solution is the usual trap.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Solving trigonometric equations",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Trigonometry: Solving trigonometric equations.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "Solve $2\\sin x=1$ for $0^\\circ\\le x\\le360^\\circ$: $x$ = {{1}} and {{2}} (smaller first).",
+   "blanks": [
+    {
+     "answers": [
+      "30"
+     ]
+    },
+    {
+     "answers": [
+      "150"
+     ]
+    }
+   ],
+   "explanation": "$\\sin x=\\dfrac12$ gives $x=30^\\circ$ and $180^\\circ-30^\\circ=150^\\circ$. Watch out: sine is positive in two quadrants.",
+   "id": "q40301"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "Solve $\\cos x=-\\dfrac12$ for $0^\\circ\\le x\\le360^\\circ$: $x$ = {{1}} and {{2}} (smaller first).",
+   "blanks": [
+    {
+     "answers": [
+      "120"
+     ]
+    },
+    {
+     "answers": [
+      "240"
+     ]
+    }
+   ],
+   "explanation": "The reference angle is $60^\\circ$; cosine is negative in quadrants II and III: $180-60=120$ and $180+60=240$. Watch out: do not answer $-60$.",
+   "id": "q40302"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "Solve $\\tan x=1$ for $0^\\circ\\le x\\le360^\\circ$: $x$ = {{1}} and {{2}} (smaller first).",
+   "blanks": [
+    {
+     "answers": [
+      "45"
+     ]
+    },
+    {
+     "answers": [
+      "225"
+     ]
+    }
+   ],
+   "explanation": "$\\tan x=1$ gives $45^\\circ$, then add $180^\\circ$. Watch out: tangent repeats every $180^\\circ$.",
+   "id": "q40303"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many solutions does $\\sin^{2}x=\\dfrac14$ have for $0^\\circ\\le x\\le360^\\circ$?",
+   "correct": 4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\sin x=\\pm\\dfrac12$ gives $30,150,210,330$. Watch out: the square root gives both signs.",
+   "id": "q40304"
+  },
+  {
+   "type": "fill",
+   "marks": 3,
+   "question": "Solve $2\\sin^{2}x+\\sin x-1=0$ for $0^\\circ\\le x\\le360^\\circ$: $x$ = {{1}}, {{2}} and {{3}} (smallest first).",
+   "blanks": [
+    {
+     "answers": [
+      "30"
+     ]
+    },
+    {
+     "answers": [
+      "150"
+     ]
+    },
+    {
+     "answers": [
+      "270"
+     ]
+    }
+   ],
+   "explanation": "Factorise: $(2\\sin x-1)(\\sin x+1)=0$, so $\\sin x=\\dfrac12$ or $\\sin x=-1$. This gives $30,150,270$. Watch out: $\\sin x=-1$ gives one solution only.",
+   "id": "q40305"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\sin x=2$ has a solution.",
+   "correct": false,
+   "explanation": "Sine never exceeds $1$. Watch out: always check that the value is in $[-1,1]$.",
+   "id": "q40306"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "To solve $\\sin x\\cos x=\\sin x$, which is the **safe** first step?",
+   "options": [
+    "Divide both sides by $\\sin x$ first",
+    "Square both sides, then expand",
+    "Collect the terms and factorise",
+    "Divide both sides by $\\cos x$ first"
+   ],
+   "correct": 2,
+   "explanation": "$\\sin x(\\cos x-1)=0$ keeps the solutions with $\\sin x=0$. Watch out: dividing by $\\sin x$ loses them.",
+   "id": "q40307"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which value is a solution of $\\sin x=-\\dfrac12$ in $0^\\circ\\le x\\le360^\\circ$?",
+   "options": [
+    "$120^\\circ$",
+    "$150^\\circ$",
+    "$30^\\circ$",
+    "$210^\\circ$"
+   ],
+   "correct": 3,
+   "explanation": "Sine is negative in quadrants III and IV: $210^\\circ$ and $330^\\circ$. Watch out: $30^\\circ$ and $150^\\circ$ solve $\\sin x=+\\dfrac12$.",
+   "id": "q40308"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "Solve $\\sin x=-\\dfrac12$ for $0^\\circ\\le x\\le360^\\circ$: $x$ = {{1}} and {{2}} (smaller first).",
+   "blanks": [
+    {
+     "answers": [
+      "210"
+     ]
+    },
+    {
+     "answers": [
+      "330"
+     ]
+    }
+   ],
+   "explanation": "Reference angle $30^\\circ$: $180+30=210$ and $360-30=330$. Watch out: the answers are in quadrants III and IV.",
+   "id": "q40309"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Solve $\\sin x=\\dfrac12$ for $0^\\circ\\le x\\le360^\\circ$. One step is wrong. Tap it.",
+   "steps": [
+    "\\sin x=\\dfrac12",
+    "x=30^\\circ",
+    "\\text{second solution: }x=360^\\circ-30^\\circ",
+    "x=330^\\circ"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "The second solution is $180^\\circ-30^\\circ=150^\\circ$. Watch out: $360-x$ is the cosine rule; sine uses $180-x$.",
+   "id": "q40310"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which are solutions of $\\tan x=1$ in $0^\\circ\\le x\\le360^\\circ$?",
+   "options": [
+    "$135^\\circ$",
+    "$315^\\circ$",
+    "$45^\\circ$",
+    "$225^\\circ$"
+   ],
+   "correct": [
+    2,
+    3
+   ],
+   "explanation": "The solutions are $45^\\circ$ and $225^\\circ$. Watch out: $135^\\circ$ and $315^\\circ$ solve $\\tan x=-1$.",
+   "id": "q40311"
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "kind": "summary",
+ "title": "Domain, range and composite functions",
+ "intro": "Read this before the questions on domain, range and composition.",
+ "blocks": [
+  {
+   "kind": "remember",
+   "title": "domain and range",
+   "body": "The **domain** is the set of allowed inputs $x$. The **range** is the set of outputs $y$ that actually occur."
+  },
+  {
+   "kind": "formula",
+   "title": "domain restrictions",
+   "items": [
+    "$\\dfrac{1}{h(x)}$ needs $h(x)\\neq0$",
+    "$\\sqrt{h(x)}$ needs $h(x)\\ge0$",
+    "$\\ln h(x)$ needs $h(x)>0$"
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "composition",
+   "items": [
+    "$(f\\circ g)(x)=f(g(x))$: apply $g$ first, then $f$",
+    "Usually $f(g(x))\\neq g(f(x))$"
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "Square roots need $\\ge0$, but logs and denominators need strict conditions.",
+    "$f(g(x))$ means $g$ goes **first**, even though $f$ is written first."
+   ]
+  },
+  {
+   "kind": "example",
+   "title": "worked example",
+   "body": "$f(x)=2x+1$, $g(x)=x^2$. Then $f(g(x))=2x^2+1$ but $g(f(x))=(2x+1)^2$."
+  }
+ ]
+}

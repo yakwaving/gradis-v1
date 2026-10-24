@@ -1,0 +1,34 @@
+{
+ "kind": "summary",
+ "title": "Solving equations and compound angles",
+ "intro": "Read this before solving trigonometric equations and using double angles.",
+ "blocks": [
+  {
+   "kind": "remember",
+   "title": "solving equations",
+   "body": "Find the **principal value** with the inverse function, then use the symmetry of the graph for the other solutions in the range. For $\\sin x=k$: $x$ and $180^\\circ-x$. For $\\cos x=k$: $x$ and $360^\\circ-x$. For $\\tan x=k$: $x$ and $x+180^\\circ$."
+  },
+  {
+   "kind": "formula",
+   "title": "compound and double angles",
+   "items": [
+    "$\\sin(A\\pm B)=\\sin A\\cos B\\pm\\cos A\\sin B$",
+    "$\\cos(A\\pm B)=\\cos A\\cos B\\mp\\sin A\\sin B$",
+    "$\\sin2x=2\\sin x\\cos x$",
+    "$\\cos2x=\\cos^2x-\\sin^2x=1-2\\sin^2x=2\\cos^2x-1$"
+   ]
+  },
+  {
+   "kind": "hint",
+   "body": "For $\\sin2x=k$ in a range $0^\\circ$ to $360^\\circ$, solve for $2x$ in the **doubled** range $0^\\circ$ to $720^\\circ$, then halve."
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "Do not divide an equation by $\\sin x$: you lose the solutions where $\\sin x=0$. Factorise instead.",
+    "In $\\cos(A+B)$ the sign between the products is **minus**."
+   ]
+  }
+ ]
+}

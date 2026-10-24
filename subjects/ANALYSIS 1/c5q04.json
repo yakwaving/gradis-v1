@@ -1,0 +1,146 @@
+{
+ "title": "Differentiation Quiz 4",
+ "description": "Find the gradient first, then build the line.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Tangents and gradients",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Differentiation: Tangents and gradients.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find the tangent to $y=x^{2}$ at $x=3$. Write it as $y=\\ldots$",
+   "answer": "y=6x-9",
+   "explanation": "$y'=2x=6$ at $x=3$ and $y=9$, so $y-9=6(x-3)$, giving $y=6x-9$. Watch out: the tangent passes through $(3,9)$, not the origin.",
+   "id": "q50401"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find the gradient of $y=x^{2}-4x$ at $x=3$.",
+   "correct": 2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$y'=2x-4=2$. Watch out: substitute into the derivative.",
+   "id": "q50402"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "At what $x$ is the gradient of $y=x^{2}-6x$ equal to zero?",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$2x-6=0$ gives $x=3$. Watch out: set the **derivative** to zero.",
+   "id": "q50403"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "The curve $y=x^{3}$ has gradient $3$ at $x=a$ for $a>0$. Find $a$.",
+   "correct": 1,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$3a^2=3$ so $a=1$ (positive). Watch out: $a=-1$ also solves it but is excluded.",
+   "id": "q50404"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The tangent to a curve at $x=2$ has gradient $5$. The normal there has gradient...",
+   "options": [
+    "$-\\dfrac15$",
+    "$-5$",
+    "$\\dfrac15$",
+    "$5$"
+   ],
+   "correct": 0,
+   "explanation": "Perpendicular gradients multiply to $-1$. Watch out: flip **and** change the sign.",
+   "id": "q50405"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find the $y$-intercept of the tangent to $y=x^{2}$ at $x=3$.",
+   "correct": -9,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The tangent is $y=6x-9$, so it cuts the $y$-axis at $-9$. Watch out: the intercept is negative.",
+   "id": "q50406"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The tangent to $y=x^{2}$ at $x=0$ is the $x$-axis.",
+   "correct": true,
+   "explanation": "The gradient is $0$ at the origin, so the tangent is $y=0$. Watch out: a tangent can be horizontal.",
+   "id": "q50407"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Find the tangent to $y=x^{3}$ at $x=2$. One step is wrong. Tap it.",
+   "steps": [
+    "y'=3x^{2}",
+    "y'(2)=6",
+    "y(2)=8",
+    "y-8=12(x-2)"
+   ],
+   "bugs": [
+    2
+   ],
+   "explanation": "$3\\cdot2^2=12$, not $6$. Watch out: square before multiplying.",
+   "id": "q50408"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "Tangent to $y=x^{3}$ at $x=1$: $y=mx+c$ with $m$ = {{1}} and $c$ = {{2}}.",
+   "blanks": [
+    {
+     "answers": [
+      "3"
+     ]
+    },
+    {
+     "answers": [
+      "-2"
+     ]
+    }
+   ],
+   "explanation": "$y'=3x^2=3$ and $y(1)=1$, so $y-1=3(x-1)$ gives $y=3x-2$. Watch out: $c=1-3=-2$.",
+   "id": "q50409"
+  },
+  {
+   "type": "multiple",
+   "marks": 1,
+   "scoring": "partial",
+   "question": "Which points have gradient zero on $y=x^{2}-4x$?",
+   "options": [
+    "$x=2$",
+    "$x=0$",
+    "$x=4$"
+   ],
+   "correct": [
+    0
+   ],
+   "explanation": "$2x-4=0$ gives $x=2$ only. Watch out: $x=0$ and $x=4$ are the $x$-intercepts, not stationary points.",
+   "id": "q50410"
+  }
+ ]
+}

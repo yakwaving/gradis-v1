@@ -1,0 +1,111 @@
+{
+ "title": "Differentiation Quiz 2",
+ "description": "Outside first, then multiply by the derivative of the inside.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "The chain rule",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Differentiation: The chain rule.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $(2x+1)^{5}$.",
+   "answer": "10(2x+1)^4",
+   "explanation": "$5(2x+1)^4\\cdot2=10(2x+1)^4$. Watch out: do not forget the factor $2$ from the inside.",
+   "id": "q50201"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\sin3x$.",
+   "answer": "3cos(3x)",
+   "explanation": "$\\cos3x\\cdot3$. Watch out: the $3$ comes out in front.",
+   "id": "q50202"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $e^{2x}$.",
+   "answer": "2e^(2x)",
+   "explanation": "$2e^{2x}$. Watch out: the exponent keeps its $2$ and a factor $2$ appears.",
+   "id": "q50203"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\sqrt{x^{2}+1}$.",
+   "answer": "x/sqrt(x^2+1)",
+   "explanation": "$\\dfrac{1}{2\\sqrt{x^2+1}}\\cdot2x=\\dfrac{x}{\\sqrt{x^2+1}}$. Watch out: the $2$ cancels.",
+   "id": "q50204"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\ln(3x)$.",
+   "answer": "1/x",
+   "explanation": "$\\dfrac{3}{3x}=\\dfrac1x$. Watch out: the answer is **not** $\\dfrac{1}{3x}$.",
+   "id": "q50205"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\sin^{2}x$.",
+   "answer": "2sin(x)cos(x)",
+   "explanation": "$2\\sin x\\cdot\\cos x$. Watch out: $\\sin^2x=(\\sin x)^2$, so the inside is $\\sin x$.",
+   "id": "q50206"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $e^{x^{2}}$.",
+   "answer": "2xe^(x^2)",
+   "explanation": "$e^{x^2}\\cdot2x$. Watch out: the exponent is not just $x$.",
+   "id": "q50207"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\dfrac{d}{dx}\\sin(x^{2})=\\cos(x^{2})$.",
+   "correct": false,
+   "explanation": "The chain rule gives $2x\\cos(x^2)$. Watch out: the missing factor is the derivative of the inside.",
+   "id": "q50208"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Differentiate $(3x-1)^{4}$. One step is wrong. Tap it.",
+   "steps": [
+    "y=(3x-1)^{4}",
+    "\\text{outside: }4(3x-1)^{3}",
+    "\\text{inside: }3",
+    "y'=4(3x-1)^{3}+3"
+   ],
+   "bugs": [
+    4
+   ],
+   "explanation": "The chain rule **multiplies** the two parts: $y'=4(3x-1)^3\\cdot3=12(3x-1)^3$. Watch out: adding the inside derivative is a common slip.",
+   "id": "q50209"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the inside function of $\\cos(5x^{2})$?",
+   "options": [
+    "$5x^{2}$",
+    "$x^{2}$",
+    "$\\cos x$",
+    "$5x$"
+   ],
+   "correct": 0,
+   "explanation": "The inside is the argument of $\\cos$. Watch out: the inside is the whole expression $5x^2$.",
+   "id": "q50210"
+  }
+ ]
+}

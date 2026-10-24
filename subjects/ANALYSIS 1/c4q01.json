@@ -1,0 +1,166 @@
+{
+ "title": "Trigonometry Quiz 1",
+ "description": "Know the standard values and convert angles.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Exact values and radians",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Trigonometry: Exact values and radians.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the exact value of $\\sin30^\\circ$?",
+   "options": [
+    "$\\dfrac{\\sqrt2}{2}$",
+    "$1$",
+    "$\\dfrac{\\sqrt3}{2}$",
+    "$\\dfrac12$"
+   ],
+   "correct": 3,
+   "explanation": "$\\sin30^\\circ=\\dfrac12$. Watch out: $\\dfrac{\\sqrt3}{2}$ belongs to $\\sin60^\\circ$.",
+   "id": "q40101"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the exact value of $\\cos60^\\circ$?",
+   "options": [
+    "$\\dfrac{1}{\\sqrt3}$",
+    "$0$",
+    "$\\dfrac12$",
+    "$\\dfrac{\\sqrt3}{2}$"
+   ],
+   "correct": 2,
+   "explanation": "$\\cos60^\\circ=\\dfrac12$. Watch out: $\\cos30^\\circ$ is the one with the root.",
+   "id": "q40102"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the exact value of $\\tan45^\\circ$?",
+   "options": [
+    "$1$",
+    "$\\sqrt3$",
+    "$0$",
+    "$\\dfrac12$"
+   ],
+   "correct": 0,
+   "explanation": "At $45^\\circ$ sine and cosine are equal, so $\\tan45^\\circ=1$. Watch out: $\\sqrt3$ is $\\tan60^\\circ$.",
+   "id": "q40103"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the exact value of $\\tan60^\\circ$?",
+   "options": [
+    "$1$",
+    "$\\sqrt3$",
+    "$\\dfrac1{\\sqrt3}$",
+    "$\\dfrac{\\sqrt3}{2}$"
+   ],
+   "correct": 1,
+   "explanation": "$\\tan60^\\circ=\\dfrac{\\sin60^\\circ}{\\cos60^\\circ}=\\sqrt3$. Watch out: $\\dfrac{1}{\\sqrt3}$ is $\\tan30^\\circ$.",
+   "id": "q40104"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Convert $60^\\circ$ to radians.",
+   "answer": "pi/3",
+   "explanation": "$60\\times\\dfrac{\\pi}{180}=\\dfrac{\\pi}{3}$. Watch out: multiply by $\\dfrac{\\pi}{180}$, not by $\\dfrac{180}{\\pi}$.",
+   "id": "q40105"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Convert $135^\\circ$ to radians.",
+   "answer": "3pi/4",
+   "explanation": "$135\\times\\dfrac{\\pi}{180}=\\dfrac{3\\pi}{4}$. Watch out: $\\dfrac{135}{180}=\\dfrac34$.",
+   "id": "q40106"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Convert $\\dfrac{\\pi}{6}$ radians to degrees.",
+   "correct": 30,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\dfrac{\\pi}{6}\\times\\dfrac{180}{\\pi}=30$. Watch out: the $\\pi$ cancels.",
+   "id": "q40107"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\sin(90^\\circ)=0$.",
+   "correct": false,
+   "explanation": "$\\sin90^\\circ=1$; it is $\\cos90^\\circ$ that is $0$. Watch out: sine peaks at $90^\\circ$.",
+   "id": "q40108"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\sin^{2}x+\\cos^{2}x=1$ for every angle $x$.",
+   "correct": true,
+   "explanation": "This is the Pythagorean identity. Watch out: it holds for all $x$, positive or negative.",
+   "id": "q40109"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "If $\\sin x=\\dfrac35$ and $x$ is acute, find $\\cos x$ as a decimal.",
+   "correct": 0.8,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$\\cos^2x=1-\\dfrac{9}{25}=\\dfrac{16}{25}$, so $\\cos x=0.8$. Watch out: for an acute angle take the positive root.",
+   "id": "q40110"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each angle with its sine.",
+   "left": [
+    "$0^\\circ$",
+    "$30^\\circ$",
+    "$90^\\circ$",
+    "$270^\\circ$"
+   ],
+   "right": [
+    "$0$",
+    "$\\frac12$",
+    "$1$",
+    "$-1$"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Read each value from the unit circle. Watch out: $\\sin270^\\circ=-1$, the lowest point of the wave.",
+   "id": "q40111"
+  }
+ ]
+}

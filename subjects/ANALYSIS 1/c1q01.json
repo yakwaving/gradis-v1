@@ -1,0 +1,145 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 1",
+ "description": "Zero, negative and same-base rules. Each question has a small trap.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Laws of indices",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Indices, Logarithm and Surds: Laws of indices.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the value of $5^{0}+12^{0}+y^{0}$ for $y\\neq0$?",
+   "options": [
+    "3",
+    "17",
+    "0",
+    "1"
+   ],
+   "correct": 0,
+   "explanation": "Every non-zero base raised to the power $0$ equals $1$, so the sum is $1+1+1=3$. Watch out: $a^0$ is $1$, not $0$.",
+   "id": "q10101"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Simplify $2^{3}\\cdot2^{2}$.",
+   "options": [
+    "$2^{5}$",
+    "$4^{5}$",
+    "$2^{6}$",
+    "$4^{6}$"
+   ],
+   "correct": 0,
+   "explanation": "Same base: add the indices, $2^{3+2}=2^{5}$. Watch out: the base stays $2$, and indices are added, not multiplied.",
+   "id": "q10102"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Simplify $\\dfrac{10^{4}}{10^{2}}$.",
+   "options": [
+    "$10^{8}$",
+    "$10^{6}$",
+    "$5^{2}$",
+    "$10^{2}$"
+   ],
+   "correct": 3,
+   "explanation": "Same base: subtract the indices, $10^{4-2}=10^{2}$. Watch out: dividing the numbers $10\\div10$ is not what the rule does.",
+   "id": "q10103"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Simplify $(x^{3})^{4}\\times x^{-2}$.",
+   "answer": "x^10",
+   "explanation": "$(x^3)^4=x^{12}$, then $x^{12}\\cdot x^{-2}=x^{10}$. Watch out: a power of a power multiplies the indices ($3\\times4$), it does not add them.",
+   "id": "q10104"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find the value of $2^{-3}$ as a decimal.",
+   "correct": 0.125,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$2^{-3}=\\dfrac{1}{2^3}=\\dfrac18=0.125$. Watch out: a negative index gives a reciprocal, not a negative number.",
+   "id": "q10105"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$3^{2}\\cdot5^{2}=15^{2}$.",
+   "correct": true,
+   "explanation": "Equal indices: $a^{p}b^{p}=(ab)^{p}$, so $3^2\\cdot5^2=(3\\cdot5)^2=15^2$. Watch out: the rule needs the same index on both factors.",
+   "id": "q10106"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$(8^{2})^{3}=8^{5}$.",
+   "correct": false,
+   "explanation": "A power of a power multiplies: $(8^2)^3=8^{2\\times3}=8^{6}$. Watch out: $8^5$ would come from adding the indices.",
+   "id": "q10107"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is $6^{1/2}$?",
+   "options": [
+    "$\\sqrt{6}$",
+    "$3$",
+    "$6^{2}$",
+    "$\\dfrac{1}{6}$"
+   ],
+   "correct": 0,
+   "explanation": "A fractional index $\\frac{p}{q}$ is a root: $6^{1/2}=\\sqrt6$. Watch out: $6^{1/2}$ is not half of $6$.",
+   "id": "q10108"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Simplify $\\dfrac{x^{5}\\cdot x^{-2}}{x^{2}}$. One step is wrong. Tap it.",
+   "steps": [
+    "\\dfrac{x^{5}\\cdot x^{-2}}{x^{2}}",
+    "=\\dfrac{x^{3}}{x^{2}}",
+    "=x^{3\\cdot2}",
+    "=x^{6}"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "Dividing powers of the same base subtracts the indices: $x^{3}/x^{2}=x^{3-2}=x$. Watch out: step 3 multiplies the indices instead of subtracting them.",
+   "id": "q10109"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these are **true** for $a\\neq0$?",
+   "options": [
+    "$a^{0}=1$",
+    "$a^{2}a^{3}=a^{5}$",
+    "$a^{-2}=\\dfrac{1}{a^{2}}$",
+    "$a^{-2}=-a^{2}$",
+    "$a^{2}a^{3}=a^{6}$"
+   ],
+   "correct": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "The laws give $a^0=1$, $a^{-2}=1/a^2$ and $a^2a^3=a^5$. Watch out: adding the indices gives $5$, not $6$, and a negative index is never a minus sign.",
+   "id": "q10110"
+  }
+ ]
+}

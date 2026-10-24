@@ -1,0 +1,42 @@
+{
+ "kind": "summary",
+ "title": "Exact values, radians and identities",
+ "intro": "Read this before the trigonometry questions.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "exact values",
+   "items": [
+    "$\\sin30^\\circ=\\tfrac12,\\ \\cos60^\\circ=\\tfrac12$",
+    "$\\sin45^\\circ=\\cos45^\\circ=\\dfrac{\\sqrt2}{2},\\ \\tan45^\\circ=1$",
+    "$\\cos30^\\circ=\\sin60^\\circ=\\dfrac{\\sqrt3}{2}$",
+    "$\\tan30^\\circ=\\dfrac{1}{\\sqrt3},\\ \\tan60^\\circ=\\sqrt3$"
+   ]
+  },
+  {
+   "kind": "remember",
+   "title": "radians",
+   "body": "$180^\\circ=\\pi$ radians. To convert degrees to radians multiply by $\\dfrac{\\pi}{180}$; for radians to degrees multiply by $\\dfrac{180}{\\pi}$."
+  },
+  {
+   "kind": "formula",
+   "title": "identities",
+   "items": [
+    "$\\sin^2x+\\cos^2x=1$",
+    "$1+\\tan^2x=\\sec^2x$",
+    "$\\tan x=\\dfrac{\\sin x}{\\cos x}$",
+    "$\\sin(\\pi-x)=\\sin x,\\ \\cos(\\pi-x)=-\\cos x$",
+    "$\\sin(90^\\circ-x)=\\cos x$"
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "$\\sin^2x$ means $(\\sin x)^2$, not $\\sin(x^2)$.",
+    "$\\sin(A+B)\\neq\\sin A+\\sin B$.",
+    "$\\sqrt{\\sin^2x}=|\\sin x|$."
+   ]
+  }
+ ]
+}

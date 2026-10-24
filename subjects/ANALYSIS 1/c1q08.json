@@ -1,0 +1,127 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 8",
+ "description": "Different bases: take logarithms of both sides.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Exponential equations with logarithms",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Indices, Logarithm and Surds: Exponential equations with logarithms.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Solve $7^{x}=9$. Give an exact answer.",
+   "answer": "ln(9)/ln(7)",
+   "explanation": "Take logs: $x\\ln7=\\ln9$, so $x=\\dfrac{\\ln9}{\\ln7}$. Watch out: the logs are divided, not subtracted.",
+   "id": "q10801"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $e^{t+6}=2$, giving $t$ to 3 decimal places.",
+   "correct": -5.307,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "Take $\\ln$: $t+6=\\ln2$, so $t=\\ln2-6\\approx-5.307$. Watch out: $\\ln2$ is about $0.693$, and we then subtract $6$.",
+   "id": "q10802"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $10^{5-x}=8$, giving $x$ to 3 decimal places.",
+   "correct": 4.097,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$5-x=\\log8\\approx0.903$, so $x=5-\\log8\\approx4.097$. Watch out: it is $5-\\log 8$, not $\\log 8-5$.",
+   "id": "q10803"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Solve $5e^{2z+4}-8=0$. Give an exact answer.",
+   "answer": "(ln(8/5)-4)/2",
+   "explanation": "$e^{2z+4}=\\dfrac85$, so $2z+4=\\ln\\dfrac85$ and $z=\\dfrac{\\ln(8/5)-4}{2}$. Watch out: divide by $5$ **before** taking logs.",
+   "id": "q10804"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $2^{4y+1}-3^{y}=0$, giving $y$ to 3 decimal places.",
+   "correct": -0.414,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$2^{4y+1}=3^y$ gives $(4y+1)\\ln2=y\\ln3$, so $y=\\dfrac{-\\ln2}{4\\ln2-\\ln3}\\approx-0.414$. Watch out: $y$ is negative, so check the sign.",
+   "id": "q10805"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Solve $3^{x}=20$. Which is the solution?",
+   "options": [
+    "$x=\\ln20-\\ln3$",
+    "$x=\\ln\\dfrac{20}{3}$",
+    "$x=\\dfrac{\\ln20}{\\ln3}$",
+    "$x=\\dfrac{\\ln3}{\\ln20}$"
+   ],
+   "correct": 2,
+   "explanation": "$x\\ln3=\\ln20$, so $x=\\dfrac{\\ln20}{\\ln3}$. Watch out: $\\ln20-\\ln3$ equals $\\ln\\dfrac{20}{3}$, which is not the same.",
+   "id": "q10806"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\ln(5^{x})=5\\ln x$.",
+   "correct": false,
+   "explanation": "The power rule gives $\\ln(5^x)=x\\ln5$. Watch out: the exponent $x$ comes down, but the base stays $5$.",
+   "id": "q10807"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Solve $7^{x}=9$. One step is wrong. Tap it.",
+   "steps": [
+    "7^{x}=9",
+    "\\ln7^{x}=\\ln9",
+    "x\\ln7=\\ln9",
+    "x=\\ln9-\\ln7"
+   ],
+   "bugs": [
+    4
+   ],
+   "explanation": "Divide both sides by $\\ln7$: $x=\\dfrac{\\ln9}{\\ln7}$. Watch out: $\\ln 7$ multiplies $x$, so it is divided, not subtracted.",
+   "id": "q10808"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\ln e^{3}+e^{\\ln2}$.",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\ln e^3=3$ and $e^{\\ln2}=2$, so the sum is $5$. Watch out: $e^{\\ln 2}$ equals $2$, because the functions undo each other.",
+   "id": "q10809"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Solve $e^{2x}=5$. Give an exact answer.",
+   "answer": "ln(5)/2",
+   "explanation": "$2x=\\ln5$, so $x=\\dfrac{\\ln5}{2}$. Watch out: the $2$ divides the whole logarithm.",
+   "id": "q10810"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "kind": "summary",
+ "title": "Logarithms",
+ "intro": "Read this before the logarithm questions. A logarithm is an exponent in disguise.",
+ "blocks": [
+  {
+   "kind": "remember",
+   "title": "definition",
+   "body": "$b^{y}=a\\iff\\log_b a=y$, with $a>0$, $b>0$ and $b\\neq1$. Ask yourself: **what power of $b$ gives $a$?**"
+  },
+  {
+   "kind": "formula",
+   "title": "special values and the two common bases",
+   "items": [
+    "$\\log_b b=1$, $\\log_b1=0$, and $\\log_b0$ is undefined",
+    "Common logarithm: $\\log x=\\log_{10}x$",
+    "Natural logarithm: $\\ln x=\\log_e x$"
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "the laws",
+   "items": [
+    "$\\log_b(mn)=\\log_b m+\\log_b n$",
+    "$\\log_b\\dfrac mn=\\log_b m-\\log_b n$",
+    "$\\log_b(m^{n})=n\\log_b m$",
+    "$\\log_b m=\\dfrac{\\log_a m}{\\log_a b}$",
+    "$\\log_b a=\\dfrac{1}{\\log_a b}$"
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "never",
+   "items": [
+    "$\\log(m+n)$ is **not** $\\log m+\\log n$",
+    "The number inside a logarithm must be **positive**.",
+    "$n\\log m$ is not $(\\log m)^n$"
+   ]
+  },
+  {
+   "kind": "format",
+   "title": "typed answers",
+   "body": "Write logarithms as `log(` (base 10), `ln(` or `log_2(8)` for another base."
+  }
+ ],
+ "builds": "Laws of indices"
+}

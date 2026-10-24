@@ -1,0 +1,160 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 5",
+ "description": "What a logarithm is, and its special values.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Meaning of a logarithm",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Indices, Logarithm and Surds: Meaning of a logarithm.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\log_2 64$.",
+   "correct": 6,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$2^{6}=64$, so $\\log_2 64=6$. Watch out: the answer is the exponent $6$, not the base $2$.",
+   "id": "q10501"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is $\\log_{10}100$?",
+   "options": [
+    "1",
+    "10",
+    "2",
+    "100"
+   ],
+   "correct": 2,
+   "explanation": "$10^2=100$, so the logarithm is $2$. Watch out: the logarithm is the power, not the number $100$.",
+   "id": "q10502"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\log_b 1=0$ for every valid base $b$.",
+   "correct": true,
+   "explanation": "$b^0=1$ for every base, so $\\log_b1=0$. Watch out: this holds for every allowed base, not just $10$.",
+   "id": "q10503"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the exponential form of $\\log_3 27=3$?",
+   "options": [
+    "$3^{3}=27$",
+    "$27^{3}=3$",
+    "$3^{27}=3$",
+    "$3^{3}=3$"
+   ],
+   "correct": 0,
+   "explanation": "$\\log_b a=y$ means $b^{y}=a$, so $3^{3}=27$. Watch out: the base of the logarithm stays the base of the power.",
+   "id": "q10504"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\log_b 0=0$.",
+   "correct": false,
+   "explanation": "No power of $b$ gives $0$, so $\\log_b0$ is undefined. Watch out: it is not $0$ and not a number at all.",
+   "id": "q10505"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\ln e^{5}$.",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\ln$ is $\\log_e$, so $\\ln e^{5}=5$. Watch out: $\\ln$ has base $e$, not $10$.",
+   "id": "q10506"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The common logarithm is the logarithm to which base?",
+   "options": [
+    "base $1$",
+    "base $2$",
+    "base $e$",
+    "base $10$"
+   ],
+   "correct": 3,
+   "explanation": "$\\log x$ means $\\log_{10}x$. Watch out: base $e$ is the natural logarithm, written $\\ln x$.",
+   "id": "q10507"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\log_5 5$.",
+   "correct": 1,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$5^{1}=5$, so $\\log_55=1$. Watch out: $\\log_b b=1$, not $0$ (that is $\\log_b1$).",
+   "id": "q10508"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $\\log_2 x=5$.",
+   "correct": 32,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Write it as a power: $x=2^{5}=32$. Watch out: $x=2\\times5=10$ is the usual slip.",
+   "id": "q10509"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each logarithm with its value.",
+   "left": [
+    "log₂ 8",
+    "log₃ 9",
+    "log₁₀ 1",
+    "log₅ 5"
+   ],
+   "right": [
+    "3",
+    "2",
+    "0",
+    "1"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "$2^3=8$, $3^2=9$, $10^0=1$ and $5^1=5$. Watch out: $\\log_{10}1$ is $0$, because any base to the power $0$ is $1$.",
+   "id": "q10510"
+  }
+ ]
+}

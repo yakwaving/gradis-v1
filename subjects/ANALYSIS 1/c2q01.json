@@ -1,0 +1,180 @@
+{
+ "title": "Partial Fractions Quiz 1",
+ "description": "Before solving anything, learn to choose the correct form.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Proper or improper, and the right form",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Partial Fractions: Proper or improper, and the right form.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which of these fractions is **improper**?",
+   "options": [
+    "$\\dfrac{4x-1}{x(x+1)}$",
+    "$\\dfrac{7x+5}{(x+1)(x+2)}$",
+    "$\\dfrac{2x+3}{(x-1)^{2}}$",
+    "$\\dfrac{x^{3}+2x^{2}+3}{x^{2}+1}$"
+   ],
+   "correct": 3,
+   "explanation": "The first has numerator degree $3$ and denominator degree $2$. Watch out: compare the degrees, not the sizes of the coefficients.",
+   "id": "q20101"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the correct form for $\\dfrac{7x+5}{(x+1)(x+2)}$?",
+   "options": [
+    "$\\dfrac{A}{x+1}\\cdot\\dfrac{B}{x+2}$",
+    "$\\dfrac{A+B}{(x+1)(x+2)}$",
+    "$\\dfrac{A}{x+1}+\\dfrac{B}{x+2}$",
+    "$\\dfrac{Ax+B}{x+1}+\\dfrac{C}{x+2}$"
+   ],
+   "correct": 2,
+   "explanation": "Two distinct linear factors give two terms with constant numerators. Watch out: the terms are **added**, not multiplied.",
+   "id": "q20102"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the correct form for $\\dfrac{3x+5}{(x-1)^{2}}$?",
+   "options": [
+    "$\\dfrac{Ax+B}{(x-1)^{2}}$",
+    "$\\dfrac{A}{x-1}+\\dfrac{B}{x-1}$",
+    "$\\dfrac{A}{x-1}+\\dfrac{B}{(x-1)^{2}}$",
+    "$\\dfrac{A}{(x-1)^{2}}$"
+   ],
+   "correct": 2,
+   "explanation": "A repeated factor needs a term for each power: $(x-1)$ and $(x-1)^2$. Watch out: two terms with $(x-1)$ would collapse into one.",
+   "id": "q20103"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the correct form for $\\dfrac{2x^{2}+3x+1}{(x+1)(x^{2}+1)}$?",
+   "options": [
+    "$\\dfrac{A}{x+1}+\\dfrac{Bx}{x^{2}+1}$",
+    "$\\dfrac{Ax+B}{x+1}+\\dfrac{C}{x^{2}+1}$",
+    "$\\dfrac{A}{x+1}+\\dfrac{B}{x^{2}+1}$",
+    "$\\dfrac{A}{x+1}+\\dfrac{Bx+C}{x^{2}+1}$"
+   ],
+   "correct": 3,
+   "explanation": "The linear factor gets a constant, the irreducible quadratic gets $Bx+C$. Watch out: the numerator over $x^2+1$ must be linear.",
+   "id": "q20104"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$x^{2}+1$ cannot be factorised into real linear factors.",
+   "correct": true,
+   "explanation": "Its discriminant is $0-4=-4<0$, so it has no real roots. Watch out: this is why it needs the form $\\dfrac{Bx+C}{x^2+1}$.",
+   "id": "q20105"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$x^{2}-1$ is an irreducible quadratic.",
+   "correct": false,
+   "explanation": "$x^2-1=(x-1)(x+1)$, so it splits into linear factors. Watch out: a minus sign changes everything: $x^2-1$ factorises, $x^2+1$ does not.",
+   "id": "q20106"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "In $\\dfrac{x^{3}+2x^{2}+3}{x^{2}+1}$, what is the degree of the quotient after division?",
+   "correct": 1,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Dividing a degree-$3$ polynomial by a degree-$2$ one gives a quotient of degree $3-2=1$. Watch out: subtract the degrees; the quotient is $x+2$.",
+   "id": "q20107"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these quadratics are **irreducible** over the real numbers?",
+   "options": [
+    "$x^{2}+1$",
+    "$x^{2}-9$",
+    "$x^{2}+2x+5$",
+    "$x^{2}+4$",
+    "$x^{2}+2x+1$"
+   ],
+   "correct": [
+    0,
+    2,
+    3
+   ],
+   "explanation": "A quadratic is irreducible when $b^2-4c<0$: $x^2+1$, $x^2+4$ and $x^2+2x+5$ ($4-20=-16$). But $x^2-9=(x-3)(x+3)$ and $x^2+2x+1=(x+1)^2$. Watch out: a perfect square is reducible.",
+   "id": "q20108"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each denominator with its general form.",
+   "left": [
+    "Distinct linear factors",
+    "Repeated linear factor",
+    "Irreducible quadratic",
+    "Linear times quadratic"
+   ],
+   "right": [
+    "A/(x−a) + B/(x−b)",
+    "A/(x−a) + B/(x−a)²",
+    "(Ax+B)/(x²+px+q)",
+    "A/(x−a) + (Bx+C)/(x²+px+q)"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Each pattern is a different shape of denominator. Watch out: the repeated factor has two terms, the irreducible quadratic has a linear numerator.",
+   "id": "q20109"
+  },
+  {
+   "type": "ordering",
+   "marks": 4,
+   "scoring": "adjacent",
+   "question": "Put the steps of a partial fraction decomposition in order.",
+   "items": [
+    "Multiply both sides by the denominator",
+    "Find the constants",
+    "Write the general form with unknown constants",
+    "Check that the fraction is proper (divide if not)",
+    "Factorise the denominator"
+   ],
+   "correctOrder": [
+    3,
+    4,
+    2,
+    0,
+    1
+   ],
+   "explanation": "Always start by checking the degrees. Watch out: if you factorise an improper fraction first you will choose the wrong form.",
+   "id": "q20110"
+  }
+ ]
+}

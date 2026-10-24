@@ -1,0 +1,148 @@
+{
+ "title": "Differentiation Quiz 1",
+ "description": "Differentiate term by term.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Basic derivatives",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Differentiation: Basic derivatives.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $3x^{2}-5x+2$.",
+   "answer": "6x-5",
+   "explanation": "$6x-5+0$. Watch out: the constant $2$ disappears.",
+   "id": "q50101"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $x^{4}$.",
+   "answer": "4x^3",
+   "explanation": "$4x^{3}$. Watch out: reduce the power by one, not by two.",
+   "id": "q50102"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\dfrac1x$.",
+   "answer": "-1/x^2",
+   "explanation": "Write $x^{-1}$: $-x^{-2}=-\\dfrac{1}{x^2}$. Watch out: the answer is negative.",
+   "id": "q50103"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\sqrt{x}$.",
+   "answer": "1/(2sqrt(x))",
+   "explanation": "$x^{1/2}$ gives $\\dfrac12x^{-1/2}=\\dfrac{1}{2\\sqrt x}$. Watch out: the exponent becomes $-\\dfrac12$.",
+   "id": "q50104"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\cos x$.",
+   "answer": "-sin(x)",
+   "explanation": "$\\dfrac{d}{dx}\\cos x=-\\sin x$. Watch out: the minus sign.",
+   "id": "q50105"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\ln x$.",
+   "answer": "1/x",
+   "explanation": "$\\dfrac{d}{dx}\\ln x=\\dfrac1x$. Watch out: this holds for $x>0$.",
+   "id": "q50106"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is $\\dfrac{d}{dx}e^{x}$?",
+   "options": [
+    "$\\dfrac{1}{e^{x}}$",
+    "$xe^{x-1}$",
+    "$e^{x}$",
+    "$e^{x}\\ln x$"
+   ],
+   "correct": 2,
+   "explanation": "The exponential is its own derivative. Watch out: the power rule does not apply to $e^x$.",
+   "id": "q50107"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The derivative of a constant is $0$.",
+   "correct": true,
+   "explanation": "A constant has a flat graph. Watch out: this is why $x^2+7$ and $x^2$ have the same derivative.",
+   "id": "q50108"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find the gradient of $y=x^{3}$ at $x=2$.",
+   "correct": 12,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$y'=3x^2=12$ at $x=2$. Watch out: substitute into the derivative, not into $y$.",
+   "id": "q50109"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\dfrac{d^{2}y}{dx^{2}}$ of $y=x^{4}$ at $x=1$.",
+   "correct": 12,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$y'=4x^3$, $y''=12x^2=12$. Watch out: differentiate twice.",
+   "id": "q50110"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each function with its derivative.",
+   "left": [
+    "$\\sin x$",
+    "$\\cos x$",
+    "$e^{x}$",
+    "$\\ln x$"
+   ],
+   "right": [
+    "$\\cos x$",
+    "$-\\sin x$",
+    "$e^{x}$",
+    "$\\frac1x$"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "These are the standard derivatives. Watch out: only $\\cos x$ gets a minus sign.",
+   "id": "q50111"
+  }
+ ]
+}

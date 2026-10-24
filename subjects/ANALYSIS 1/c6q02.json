@@ -1,0 +1,137 @@
+{
+ "title": "Functions of Several Real Variables Quiz 2",
+ "description": "Treat the other variable as a constant.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Partial derivatives",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Functions of Several Real Variables: Partial derivatives.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_x$ for $f(x,y)=x^{2}y+3xy^{2}$.",
+   "answer": "2xy+3y^2",
+   "explanation": "Treat $y$ as constant: $2xy+3y^2$. Watch out: $3xy^2$ differentiates to $3y^2$.",
+   "id": "q60201"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_y$ for $f(x,y)=x^{2}y+3xy^{2}$.",
+   "answer": "x^2+6xy",
+   "explanation": "Treat $x$ as constant: $x^2+6xy$. Watch out: $\\dfrac{\\partial}{\\partial y}y^2=2y$.",
+   "id": "q60202"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Evaluate $f_x(1,2)$ for $f(x,y)=x^{2}y+3xy^{2}$.",
+   "correct": 16,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$2\\cdot1\\cdot2+3\\cdot4=16$. Watch out: substitute after differentiating.",
+   "id": "q60203"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Evaluate $f_y(1,2)$ for $f(x,y)=x^{2}y+3xy^{2}$.",
+   "correct": 13,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$1+6\\cdot1\\cdot2=13$. Watch out: both terms contribute.",
+   "id": "q60204"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_x$ for $f(x,y)=e^{xy}$.",
+   "answer": "ye^(xy)",
+   "explanation": "The chain rule gives $e^{xy}\\cdot y$. Watch out: the inner derivative with respect to $x$ is $y$.",
+   "id": "q60205"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_y$ for $f(x,y)=\\sin(xy)$.",
+   "answer": "xcos(xy)",
+   "explanation": "$\\cos(xy)\\cdot x$. Watch out: the factor is $x$, the derivative of $xy$ with respect to $y$.",
+   "id": "q60206"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_x$ for $f(x,y)=\\ln(x^{2}+y^{2})$.",
+   "answer": "2x/(x^2+y^2)",
+   "explanation": "$\\dfrac{2x}{x^2+y^2}$. Watch out: $y^2$ is a constant, so it disappears in the inner derivative.",
+   "id": "q60207"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "For $f(x,y)=3xy^{2}$, $f_x=6xy$.",
+   "correct": false,
+   "explanation": "Treating $y$ as constant gives $f_x=3y^2$. Watch out: $6xy$ is $f_y$.",
+   "id": "q60208"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Find $f_y$ for $f=x^{2}y+3xy^{2}$. One step is wrong. Tap it.",
+   "steps": [
+    "f=x^{2}y+3xy^{2}",
+    "f_y=x^{2}+3x\\cdot2y",
+    "f_y=x^{2}+6xy",
+    "f_y=2xy+6xy"
+   ],
+   "bugs": [
+    4
+   ],
+   "explanation": "The last step differentiates the first term with respect to $x$. The result is $x^2+6xy$. Watch out: $\\dfrac{\\partial}{\\partial y}(x^2y)=x^2$.",
+   "id": "q60209"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is $\\dfrac{\\partial}{\\partial x}(5y^{3})$?",
+   "options": [
+    "$5y^{3}$",
+    "$15y^{2}$",
+    "$5$",
+    "$0$"
+   ],
+   "correct": 3,
+   "explanation": "With $y$ held constant, $5y^3$ is a constant. Watch out: it is $\\dfrac{\\partial}{\\partial y}$ that gives $15y^2$.",
+   "id": "q60210"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which statements are **true** for $f=x^{2}y$?",
+   "options": [
+    "$f_y=2xy$",
+    "$f_x=2xy$",
+    "$f_x=x^{2}$",
+    "$f_y=x^{2}$"
+   ],
+   "correct": [
+    1,
+    3
+   ],
+   "explanation": "The partial with respect to $x$ is $2xy$, with respect to $y$ is $x^2$. Watch out: the two are easy to swap.",
+   "id": "q60211"
+  }
+ ]
+}

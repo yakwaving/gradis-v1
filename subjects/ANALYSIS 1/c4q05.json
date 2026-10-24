@@ -1,0 +1,191 @@
+{
+ "title": "Trigonometry Quiz 5",
+ "description": "Every question has a trap: a lost solution, a wrong sign or a hidden range.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: trigonometry",
+ "timerType": "wholeQuiz",
+ "totalTime": 1560,
+ "confidence": true,
+ "instructions": [
+  "Trigonometry: Difficult: trigonometry.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Solve $\\sin x\\cos x=\\sin x$ for $0^\\circ\\le x\\le360^\\circ$. One step is wrong. Tap it.",
+   "steps": [
+    "\\sin x\\cos x=\\sin x",
+    "\\cos x=1",
+    "x=0^\\circ\\text{ or }360^\\circ"
+   ],
+   "bugs": [
+    2
+   ],
+   "explanation": "Dividing by $\\sin x$ loses the solutions with $\\sin x=0$ ($x=180^\\circ$). Watch out: factorise instead: $\\sin x(\\cos x-1)=0$.",
+   "id": "q40501"
+  },
+  {
+   "type": "fill",
+   "marks": 4,
+   "question": "Solve $\\cos2x=\\dfrac12$ for $0^\\circ\\le x\\le360^\\circ$: $x$ = {{1}}, {{2}}, {{3}} and {{4}} (smallest first).",
+   "blanks": [
+    {
+     "answers": [
+      "30"
+     ]
+    },
+    {
+     "answers": [
+      "150"
+     ]
+    },
+    {
+     "answers": [
+      "210"
+     ]
+    },
+    {
+     "answers": [
+      "330"
+     ]
+    }
+   ],
+   "explanation": "$2x=60,300,420,660$, so $x=30,150,210,330$. Watch out: the doubled range is $0$ to $720^\\circ$.",
+   "id": "q40502"
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Simplify $\\dfrac{\\sin2x}{\\sin x}$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "\\dfrac{\\sin2x}{\\sin x}",
+    "=\\dfrac{2\\sin x}{\\sin x}",
+    "=2"
+   ],
+   "bug": 2,
+   "options": [
+    "=\\dfrac{\\sin^{2}x}{\\sin x}",
+    "=\\dfrac{2\\sin x\\cos x}{\\cos x}",
+    "=\\dfrac{2\\sin x\\cos x}{\\sin x}",
+    "=\\dfrac{2\\sin x+\\cos x}{\\sin x}"
+   ],
+   "correct": 2,
+   "explanation": "$\\sin2x=2\\sin x\\cos x$, so the quotient is $2\\cos x$. Watch out: $\\sin2x$ is not $2\\sin x$.",
+   "id": "q40503"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Simplify $\\dfrac{\\sin2x}{\\sin x}$ for $\\sin x\\ne0$.",
+   "answer": "2cos(x)",
+   "explanation": "$\\dfrac{2\\sin x\\cos x}{\\sin x}=2\\cos x$. Watch out: the $\\sin x$ cancels exactly once.",
+   "id": "q40504"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\sin(A+B)=\\sin A+\\sin B$.",
+   "correct": false,
+   "explanation": "For $A=B=90^\\circ$: $\\sin180^\\circ=0$ but $1+1=2$. Watch out: always test a suspicious identity with simple numbers.",
+   "id": "q40505"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What is the maximum value of $3\\sin x+4\\cos x$?",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$3\\sin x+4\\cos x=5\\sin(x+\\alpha)$ with $\\sqrt{3^2+4^2}=5$. Watch out: the maximum is $5$, not $7$.",
+   "id": "q40506"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "A student writes $\\sqrt{\\cos^{2}x}=\\cos x$. When is this **false**?",
+   "options": [
+    "When $\\cos x>0$",
+    "It is never false",
+    "When $\\cos x<0$",
+    "When $\\cos x=0$"
+   ],
+   "correct": 2,
+   "explanation": "$\\sqrt{\\cos^2x}=|\\cos x|$, which is $-\\cos x$ when $\\cos x<0$. Watch out: a root is never negative.",
+   "id": "q40507"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find the period in degrees of $\\sin3x$.",
+   "correct": 120,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The period of $\\sin x$ is $360^\\circ$; with $3x$ it divides by $3$: $120^\\circ$. Watch out: the factor $3$ shortens the period, not lengthens it.",
+   "id": "q40508"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "Solve $\\tan x=-1$ for $0^\\circ\\le x\\le360^\\circ$: $x$ = {{1}} and {{2}} (smaller first).",
+   "blanks": [
+    {
+     "answers": [
+      "135"
+     ]
+    },
+    {
+     "answers": [
+      "315"
+     ]
+    }
+   ],
+   "explanation": "Reference angle $45^\\circ$; tangent is negative in quadrants II and IV: $135^\\circ$ and $315^\\circ$. Watch out: $45^\\circ$ and $225^\\circ$ solve $\\tan x=+1$.",
+   "id": "q40509"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "$\\sin^{2}x=\\dfrac14$ has four solutions in $0^\\circ\\le x\\le360^\\circ$.",
+   "reason": "$\\sin x=\\dfrac12$ and $\\sin x=-\\dfrac12$ each give two solutions.",
+   "correct": "A",
+   "explanation": "Both true: $\\sin x=\\pm\\dfrac12$ gives $30,150,210,330$, and the second statement explains the count. Watch out: a squared equation gives both signs.",
+   "id": "q40510"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\cos(\\pi-x)=\\cos x$.",
+   "correct": false,
+   "explanation": "$\\cos(\\pi-x)=-\\cos x$. Watch out: only sine keeps its sign under $\\pi-x$.",
+   "id": "q40511"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which are solutions of $2\\sin^{2}x+\\sin x-1=0$ in $0^\\circ\\le x\\le360^\\circ$?",
+   "options": [
+    "$30^\\circ$",
+    "$210^\\circ$",
+    "$90^\\circ$",
+    "$270^\\circ$",
+    "$150^\\circ$"
+   ],
+   "correct": [
+    0,
+    3,
+    4
+   ],
+   "explanation": "$\\sin x=\\dfrac12$ or $-1$ gives $30,150,270$. Watch out: $210^\\circ$ gives $\\sin x=-\\dfrac12$, which is not a root.",
+   "id": "q40512"
+  }
+ ]
+}

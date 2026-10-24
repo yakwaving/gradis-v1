@@ -1,0 +1,154 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 3",
+ "description": "The six surd rules, in a gentle first set. Mind the roots of sums.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Simplifying surds",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Indices, Logarithm and Surds: Simplifying surds.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Simplify $\\sqrt{18}$.",
+   "options": [
+    "$2\\sqrt{3}$",
+    "$9\\sqrt{2}$",
+    "$3\\sqrt{2}$",
+    "$6\\sqrt{3}$"
+   ],
+   "correct": 2,
+   "explanation": "$\\sqrt{18}=\\sqrt{9\\times2}=\\sqrt9\\times\\sqrt2=3\\sqrt2$. Watch out: take the square root of the perfect square: $\\sqrt9=3$, not $9$.",
+   "id": "q10301"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Simplify $2\\sqrt{2}\\times3\\sqrt{5}$.",
+   "answer": "6sqrt(10)",
+   "explanation": "Multiply the numbers outside and the numbers inside: $2\\cdot3\\cdot\\sqrt{2\\cdot5}=6\\sqrt{10}$. Watch out: you cannot add $2+3$; this is a product.",
+   "form": "rationalised",
+   "id": "q10302"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "$\\sqrt{28}=k\\sqrt7$. Find $k$.",
+   "correct": 2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\sqrt{28}=\\sqrt{4\\times7}=2\\sqrt7$, so $k=2$. Watch out: $28=4\\times7$ uses the perfect square $4$, not $14\\times2$.",
+   "id": "q10303"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find the value of $(\\sqrt{10}+\\sqrt{3})(\\sqrt{10}-\\sqrt{3})$.",
+   "correct": 7,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Difference of two squares: $10-3=7$. Watch out: the cross terms cancel, so it is a difference ($10-3$), not a sum.",
+   "id": "q10304"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\sqrt{9}+\\sqrt{16}=\\sqrt{25}$.",
+   "correct": false,
+   "explanation": "$\\sqrt9+\\sqrt{16}=3+4=7$ but $\\sqrt{25}=5$. Watch out: $\\sqrt{a}+\\sqrt{b}\\neq\\sqrt{a+b}$.",
+   "id": "q10305"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Simplify $5\\sqrt{6}+4\\sqrt{6}$.",
+   "options": [
+    "$20\\sqrt{6}$",
+    "$\\sqrt{54}$",
+    "$9\\sqrt{12}$",
+    "$9\\sqrt{6}$"
+   ],
+   "correct": 3,
+   "explanation": "Like surds add like terms: $(5+4)\\sqrt6=9\\sqrt6$. Watch out: only the coefficients are added; the root stays $\\sqrt6$.",
+   "id": "q10306"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "$\\sqrt{\\dfrac{12}{121}}=k\\sqrt3$. Give $k$ as a decimal to 3 decimal places.",
+   "correct": 0.182,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$\\sqrt{\\dfrac{12}{121}}=\\dfrac{\\sqrt{12}}{\\sqrt{121}}=\\dfrac{2\\sqrt3}{11}$, so $k=\\dfrac{2}{11}\\approx0.182$. Watch out: split into two roots first, and simplify $\\sqrt{12}$ too.",
+   "id": "q10307"
+  },
+  {
+   "type": "ordering",
+   "marks": 3,
+   "scoring": "adjacent",
+   "question": "Put the steps for simplifying $\\sqrt{18}$ in order.",
+   "items": [
+    "Write the result $3\\sqrt2$",
+    "Evaluate $\\sqrt9=3$",
+    "Write $18=9\\times2$",
+    "Split $\\sqrt{9\\times2}=\\sqrt9\\times\\sqrt2$"
+   ],
+   "correctOrder": [
+    2,
+    3,
+    1,
+    0
+   ],
+   "explanation": "Find a perfect-square factor, split the root, evaluate the root of the square, then write the result. Watch out: split only after you have found the perfect square.",
+   "id": "q10308"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these are **surds**?",
+   "options": [
+    "$\\sqrt{16}$",
+    "$\\sqrt{\\dfrac94}$",
+    "$\\sqrt{7}$",
+    "$\\sqrt{12}$",
+    "$\\sqrt{2}$"
+   ],
+   "correct": [
+    2,
+    3,
+    4
+   ],
+   "explanation": "$\\sqrt2$, $\\sqrt7$ and $\\sqrt{12}=2\\sqrt3$ are irrational, so they are surds. $\\sqrt{16}=4$ and $\\sqrt{9/4}=\\frac32$ are rational. Watch out: $\\sqrt{12}$ can be simplified, but it is still a surd.",
+   "id": "q10309"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Simplify $\\sqrt{50}+\\sqrt{8}$. One step is wrong. Tap it.",
+   "steps": [
+    "\\sqrt{50}+\\sqrt{8}",
+    "=5\\sqrt{2}+2\\sqrt{2}",
+    "=7\\sqrt{2}",
+    "=\\sqrt{14}"
+   ],
+   "bugs": [
+    4
+   ],
+   "explanation": "$7\\sqrt2$ cannot be turned into $\\sqrt{14}$: $7\\sqrt2=\\sqrt{98}$. Watch out: adding coefficients keeps the root $\\sqrt2$.",
+   "id": "q10310"
+  }
+ ]
+}

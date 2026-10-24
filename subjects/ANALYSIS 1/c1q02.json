@@ -1,0 +1,143 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 2",
+ "description": "Roots, reciprocals and equal-base reasoning, with a trap or two on the way.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Negative, zero and fractional indices",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Indices, Logarithm and Surds: Negative, zero and fractional indices.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $27^{2/3}$.",
+   "correct": 9,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$27^{2/3}=(\\sqrt[3]{27})^{2}=3^2=9$. Watch out: the index $\\frac23$ means cube root, then square; it is not $27\\times\\frac23=18$.",
+   "id": "q10201"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find the exact value of $16^{3/2}+16^{-3/2}$.",
+   "answer": "4097/64",
+   "explanation": "$16^{3/2}=(\\sqrt{16})^3=64$ and $16^{-3/2}=\\dfrac{1}{64}$, so the sum is $\\dfrac{4097}{64}$. Watch out: the negative index gives $\\frac1{64}$, not $-64$.",
+   "id": "q10202"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "If $\\left(\\dfrac15\\right)^{3a}=0.008$, find the value of $(0.25)^{a}$.",
+   "correct": 0.25,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$0.008=\\dfrac{8}{1000}=\\dfrac{1}{125}=\\left(\\dfrac15\\right)^3$, so $3a=3$ and $a=1$. Then $(0.25)^1=0.25$. Watch out: $3a=3$ gives $a=1$, not $a=3$.",
+   "id": "q10203"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Simplify $\\dfrac{x^{-2}\\cdot x^{5}}{x^{-1}}$.",
+   "answer": "x^4",
+   "explanation": "Numerator: $x^{-2+5}=x^{3}$. Dividing by $x^{-1}$ subtracts $-1$: $x^{3-(-1)}=x^{4}$. Watch out: subtracting a negative index adds it.",
+   "id": "q10204"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is $8^{-1/3}$?",
+   "options": [
+    "$-\\dfrac12$",
+    "$2$",
+    "$\\dfrac12$",
+    "$-2$"
+   ],
+   "correct": 2,
+   "explanation": "$8^{1/3}=2$, and the negative index takes the reciprocal: $\\dfrac12$. Watch out: the negative index flips the number, it does not change its sign.",
+   "id": "q10205"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Multiply $x^{4}y^{3}z^{2}$ by $xy^{5}z^{-1}$.",
+   "answer": "x^5 y^8 z",
+   "explanation": "Add the indices of each letter: $x^{4+1}y^{3+5}z^{2-1}=x^{5}y^{8}z$. Watch out: $x$ has an invisible index $1$, and $z^{2}z^{-1}=z^{1}$.",
+   "keys": [
+    "pow",
+    "lp",
+    "rp",
+    "mul",
+    "minus",
+    "plus"
+   ],
+   "id": "q10206"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\left(\\dfrac35\\right)^{2}=\\dfrac{3^{2}}{5^{2}}$.",
+   "correct": true,
+   "explanation": "The index applies to the numerator and to the denominator: $\\dfrac{9}{25}$. Watch out: $\\dfrac{3}{5^2}$ would give $\\dfrac{3}{25}$.",
+   "id": "q10207"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which expression is equal to $a^{-p}$?",
+   "options": [
+    "$a^{1/p}$",
+    "$\\dfrac{1}{a^{-p}}$",
+    "$\\dfrac{1}{a^{p}}$",
+    "$-a^{p}$"
+   ],
+   "correct": 2,
+   "explanation": "By Rule 2, $a^{-p}=\\dfrac1{a^p}$. Watch out: $\\dfrac{1}{a^{-p}}$ is the reverse, it equals $a^{p}$.",
+   "id": "q10208"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\left(\\dfrac23\\right)^{-2}$ as a decimal.",
+   "correct": 2.25,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "Flip the fraction, then square: $\\left(\\dfrac32\\right)^2=\\dfrac94=2.25$. Watch out: flip first, because the negative index means reciprocal.",
+   "id": "q10209"
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Solve $4^{x}=8$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "4^{x}=8",
+    "(2^{2})^{x}=2^{3}",
+    "2^{2x}=2^{3}",
+    "2x=3",
+    "x=6"
+   ],
+   "bug": 5,
+   "options": [
+    "x=\\dfrac{2}{3}",
+    "x=\\dfrac{3}{2}",
+    "x=1",
+    "x=\\dfrac{3}{4}"
+   ],
+   "correct": 1,
+   "explanation": "From $2x=3$ we divide both sides by $2$: $x=\\dfrac32$. Watch out: $x=6$ multiplies by $2$ instead of dividing.",
+   "id": "q10210"
+  }
+ ]
+}

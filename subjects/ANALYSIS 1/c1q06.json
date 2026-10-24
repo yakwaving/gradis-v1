@@ -1,0 +1,142 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 6",
+ "description": "Product, quotient, power and change of base.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Laws of logarithms",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Indices, Logarithm and Surds: Laws of logarithms.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Write $\\log_3 4+\\log_3 7$ as a single logarithm.",
+   "answer": "log_3(28)",
+   "explanation": "Product rule: $\\log_34+\\log_37=\\log_3(4\\times7)=\\log_3 28$. Watch out: the numbers are multiplied inside the log ($4\\times7$), not added.",
+   "form": "single",
+   "id": "q10601"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\log_3(2y)=\\log_3 2+\\log_3 y$.",
+   "correct": true,
+   "explanation": "Product rule: a product inside the log becomes a sum. Watch out: $\\log_3 2\\cdot\\log_3 y$ would be wrong.",
+   "id": "q10602"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\log_5\\dfrac{1}{25}$.",
+   "correct": -2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\dfrac1{25}=5^{-2}$, so $\\log_5\\dfrac1{25}=-2$. Watch out: the answer is negative, because the number is smaller than $1$.",
+   "id": "q10603"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which expression is equal to $\\log_b(m^{n})$?",
+   "options": [
+    "$m\\log_b n$",
+    "$n\\log_b m$",
+    "$\\log_b m+n$",
+    "$(\\log_b m)^{n}$"
+   ],
+   "correct": 1,
+   "explanation": "Power rule: bring the exponent in front, $n\\log_b m$. Watch out: $(\\log_b m)^n$ is a power of the logarithm, which is different.",
+   "id": "q10604"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\log(a+b)=\\log a+\\log b$.",
+   "correct": false,
+   "explanation": "It is $\\log(ab)$ that equals $\\log a+\\log b$. Watch out: a sum inside a logarithm cannot be split.",
+   "id": "q10605"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\log_2 8+\\log_2 4$.",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\log_2 8+\\log_24=3+2=5$ (or $\\log_2 32=5$). Watch out: add the logarithms, $3+2$; do not multiply $8\\times4$ inside and then forget to take the log.",
+   "id": "q10606"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\log_{10}50+\\log_{10}2$.",
+   "correct": 2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\log_{10}(50\\times2)=\\log_{10}100=2$. Watch out: the two logs are **added**, so the numbers are multiplied.",
+   "id": "q10607"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the change of base rule for $\\log_b2$?",
+   "options": [
+    "$\\dfrac{\\log_ab}{\\log_a2}$",
+    "$\\log_a2-\\log_ab$",
+    "$\\dfrac{\\log_a2}{\\log_ab}$",
+    "$\\log_a2\\cdot\\log_ab$"
+   ],
+   "correct": 2,
+   "explanation": "$\\log_b m=\\dfrac{\\log_a m}{\\log_a b}$. Watch out: the base goes in the denominator, and it is a quotient, not a difference.",
+   "id": "q10608"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Write $2\\log x-\\log y$ as a single logarithm.",
+   "answer": "log(x^2/y)",
+   "explanation": "$2\\log x=\\log x^{2}$ and subtracting a log divides: $\\log\\dfrac{x^{2}}{y}$. Watch out: the $2$ becomes a power of $x$ only, not of $\\dfrac xy$.",
+   "form": "single",
+   "id": "q10609"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Simplify $\\log_3 81-\\log_3 3$. One step is wrong. Tap it.",
+   "steps": [
+    "\\log_{3}81-\\log_{3}3",
+    "=\\log_{3}(81-3)",
+    "=\\log_{3}78"
+   ],
+   "bugs": [
+    2
+   ],
+   "explanation": "A difference of logarithms is the log of a quotient: $\\log_3\\dfrac{81}{3}=\\log_327=3$. Watch out: subtracting inside the log is not allowed.",
+   "id": "q10610"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Use $\\log_b a=\\dfrac{1}{\\log_a b}$ to find $\\log_8 2$ as a decimal to 3 decimal places.",
+   "correct": 0.333,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$\\log_82=\\dfrac{1}{\\log_28}=\\dfrac13\\approx0.333$. Watch out: the base and the number swap places, so the answer is $\\frac13$, not $3$.",
+   "id": "q10611"
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "kind": "summary",
+ "title": "Inverse functions, symmetry and transformations",
+ "intro": "Read this before the inverse and transformation questions.",
+ "blocks": [
+  {
+   "kind": "remember",
+   "title": "inverse",
+   "body": "$f^{-1}$ undoes $f$. It exists only if $f$ is one-to-one (passes the horizontal line test). To find it: write $y=f(x)$, swap the roles, solve for $x$."
+  },
+  {
+   "kind": "formula",
+   "title": "symmetry",
+   "items": [
+    "Even: $f(-x)=f(x)$, symmetric about the $y$-axis",
+    "Odd: $f(-x)=-f(x)$, symmetric about the origin"
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "transformations",
+   "items": [
+    "$f(x)+a$: up by $a$",
+    "$f(x+a)$: **left** by $a$",
+    "$f(-x)$: reflect in the $y$-axis",
+    "$-f(x)$: reflect in the $x$-axis",
+    "$f(ax)$: horizontal stretch by factor $\\dfrac1a$"
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "$f^{-1}(x)$ is not $\\dfrac1{f(x)}$.",
+    "Changes inside the brackets act on $x$ and work backwards."
+   ]
+  }
+ ]
+}

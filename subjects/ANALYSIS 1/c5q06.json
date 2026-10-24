@@ -1,0 +1,137 @@
+{
+ "title": "Differentiation Quiz 6",
+ "description": "Turn the words into a function, or differentiate $y$ with respect to $x$.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Optimisation and implicit differentiation",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Differentiation: Optimisation and implicit differentiation.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "A rectangle has perimeter $20$. What is the largest possible area?",
+   "correct": 25,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Width $x$ and height $10-x$: $A=10x-x^2$, maximum at $x=5$: $25$. Watch out: the maximum is a square.",
+   "id": "q50601"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "A rectangle has perimeter $20$. What width gives the maximum area?",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$A'=10-2x=0$ gives $x=5$. Watch out: the answer is the width, not the area.",
+   "id": "q50602"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Write the area $A$ of a rectangle of width $x$ and perimeter $20$ as a function of $x$.",
+   "answer": "x(10-x)",
+   "explanation": "The height is $10-x$, so $A=x(10-x)$. Watch out: the perimeter is $2x+2h$, so $x+h=10$.",
+   "id": "q50603"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "For $x^{2}+y^{2}=25$ find $\\dfrac{dy}{dx}$ at $(3,4)$ as a decimal.",
+   "correct": -0.75,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$2x+2y\\,y'=0$ so $y'=-\\dfrac{x}{y}=-\\dfrac34$. Watch out: differentiate $y^2$ as $2y\\,y'$.",
+   "id": "q50604"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is $\\dfrac{d}{dx}(y^{2})$ when $y$ depends on $x$?",
+   "options": [
+    "$2y$",
+    "$2y\\dfrac{dy}{dx}$",
+    "$y\\dfrac{dy}{dx}$",
+    "$2x\\dfrac{dy}{dx}$"
+   ],
+   "correct": 1,
+   "explanation": "This is the chain rule. Watch out: the $\\dfrac{dy}{dx}$ factor cannot be dropped.",
+   "id": "q50605"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "For $x^{2}+y^{2}=25$ write $\\dfrac{dy}{dx}$ in terms of $x$ and $y$.",
+   "answer": "-x/y",
+   "explanation": "$y'=-\\dfrac{x}{y}$. Watch out: the answer contains both $x$ and $y$.",
+   "id": "q50606"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "A square has side $x$ growing at $2$ cm/s. How fast is the area growing when $x=5$?",
+   "correct": 20,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$A=x^2$, so $\\dfrac{dA}{dt}=2x\\cdot\\dfrac{dx}{dt}=2\\cdot5\\cdot2=20$. Watch out: units are cm²/s.",
+   "id": "q50607"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "To optimise a quantity you must first write it as a function of one variable.",
+   "correct": true,
+   "explanation": "Only then can you differentiate and solve $A'=0$. Watch out: eliminate the other variable with the constraint.",
+   "id": "q50608"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Maximise $A=x(10-x)$. One step is wrong. Tap it.",
+   "steps": [
+    "A=10x-x^{2}",
+    "A'=10-x",
+    "A'=0\\Rightarrow x=10",
+    "A=0"
+   ],
+   "bugs": [
+    2
+   ],
+   "explanation": "$A'=10-2x$, so the maximum is at $x=5$. Watch out: differentiate $x^2$ as $2x$.",
+   "id": "q50609"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which are **true** for the rectangle with perimeter $20$?",
+   "options": [
+    "height $=10-$ width",
+    "the maximum area is $50$",
+    "the maximum area is $25$",
+    "the width is $10$ at maximum"
+   ],
+   "correct": [
+    0,
+    2
+   ],
+   "explanation": "The two sides add to $10$, and $5\\times5=25$. Watch out: do not confuse the perimeter with the area.",
+   "id": "q50610"
+  }
+ ]
+}

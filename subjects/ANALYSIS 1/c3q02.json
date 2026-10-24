@@ -1,0 +1,138 @@
+{
+ "title": "Functions Quiz 2",
+ "description": "Work from the inside out. The order matters.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Composite functions",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Functions: Composite functions.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Let $f(x)=2x+1$ and $g(x)=x^{2}$. Find $f(g(x))$.",
+   "answer": "2x^2+1",
+   "explanation": "Apply $g$ first: $g(x)=x^2$, then $f$: $2x^2+1$. Watch out: $f(g(x))$ puts $g$ **inside** $f$.",
+   "id": "q30201"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Let $f(x)=2x+1$ and $g(x)=x^{2}$. Find $g(f(x))$.",
+   "answer": "(2x+1)^2",
+   "explanation": "Apply $f$ first: $2x+1$, then square: $(2x+1)^2$. Watch out: the square covers the whole bracket, not just $2x$.",
+   "id": "q30202"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Let $f(x)=2x+1$ and $g(x)=x^{2}$. Find $f(g(3))$.",
+   "correct": 19,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$g(3)=9$ and $f(9)=19$. Watch out: do $g$ first, otherwise you get $49$.",
+   "id": "q30203"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Let $f(x)=2x+1$ and $g(x)=x^{2}$. Find $g(f(3))$.",
+   "correct": 49,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$f(3)=7$ and $g(7)=49$. Watch out: this is the other order and gives a different answer.",
+   "id": "q30204"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "For any two functions, $f(g(x))=g(f(x))$.",
+   "correct": false,
+   "explanation": "In general they differ, for example $2x^2+1\\neq(2x+1)^2$. Watch out: composition is not commutative.",
+   "id": "q30205"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "If $f(x)=x+3$ and $g(x)=2x$, what is $(f\\circ g)(x)$?",
+   "options": [
+    "$2x+3$",
+    "$x+6$",
+    "$2x+6$",
+    "$2(x+3)$"
+   ],
+   "correct": 0,
+   "explanation": "$f(g(x))=f(2x)=2x+3$. Watch out: $2(x+3)=2x+6$ is $g(f(x))$, the other order.",
+   "id": "q30206"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "If $f(x)=\\sqrt{x}$ and $g(x)=x-4$, what is the domain of $f(g(x))$?",
+   "options": [
+    "all real $x$",
+    "$x\\ge4$",
+    "$x\\ge-4$",
+    "$x\\ge0$"
+   ],
+   "correct": 1,
+   "explanation": "We need $x-4\\ge0$, so $x\\ge4$. Watch out: the restriction comes from the inner function's output.",
+   "id": "q30207"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Find $f(g(x))$ for $f(x)=x^{2}+1$ and $g(x)=x-2$. One step is wrong. Tap it.",
+   "steps": [
+    "f(g(x))=f(x-2)",
+    "=(x-2)^{2}+1",
+    "=x^{2}-4+1",
+    "=x^{2}-3"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "$(x-2)^2=x^2-4x+4$, so the result is $x^2-4x+5$. Watch out: the cross term $-4x$ was dropped.",
+   "id": "q30208"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Let $f(x)=x^{2}+1$ and $g(x)=x-2$. Simplify $f(g(x))$.",
+   "answer": "x^2-4x+5",
+   "explanation": "$(x-2)^2+1=x^2-4x+4+1=x^2-4x+5$. Watch out: expand the bracket fully.",
+   "form": "expanded",
+   "id": "q30209"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "With $f(x)=2x+1$ and $g(x)=x^{2}$, which are **true**?",
+   "options": [
+    "$f(g(0))=1$",
+    "$g(f(0))=1$",
+    "$g(f(1))=5$",
+    "$f(g(2))=25$",
+    "$f(g(-1))=3$"
+   ],
+   "correct": [
+    0,
+    1,
+    4
+   ],
+   "explanation": "$f(g(0))=1$, $g(f(0))=1$, $f(g(-1))=2+1=3$. But $f(g(2))=9$ and $g(f(1))=9$. Watch out: squaring comes before doubling in $f(g(x))$.",
+   "id": "q30210"
+  }
+ ]
+}

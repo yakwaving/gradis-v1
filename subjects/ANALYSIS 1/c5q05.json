@@ -1,0 +1,168 @@
+{
+ "title": "Differentiation Quiz 5",
+ "description": "Find them, then decide what kind they are.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Stationary points",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Differentiation: Stationary points.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "$y=x^{3}-3x$ has stationary points at $x$ = {{1}} and {{2}} (smaller first).",
+   "blanks": [
+    {
+     "answers": [
+      "-1"
+     ]
+    },
+    {
+     "answers": [
+      "1"
+     ]
+    }
+   ],
+   "explanation": "$y'=3x^2-3=0$ gives $x=\\pm1$. Watch out: both signs are solutions.",
+   "id": "q50501"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "For $y=x^{3}-3x$, what is the point at $x=1$?",
+   "options": [
+    "a maximum, at $(1,2)$",
+    "a minimum, at $(1,2)$",
+    "a minimum, at $(1,-2)$",
+    "a maximum, at $(1,-2)$"
+   ],
+   "correct": 2,
+   "explanation": "$y''=6x=6>0$ at $x=1$, so it is a minimum, with $y=1-3=-2$. Watch out: check the sign of $y''$ and calculate $y$.",
+   "id": "q50502"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "For $y=x^{3}-3x$, what is the point at $x=-1$?",
+   "options": [
+    "a maximum, at $(-1,-2)$",
+    "a maximum, at $(-1,2)$",
+    "a minimum, at $(-1,-2)$",
+    "a minimum, at $(-1,2)$"
+   ],
+   "correct": 1,
+   "explanation": "$y''=-6<0$, so a maximum; $y=-1+3=2$. Watch out: $y(-1)=-1-(-3)=2$.",
+   "id": "q50503"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find the minimum value of $y=x^{2}-6x+5$.",
+   "correct": -4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$y'=2x-6=0$ at $x=3$, and $y=9-18+5=-4$. Watch out: the answer is the **value** of $y$, not $x$.",
+   "id": "q50504"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "If $f'(a)=0$ then $f$ must have a maximum or minimum at $x=a$.",
+   "correct": false,
+   "explanation": "For $y=x^3$, $y'(0)=0$ but there is only a point of inflection. Watch out: also check $f''$ or the sign of $f'$.",
+   "id": "q50505"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "If $f''(a)>0$ and $f'(a)=0$ the point is a minimum.",
+   "correct": true,
+   "explanation": "Positive second derivative means the curve bends upward. Watch out: $f''(a)<0$ would be a maximum.",
+   "id": "q50506"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "For $y=x^{4}$, find $y''$ at $x=0$.",
+   "correct": 0,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$y''=12x^2=0$ at $x=0$. Watch out: the second derivative test is inconclusive here, yet $x=0$ is still a minimum.",
+   "id": "q50507"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Find the stationary points of $y=x^{3}-3x$. One step is wrong. Tap it.",
+   "steps": [
+    "y'=3x^{2}-3",
+    "3x^{2}-3=0",
+    "x^{2}=3",
+    "x=\\pm\\sqrt3"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "$3x^2=3$ gives $x^2=1$. Watch out: divide by $3$, not by $1$.",
+   "id": "q50508"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which statements about $y=x^{3}-3x$ are **true**?",
+   "options": [
+    "a derivative of $3x^{2}+3$",
+    "no stationary points anywhere",
+    "a maximum at the point $x=-1$",
+    "a minimum at the point $x=1$",
+    "a derivative of $3x^{2}-3$"
+   ],
+   "correct": [
+    2,
+    3,
+    4
+   ],
+   "explanation": "The derivative is $3x^2-3$ and it vanishes at $x=\\pm1$. Watch out: the constant term is $-3$.",
+   "id": "q50509"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $y''$ for $y=x^{3}-3x$.",
+   "answer": "6x",
+   "explanation": "$y'=3x^2-3$ and $y''=6x$. Watch out: the constant disappears at the first derivative.",
+   "id": "q50510"
+  },
+  {
+   "type": "ordering",
+   "marks": 3,
+   "scoring": "adjacent",
+   "question": "Put the steps for finding and classifying a turning point in order.",
+   "items": [
+    "Find $y''$ at each solution",
+    "Differentiate",
+    "Set $y'=0$ and solve",
+    "State max or min and find $y$"
+   ],
+   "correctOrder": [
+    1,
+    2,
+    0,
+    3
+   ],
+   "explanation": "Always differentiate first, and solve before classifying. Watch out: remember to give the $y$-coordinate if asked.",
+   "id": "q50511"
+  }
+ ]
+}

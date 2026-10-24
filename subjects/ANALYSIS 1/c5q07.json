@@ -1,0 +1,152 @@
+{
+ "title": "Differentiation Quiz 7",
+ "description": "Every question hides a trap: a missing factor, a sign or an unchecked point.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: differentiation",
+ "timerType": "wholeQuiz",
+ "totalTime": 1560,
+ "confidence": true,
+ "instructions": [
+  "Differentiation: Difficult: differentiation.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Differentiate $\\ln(3x)$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "u=3x,\\ y=\\ln u",
+    "\\dfrac{dy}{du}=\\dfrac1u",
+    "\\dfrac{dy}{dx}=\\dfrac{dy}{du}=\\dfrac{1}{3x}"
+   ],
+   "bug": 3,
+   "options": [
+    "\\dfrac{dy}{dx}=\\dfrac1u+3=\\dfrac{1}{3x}+3",
+    "\\dfrac{dy}{dx}=\\dfrac1u\\cdot3=\\dfrac1x",
+    "\\dfrac{dy}{dx}=3\\ln x",
+    "\\dfrac{dy}{dx}=\\dfrac1u\\cdot\\dfrac13=\\dfrac{1}{9x}"
+   ],
+   "correct": 1,
+   "explanation": "The chain rule multiplies by $\\dfrac{du}{dx}=3$: $\\dfrac{3}{3x}=\\dfrac1x$. Watch out: the answer does not depend on the $3$.",
+   "id": "q50701"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Differentiate $\\dfrac{x}{x+1}$. One step is wrong. Tap it.",
+   "steps": [
+    "u=x,\\ v=x+1",
+    "u'=1,\\ v'=1",
+    "y'=\\dfrac{1\\cdot(x+1)+x\\cdot1}{(x+1)^{2}}",
+    "y'=\\dfrac{2x+1}{(x+1)^{2}}"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "The quotient rule subtracts: $u'v-uv'=x+1-x=1$. Watch out: the sign between the products is minus.",
+   "id": "q50702"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $xe^{2x}$.",
+   "answer": "e^(2x)(1+2x)",
+   "explanation": "$e^{2x}+x\\cdot2e^{2x}=e^{2x}(1+2x)$. Watch out: the chain rule gives the factor $2$ inside the product rule.",
+   "id": "q50703"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\sin^{2}x$.",
+   "answer": "2sin(x)cos(x)",
+   "explanation": "$2\\sin x\\cos x$, which equals $\\sin2x$. Watch out: it is not $2\\sin x$.",
+   "id": "q50704"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\dfrac{d}{dx}e^{2x}=e^{2x}$.",
+   "correct": false,
+   "explanation": "The chain rule gives $2e^{2x}$. Watch out: the exponential only stays unchanged when the exponent is exactly $x$.",
+   "id": "q50705"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\dfrac{d}{dx}\\tan x$ at $x=0$.",
+   "correct": 1,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\sec^2 0=1$. Watch out: $\\sec0=1$, so the square is $1$.",
+   "id": "q50706"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find the gradient of $y=x^{2}e^{x}$ at $x=1$ to 3 decimal places.",
+   "correct": 8.155,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.002
+   },
+   "explanation": "$y'=e^x(x^2+2x)=3e\\approx8.155$. Watch out: do not drop the $e^x$.",
+   "id": "q50707"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A stationary point is always a maximum or a minimum.",
+   "correct": false,
+   "explanation": "For $y=x^3$ at $x=0$ it is a point of inflection. Watch out: check the sign change of the gradient.",
+   "id": "q50708"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which derivative needs the **chain rule**?",
+   "options": [
+    "$\\dfrac{d}{dx}\\sqrt{x^{2}+1}$",
+    "$\\dfrac{d}{dx}\\dfrac{x}{x+1}$",
+    "$\\dfrac{d}{dx}\\sqrt{x}$",
+    "$\\dfrac{d}{dx}x^{2}e^{x}$"
+   ],
+   "correct": 0,
+   "explanation": "The inner function $x^2+1$ is not just $x$. Watch out: the other two use the product and quotient rules.",
+   "id": "q50709"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "The normal to $y=x^{2}$ at $x=1$ has what gradient?",
+   "correct": -0.5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "The tangent gradient is $2$, so the normal gradient is $-\\dfrac12$. Watch out: flip **and** negate.",
+   "id": "q50710"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "The tangent to $y=x^{3}$ at the origin is the $x$-axis, although $y=x^3$ crosses it.",
+   "reason": "The gradient at $x=0$ is $0$.",
+   "correct": "A",
+   "explanation": "Both are true: $y'=3x^2=0$ at $0$, so the tangent is horizontal even though the curve passes through it. Watch out: tangents can cross the curve.",
+   "id": "q50711"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Differentiate $\\dfrac{\\cos x}{x}$.",
+   "answer": "(-xsin(x)-cos(x))/x^2",
+   "explanation": "$\\dfrac{-\\sin x\\cdot x-\\cos x}{x^2}$. Watch out: the derivative of $\\cos x$ carries the minus sign into the numerator.",
+   "id": "q50712"
+  }
+ ]
+}

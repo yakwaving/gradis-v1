@@ -1,0 +1,41 @@
+{
+ "kind": "summary",
+ "title": "Surds and rationalising",
+ "intro": "Read this before the surd questions.",
+ "blocks": [
+  {
+   "kind": "remember",
+   "title": "what a surd is",
+   "body": "A surd is a root that cannot be written as a whole number or a fraction, like $\\sqrt2\\approx1.414$. It is best left as $\\sqrt2$ because the decimal is never exact."
+  },
+  {
+   "kind": "formula",
+   "title": "the surd rules",
+   "items": [
+    "$\\sqrt{a\\times b}=\\sqrt a\\times\\sqrt b$",
+    "$\\sqrt{\\dfrac ab}=\\dfrac{\\sqrt a}{\\sqrt b}$",
+    "$\\dfrac{b}{\\sqrt a}=\\dfrac{b}{\\sqrt a}\\times\\dfrac{\\sqrt a}{\\sqrt a}=\\dfrac{b\\sqrt a}{a}$",
+    "$a\\sqrt c\\pm b\\sqrt c=(a\\pm b)\\sqrt c$",
+    "$(a+b)(a-b)=a^{2}-b^{2}$, so a conjugate removes the root"
+   ]
+  },
+  {
+   "kind": "hint",
+   "body": "To rationalise $\\dfrac{c}{a+b\\sqrt n}$ multiply top and bottom by the **conjugate** $a-b\\sqrt n$. For $\\dfrac{c}{a-b\\sqrt n}$ use $a+b\\sqrt n$."
+  },
+  {
+   "kind": "dont",
+   "title": "watch the roots of sums",
+   "items": [
+    "$\\sqrt a+\\sqrt b\\neq\\sqrt{a+b}$",
+    "Only like surds add: $5\\sqrt6+4\\sqrt6=9\\sqrt6$, but $\\sqrt2+\\sqrt3$ stays as it is."
+   ]
+  },
+  {
+   "kind": "format",
+   "title": "typed answers",
+   "body": "Write roots as `sqrt(2)`. Rationalised answers must have no root in the denominator."
+  }
+ ],
+ "builds": "Laws of indices"
+}

@@ -1,0 +1,41 @@
+{
+ "kind": "summary",
+ "title": "Types of denominators and general forms",
+ "intro": "Read this before any partial fraction question. The form you choose decides everything.",
+ "blocks": [
+  {
+   "kind": "remember",
+   "title": "proper or improper",
+   "body": "A fraction $\\dfrac{P(x)}{Q(x)}$ is **proper** when $\\deg P<\\deg Q$. If it is not proper, divide first (long division), then decompose the remainder fraction."
+  },
+  {
+   "kind": "formula",
+   "title": "the general forms",
+   "items": [
+    "Distinct linear factors: $\\dfrac{A}{x-a}+\\dfrac{B}{x-b}+\\dfrac{C}{x-c}$",
+    "Repeated factor $(x-a)^2$: $\\dfrac{A}{x-a}+\\dfrac{B}{(x-a)^2}$",
+    "Irreducible quadratic: $\\dfrac{Ax+B}{x^{2}+px+q}$, where $p^{2}-4q<0$",
+    "Linear and quadratic: $\\dfrac{A}{x-a}+\\dfrac{Bx+C}{x^{2}+px+q}$"
+   ]
+  },
+  {
+   "kind": "hint",
+   "title": "finding the constants",
+   "body": "Multiply both sides by the denominator, then either **substitute** the roots (cover-up) or **compare coefficients**. A good check: substitute $x=0$ at the end."
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "A repeated factor needs **one term for each power**: $(x-1)^2$ gives two terms.",
+    "An irreducible quadratic gets a **linear** numerator $Bx+C$, not just a constant.",
+    "A constant can turn out to be $0$. That is allowed."
+   ]
+  },
+  {
+   "kind": "format",
+   "title": "typed answers",
+   "body": "Write a fraction constant as `4/3`. For several constants, the blanks are filled in the order $A$, $B$, $C$."
+  }
+ ]
+}

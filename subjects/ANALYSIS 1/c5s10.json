@@ -1,0 +1,34 @@
+{
+ "kind": "summary",
+ "title": "Basic derivative rules",
+ "intro": "Read this before the first differentiation questions.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "standard derivatives",
+   "items": [
+    "$\\dfrac{d}{dx}x^{n}=nx^{n-1}$",
+    "$\\dfrac{d}{dx}e^{x}=e^{x},\\ \\dfrac{d}{dx}\\ln x=\\dfrac1x$",
+    "$\\dfrac{d}{dx}\\sin x=\\cos x,\\ \\dfrac{d}{dx}\\cos x=-\\sin x$",
+    "$\\dfrac{d}{dx}\\tan x=\\sec^2x$"
+   ]
+  },
+  {
+   "kind": "remember",
+   "title": "linearity",
+   "body": "Differentiate term by term, and constants multiply through: $\\dfrac{d}{dx}(af+bg)=af'+bg'$. The derivative of a constant is $0$."
+  },
+  {
+   "kind": "hint",
+   "body": "Rewrite roots and reciprocals as powers first: $\\dfrac1x=x^{-1}$, $\\sqrt x=x^{1/2}$."
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "The derivative of $\\cos x$ is $-\\sin x$, with the minus.",
+    "$\\dfrac{d}{dx}x^{-1}=-x^{-2}$, not $x^{0}$."
+   ]
+  }
+ ]
+}

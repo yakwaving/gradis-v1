@@ -1,0 +1,130 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 4",
+ "description": "Conjugates and rationalising. The final answer must have no root in the denominator.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Rationalising denominators",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Indices, Logarithm and Surds: Rationalising denominators.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Rationalise $\\dfrac{5}{\\sqrt7}$.",
+   "answer": "5sqrt(7)/7",
+   "explanation": "Multiply top and bottom by $\\sqrt7$: $\\dfrac{5\\sqrt7}{7}$. Watch out: the same factor goes on the top and on the bottom.",
+   "form": "rationalised",
+   "id": "q10401"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Rationalise $\\dfrac{3}{2+\\sqrt2}$.",
+   "answer": "(6-3sqrt(2))/2",
+   "explanation": "Multiply by $\\dfrac{2-\\sqrt2}{2-\\sqrt2}$: the denominator is $4-2=2$ and the numerator is $6-3\\sqrt2$. Watch out: the conjugate of $2+\\sqrt2$ is $2-\\sqrt2$.",
+   "form": "rationalised",
+   "id": "q10402"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Rationalise $\\dfrac{3}{2-\\sqrt2}$.",
+   "answer": "(6+3sqrt(2))/2",
+   "explanation": "Multiply by $\\dfrac{2+\\sqrt2}{2+\\sqrt2}$: the denominator is $4-2=2$. Watch out: here the conjugate has a **plus** sign.",
+   "form": "rationalised",
+   "id": "q10403"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "By what should you multiply top and bottom to rationalise $\\dfrac{1}{3+\\sqrt5}$?",
+   "options": [
+    "$\\sqrt5$",
+    "$3-\\sqrt5$",
+    "$-3-\\sqrt5$",
+    "$3+\\sqrt5$"
+   ],
+   "correct": 1,
+   "explanation": "The conjugate $3-\\sqrt5$ gives $(3+\\sqrt5)(3-\\sqrt5)=9-5=4$, with no root. Watch out: $3+\\sqrt5$ would give $14+6\\sqrt5$, still with a root.",
+   "id": "q10404"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find the value of the denominator after rationalising $\\dfrac{4}{5+\\sqrt{3}}$ with its conjugate.",
+   "correct": 22,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$(5+\\sqrt3)(5-\\sqrt3)=25-3=22$. Watch out: square both terms and subtract: $25-3$, not $25+3$.",
+   "id": "q10405"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Simplify $\\dfrac{\\sqrt{12}}{\\sqrt{3}}$.",
+   "answer": "2",
+   "explanation": "$\\dfrac{\\sqrt{12}}{\\sqrt3}=\\sqrt{\\dfrac{12}{3}}=\\sqrt4=2$. Watch out: the result is a whole number, so there is no root left to rationalise.",
+   "id": "q10406"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is $\\dfrac{1}{\\sqrt2}$ with a rational denominator?",
+   "options": [
+    "$\\sqrt2$",
+    "$\\dfrac{\\sqrt2}{4}$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{\\sqrt2}{2}$"
+   ],
+   "correct": 3,
+   "explanation": "Multiply top and bottom by $\\sqrt2$: $\\dfrac{\\sqrt2}{2}$. Watch out: $\\dfrac{\\sqrt2}{2}$ is not $\\sqrt2$, they differ by a factor of $2$.",
+   "id": "q10407"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Simplify $5\\sqrt6+4\\sqrt6$.",
+   "answer": "9sqrt(6)",
+   "explanation": "Like surds: $(5+4)\\sqrt6=9\\sqrt6$. Watch out: only the coefficients are added.",
+   "form": "rationalised",
+   "id": "q10408"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\dfrac{1}{\\sqrt3+1}$ can be rationalised by multiplying top and bottom by $\\sqrt3-1$.",
+   "correct": true,
+   "explanation": "$(\\sqrt3+1)(\\sqrt3-1)=3-1=2$, so the result is $\\dfrac{\\sqrt3-1}{2}$. Watch out: the conjugate changes the sign between the terms.",
+   "id": "q10409"
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Rationalise $\\dfrac{3}{2+\\sqrt2}$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "\\dfrac{3}{2+\\sqrt{2}}",
+    "=\\dfrac{3}{2+\\sqrt{2}}\\times\\dfrac{2-\\sqrt{2}}{2-\\sqrt{2}}",
+    "=\\dfrac{6-3\\sqrt{2}}{4+2}",
+    "=\\dfrac{6-3\\sqrt{2}}{6}"
+   ],
+   "bug": 3,
+   "options": [
+    "=\\dfrac{6-3\\sqrt{2}}{4-2}",
+    "=\\dfrac{6-3\\sqrt{2}}{2+\\sqrt{2}}",
+    "=\\dfrac{6-3\\sqrt{2}}{2\\sqrt2}",
+    "=\\dfrac{6+3\\sqrt{2}}{4-2}"
+   ],
+   "correct": 0,
+   "explanation": "The denominator is $(2+\\sqrt2)(2-\\sqrt2)=4-2=2$. Watch out: a difference of squares gives a minus, never $4+2$.",
+   "id": "q10410"
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "title": "Partial Fractions Quiz 5",
+ "description": "Divide first. The form of the remainder fraction depends on the denominator, and a missed division ruins everything.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Improper fractions",
+ "timerType": "wholeQuiz",
+ "totalTime": 1440,
+ "confidence": true,
+ "instructions": [
+  "Partial Fractions: Improper fractions.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What must you do **first** with $\\dfrac{x^{3}+2x^{2}+3}{x^{2}+1}$?",
+   "options": [
+    "Write $\\dfrac{A}{x^{2}+1}+\\dfrac{B}{x^{2}+1}$",
+    "Substitute $x=0$ first",
+    "Factorise the numerator",
+    "Divide the numerator by it"
+   ],
+   "correct": 3,
+   "explanation": "The numerator has a higher degree than the denominator, so the fraction is improper and needs long division. Watch out: starting the decomposition on an improper fraction gives constants that cannot exist.",
+   "id": "q20501"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find the **quotient** of $(x^{3}+2x^{2}+3)\\div(x^{2}+1)$.",
+   "answer": "x+2",
+   "explanation": "$x^3+2x^2+3=(x+2)(x^2+1)-x+1$, so the quotient is $x+2$. Watch out: $x^2\\cdot(x+2)$ needs the remainder subtracted, not added.",
+   "id": "q20502"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find the **remainder** of $(x^{3}+2x^{2}+3)\\div(x^{2}+1)$.",
+   "answer": "1-x",
+   "explanation": "$(x+2)(x^2+1)=x^3+2x^2+x+2$, and $x^3+2x^2+3$ minus that is $1-x$. Watch out: the remainder is $-x+1$, with the $x$ term negative.",
+   "id": "q20503"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Divide $x^{3}+2x^{2}+3$ by $x^{2}+1$. One step is wrong. Tap it.",
+   "steps": [
+    "x^{3}+2x^{2}+3=(x+2)(x^{2}+1)+R",
+    "(x+2)(x^{2}+1)=x^{3}+2x^{2}+2",
+    "R=(x^{3}+2x^{2}+3)-(x^{3}+2x^{2}+2)=1",
+    "\\dfrac{x^{3}+2x^{2}+3}{x^{2}+1}=x+2+\\dfrac{1}{x^{2}+1}"
+   ],
+   "bugs": [
+    2
+   ],
+   "explanation": "$(x+2)(x^2+1)=x^3+x+2x^2+2$: the term $x$ was missed. So $R=1-x$. Watch out: expand every term of the product.",
+   "id": "q20504"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "$\\dfrac{x^{2}+2x+3}{x(x+1)}=1+\\dfrac{A}{x}+\\dfrac{B}{x+1}$. Find $A$ = {{1}} and $B$ = {{2}}.",
+   "blanks": [
+    {
+     "answers": [
+      "3"
+     ]
+    },
+    {
+     "answers": [
+      "-2"
+     ]
+    }
+   ],
+   "explanation": "Divide: $x^2+2x+3=1\\cdot(x^2+x)+(x+3)$. Then $\\dfrac{x+3}{x(x+1)}=\\dfrac{3}{x}-\\dfrac{2}{x+1}$. Watch out: the numerator and denominator have the same degree, so the quotient is $1$, not $0$.",
+   "id": "q20505"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the quotient of $\\dfrac{x^{2}+2x+3}{x(x+1)}$?",
+   "options": [
+    "$0$",
+    "$x+2$",
+    "$1$",
+    "$x$"
+   ],
+   "correct": 2,
+   "explanation": "Both degrees are $2$, so the quotient is the ratio of the leading coefficients: $1$. Watch out: equal degrees still need a division.",
+   "id": "q20506"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "An improper fraction can be decomposed directly, without dividing first.",
+   "correct": false,
+   "explanation": "The general forms assume a proper fraction. Watch out: the quotient from the division is the polynomial part.",
+   "id": "q20507"
+  },
+  {
+   "type": "fill",
+   "marks": 3,
+   "question": "After dividing, $\\dfrac{x^{3}+4x^{2}+6x+5}{(x+2)(x^{2}+1)}=1+\\dfrac{A}{x+2}+\\dfrac{Bx+C}{x^{2}+1}$. Find $A$ = {{1}}, $B$ = {{2}} and $C$ = {{3}} as decimals.",
+   "blanks": [
+    {
+     "answers": [
+      "0.2",
+      "1/5"
+     ]
+    },
+    {
+     "answers": [
+      "1.8",
+      "9/5"
+     ]
+    },
+    {
+     "answers": [
+      "1.4",
+      "7/5"
+     ]
+    }
+   ],
+   "explanation": "$(x+2)(x^2+1)=x^3+2x^2+x+2$, so the quotient is $1$ and the remainder is $2x^2+5x+3$. Then $A=\\dfrac15$, $B=\\dfrac95$, $C=\\dfrac75$. Watch out: expand the denominator before dividing.",
+   "id": "q20508"
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Decompose $\\dfrac{x^{2}+2x+3}{x(x+1)}$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "\\dfrac{x^{2}+2x+3}{x(x+1)}=\\dfrac{A}{x}+\\dfrac{B}{x+1}",
+    "x^{2}+2x+3=A(x+1)+Bx",
+    "x=0:\\ 3=A",
+    "x=-1:\\ 2=-B\\ \\Rightarrow\\ B=-2"
+   ],
+   "bug": 1,
+   "options": [
+    "\\dfrac{x^{2}+2x+3}{x(x+1)}=\\dfrac{A}{x^{2}}+\\dfrac{B}{x+1}",
+    "\\dfrac{x^{2}+2x+3}{x(x+1)}=1+\\dfrac{A}{x}+\\dfrac{B}{x+1}",
+    "\\dfrac{x^{2}+2x+3}{x(x+1)}=\\dfrac{Ax+B}{x}+\\dfrac{C}{x+1}",
+    "\\dfrac{x^{2}+2x+3}{x(x+1)}=x+\\dfrac{A}{x}+\\dfrac{B}{x+1}"
+   ],
+   "correct": 1,
+   "explanation": "The fraction is improper, so a quotient of $1$ must be taken out first. Watch out: without it, $x^2+2x+3=A(x+1)+Bx$ cannot hold.",
+   "id": "q20509"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which of these fractions need long division first?",
+   "options": [
+    "$\\dfrac{x^{2}+2x+3}{x(x+1)}$",
+    "$\\dfrac{x^{3}+2x^{2}+3}{x^{2}+1}$",
+    "$\\dfrac{2x^{2}+3x+5}{x(x+1)^{2}}$",
+    "$\\dfrac{7x+5}{(x+1)(x+2)}$"
+   ],
+   "correct": [
+    0,
+    1
+   ],
+   "explanation": "Divide when $\\deg P\\ge\\deg Q$: the first two. The last two have numerator degree below the denominator degree ($3$). Watch out: equal degrees, as in the second, still count as improper.",
+   "id": "q20510"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "In $\\dfrac{x^{3}+2x^{2}+3}{x^{2}+1}=x+2+\\dfrac{1-x}{x^{2}+1}$, what is the value of the whole expression at $x=1$?",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "At $x=1$: $\\dfrac{1+2+3}{2}=3$, and $1+2+\\dfrac{0}{2}=3$. Watch out: the remainder term is $\\dfrac{1-1}{2}=0$ at $x=1$.",
+   "id": "q20511"
+  }
+ ]
+}

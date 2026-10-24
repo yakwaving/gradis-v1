@@ -1,0 +1,169 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 9",
+ "description": "Combine the logs, solve, then check the domain. Some roots will not survive.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Solving logarithmic equations",
+ "timerType": "wholeQuiz",
+ "totalTime": 1560,
+ "confidence": true,
+ "instructions": [
+  "Indices, Logarithm and Surds: Solving logarithmic equations.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $\\log_5(2x+4)=2$.",
+   "correct": 10.5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$2x+4=5^2=25$, so $x=10.5$. Watch out: $\\log_5(\\ldots)=2$ means the bracket equals $25$, not $10$.",
+   "id": "q10901"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $\\log x=1-\\log(x-3)$ (base $10$).",
+   "correct": 5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\log x+\\log(x-3)=1$ gives $x(x-3)=10$, so $x^2-3x-10=0$ and $x=5$ or $x=-2$. Watch out: the domain needs $x>3$, so $x=-2$ is rejected.",
+   "id": "q10902"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $\\log_2(x^{2}-6x)=3+\\log_2(1-x)$.",
+   "correct": -4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$x^2-6x=8(1-x)$ gives $x^2+2x-8=0$, so $x=2$ or $x=-4$. The domain needs $1-x>0$, so $x=2$ is rejected. Watch out: check **both** logs; only $x=-4$ works.",
+   "id": "q10903"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $2\\log_9(\\sqrt{x})-\\log_9(6x-1)=0$.",
+   "correct": 0.2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$2\\log_9\\sqrt x=\\log_9x$, so $x=6x-1$ and $x=\\dfrac15$. Check: $6x-1=0.2>0$. Watch out: $2\\log_9\\sqrt{x}=\\log_9x$, not $\\log_9 2x$.",
+   "id": "q10904"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Solve $\\ln10-\\ln(7-x)=\\ln x$. Give all the solutions.",
+   "answer": "2, 5",
+   "explanation": "$\\dfrac{10}{7-x}=x$ gives $x^2-7x+10=0$, so $x=2$ or $x=5$. Both satisfy $0<x<7$. Watch out: both roots are valid here, so check before you reject.",
+   "set": true,
+   "id": "q10905"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $\\log x+\\log(x-1)=\\log(3x+12)$.",
+   "correct": 6,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$x(x-1)=3x+12$ gives $x^2-4x-12=0$, so $x=6$ or $x=-2$. The domain needs $x>1$. Watch out: $x=-2$ is rejected because $\\log(-2)$ does not exist.",
+   "id": "q10906"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "After solving a logarithm equation, every answer must be checked in the original equation.",
+   "correct": true,
+   "explanation": "Combining logs can introduce roots that make an argument negative. Watch out: the check is part of the solution.",
+   "id": "q10907"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Solve $\\log x+\\log(x-3)=1$. One step is wrong. Tap it.",
+   "steps": [
+    "\\log x+\\log(x-3)=1",
+    "\\log[x(x-3)]=1",
+    "x(x-3)=10",
+    "x^{2}-3x-10=0",
+    "x=5\\ \\text{or}\\ x=-2"
+   ],
+   "bugs": [
+    5
+   ],
+   "explanation": "$x=-2$ makes $\\log x$ undefined, so only $x=5$ is a solution. Watch out: factorising gives two roots, but the domain keeps one.",
+   "id": "q10908"
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Solve $\\ln x+\\ln(x-2)=\\ln3$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "\\ln x+\\ln(x-2)=\\ln3",
+    "\\ln(x-2+x)=\\ln3",
+    "x(x-2)=3",
+    "x=3"
+   ],
+   "bug": 2,
+   "options": [
+    "\\ln\\dfrac{x}{x-2}=\\ln3",
+    "\\ln(x-2)^{x}=\\ln3",
+    "\\ln[x(x-2)]=\\ln3",
+    "\\ln(2x-2)=\\ln3"
+   ],
+   "correct": 2,
+   "explanation": "Adding logs multiplies the arguments: $\\ln[x(x-2)]=\\ln3$. Watch out: $\\ln a+\\ln b=\\ln(ab)$, not $\\ln(a+b)$.",
+   "id": "q10909"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "For which values of $x$ is $\\log_2(x-1)$ defined?",
+   "options": [
+    "$x=1$",
+    "$x=10$",
+    "$x=2$",
+    "$x=5$",
+    "$x=0.5$"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "We need $x-1>0$, so $x>1$: $2$, $5$ and $10$ work. Watch out: $x=1$ gives $\\log_2 0$, which is undefined.",
+   "id": "q10910"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Solve $\\log_3x=-2$.",
+   "answer": "1/9",
+   "explanation": "$x=3^{-2}=\\dfrac19$. Watch out: a negative logarithm means a number between $0$ and $1$, so $x$ is a fraction, not $-6$.",
+   "id": "q10911"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "$\\log_2 x$ is defined for every real number $x$.",
+   "reason": "$2^{y}>0$ for every real number $y$.",
+   "correct": "D",
+   "explanation": "The assertion is false: $\\log_2x$ needs $x>0$. The reason is true, and it is exactly why $x$ must be positive. Watch out: the reason is true but it contradicts the assertion.",
+   "id": "q10912"
+  }
+ ]
+}

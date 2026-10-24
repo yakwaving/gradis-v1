@@ -1,0 +1,34 @@
+{
+ "kind": "summary",
+ "title": "Chain, product and quotient rules",
+ "intro": "Read this before the questions on composite functions and products.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "the three rules",
+   "items": [
+    "Chain: $\\dfrac{d}{dx}f(g(x))=f'(g(x))\\cdot g'(x)$",
+    "Product: $(uv)'=u'v+uv'$",
+    "Quotient: $\\left(\\dfrac uv\\right)'=\\dfrac{u'v-uv'}{v^{2}}$"
+   ]
+  },
+  {
+   "kind": "hint",
+   "body": "For the chain rule, differentiate the **outside** first, keep the inside unchanged, then multiply by the derivative of the inside."
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "$(uv)'\\neq u'v'$.",
+    "In the quotient rule the order matters: $u'v-uv'$, not $uv'-u'v$.",
+    "$\\dfrac{d}{dx}\\ln(3x)=\\dfrac{1}{x}$, because the $3$ cancels."
+   ]
+  },
+  {
+   "kind": "example",
+   "title": "worked example",
+   "body": "$\\dfrac{d}{dx}(x^2e^x)=2xe^x+x^2e^x=e^x(x^2+2x)$."
+  }
+ ]
+}

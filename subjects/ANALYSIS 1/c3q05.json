@@ -1,0 +1,159 @@
+{
+ "title": "Functions Quiz 5",
+ "description": "Every question has a trap: restrictions, order of composition, or a hidden swap.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: functions",
+ "timerType": "wholeQuiz",
+ "totalTime": 1440,
+ "confidence": true,
+ "instructions": [
+  "Functions: Difficult: functions.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Find $f^{-1}$ for $f(x)=3x-2$. One step is wrong. Tap it.",
+   "steps": [
+    "y=3x-2",
+    "y+2=3x",
+    "x=3(y+2)",
+    "f^{-1}(x)=3(x+2)"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "$x=\\dfrac{y+2}{3}$: divide by $3$, do not multiply. Watch out: undoing multiplication by $3$ is division.",
+   "id": "q30501"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The domain of $f(g(x))$ with $f(x)=\\dfrac1{x}$ and $g(x)=x-1$ excludes...",
+   "options": [
+    "$x=-1$",
+    "$x=0$",
+    "$x=0$ and $x=1$",
+    "$x=1$"
+   ],
+   "correct": 3,
+   "explanation": "$f(g(x))=\\dfrac{1}{x-1}$, undefined at $x=1$. Watch out: $x=0$ is fine since $g(0)=-1$.",
+   "id": "q30502"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "If $f(x)=2x+1$ and $g(x)=x^{2}$, find $g(f(g(1)))$.",
+   "correct": 9,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$g(1)=1$, $f(1)=3$, $g(3)=9$. Watch out: work from the inside out.",
+   "id": "q30503"
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Find the domain of $\\sqrt{4-x^{2}}$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "4-x^{2}\\ge0",
+    "x^{2}\\le4",
+    "x\\le2",
+    "\\text{domain }x\\le2"
+   ],
+   "bug": 3,
+   "options": [
+    "x=2",
+    "-2\\le x\\le2",
+    "x\\le-2",
+    "x\\ge2"
+   ],
+   "correct": 1,
+   "explanation": "$x^2\\le4$ means $|x|\\le2$, so $-2\\le x\\le2$. Watch out: $x=-5$ has $x^2=25>4$.",
+   "id": "q30504"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "If $f$ is even and one-to-one on its whole domain, it has an inverse.",
+   "correct": false,
+   "explanation": "An even function has $f(-a)=f(a)$, so it cannot be one-to-one unless its domain is only $\\{0\\}$ or similar. Watch out: symmetry about the $y$-axis forces repeated outputs.",
+   "id": "q30505"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f^{-1}(x)$ for $f(x)=\\dfrac{x+1}{x-2}$.",
+   "answer": "(2x+1)/(x-1)",
+   "explanation": "$y(x-2)=x+1$ so $x(y-1)=2y+1$ and $x=\\dfrac{2y+1}{y-1}$. Watch out: one sign slip in $-2y$ breaks the result.",
+   "id": "q30506"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "For $f(x)=x^{2}-4x+5$, find the minimum value of $f$.",
+   "correct": 1,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$x^2-4x+5=(x-2)^2+1\\ge1$. Watch out: the minimum is $1$ at $x=2$, not at $x=0$.",
+   "id": "q30507"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the range of $f(x)=x^{2}-4x+5$?",
+   "options": [
+    "all real $y$",
+    "$y\\ge2$",
+    "$y\\ge5$",
+    "$y\\ge1$"
+   ],
+   "correct": 3,
+   "explanation": "Complete the square: $(x-2)^2+1\\ge1$. Watch out: $f(0)=5$ is not the minimum.",
+   "id": "q30508"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which statements are **true**?",
+   "options": [
+    "$f^{-1}(x)$ equals $\\dfrac{1}{f(x)}$",
+    "$f(g(x))$ applies $g$ first",
+    "$\\ln x$ is defined at $x=0$",
+    "$\\sqrt{x^2}=|x|$ for every $x$",
+    "$f(x+2)$ shifts the graph left"
+   ],
+   "correct": [
+    1,
+    3,
+    4
+   ],
+   "explanation": "The first three are standard facts. Watch out: $\\ln 0$ is undefined and $f^{-1}$ is not a reciprocal.",
+   "id": "q30509"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "The function $f(x)=x^{2}$ has no inverse on all of $\\mathbb R$.",
+   "reason": "Both $2$ and $-2$ map to $4$.",
+   "correct": "A",
+   "explanation": "Both are true and the second explains the first: two inputs share one output, so $f$ is not one-to-one. Watch out: restricting to $x\\ge0$ makes an inverse possible.",
+   "id": "q30510"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$f(x)=\\dfrac{x^{2}-1}{x-1}$ has domain all real $x$.",
+   "correct": false,
+   "explanation": "At $x=1$ the denominator is $0$, so $x=1$ is excluded even though the fraction simplifies to $x+1$. Watch out: cancel only after finding the domain.",
+   "id": "q30511"
+  }
+ ]
+}

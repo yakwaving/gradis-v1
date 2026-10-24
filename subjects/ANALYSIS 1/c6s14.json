@@ -1,0 +1,33 @@
+{
+ "kind": "summary",
+ "title": "Chain rule, differentials and critical points",
+ "intro": "Read this before the questions on chains and extreme values.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "chain rule and differential",
+   "items": [
+    "If $z=f(x,y)$ with $x=x(t),\\ y=y(t)$: $\\dfrac{dz}{dt}=f_x\\dfrac{dx}{dt}+f_y\\dfrac{dy}{dt}$",
+    "Differential: $df=f_xdx+f_ydy$"
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "critical points",
+   "items": [
+    "Solve $f_x=0$ and $f_y=0$ together.",
+    "$D=f_{xx}f_{yy}-f_{xy}^{2}$",
+    "$D>0,\\ f_{xx}>0$: minimum. $D>0,\\ f_{xx}<0$: maximum.",
+    "$D<0$: saddle point. $D=0$: test fails."
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "If $D>0$ you still need the sign of $f_{xx}$.",
+    "A saddle point is stationary but is neither a maximum nor a minimum."
+   ]
+  }
+ ]
+}

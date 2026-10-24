@@ -1,0 +1,169 @@
+{
+ "title": "Trigonometry Quiz 4",
+ "description": "Expand carefully. Signs and which identity to use are the traps.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Compound and double angles",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Trigonometry: Compound and double angles.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Expand $\\sin2x$ in terms of $\\sin x$ and $\\cos x$.",
+   "answer": "2sin(x)cos(x)",
+   "explanation": "$\\sin2x=2\\sin x\\cos x$. Watch out: it is not $2\\sin x$.",
+   "id": "q40401"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Write $\\cos2x$ in terms of $\\sin x$ only.",
+   "answer": "1-2sin(x)^2",
+   "explanation": "From $\\cos2x=\\cos^2x-\\sin^2x$ and $\\cos^2x=1-\\sin^2x$: $1-2\\sin^2x$. Watch out: the $2$ multiplies $\\sin^2x$, not the whole $1-\\sin^2x$ twice.",
+   "id": "q40402"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "If $\\sin x=\\dfrac35$ and $x$ is acute, find $\\sin2x$ as a decimal.",
+   "correct": 0.96,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$\\sin2x=2\\cdot\\dfrac35\\cdot\\dfrac45=\\dfrac{24}{25}=0.96$. Watch out: you need $\\cos x=\\dfrac45$ first.",
+   "id": "q40403"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "If $\\sin x=\\dfrac35$ and $x$ is acute, find $\\cos2x$ as a decimal.",
+   "correct": 0.28,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$\\cos2x=1-2\\cdot\\dfrac{9}{25}=\\dfrac{7}{25}=0.28$. Watch out: do not subtract before squaring.",
+   "id": "q40404"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the correct expansion of $\\cos(A+B)$?",
+   "options": [
+    "$\\sin A\\cos B+\\cos A\\sin B$",
+    "$\\cos A\\cos B+\\sin A\\sin B$",
+    "$\\cos A\\cos B-\\sin A\\sin B$",
+    "$\\cos A+\\cos B$"
+   ],
+   "correct": 2,
+   "explanation": "The sign is a minus for $\\cos(A+B)$. Watch out: $\\cos(A-B)$ has the plus.",
+   "id": "q40405"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the correct expansion of $\\sin(A-B)$?",
+   "options": [
+    "$\\sin A\\cos B-\\cos A\\sin B$",
+    "$\\sin A\\cos B+\\cos A\\sin B$",
+    "$\\sin A-\\sin B$",
+    "$\\cos A\\cos B-\\sin A\\sin B$"
+   ],
+   "correct": 0,
+   "explanation": "Sine keeps the sign. Watch out: $\\sin A-\\sin B$ is not an expansion.",
+   "id": "q40406"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\sin75^\\circ$ as a decimal, using $\\sin(45^\\circ+30^\\circ)$ (3 d.p.).",
+   "correct": 0.966,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.002
+   },
+   "explanation": "$\\sin75^\\circ=\\dfrac{\\sqrt2}{2}\\cdot\\dfrac{\\sqrt3}{2}+\\dfrac{\\sqrt2}{2}\\cdot\\dfrac12=\\dfrac{\\sqrt6+\\sqrt2}{4}\\approx0.966$. Watch out: add the two products.",
+   "id": "q40407"
+  },
+  {
+   "type": "fill",
+   "marks": 4,
+   "question": "Solve $\\sin2x=\\dfrac12$ for $0^\\circ\\le x\\le360^\\circ$: $x$ = {{1}}, {{2}}, {{3}} and {{4}} (smallest first).",
+   "blanks": [
+    {
+     "answers": [
+      "15"
+     ]
+    },
+    {
+     "answers": [
+      "75"
+     ]
+    },
+    {
+     "answers": [
+      "195"
+     ]
+    },
+    {
+     "answers": [
+      "255"
+     ]
+    }
+   ],
+   "explanation": "$2x=30,150,390,510$, so $x=15,75,195,255$. Watch out: the range for $2x$ is $0$ to $720^\\circ$, so there are four solutions.",
+   "id": "q40408"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\cos2x=2\\cos x$.",
+   "correct": false,
+   "explanation": "$\\cos2x=2\\cos^2x-1$. Watch out: test $x=0$: $\\cos0=1$ for both, but $x=60^\\circ$ gives $-\\dfrac12$ against $1$.",
+   "id": "q40409"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Expand $\\cos(x+30^\\circ)$. One step is wrong. Tap it.",
+   "steps": [
+    "\\cos(x+30^\\circ)",
+    "=\\cos x\\cos30^\\circ+\\sin x\\sin30^\\circ",
+    "=\\dfrac{\\sqrt3}{2}\\cos x+\\dfrac12\\sin x"
+   ],
+   "bugs": [
+    2
+   ],
+   "explanation": "The sign is minus: $\\cos x\\cos30^\\circ-\\sin x\\sin30^\\circ$. Watch out: $\\cos(A+B)$ has a minus between the products.",
+   "id": "q40410"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which equal $\\cos2x$?",
+   "options": [
+    "$1-2\\sin^{2}x$",
+    "$2\\cos^{2}x-1$",
+    "$\\cos^{2}x-\\sin^{2}x$",
+    "$1-2\\cos^{2}x$",
+    "$2\\sin x\\cos x$"
+   ],
+   "correct": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "The three forms agree. But $2\\sin x\\cos x=\\sin2x$ and $1-2\\cos^2x=-\\cos2x$. Watch out: swapping $\\sin$ and $\\cos$ changes the sign.",
+   "id": "q40411"
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "title": "Functions Quiz 3",
+ "description": "Swap and solve. Check that an inverse exists first.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Inverse functions",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Functions: Inverse functions.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f^{-1}(x)$ for $f(x)=3x-2$.",
+   "answer": "(x+2)/3",
+   "explanation": "Write $y=3x-2$, so $x=\\dfrac{y+2}{3}$. Watch out: add $2$ before dividing by $3$.",
+   "id": "q30301"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "If $f(x)=2x-5$, find $f^{-1}(7)$.",
+   "correct": 6,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Solve $2x-5=7$: $x=6$. Watch out: you solve $f(x)=7$, you do not substitute $7$ into $f$.",
+   "id": "q30302"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f^{-1}(x)$ for $f(x)=\\dfrac{x+1}{x-2}$.",
+   "answer": "(2x+1)/(x-1)",
+   "explanation": "$y(x-2)=x+1$ gives $x(y-1)=2y+1$, so $x=\\dfrac{2y+1}{y-1}$. Watch out: collect the $x$ terms on one side before factoring.",
+   "id": "q30303"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which function has an inverse over all real numbers?",
+   "options": [
+    "$f(x)=|x|$",
+    "$f(x)=\\cos x$",
+    "$f(x)=x^{3}+1$",
+    "$f(x)=x^{2}+1$"
+   ],
+   "correct": 2,
+   "explanation": "Only $x^3+1$ is one-to-one on all of $\\mathbb R$. Watch out: $x^2$ and $|x|$ give the same output for $x$ and $-x$.",
+   "id": "q30304"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$f^{-1}(x)=\\dfrac{1}{f(x)}$.",
+   "correct": false,
+   "explanation": "The inverse undoes $f$; $\\dfrac1{f(x)}$ is the reciprocal. For $f(x)=2x$, $f^{-1}(x)=\\dfrac x2$ but $\\dfrac1{f(x)}=\\dfrac1{2x}$. Watch out: the $-1$ is not an exponent here.",
+   "id": "q30305"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the inverse of $f(x)=e^{x}$?",
+   "options": [
+    "$\\ln x$",
+    "$e^{-x}$",
+    "$\\dfrac{1}{e^{x}}$",
+    "$-e^{x}$"
+   ],
+   "correct": 0,
+   "explanation": "Logarithm undoes the exponential. Watch out: $e^{-x}$ is the reciprocal, not the inverse.",
+   "id": "q30306"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f^{-1}(x)$ for $f(x)=x^{3}+1$.",
+   "answer": "cbrt(x-1)",
+   "explanation": "$y=x^3+1$ gives $x=\\sqrt[3]{y-1}$. Watch out: subtract $1$ first, then take the cube root.",
+   "id": "q30307"
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Find $f^{-1}$ for $f(x)=\\dfrac{2x}{x+1}$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "y=\\dfrac{2x}{x+1}",
+    "y(x+1)=2x",
+    "yx+y=2x",
+    "x(y-2)=y",
+    "x=\\dfrac{y}{y-2}"
+   ],
+   "bug": 4,
+   "options": [
+    "x(y-2)=-y",
+    "x(y+2)=-y",
+    "x(y-2)=2y",
+    "x(2-y)=-y"
+   ],
+   "correct": 0,
+   "explanation": "$yx-2x=-y$ gives $x(y-2)=-y$. Watch out: moving $y$ across changes its sign.",
+   "id": "q30308"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "A function must pass the horizontal line test to have an inverse.",
+   "correct": true,
+   "explanation": "If a horizontal line crosses twice, two inputs share one output and the inverse is not a function. Watch out: this is different from the vertical line test.",
+   "id": "q30309"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "The point $(2,5)$ is on the graph of $f$. What is $f^{-1}(5)$?",
+   "correct": 2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The inverse swaps coordinates, so $(5,2)$ is on $f^{-1}$. Watch out: swap the coordinates, do not negate.",
+   "id": "q30310"
+  }
+ ]
+}

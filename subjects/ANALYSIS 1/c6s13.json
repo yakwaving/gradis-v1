@@ -1,0 +1,34 @@
+{
+ "kind": "summary",
+ "title": "Partial derivatives, domains and level curves",
+ "intro": "Read this before the questions on functions of two variables.",
+ "blocks": [
+  {
+   "kind": "remember",
+   "title": "partial derivatives",
+   "body": "For $f(x,y)$, the partial derivative $f_x=\\dfrac{\\partial f}{\\partial x}$ is found by differentiating with respect to $x$ while treating $y$ as a **constant**. Likewise for $f_y$."
+  },
+  {
+   "kind": "formula",
+   "title": "useful results",
+   "items": [
+    "$\\dfrac{\\partial}{\\partial x}(x^2y)=2xy$ and $\\dfrac{\\partial}{\\partial y}(x^2y)=x^2$",
+    "$f_{xy}=f_{yx}$ when the second derivatives are continuous",
+    "Gradient: $\\nabla f=(f_x,\\ f_y)$"
+   ]
+  },
+  {
+   "kind": "remember",
+   "title": "domains and level curves",
+   "body": "The domain is a region of the plane. A **level curve** is the set where $f(x,y)=c$ for a constant $c$. For $x^2+y^2=c$ the level curves are circles."
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "Do not treat $y$ as a variable when finding $f_x$.",
+    "$\\dfrac{\\partial}{\\partial x}(3xy^2)=3y^2$, not $6xy$."
+   ]
+  }
+ ]
+}

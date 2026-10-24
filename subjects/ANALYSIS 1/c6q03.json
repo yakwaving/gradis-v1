@@ -1,0 +1,130 @@
+{
+ "title": "Functions of Several Real Variables Quiz 3",
+ "description": "Differentiate twice and keep track of the order.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Higher derivatives and the gradient",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Functions of Several Real Variables: Higher derivatives and the gradient.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_{xx}$ for $f=x^{2}y+3xy^{2}$.",
+   "answer": "2y",
+   "explanation": "$f_x=2xy+3y^2$, so $f_{xx}=2y$. Watch out: $3y^2$ is constant in $x$.",
+   "id": "q60301"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_{yy}$ for $f=x^{2}y+3xy^{2}$.",
+   "answer": "6x",
+   "explanation": "$f_y=x^2+6xy$, so $f_{yy}=6x$. Watch out: $x^2$ is constant in $y$.",
+   "id": "q60302"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_{xy}$ for $f=x^{2}y+3xy^{2}$ (differentiate $f_x$ with respect to $y$).",
+   "answer": "2x+6y",
+   "explanation": "$f_x=2xy+3y^2$, so $f_{xy}=2x+6y$. Watch out: differentiate $3y^2$ to $6y$.",
+   "id": "q60303"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "For $f=x^{2}y+3xy^{2}$, $f_{xy}=f_{yx}$.",
+   "correct": true,
+   "explanation": "Both equal $2x+6y$. Watch out: this is true for smooth functions, which includes polynomials.",
+   "id": "q60304"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find the gradient component $f_x$ of $f=x^{3}y$.",
+   "answer": "3x^2y",
+   "explanation": "Treat $y$ as constant: $3x^2y$. Watch out: do not drop the $y$.",
+   "id": "q60305"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Evaluate $f_{xy}(1,1)$ for $f=x^{3}y^{2}$.",
+   "correct": 6,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$f_x=3x^2y^2$, $f_{xy}=6x^2y=6$. Watch out: differentiate the already-differentiated $f_x$.",
+   "id": "q60306"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "For $f(x,y)=x^{2}y+3xy^{2}$, the gradient at $(1,2)$ is $\\nabla f=($ {{1}} , {{2}} $)$.",
+   "blanks": [
+    {
+     "answers": [
+      "16"
+     ]
+    },
+    {
+     "answers": [
+      "13"
+     ]
+    }
+   ],
+   "explanation": "$f_x(1,2)=16$ and $f_y(1,2)=13$. Watch out: the order is $(f_x,f_y)$.",
+   "id": "q60307"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The gradient $\\nabla f$ at a point points...",
+   "options": [
+    "downhill, towards fastest decrease",
+    "directly towards the origin point",
+    "along the level curve itself",
+    "uphill, towards fastest increase"
+   ],
+   "correct": 3,
+   "explanation": "The gradient is perpendicular to the level curve and points uphill. Watch out: it does not point along the level curve.",
+   "id": "q60308"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Find $f_{xy}$ for $f=x^{3}y^{2}$. One step is wrong. Tap it.",
+   "steps": [
+    "f=x^{3}y^{2}",
+    "f_x=3x^{2}y^{2}",
+    "f_{xy}=3x^{2}\\cdot y",
+    "f_{xy}=3x^{2}y"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "$\\dfrac{\\partial}{\\partial y}y^2=2y$, so $f_{xy}=6x^2y$. Watch out: do not lose the power of $y$.",
+   "id": "q60309"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Evaluate $f_{xx}(2,3)$ for $f=x^{3}y$.",
+   "correct": 36,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$f_x=3x^2y$, $f_{xx}=6xy=36$. Watch out: both variables are substituted at the end.",
+   "id": "q60310"
+  }
+ ]
+}

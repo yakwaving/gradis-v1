@@ -1,0 +1,127 @@
+{
+ "title": "Functions of Several Real Variables Quiz 4",
+ "description": "Combine the partial derivatives with the derivatives of the inside functions.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Chain rule and differentials",
+ "timerType": "wholeQuiz",
+ "totalTime": 960,
+ "confidence": false,
+ "instructions": [
+  "Functions of Several Real Variables: Chain rule and differentials.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Let $z=x^{2}y$ with $x=t$ and $y=t^{2}$. Find $\\dfrac{dz}{dt}$.",
+   "answer": "4t^3",
+   "explanation": "$z=t^4$, so $\\dfrac{dz}{dt}=4t^3$. By the chain rule: $2xy\\cdot1+x^2\\cdot2t=2t^3+2t^3$. Watch out: both terms contribute.",
+   "id": "q60401"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Let $z=x^{2}y$ with $x=t$ and $y=t^{2}$. Find $\\dfrac{dz}{dt}$ at $t=2$.",
+   "correct": 32,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$4t^3=32$. Watch out: $4\\cdot8=32$.",
+   "id": "q60402"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "For $f=xy$ at $(2,3)$ with $dx=0.1$ and $dy=-0.1$, find $df$.",
+   "correct": 0.1,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$df=y\\,dx+x\\,dy=0.3-0.2=0.1$. Watch out: $dy$ is negative.",
+   "id": "q60403"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The chain rule for $z=f(x,y)$ has only one term, $f_x\\dfrac{dx}{dt}$.",
+   "correct": false,
+   "explanation": "Both variables depend on $t$, so there are two terms. Watch out: leaving out $f_y\\dfrac{dy}{dt}$ is the usual slip.",
+   "id": "q60404"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the differential $df$ of $f=x^{2}y$?",
+   "options": [
+    "$2x\\,dx+dy$",
+    "$x^{2}\\,dx+2xy\\,dy$",
+    "$2xy\\,dx+2xy\\,dy$",
+    "$2xy\\,dx+x^{2}\\,dy$"
+   ],
+   "correct": 3,
+   "explanation": "$df=f_xdx+f_ydy$. Watch out: pair $f_x$ with $dx$, $f_y$ with $dy$.",
+   "id": "q60405"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Let $z=x^{2}y$, $x=t$, $y=t^{2}$. Find $\\dfrac{dz}{dt}$. One step is wrong. Tap it.",
+   "steps": [
+    "f_x=2xy,\\ f_y=x^{2}",
+    "\\dfrac{dx}{dt}=1,\\ \\dfrac{dy}{dt}=2t",
+    "\\dfrac{dz}{dt}=f_x+f_y",
+    "\\dfrac{dz}{dt}=2t^{3}+2t^{3}=4t^{3}"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "The chain rule needs $f_x\\dfrac{dx}{dt}+f_y\\dfrac{dy}{dt}$, not just the sum of partials. Watch out: multiply each partial by its own rate.",
+   "id": "q60406"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "A rectangle has $x=4$ and $y=5$. If $x$ grows by $0.1$ and $y$ by $0.2$, estimate the change in area $xy$.",
+   "correct": 1.3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$dA=y\\,dx+x\\,dy=0.5+0.8=1.3$. Watch out: each side is multiplied by the **other** side.",
+   "id": "q60407"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Let $z=xy$ with $x=t^{2}$ and $y=t$. Find $\\dfrac{dz}{dt}$.",
+   "answer": "3t^2",
+   "explanation": "$z=t^3$, so $\\dfrac{dz}{dt}=3t^2$. Watch out: check with the chain rule $y\\cdot2t+x\\cdot1=2t^2+t^2$.",
+   "id": "q60408"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which are needed in $\\dfrac{dz}{dt}$ for $z=f(x(t),y(t))$?",
+   "options": [
+    "$\\dfrac{d^{2}x}{dt^{2}}$",
+    "$f_y$",
+    "$\\dfrac{dx}{dt}$",
+    "$f_x$",
+    "$f_{xy}$"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "The first derivative of the chain needs $f_x,f_y,\\dfrac{dx}{dt},\\dfrac{dy}{dt}$. Watch out: second derivatives are not needed.",
+   "id": "q60409"
+  }
+ ]
+}

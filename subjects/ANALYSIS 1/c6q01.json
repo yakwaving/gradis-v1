@@ -1,0 +1,176 @@
+{
+ "title": "Functions of Several Real Variables Quiz 1",
+ "description": "Describe the allowed region and the curves where $f$ is constant.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Domains and level curves",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Functions of Several Real Variables: Domains and level curves.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the domain of $f(x,y)=\\sqrt{x+y}$?",
+   "options": [
+    "$x+y\\ge0$",
+    "$x\\ge0$ and $y\\ge0$",
+    "$x+y\\le0$",
+    "$x+y>0$"
+   ],
+   "correct": 0,
+   "explanation": "We need the expression under the root to be non-negative. Watch out: the line $x+y=0$ is included, and $x$, $y$ may be negative.",
+   "id": "q60101"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the domain of $f(x,y)=\\ln(xy)$?",
+   "options": [
+    "$xy>0$",
+    "$x+y>0$",
+    "$x>0$ and $y>0$",
+    "$xy\\ge0$"
+   ],
+   "correct": 0,
+   "explanation": "We need $xy>0$, which includes both positive and both negative pairs. Watch out: $x=y=-1$ is allowed.",
+   "id": "q60102"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the domain of $f(x,y)=\\dfrac{1}{x-y}$?",
+   "options": [
+    "all points with $x\\neq y$",
+    "all points with $x=y$",
+    "all points with $x\\neq0$",
+    "all points with $x>y$"
+   ],
+   "correct": 0,
+   "explanation": "The denominator must not be zero, so the line $y=x$ is removed. Watch out: both $x>y$ and $x<y$ are fine.",
+   "id": "q60103"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Evaluate $f(2,3)$ for $f(x,y)=x^{2}+xy$.",
+   "correct": 10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$4+6=10$. Watch out: $xy$ means $2\\times3$.",
+   "id": "q60104"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The level curves of $f(x,y)=x^{2}+y^{2}$ are...",
+   "options": [
+    "hyperbolas with the axes",
+    "circles about the origin",
+    "straight lines through it",
+    "parabolas opening upward"
+   ],
+   "correct": 1,
+   "explanation": "$x^2+y^2=c$ is a circle of radius $\\sqrt c$. Watch out: $c$ must be positive for a real circle.",
+   "id": "q60105"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The level curves of $f(x,y)=xy$ are...",
+   "options": [
+    "ellipses",
+    "hyperbolas",
+    "circles",
+    "straight lines"
+   ],
+   "correct": 1,
+   "explanation": "$xy=c$ gives $y=\\dfrac cx$, a hyperbola. Watch out: for $c=0$ they are the two axes.",
+   "id": "q60106"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "For $f(x,y)=x^{2}+y^{2}$ the level curve $f=-4$ is empty.",
+   "correct": true,
+   "explanation": "A sum of squares cannot be negative. Watch out: level curves may be empty.",
+   "id": "q60107"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "What radius has the level curve $x^{2}+y^{2}=9$ of $f(x,y)=x^{2}+y^{2}$?",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$r=\\sqrt9=3$. Watch out: the radius is the square root of $c$.",
+   "id": "q60108"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which points are in the domain of $\\sqrt{x+y}$?",
+   "options": [
+    "$(3,-2)$",
+    "$(-1,1)$",
+    "$(0,-3)$",
+    "$(1,1)$",
+    "$(-2,1)$"
+   ],
+   "correct": [
+    0,
+    1,
+    3
+   ],
+   "explanation": "We need $x+y\\ge0$: $2$, $1$ and $0$ work, but $-1$ and $-3$ do not. Watch out: $(-1,1)$ gives $0$, which is allowed.",
+   "id": "q60109"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each function with its domain.",
+   "left": [
+    "$\\sqrt{x+y}$",
+    "$\\ln(x+y)$",
+    "$\\dfrac1{xy}$",
+    "$x^{2}+y^{2}$"
+   ],
+   "right": [
+    "$x+y\\ge0$",
+    "$x+y>0$",
+    "$xy\\neq0$",
+    "all real points"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Each restriction comes from the operation used. Watch out: log needs a strict inequality, the root allows equality.",
+   "id": "q60110"
+  }
+ ]
+}

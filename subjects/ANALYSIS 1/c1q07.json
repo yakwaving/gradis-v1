@@ -1,0 +1,138 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 7",
+ "description": "Same-base equations, one step at a time.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Exponential equations",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Indices, Logarithm and Surds: Exponential equations.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Solve $5^{3x}=5^{7x-2}$.",
+   "answer": "1/2",
+   "explanation": "Equal bases, so the indices are equal: $3x=7x-2$, which gives $x=\\dfrac12$. Watch out: $3x-7x=-2$ gives $-4x=-2$, so $x$ is positive.",
+   "id": "q10701"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Solve $4^{t^{2}}=4^{6-t}$. Give all the solutions.",
+   "answer": "2, -3",
+   "explanation": "Equal bases: $t^2=6-t$, so $t^2+t-6=0$ and $(t-2)(t+3)=0$. Watch out: there are two solutions, $2$ and $-3$.",
+   "set": true,
+   "id": "q10702"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $3^{z}=9^{z+5}$.",
+   "correct": -10,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$9^{z+5}=3^{2z+10}$, so $z=2z+10$ and $z=-10$. Watch out: $9=3^2$, so the index $z+5$ doubles.",
+   "id": "q10703"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Solve $4^{5-9x}=\\dfrac{1}{8^{x-2}}$.",
+   "answer": "4/15",
+   "explanation": "With base $2$: $2^{10-18x}=2^{-3x+6}$, so $10-18x=-3x+6$ and $x=\\dfrac{4}{15}$. Watch out: $\\dfrac1{8^{x-2}}=2^{-3(x-2)}$, with the minus sign on the whole bracket.",
+   "id": "q10704"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the best first step to solve $2^{x}=7$?",
+   "options": [
+    "Cancel the base from both sides",
+    "Take logarithms of both sides",
+    "Divide both sides by $2$",
+    "Square root both sides"
+   ],
+   "correct": 1,
+   "explanation": "$7$ is not a power of $2$, so we take a logarithm: $x\\ln2=\\ln7$. Watch out: $2^x$ is not $2\\times x$, so dividing by $2$ does nothing.",
+   "id": "q10705"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "If $b^{x}=b^{y}$ then $x=y$ for every positive base $b$.",
+   "correct": false,
+   "explanation": "The base must also be different from $1$: $1^{3}=1^{5}$ but $3\\neq5$. Watch out: $b=1$ breaks the rule.",
+   "id": "q10706"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $9^{x}=27$ as a decimal.",
+   "correct": 1.5,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0.001
+   },
+   "explanation": "$3^{2x}=3^{3}$, so $2x=3$ and $x=1.5$. Watch out: $9=3^2$, so the index is $2x$, not $x$.",
+   "id": "q10707"
+  },
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Solve $2^{2x+1}=32$. One step is wrong. Tap it.",
+   "steps": [
+    "2^{2x+1}=2^{5}",
+    "2x+1=5",
+    "2x=6",
+    "x=3"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "From $2x+1=5$ we get $2x=4$, so $x=2$. Watch out: subtract $1$ from both sides, do not add it.",
+   "id": "q10708"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Write $\\dfrac{1}{8^{x-2}}$ as a power of $2$.",
+   "options": [
+    "$2^{-3x-6}$",
+    "$2^{-x+2}$",
+    "$2^{3x-6}$",
+    "$2^{-3x+6}$"
+   ],
+   "correct": 3,
+   "explanation": "$8=2^3$, so $8^{x-2}=2^{3x-6}$ and the reciprocal is $2^{-(3x-6)}=2^{-3x+6}$. Watch out: the minus sign applies to the whole bracket.",
+   "id": "q10709"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which equations can be solved by writing both sides with the **same base**?",
+   "options": [
+    "$3^{z}=9^{z+5}$",
+    "$7^{x}=9$",
+    "$2^{4y+1}=3^{y}$",
+    "$4^{t^{2}}=4^{6-t}$",
+    "$5^{3x}=5^{7x-2}$"
+   ],
+   "correct": [
+    0,
+    3,
+    4
+   ],
+   "explanation": "The first three have bases that are powers of one base ($4$, or $3$ and $9=3^2$). $7^x=9$ and $2^{4y+1}=3^y$ need logarithms. Watch out: $7$ and $9$ share no base.",
+   "id": "q10710"
+  }
+ ]
+}

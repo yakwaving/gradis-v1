@@ -1,0 +1,172 @@
+{
+ "title": "Functions Quiz 1",
+ "description": "Find which inputs are allowed and which outputs appear.",
+ "difficulty": "Easy",
+ "level": "Level I",
+ "topic": "Domain and range",
+ "timerType": "wholeQuiz",
+ "totalTime": 1080,
+ "confidence": false,
+ "instructions": [
+  "Functions: Domain and range.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the domain of $f(x)=\\sqrt{x-3}$?",
+   "options": [
+    "$x>3$",
+    "$x\\ge-3$",
+    "$x\\ge3$",
+    "$x\\le3$"
+   ],
+   "correct": 2,
+   "explanation": "We need $x-3\\ge0$, so $x\\ge3$. Watch out: zero is allowed under a square root, so $x=3$ is included.",
+   "id": "q30101"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the domain of $f(x)=\\dfrac{1}{x-2}$?",
+   "options": [
+    "$x\\neq2$",
+    "$x\\ge2$",
+    "$x>2$",
+    "$x\\neq-2$"
+   ],
+   "correct": 0,
+   "explanation": "The denominator must not be zero, so $x\\neq2$. Watch out: the excluded value solves $x-2=0$, which is $+2$.",
+   "id": "q30102"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the domain of $f(x)=\\ln(x+1)$?",
+   "options": [
+    "$x>1$",
+    "$x\\ge-1$",
+    "$x\\ge1$",
+    "$x>-1$"
+   ],
+   "correct": 3,
+   "explanation": "We need $x+1>0$, so $x>-1$. Watch out: a log needs a strictly positive input, so $-1$ is excluded.",
+   "id": "q30103"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the range of $f(x)=x^{2}+1$?",
+   "options": [
+    "all real $y$",
+    "$y>1$",
+    "$y\\ge1$",
+    "$y\\ge0$"
+   ],
+   "correct": 2,
+   "explanation": "Since $x^2\\ge0$, we get $y\\ge1$ and $y=1$ is reached at $x=0$. Watch out: the minimum is $1$, not $0$.",
+   "id": "q30104"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the range of $f(x)=3-x^{2}$?",
+   "options": [
+    "$y\\ge3$",
+    "all real $y$",
+    "$y\\le0$",
+    "$y\\le3$"
+   ],
+   "correct": 3,
+   "explanation": "Since $x^2\\ge0$, $3-x^2\\le3$. Watch out: the minus sign flips the inequality.",
+   "id": "q30105"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The domain of $f(x)=\\dfrac{1}{\\sqrt{x-1}}$ is $x>1$.",
+   "correct": true,
+   "explanation": "We need $x-1\\ge0$ for the root and $\\sqrt{x-1}\\neq0$ for the denominator, so $x>1$. Watch out: both conditions apply together.",
+   "id": "q30106"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The domain of $f(x)=\\sqrt{4-x^{2}}$ is $x\\le2$.",
+   "correct": false,
+   "explanation": "We need $4-x^2\\ge0$, so $-2\\le x\\le2$. Watch out: $x=-5$ would make $4-25<0$, so it is not allowed.",
+   "id": "q30107"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Evaluate $f(3)$ for $f(x)=\\sqrt{x+1}$.",
+   "correct": 2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$\\sqrt{3+1}=\\sqrt4=2$. Watch out: the square root of $4$ is $2$, not $\\pm2$.",
+   "id": "q30108"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which values are **in** the domain of $f(x)=\\sqrt{x-3}$?",
+   "options": [
+    "$x=10$",
+    "$x=2$",
+    "$x=0$",
+    "$x=3$",
+    "$x=5$"
+   ],
+   "correct": [
+    0,
+    3,
+    4
+   ],
+   "explanation": "Only $x\\ge3$ works. Watch out: $x=3$ is included because $\\sqrt0=0$ is defined.",
+   "id": "q30109"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each function with its domain.",
+   "left": [
+    "$\\sqrt{x}$",
+    "$\\dfrac1x$",
+    "$\\ln x$",
+    "$x^{2}$"
+   ],
+   "right": [
+    "$x\\ge0$",
+    "$x\\neq0$",
+    "$x>0$",
+    "all real $x$"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Each function has its own restriction. Watch out: $\\ln x$ excludes $0$, but $\\sqrt x$ does not.",
+   "id": "q30110"
+  }
+ ]
+}

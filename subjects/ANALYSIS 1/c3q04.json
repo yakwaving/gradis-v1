@@ -1,0 +1,186 @@
+{
+ "title": "Functions Quiz 4",
+ "description": "Even, odd and the shifts that work backwards.",
+ "difficulty": "Medium",
+ "level": "Level I",
+ "topic": "Symmetry and transformations",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Functions: Symmetry and transformations.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which function is **even**?",
+   "options": [
+    "$f(x)=x^{3}$",
+    "$f(x)=\\sin x$",
+    "$f(x)=x^{2}+\\cos x$",
+    "$f(x)=x^{2}+x$"
+   ],
+   "correct": 2,
+   "explanation": "$f(-x)=x^2+\\cos x=f(x)$. Watch out: $x^2+x$ mixes an even and an odd term, so it is neither.",
+   "id": "q30401"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which function is **odd**?",
+   "options": [
+    "$f(x)=x^{3}+1$",
+    "$f(x)=|x|$",
+    "$f(x)=x^{3}+\\sin x$",
+    "$f(x)=x^{2}$"
+   ],
+   "correct": 2,
+   "explanation": "$f(-x)=-x^3-\\sin x=-f(x)$. Watch out: the constant in $x^3+1$ destroys oddness.",
+   "id": "q30402"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$f(x)=x^{3}+1$ is an odd function.",
+   "correct": false,
+   "explanation": "$f(-x)=-x^3+1$, which is neither $f(x)$ nor $-f(x)$. Watch out: constants are even terms.",
+   "id": "q30403"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$f(x)=|x|$ is even.",
+   "correct": true,
+   "explanation": "$|-x|=|x|$. Watch out: even functions are symmetric about the $y$-axis.",
+   "id": "q30404"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The graph of $f(x+2)$ is the graph of $f(x)$ moved...",
+   "options": [
+    "left by $2$",
+    "right by $2$",
+    "up by $2$",
+    "down by $2$"
+   ],
+   "correct": 0,
+   "explanation": "Replacing $x$ by $x+2$ shifts left. Watch out: changes inside the brackets work backwards.",
+   "id": "q30405"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The graph of $f(x)-3$ is the graph of $f(x)$ moved...",
+   "options": [
+    "up by $3$",
+    "down by $3$",
+    "right by $3$",
+    "left by $3$"
+   ],
+   "correct": 1,
+   "explanation": "Subtracting outside the function lowers every output by $3$. Watch out: this change is outside the bracket, so it works as written.",
+   "id": "q30406"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does $f(-x)$ do to the graph of $f(x)$?",
+   "options": [
+    "a shift to the left",
+    "a reflection in the $y$-axis",
+    "a reflection in the $x$-axis",
+    "a reflection in the origin"
+   ],
+   "correct": 1,
+   "explanation": "Each point $(a,b)$ becomes $(-a,b)$. Watch out: $-f(x)$ is the one that reflects in the $x$-axis.",
+   "id": "q30407"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does $f(2x)$ do to the graph of $f(x)$?",
+   "options": [
+    "a shift to the left by two",
+    "a horizontal stretch by two",
+    "a vertical squeeze by half",
+    "a horizontal squeeze by half"
+   ],
+   "correct": 3,
+   "explanation": "Inputs are doubled, so features arrive at half the distance. Watch out: doubling $x$ compresses, it does not stretch.",
+   "id": "q30408"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each transformation with its effect.",
+   "left": [
+    "$f(x)+2$",
+    "$f(x+2)$",
+    "$-f(x)$",
+    "$f(-x)$"
+   ],
+   "right": [
+    "up by 2",
+    "left by 2",
+    "reflect in $x$-axis",
+    "reflect in $y$-axis"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Outside changes act on $y$; inside changes act on $x$. Watch out: inside changes move opposite to the sign.",
+   "id": "q30409"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "The point $(3,4)$ is on $y=f(x)$. What is the $x$-coordinate of its image on $y=f(x-1)$?",
+   "correct": 4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "The graph moves right by $1$, so $(3,4)$ goes to $(4,4)$. Watch out: $f(x-1)$ shifts right.",
+   "id": "q30410"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these are even functions?",
+   "options": [
+    "$x^{2}$",
+    "$\\cos x$",
+    "$\\sin x$",
+    "$x^{3}$",
+    "$|x|$"
+   ],
+   "correct": [
+    0,
+    1,
+    4
+   ],
+   "explanation": "$x^2$, $\\cos x$ and $|x|$ are symmetric about the $y$-axis. Watch out: $\\sin x$ and $x^3$ are odd.",
+   "id": "q30411"
+  }
+ ]
+}

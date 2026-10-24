@@ -112,6 +112,12 @@ function mform(text,form){try{const t=mparse(mstrip(text));
  const prodGroup=n=>{if(!n||typeof n!=="object")return false;if(n.t==="bin"&&n.o==="*"&&(hasPar(n.l)||hasPar(n.r)))return true;return["l","r","e","b","a"].some(k=>n[k]&&prodGroup(n[k]))};
  const hasPar=n=>n&&(n.t==="par"||(n.t==="pow"&&n.b&&n.b.t==="par"));
  const anyPar=n=>{if(!n||typeof n!=="object")return false;if(n.t==="par"&&!n.fnArg)return true;return["l","r","e","b","a"].some(k=>n[k]&&anyPar(n[k]))};
+ if(form==="rationalised"){let ok=true;const hasRoot=n=>!!n&&typeof n==="object"&&((n.t==="call"&&(n.f==="sqrt"||n.f==="cbrt"))||["l","r","e","b","a"].some(k=>n[k]&&hasRoot(n[k])));
+  const sqf=v=>{for(let k=2;k*k<=v;k++)if(v%(k*k)===0)return false;return true};
+  (function w(n){if(!n||typeof n!=="object")return;if(n.t==="bin"&&n.o==="/"&&hasRoot(n.r))ok=false;
+   if(n.t==="call"&&n.f==="sqrt"){const a=unp(n.a);if(a.t==="num"){if(!Number.isInteger(a.v)||!sqf(a.v))ok=false}else if(a.t==="bin"&&a.o==="/")ok=false}
+   ["l","r","e","b","a"].forEach(k=>n[k]&&w(n[k]))})(t);return ok}
+ if(form==="single"){let n=t;while(n.t==="neg"||n.t==="par")n=n.e;return n.t==="logb"||(n.t==="call"&&(n.f==="log"||n.f==="ln"))}
  if(form==="factorised")return prodGroup(t)||(t.t==="pow"&&t.b.t==="par");
  if(form==="expanded")return !prodGroup(t)&&!(t.t==="pow"&&t.b.t==="par"&&t.e.t==="num"&&t.e.v>1);
  return true}catch(_){return false}}
@@ -144,7 +150,7 @@ function mcheck(q){
   if(!list.length||list.some(x=>typeof x!=="string"&&typeof x!=="number"))return"answer must be text such as x^2-1";
   if(q.set){try{mnums(Array.isArray(q.answer)?q.answer.join(";"):String(q.answer))}catch(_){return"a set answer must be numbers, e.g. \"2, -3\""}}
   else for(const x of list){try{const s=mstrip(String(x));if(!/=/.test(s))mparse(s)}catch(_){return'cannot read the answer "'+x+'"'}}
-  if(q.form&&q.form!=="expanded"&&q.form!=="factorised")return'form can only be "expanded" or "factorised"';
+  if(q.form&&!["expanded","factorised","rationalised","single"].includes(q.form))return'form can only be "expanded", "factorised", "rationalised" or "single"';
   if(q.form&&!mform(String(list[0]),q.form))return"the answer itself is not in the form you asked for"}
  if(q.type==="stepline"||q.type==="stepfix"){
   if(!Array.isArray(q.steps)||q.steps.length<2||q.steps.some(s=>typeof s!=="string"))return"steps must list at least 2 lines of maths";
@@ -159,7 +165,7 @@ const MKEYSET=["x","pow","sq","div","sqrt","lp","rp","pi","e","ln","log","exp","
 function mathUI(q,a,ch,R){
  const keys=(q.keys||(q.set?["minus","div","sqrt","pi","comma","del"]:MKEYSET)).filter(k=>MKEYS[k]);
  const ok=ch?mathOk(q,a):null,pv=mathTex(a.v||"",q);
- const hint=q.set?"Type the values separated by commas, e.g. 2, -3":q.form==="expanded"?"Give your answer fully expanded":q.form==="factorised"?"Give your answer factorised":"Any equivalent form is accepted";
+ const hint=q.set?"Type the values separated by commas, e.g. 2, -3":q.form==="expanded"?"Give your answer fully expanded":q.form==="factorised"?"Give your answer factorised":q.form==="rationalised"?"Rationalise the denominator and simplify the root":q.form==="single"?"Give your answer as a single logarithm":"Any equivalent form is accepted";
  return `<div class="note">${hint}</div>`
  +`<div class="mpv${ch?(ok?" ok":" bad"):""}" id="mpv">${mpvHtml(a.v,pv)}</div>`
  +`<input class="inp mono${ch?(ok?" ok":" bad"):""}" data-mt="1" placeholder="${q.set?"2, -3":"Type your answer"}" value="${esc(a.v||"")}" ${ch?"readonly":""} autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done">`

@@ -1,0 +1,171 @@
+{
+ "title": "Functions of Several Real Variables Quiz 6",
+ "description": "Every question hides a trap: a constant that is not constant, a missing term or a sign.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: several variables",
+ "timerType": "wholeQuiz",
+ "totalTime": 1560,
+ "confidence": true,
+ "instructions": [
+  "Functions of Several Real Variables: Difficult: several variables.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Find $f_x$ for $f=3xy^{2}$. One step is wrong. Tap it.",
+   "steps": [
+    "f=3xy^{2}",
+    "\\text{treat }y\\text{ as constant}",
+    "f_x=3y^{2}\\cdot2x",
+    "f_x=6xy^{2}"
+   ],
+   "bugs": [
+    3
+   ],
+   "explanation": "The derivative of $x$ is $1$, so $f_x=3y^2$. Watch out: $2x$ comes from differentiating $y^2$, which is wrong here.",
+   "id": "q60601"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_x$ for $f=3xy^{2}$.",
+   "answer": "3y^2",
+   "explanation": "Treat $y$ as constant: $3y^2$. Watch out: $6xy$ is $f_y$.",
+   "id": "q60602"
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Classify $(0,0)$ for $f=x^{2}+4xy+y^{2}$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "f_{xx}=2,\\ f_{yy}=2,\\ f_{xy}=4",
+    "D=f_{xx}f_{yy}-f_{xy}=4-4=0",
+    "\\text{the test fails}"
+   ],
+   "bug": 2,
+   "options": [
+    "D=2+2-4=0",
+    "D=2\\cdot2-4^{2}=-12",
+    "D=2\\cdot2+4^{2}=20",
+    "D=2\\cdot2-4=0"
+   ],
+   "correct": 1,
+   "explanation": "The test uses $f_{xy}^{2}$, so $D=-12<0$ and the origin is a saddle point. Watch out: square the mixed derivative.",
+   "id": "q60603"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "$f=x^{2}y+3xy^{2}$: $f_{xx}$ = {{1}} and $f_{yy}$ = {{2}}. Write each as an expression.",
+   "blanks": [
+    {
+     "answers": [
+      "2y"
+     ]
+    },
+    {
+     "answers": [
+      "6x"
+     ]
+    }
+   ],
+   "explanation": "$f_x=2xy+3y^2$ gives $f_{xx}=2y$; $f_y=x^2+6xy$ gives $f_{yy}=6x$. Watch out: each constant disappears at the right stage.",
+   "id": "q60604"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$f_{xy}$ and $f_{yx}$ can differ for a polynomial.",
+   "correct": false,
+   "explanation": "For polynomials, both mixed derivatives are equal. Watch out: the equality holds whenever the second derivatives are continuous.",
+   "id": "q60605"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\dfrac{dz}{dt}$ at $t=1$ for $z=xy$, $x=t^{2}$, $y=t$.",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$z=t^3$, so $\\dfrac{dz}{dt}=3t^2=3$. Watch out: using only $y\\,dx$ would give $2$.",
+   "id": "q60606"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What does $D<0$ tell you at a critical point?",
+   "options": [
+    "it is a maximum",
+    "it is a minimum",
+    "the test fails",
+    "it is a saddle point"
+   ],
+   "correct": 3,
+   "explanation": "A negative discriminant means the point is neither a maximum nor a minimum. Watch out: the test fails only when $D=0$.",
+   "id": "q60607"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "If $f(x,y)=x^{2}+y^{2}$ then $f_x=2x+2y$.",
+   "correct": false,
+   "explanation": "$y^2$ is constant when differentiating in $x$, so $f_x=2x$. Watch out: only the terms containing $x$ change.",
+   "id": "q60608"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "The domain of $f(x,y)=\\ln(xy)$ includes which point?",
+   "options": [
+    "$(-1,4)$",
+    "$(-2,-3)$",
+    "$(2,0)$",
+    "$(0,5)$"
+   ],
+   "correct": 1,
+   "explanation": "$xy=6>0$. Watch out: points on the axes and in the mixed-sign quadrants give $xy\\le0$.",
+   "id": "q60609"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Find $f_y$ for $f=\\sin(xy)$.",
+   "answer": "xcos(xy)",
+   "explanation": "$\\cos(xy)\\cdot x$. Watch out: the inner derivative is $x$, not $y$.",
+   "id": "q60610"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which of these critical points are **minima**?",
+   "options": [
+    "$(0,0)$ of $x^{2}+xy+y^{2}$",
+    "$(0,0)$ of $-x^{2}-y^{2}$",
+    "$(0,0)$ of $x^{2}+y^{2}$",
+    "$(0,0)$ of $x^{2}-y^{2}$"
+   ],
+   "correct": [
+    0,
+    2
+   ],
+   "explanation": "The first two have $D>0$ and $f_{xx}>0$. The third is a saddle, the fourth a maximum. Watch out: check $D$ **and** $f_{xx}$.",
+   "id": "q60611"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "The origin is a saddle point of $f=x^{2}-y^{2}$.",
+   "reason": "$D=f_{xx}f_{yy}-f_{xy}^{2}=-4<0$.",
+   "correct": "A",
+   "explanation": "Both are true and the discriminant explains the classification. Watch out: $f_x=f_y=0$ at the origin, but it is not an extremum.",
+   "id": "q60612"
+  }
+ ]
+}

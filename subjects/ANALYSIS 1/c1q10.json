@@ -1,0 +1,172 @@
+{
+ "title": "Indices, Logarithm and Surds Quiz 10",
+ "description": "Every question hides a trap. Check each rule before you use it.",
+ "difficulty": "Hard",
+ "level": "Level I",
+ "topic": "Difficult: indices, surds and logarithms",
+ "timerType": "wholeQuiz",
+ "totalTime": 1560,
+ "confidence": true,
+ "instructions": [
+  "Indices, Logarithm and Surds: Difficult: indices, surds and logarithms.",
+  "Write maths answers with the keypad. Any equal form is accepted.",
+  "Every question has a trap. Slow down at the signs."
+ ],
+ "questions": [
+  {
+   "type": "stepline",
+   "marks": 1,
+   "question": "Expand $(2+\\sqrt{3})^{2}$. One step is wrong. Tap it.",
+   "steps": [
+    "(2+\\sqrt{3})^{2}",
+    "=2^{2}+(\\sqrt{3})^{2}",
+    "=4+3",
+    "=7"
+   ],
+   "bugs": [
+    2
+   ],
+   "explanation": "$(a+b)^2=a^2+2ab+b^2$, so the answer is $4+4\\sqrt3+3=7+4\\sqrt3$. Watch out: step 2 drops the cross term $2ab$.",
+   "id": "q11001"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Expand $(2+\\sqrt{3})^{2}$ and simplify.",
+   "answer": "7+4sqrt(3)",
+   "explanation": "$4+2\\cdot2\\sqrt3+3=7+4\\sqrt3$. Watch out: do not forget the middle term $4\\sqrt3$.",
+   "form": "rationalised",
+   "id": "q11002"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\log_2 3\\times\\log_3 4$.",
+   "correct": 2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "Change of base: $\\log_34=\\dfrac{\\ln4}{\\ln3}$ and $\\log_23=\\dfrac{\\ln3}{\\ln2}$, so the product is $\\dfrac{\\ln4}{\\ln2}=2$. Watch out: the $\\ln3$ terms cancel, it is not $\\log_2 12$.",
+   "id": "q11003"
+  },
+  {
+   "type": "math",
+   "marks": 1,
+   "question": "Rationalise $\\dfrac{1}{\\sqrt5-\\sqrt3}$.",
+   "answer": "(sqrt(5)+sqrt(3))/2",
+   "explanation": "Multiply by $\\dfrac{\\sqrt5+\\sqrt3}{\\sqrt5+\\sqrt3}$: the denominator is $5-3=2$. Watch out: the conjugate has a plus sign, and the new denominator is $5-3=2$.",
+   "form": "rationalised",
+   "id": "q11004"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which statement is **NOT** a law of logarithms?",
+   "options": [
+    "$\\log(ab)=\\log a+\\log b$",
+    "$\\log(a-b)=\\log a-\\log b$",
+    "$\\log\\dfrac{a}{b}=\\log a-\\log b$",
+    "$\\log a^{n}=n\\log a$"
+   ],
+   "correct": 1,
+   "explanation": "There is no rule for the log of a difference. The quotient rule is $\\log\\dfrac ab=\\log a-\\log b$. Watch out: $\\log(a-b)$ cannot be split.",
+   "id": "q11005"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $2^{x}\\cdot4^{x}=64$.",
+   "correct": 2,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$4^x=2^{2x}$, so $2^{x}2^{2x}=2^{3x}=2^{6}$ and $x=2$. Watch out: $4^x=2^{2x}$, so the indices add to $3x$, not $2x$.",
+   "id": "q11006"
+  },
+  {
+   "type": "stepfix",
+   "marks": 2,
+   "question": "Solve $3^{x+1}=2^{x}$. One step is wrong. Tap it, then choose the correct step.",
+   "steps": [
+    "3^{x+1}=2^{x}",
+    "(x+1)\\ln3=x\\ln2",
+    "x\\ln3+\\ln3=x\\ln2",
+    "x(\\ln3-\\ln2)=\\ln3",
+    "x=\\dfrac{\\ln3}{\\ln3-\\ln2}"
+   ],
+   "bug": 4,
+   "options": [
+    "x(\\ln2-\\ln3)=-\\ln3",
+    "x(\\ln3-\\ln2)=-\\ln3",
+    "x(\\ln3+\\ln2)=-\\ln3",
+    "x(\\ln3-\\ln2)=\\ln2"
+   ],
+   "correct": 1,
+   "explanation": "Moving $\\ln3$ to the right changes its sign: $x\\ln3-x\\ln2=-\\ln3$. Watch out: a term that crosses the equals sign changes sign.",
+   "id": "q11007"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "$\\sqrt{a^{2}}=a$ for every real number $a$.",
+   "correct": false,
+   "explanation": "$\\sqrt{a^2}=|a|$, so for $a=-3$ it is $3$, not $-3$. Watch out: the square root is never negative.",
+   "id": "q11008"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Find $\\sqrt{(-3)^{2}}$.",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$(-3)^2=9$ and $\\sqrt9=3$. Watch out: the root and the square do not cancel when the number is negative.",
+   "id": "q11009"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these are equal to $4$?",
+   "options": [
+    "$16^{1/2}$",
+    "$2^{-2}$",
+    "$8^{2/3}$",
+    "$\\log_2 16$",
+    "$(-4)^{2}$"
+   ],
+   "correct": [
+    0,
+    2,
+    3
+   ],
+   "explanation": "$8^{2/3}=(\\sqrt[3]8)^2=4$, $16^{1/2}=4$, $\\log_216=4$. But $2^{-2}=\\frac14$ and $(-4)^2=16$. Watch out: a negative index is a reciprocal, and squaring a negative gives a positive.",
+   "id": "q11010"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "Solve $\\log_x16=2$ for $x>0$.",
+   "correct": 4,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "$x^2=16$, so $x=4$ (the base must be positive). Watch out: $x=-4$ is not allowed as a base.",
+   "id": "q11011"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "$\\dfrac{1}{\\sqrt2}=\\dfrac{\\sqrt2}{2}$.",
+   "reason": "Multiplying top and bottom by the same non-zero number does not change a fraction.",
+   "correct": "A",
+   "explanation": "Both are true: multiplying by $\\dfrac{\\sqrt2}{\\sqrt2}=1$ rationalises the denominator without changing the value. Watch out: this is why the same factor must go on top and bottom.",
+   "id": "q11012"
+  }
+ ]
+}
