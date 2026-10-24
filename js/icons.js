@@ -3,6 +3,7 @@
 const _f=(w,d)=>`<svg class="gi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"><path d="${d}"/></svg>`;
 const GI_FALLBACK={
  close:_f(3,"M6 6l12 12M18 6L6 18"),
+ person:_f(2.6,"M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM4 21a8 8 0 0 1 16 0"),
  arrow_back:_f(3,"M15 5l-7 7 7 7"),
  arrow_forward:_f(3,"M5 12h14M13 6l6 6-6 6"),
  schedule:_f(3,"M12 5a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM12 9v4l3 2M9 2h6"),

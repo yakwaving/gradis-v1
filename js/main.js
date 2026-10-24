@@ -22,14 +22,14 @@ async function boot(){
  try{await loadAll()}catch(e){err=e}
  const left=(quick?200:2500)-(performance.now()-t0);if(left>0)await new Promise(r=>setTimeout(r,left));
  if(err){S.err=err;return scr("error")}
- loadHist();
+ loadHist();acInit();
  if(S.warn)setTimeout(()=>toast(S.warn+" QUESTION"+(S.warn>1?"S":"")+" SKIPPED · SEE CONSOLE"),600);
  render();registerSW();Ads.init()}
 /* Android back button: close a dialog, step back one screen, or leave the app from Home */
 function goBack(){
  if(document.querySelector(".modal")){closeModal();return true}
  if(S.scr==="q"){quitModal();return true}
- const b=document.querySelector('[data-a="backlist"],[data-a="back-list"],[data-a="backres"]');if(b){b.click();return true}
+ const b=document.querySelector('[data-a="backlist"],[data-a="back-list"],[data-a="backres"],[data-a="acback"]');if(b){b.click();return true}
  if(S.scr==="review"){scr("result");return true}
  if(["result","done","subjects","hist","subres","list","landing","error"].includes(S.scr)){S.tab="home";scr("home");return true}
  return false}

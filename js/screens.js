@@ -1,5 +1,5 @@
 function scr(n){S.scr=n;render()}
-const DEPTH={boot:-1,home:0,error:0,subjects:1,hist:1,subres:2,list:2,landing:3,q:4,done:5,result:5,review:6},TABS=["home","subjects","hist"];
+const DEPTH={boot:-1,home:0,error:0,subjects:1,hist:1,subres:2,list:2,landing:3,q:4,done:5,result:5,review:6,acct:1},TABS=["home","subjects","hist"];
 const calm=()=>matchMedia("(prefers-reduced-motion: reduce)").matches;
 /* page transition: the old screen is copied, slides out and fades; the new one slides in. fwd=true goes deeper, false goes back. */
 function slideIn(A,old,fwd){const nu=A.firstElementChild;if(!nu||!old||calm())return;
@@ -7,7 +7,7 @@ function slideIn(A,old,fwd){const nu=A.firstElementChild;if(!nu||!old||calm())re
  c.style.setProperty("--ox",fwd?"-26px":"26px");nu.style.setProperty("--dx",fwd?"38px":"-38px");nu.classList.add("an");A.insertBefore(c,nu);setTimeout(()=>c.remove(),340)}
 function render(){document.querySelectorAll(".modal").forEach(m=>m.remove());const A=$("app"),old=A.firstElementChild,prev=S.shown;A.innerHTML=SCR[S.scr]();
  if(prev&&prev!==S.scr){const a=DEPTH[prev]==null?0:DEPTH[prev],b=DEPTH[S.scr]==null?0:DEPTH[S.scr];slideIn(A,old,b!==a?b>a:TABS.indexOf(S.scr)>=TABS.indexOf(prev))}
- S.shown=S.scr;bind()}
+ S.shown=S.scr;bind();if(S.scr==="acct")acPost()}
 const SCR={};
 const stat=n=>{const h=HIST.filter(x=>x.s===n);return{done:new Set(h.map(x=>x.q)).size,avg:h.length?Math.round(h.reduce((a,x)=>a+x.p,0)/h.length):null}};
 const sh=(d,k)=>Array.from({length:k},(_,i)=>`${i+1}px ${i+1}px 0 ${d}`).join(",");
@@ -109,7 +109,8 @@ SCR.home=()=>{
    cards.push(`<div class="card cont sl" style="background:var(--cor);box-shadow:${sh("#c4492b",4)}" data-a="quizgo:${esc(ws.n)}:${wi}">${ring(gicon("trending_up","width:30px;height:30px;color:#fff"))}<div style="flex:1;min-width:0"><small>IMPROVE YOUR WEAKNESS</small><b>${esc(w.t)}</b><small>${esc(ws.n)} · best so far ${w.p}% · retry it</small></div><span class="chip y">GO ›</span></div>`)}
  }else{
   cards.push(`<div class="card cont sl" style="background:var(--blu);box-shadow:${sh("#3a5fc4",4)}" data-a="tab:subjects">${ring(gicon("arrow_forward","width:30px;height:30px;color:#fff"))}<div style="flex:1;min-width:0"><small>GET STARTED</small><b>Take your first quiz</b><small>Pick a subject to begin</small></div><span class="chip y">GO ›</span></div>`)}
- return `<div class="scr">${topBar("gradis",`<button class="iconb" data-a="settings" aria-label="Settings">${gicon("settings")}</button>`)}
+ if(!AC.ses&&AC.cfg&&HIST.length>=3)cards.push(`<div class="card cont sl" style="background:var(--teal);box-shadow:${sh("#1d8174",4)}" data-a="account">${ring(gicon("person","width:30px;height:30px;color:#fff"))}<div style="flex:1;min-width:0"><small>KEEP YOUR RESULTS SAFE</small><b>Create a free account</b><small>Sync across devices, never lose your scores</small></div><span class="chip y">GO ›</span></div>`);
+ return `<div class="scr">${topBar("gradis",`<div class="tr">${AC.cfg?`<button class="iconb${AC.ses?" on":""}" data-a="account" aria-label="Account">${gicon("person")}</button>`:""}<button class="iconb" data-a="settings" aria-label="Settings">${gicon("settings")}</button></div>`)}
 <div class="body" style="padding:0"><div class="hi"><h1>${has?"Welcome back":"Welcome"}</h1><p>${has?(sk?sk+"-day streak. Every quiz counts, keep going.":"Every quiz counts. Let's go."):"Pick a subject and take your first quiz."}</p></div>
 <div class="slider" id="slr">${cards.join("")}</div><div class="dots" id="dts">${cards.map((_,i)=>`<i class="${i?"":"on"}"></i>`).join("")}</div>
 ${has?`<div class="pad" style="padding-top:8px">${homeDash()}</div>

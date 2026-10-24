@@ -1,7 +1,7 @@
 /* Gradis service worker: makes the app work offline.
    To release an update: change VERSION below, then upload the files. Installed apps offer a "New version ready" prompt. */
-const VERSION="gradis-1.11.0";
-const SHELL=["./", "vendor/katex/katex.min.js", "vendor/katex/katex.min.css", "vendor/katex/fonts/KaTeX_AMS-Regular.woff2", "vendor/katex/fonts/KaTeX_Main-Bold.woff2", "vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2", "vendor/katex/fonts/KaTeX_Main-Italic.woff2", "vendor/katex/fonts/KaTeX_Main-Regular.woff2", "vendor/katex/fonts/KaTeX_Math-Italic.woff2", "vendor/katex/fonts/KaTeX_Size1-Regular.woff2", "vendor/katex/fonts/KaTeX_Size2-Regular.woff2", "index.html", "manifest.webmanifest", "css/fonts.css", "css/style.css", "js/icons-material.js", "js/icons.js", "js/util.js", "js/ads-config.js", "js/ads.js", "js/logo.js", "js/store.js", "js/marking.js", "js/screens.js", "js/qcode.js", "js/qmath.js", "js/summary.js", "js/quiz.js", "js/events.js", "js/main.js", "fonts/DMSans-Medium.woff2", "fonts/DMSans-Bold.woff2", "fonts/DMSans-ExtraBold.woff2", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
+const VERSION="gradis-1.12.0";
+const SHELL=["./", "vendor/katex/katex.min.js", "vendor/katex/katex.min.css", "vendor/katex/fonts/KaTeX_AMS-Regular.woff2", "vendor/katex/fonts/KaTeX_Main-Bold.woff2", "vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2", "vendor/katex/fonts/KaTeX_Main-Italic.woff2", "vendor/katex/fonts/KaTeX_Main-Regular.woff2", "vendor/katex/fonts/KaTeX_Math-Italic.woff2", "vendor/katex/fonts/KaTeX_Size1-Regular.woff2", "vendor/katex/fonts/KaTeX_Size2-Regular.woff2", "index.html", "manifest.webmanifest", "css/fonts.css", "css/style.css", "js/icons-material.js", "js/icons.js", "js/util.js", "js/ads-config.js", "js/ads.js", "js/logo.js", "js/store.js", "js/marking.js", "js/screens.js", "js/qcode.js", "js/qmath.js", "js/summary.js", "js/quiz.js", "js/account.js", "js/events.js", "js/main.js", "fonts/DMSans-Medium.woff2", "fonts/DMSans-Bold.woff2", "fonts/DMSans-ExtraBold.woff2", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
 const MANIFEST="subjects-manifest.json";
 const imagePaths=(o,out)=>{if(Array.isArray(o))o.forEach(x=>imagePaths(x,out));else if(o&&typeof o==="object")for(const[k,v]of Object.entries(o)){if(k==="image"&&typeof v==="string")out.add(v);else imagePaths(v,out)}return out};
 self.addEventListener("install",e=>e.waitUntil((async()=>{
@@ -22,7 +22,7 @@ self.addEventListener("activate",e=>e.waitUntil((async()=>{
 self.addEventListener("message",e=>{if(e.data==="skip")self.skipWaiting()});
 const isShell=url=>SHELL.some(s=>new URL(s,self.registration.scope).href===url.href);
 self.addEventListener("fetch",e=>{
-  const req=e.request;if(req.method!=="GET")return;const url=new URL(req.url);if(url.origin!==location.origin||url.pathname.includes("/.well-known/"))return;
+  const req=e.request;if(req.method!=="GET")return;const url=new URL(req.url);if(url.origin!==location.origin||url.pathname.includes("/.well-known/")||url.pathname.startsWith("/api/"))return;
   e.respondWith((async()=>{
     const c=await caches.open(VERSION);
     const hit=await c.match(req,{ignoreSearch:true});

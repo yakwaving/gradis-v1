@@ -47,8 +47,8 @@ async function loadAll(){
 /* Results: saved on this device */
 function hydrate(h){const d=new Date(h.ts),t=new Date();const a=Math.max(0,Math.round((new Date(t.getFullYear(),t.getMonth(),t.getDate())-new Date(d.getFullYear(),d.getMonth(),d.getDate()))/864e5));h.ago=a;h.d=dayLbl(a,h.ts);return h}
 function saveHist(){try{localStorage.setItem(K_RES,JSON.stringify(HIST.map(({ago,d,...r})=>r)))}catch(e){}}
-function loadHist(){try{const a=JSON.parse(localStorage.getItem(K_RES)||"[]");HIST=a.filter(h=>h&&h.ts&&h.p!=null).map(hydrate).sort((x,y)=>y.ts-x.ts)}catch(e){HIST=[]}}
-function addResult(r){r.ts=Date.now();HIST.unshift(hydrate(r));if(HIST.length>500)HIST.length=500;saveHist()}
+function loadHist(){try{const a=JSON.parse(localStorage.getItem(K_RES)||"[]");HIST=a.filter(h=>h&&h.ts&&h.p!=null).map(hydrate).sort((x,y)=>y.ts-x.ts);let fix=0;HIST.forEach(h=>{if(!h.id){h.id=legacyId(h);fix++}});if(fix)saveHist()}catch(e){HIST=[]}}
+function addResult(r){r.ts=Date.now();r.id=r.ts.toString(36)+Math.random().toString(36).slice(2,6);HIST.unshift(hydrate(r));if(HIST.length>500)HIST.length=500;saveHist()}
 function exportResults(){const text=JSON.stringify({app:"gradis",version:1,exported:new Date().toISOString(),results:HIST.map(({ago,d,...r})=>r)},null,2),name="gradis-results-"+new Date().toISOString().slice(0,10)+".json";
  const download=()=>{const blob=new Blob([text],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)};
  const P=window.Capacitor&&window.Capacitor.Plugins;

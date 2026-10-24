@@ -1,0 +1,17 @@
+{
+  // Gradis: static app + small accounts/sync API. See worker/SETUP.md
+  "name": "gradis-v1",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "none",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "gradis", "database_id": "682f5427-b6ec-4329-a44d-519e727943b0" }
+  ],
+  "vars": {
+    "GOOGLE_CLIENT_ID": ""
+  }
+}

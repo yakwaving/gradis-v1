@@ -16,7 +16,7 @@ function finish(){const R=S.run;clearInterval(S.tm);R.qz.questions.forEach((q,i)
  if(R.mode==="study"){clearRun();scr("done");return}
  const got=R.res.reduce((a,r)=>a+r.got,0),max=R.res.reduce((a,r)=>a+r.max,0);R.got=got;R.max=max;R.pct=Math.round(got/max*100);
  R.cal=R.conf.length?R.qz.questions.reduce((a,q,i)=>{const c=R.conf[i];if(c==null)return a;const right=R.res[i].got>=R.res[i].max;return a+[[.5,1,2],[0,-1,-2]][right?0:1][c]},0):null;
- addResult({s:S.subj,q:R.qz.qid,t:R.qz.title,p:R.pct,got:R.got,max:R.max,m:R.mode,cal:R.cal});clearRun();scr("result");Ads.afterQuiz(R.mode)}
+ addResult({s:S.subj,q:R.qz.qid,t:R.qz.title,p:R.pct,got:R.got,max:R.max,m:R.mode,cal:R.cal});syncNow();clearRun();scr("result");Ads.afterQuiz(R.mode)}
 /* ---------- question screen ---------- */
 function renderQ(slide){const A=$("app"),old=slide?A.firstElementChild:null;A.innerHTML=SCR.q();if(slide)slideIn(A,old,slide!==-1);bind();persistRun();const b=document.querySelector(".body");if(b&&S.run.keepScroll){b.scrollTop=S.run.keepScroll}}
 SCR.q=()=>{const R=S.run,q=curQ(),a=R.ans[R.i],qz=R.qz,N=qz.questions.length,ch=R.checked||R.mode==="study",rs=R.res[R.i]||mark(q,a),conf=qz.confidence&&R.mode!=="study";

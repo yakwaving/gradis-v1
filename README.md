@@ -5,7 +5,7 @@ A quiz-first study app. It runs in the browser, installs on a phone like an app,
 - 12 question types: single choice, multiple select, true/false, fill in the blank, short answer, numeric, matching, ordering, diagram labelling, table completion, assertion–reason, and structured (extended) questions.
 - Three modes: practice (feedback after each answer), exam (timer, answers at the end), study (explanations, not graded).
 - Optional confidence rating on every question, with a separate calibration score.
-- Results and in-progress quizzes are saved on the device. Nothing is sent anywhere.
+- Results and in-progress quizzes are saved on the device. An optional account (username + password, or Google) syncs results across devices; see `worker/SETUP.md`. Without an account nothing is sent anywhere.
 
 ## Run it on your computer
 

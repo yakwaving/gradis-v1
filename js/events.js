@@ -10,6 +10,7 @@ document.addEventListener("focusin",e=>{const t=e.target,R=S.run;if(!R||S.scr!==
 document.addEventListener("change",e=>{const R=S.run;if(R&&S.scr==="q"&&e.target.dataset.g!=null){R.ans[R.i][e.target.dataset.g]=e.target.value;refreshBtn()}});
 function refreshBtn(){const R=S.run,q=curQ(),b=$("main");if(!b)return;const conf=R.qz.confidence&&R.mode!=="study";b.classList.toggle("off",!(answered(q,R.ans[R.i])&&(!conf||R.conf[R.i]!=null)))}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b)return;const [k,...r]=b.dataset.a.split(":"),v=r.join(":"),R=S.run;
+ if(typeof acAction==="function"&&acAction(k,v,b))return;
  switch(k){
  case"toast":return toast(v);
  case"home":S.tab="home";return scr("home");
@@ -75,6 +76,6 @@ document.addEventListener("pointerdown",e=>{const h=e.target.closest("[data-h]")
 function redrawOrd(){const R=S.run,q=curQ();$("ol").innerHTML=ordHtml(q,R.ans[R.i],false,drag?drag.pos:-1)}
 document.addEventListener("pointermove",e=>{if(!drag)return;const R=S.run,a=R.ans[R.i],rows=[...document.querySelectorAll("#ol .ord")];const y=e.clientY;let t=drag.pos;rows.forEach((r,i)=>{const b=r.getBoundingClientRect();if(y>=b.top&&y<=b.bottom)t=i});if(t!==drag.pos){const [it]=a.splice(drag.pos,1);a.splice(t,0,it);drag.pos=t;redrawOrd()}});
 ["pointerup","pointercancel"].forEach(ev=>document.addEventListener(ev,()=>{if(drag){drag=null;redrawOrd()}}));
-function settingsModal(){modal(`<h3>Settings</h3><p>Gradis ${APP_VERSION} · ${navigator.onLine?"online":"offline"}${HIST.length?" · "+HIST.length+" result"+(HIST.length>1?"s":"")+" saved":""}</p>${deferredPrompt?'<button class="btn" data-a="install">INSTALL APP</button>':""}<button class="btn w" data-a="export">EXPORT RESULTS</button><button class="btn w" data-a="clear">CLEAR RESULTS</button><button class="btn w" data-a="keep" style="margin-bottom:0">CLOSE</button>`)}
+function settingsModal(){modal(`<h3>Settings</h3><p>Gradis ${APP_VERSION} · ${navigator.onLine?"online":"offline"}${HIST.length?" · "+HIST.length+" result"+(HIST.length>1?"s":"")+" saved":""}</p>${deferredPrompt?'<button class="btn" data-a="install">INSTALL APP</button>':""}${AC.cfg?'<button class="btn" data-a="account" style="background:#fff;box-shadow:1px 1px 0 var(--sh),2px 2px 0 var(--sh),3px 3px 0 var(--sh),4px 4px 0 var(--sh)">ACCOUNT &amp; SYNC</button>':""}<button class="btn w" data-a="export">EXPORT RESULTS</button><button class="btn w" data-a="clear">CLEAR RESULTS</button><button class="btn w" data-a="keep" style="margin-bottom:0">CLOSE</button>`)}
 /* maths keypad: keep the cursor in the text box while keys are tapped */
 document.addEventListener("pointerdown",e=>{if(e.target.closest&&e.target.closest(".mk"))e.preventDefault()});

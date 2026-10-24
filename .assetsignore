@@ -1,0 +1,7 @@
+worker
+wrangler.jsonc
+.assetsignore
+scripts
+docs
+README.md
+*.zip
