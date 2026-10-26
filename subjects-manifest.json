@@ -111,6 +111,32 @@
         "c6q06"
       ]
     },
+    "ENGLISH": {
+      "description": "English grammar \u00b7 tenses, comparatives and more",
+      "color": "#2fb5a3",
+      "dark": "#1d8174",
+      "icon": "book",
+      "quizzes": [
+        "e1s01",
+        "e1q01",
+        "e1s02",
+        "e1q02",
+        "e1s03",
+        "e1q03",
+        "e1q04",
+        "e1s04",
+        "e1q05",
+        "e1q06",
+        "e1q07",
+        "e2s05",
+        "e2q01",
+        "e2q02",
+        "e2s06",
+        "e2q03",
+        "e2q04",
+        "e2q05"
+      ]
+    },
     "Quiz Types": {
       "description": "One quiz for each question type",
       "color": "#5b8cff",

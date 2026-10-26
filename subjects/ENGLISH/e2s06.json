@@ -1,0 +1,38 @@
+{
+ "kind": "summary",
+ "title": "Spelling changes and irregular forms",
+ "intro": "Read this before the questions on spelling and irregular adjectives.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "spelling changes",
+   "items": [
+    "Adjective ending in **e**: add only **r** / **st**: large, **larger**, **the largest**; nice, **nicer**.",
+    "One vowel + one consonant: **double the consonant**: big, **bigger**, **the biggest**; hot, **hotter**; thin, **thinner**.",
+    "Consonant + y: y becomes **i**: easy, **easier**, **the easiest**; busy, **busier**."
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "irregular adjectives",
+   "items": [
+    "good, **better**, **the best**",
+    "bad, **worse**, **the worst**",
+    "little, **less**, **the least**",
+    "much / many, **more**, **the most**",
+    "far, **farther** or **further**, **the farthest** or **the furthest**",
+    "old, **older** (or **elder** for family), **the oldest** (or **the eldest**)"
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "**more better**, **worser** and **badder** do not exist.",
+    "These forms are different words, not -er forms: **good** has no *gooder*."
+   ]
+  }
+ ],
+ "builds": "Forming comparatives and superlatives",
+ "chapter": "Comparatives and Superlatives"
+}

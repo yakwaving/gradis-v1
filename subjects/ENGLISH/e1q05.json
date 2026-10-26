@@ -1,0 +1,211 @@
+{
+ "title": "Tenses Quiz 5",
+ "chapter": "Tenses",
+ "description": "Choose will, going to, the present continuous or the present simple.",
+ "difficulty": "Medium",
+ "level": "Grammar",
+ "topic": "Future forms",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": false,
+ "instructions": [
+  "Tenses: Future forms.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence shows a decision made at the moment of speaking?",
+   "options": [
+    "I got a new phone yesterday evening.",
+    "I'm going to get a phone next week.",
+    "I have a meeting arranged for Friday.",
+    "The phone is ringing. I'll get it."
+   ],
+   "correct": 3,
+   "explanation": "A sudden decision uses will. Watch out: going to is for plans already made.",
+   "id": "q10501"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Look at those dark clouds! It ___.",
+   "options": [
+    "is going rain",
+    "will rains",
+    "is going to rain",
+    "are going to rain"
+   ],
+   "correct": 2,
+   "explanation": "We can see evidence, so be going to + base verb is used. Watch out: with it, the verb is is, not are.",
+   "id": "q10502"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "If it {{1}} (rain) tomorrow, we {{2}} (stay) at home.",
+   "blanks": [
+    {
+     "answers": [
+      "rains"
+     ]
+    },
+    {
+     "answers": [
+      "will stay",
+      "'ll stay",
+      "’ll stay"
+     ]
+    }
+   ],
+   "explanation": "After if, use the present simple; the result uses will. Watch out: not if it will rain.",
+   "id": "q10503"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "I call you when I will arrive.",
+    "I will call you when I arrive.",
+    "I will call you when I arrived.",
+    "I will call you when I will arrive."
+   ],
+   "correct": 1,
+   "explanation": "After when, a future meaning is shown by the present simple. Watch out: will never follows when in a time clause.",
+   "id": "q10504"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "At 8 pm tomorrow, I {{1}} (study).",
+   "blanks": [
+    {
+     "answers": [
+      "will be studying",
+      "'ll be studying",
+      "’ll be studying"
+     ]
+    }
+   ],
+   "explanation": "An action in progress at a future time uses will be + -ing.",
+   "id": "q10505"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "By next June, she {{1}} (finish) her degree.",
+   "blanks": [
+    {
+     "answers": [
+      "will have finished",
+      "'ll have finished",
+      "’ll have finished"
+     ]
+    }
+   ],
+   "explanation": "Finished before a future time: will have + past participle. Watch out: by + a time points to the future perfect.",
+   "id": "q10506"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each form with its use.",
+   "left": [
+    "will + base verb",
+    "be going to + base verb",
+    "will be + verb-ing",
+    "will have + past participle"
+   ],
+   "right": [
+    "a promise or sudden decision",
+    "a plan or clear evidence",
+    "an action in progress at a future time",
+    "an action finished before a future time"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Each form shows a different attitude to the future. Watch out: will have needs the past participle.",
+   "id": "q10507"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "'I am meeting the doctor at four tomorrow' uses the present continuous for a future arrangement.",
+   "correct": true,
+   "explanation": "The present continuous is used for fixed arrangements. Watch out: there is a time and a person, so the plan is already arranged.",
+   "id": "q10508"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct for a timetable?",
+   "options": [
+    "The train leaves at nine tomorrow.",
+    "The train will leaving at nine tomorrow.",
+    "The train has left at nine tomorrow.",
+    "The train is leave at nine tomorrow."
+   ],
+   "correct": 0,
+   "explanation": "Timetables use the present simple, even for the future. Watch out: will is followed by the base verb, never by -ing.",
+   "id": "q10509"
+  },
+  {
+   "type": "ordering",
+   "marks": 5,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "by",
+    "I",
+    "will",
+    "finished",
+    "Friday",
+    "have"
+   ],
+   "correctOrder": [
+    1,
+    2,
+    5,
+    3,
+    0,
+    4
+   ],
+   "explanation": "The future perfect is will have + past participle.",
+   "id": "q10510"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: I will phone you as soon as I will get home.",
+   "accepted": [
+    "I will phone you as soon as I get home.",
+    "I will phone you as soon as I get home",
+    "I'll phone you as soon as I get home.",
+    "I'll phone you as soon as I get home",
+    "I’ll phone you as soon as I get home.",
+    "I’ll phone you as soon as I get home"
+   ],
+   "explanation": "After as soon as, the present simple is used for the future. Watch out: will appears only in the main clause.",
+   "id": "q10511"
+  }
+ ]
+}

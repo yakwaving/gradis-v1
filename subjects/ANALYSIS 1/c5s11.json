@@ -30,5 +30,6 @@
    "title": "worked example",
    "body": "$\\dfrac{d}{dx}(x^2e^x)=2xe^x+x^2e^x=e^x(x^2+2x)$."
   }
- ]
+ ],
+ "chapter": "Differentiation"
 }

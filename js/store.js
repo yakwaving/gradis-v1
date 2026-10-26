@@ -37,8 +37,8 @@ async function loadAll(){
   const imgs=new Set();
   await Promise.all(SUBJ.map(async s=>{
     const got=await Promise.all(s.files.map(async f=>{try{const raw=await getJSON(`subjects/${s.n}/${f}.json`);imagePaths(raw,imgs);return raw.kind==="summary"?normSummary(raw,s.n,f):normQuiz(raw,s.n,f)}catch(e){console.warn("could not load quiz",s.n,f,e.message);S.warn++;return null}}));
-    const list=[];let pend=[];
-    got.forEach(z=>{if(!z)return;if(z.summary){pend.push(z);return}if(!z.questions.length)return;z.pre=pend;pend=[];list.push(z)});
+    const list=[];let pend=[];const seen=[];
+    got.forEach(z=>{if(!z)return;if(z.summary){pend.push(z);seen.push(z);return}if(!z.questions.length)return;z.pre=pend;pend=[];z.notes=z.chapter?seen.filter(p=>p.chapter===z.chapter):z.pre.slice();list.push(z)});
     if(pend.length){S.warn+=pend.length;console.warn(s.n,"a summary has no quiz after it and was ignored")}
     DATA[s.n]=list}));
   await Promise.all([...imgs].filter(p=>/\.svg$/i.test(p)).map(async p=>{try{const r=await fetch(encPath(p));if(r.ok)IMGS[p]=await r.text()}catch(e){}}));

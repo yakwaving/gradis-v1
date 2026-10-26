@@ -1,0 +1,37 @@
+{
+ "kind": "summary",
+ "title": "Forming comparatives and superlatives",
+ "intro": "Read this before the questions. The form depends on the NUMBER OF SYLLABLES of the adjective.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "the main rules",
+   "items": [
+    "**One syllable:** add **-er** / **-est**: tall, **taller**, **the tallest**.",
+    "**Three or more syllables:** use **more** / **most**: beautiful, **more beautiful**, **the most beautiful**.",
+    "**Two syllables ending in -y:** change y to **-ier** / **-iest**: happy, **happier**, **the happiest**.",
+    "**Other two-syllable adjectives:** usually **more** / **most** (careful, modern, boring). A few take both (quiet, clever, simple, narrow)."
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "building the sentence",
+   "items": [
+    "**Comparing two things:** comparative + **than**: She is **taller than** her sister. This book is **more interesting than** that one.",
+    "**The top of three or more:** **the** + superlative + in / of: He is **the oldest** boy **in** the class. It was **the best** of the three.",
+    "**Equal:** as + basic adjective + as: Anna is **as tall as** Ben."
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "**No double comparatives:** more taller and most easiest are wrong. Say taller, easiest.",
+    "**than** compares; **then** talks about time.",
+    "The superlative needs **the**: the tallest, not tallest.",
+    "Use **in** with a place or group (in the class, in the world) and **of** with a number of things (of the three)."
+   ]
+  }
+ ],
+ "chapter": "Comparatives and Superlatives"
+}

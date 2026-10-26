@@ -1,0 +1,257 @@
+{
+ "title": "Comparatives and Superlatives Quiz 1",
+ "chapter": "Comparatives and Superlatives",
+ "description": "Build the comparative and use than.",
+ "difficulty": "Easy",
+ "level": "Grammar",
+ "topic": "Comparatives",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": false,
+ "instructions": [
+  "Comparatives and Superlatives: Comparatives.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Choose the correct comparative: 'Tom is ___ than his brother.'",
+   "options": [
+    "taller",
+    "tallest",
+    "the taller",
+    "more tall"
+   ],
+   "correct": 0,
+   "explanation": "One-syllable adjectives add -er. Watch out: more tall mixes two systems.",
+   "id": "q20101"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "This book is most interesting than that one.",
+    "This book is more interesting than that one.",
+    "This book is more interesting that that one.",
+    "This book is interestinger than that one."
+   ],
+   "correct": 1,
+   "explanation": "Interesting has more than two syllables, so more is used, followed by than. Watch out: most is only for the superlative.",
+   "id": "q20102"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "My house is {{1}} (big) than yours.",
+   "blanks": [
+    {
+     "answers": [
+      "bigger"
+     ]
+    }
+   ],
+   "explanation": "Big doubles the last consonant: bigger.",
+   "id": "q20103"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "This exercise is {{1}} (difficult) than the last one.",
+   "blanks": [
+    {
+     "answers": [
+      "more difficult"
+     ]
+    }
+   ],
+   "explanation": "Difficult has three syllables, so it takes more.",
+   "id": "q20104"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "'More taller' is a correct comparative.",
+   "correct": false,
+   "explanation": "Taller is already a comparative. Watch out: two comparative markers together are never correct.",
+   "id": "q20105"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Complete the table with the comparative.",
+   "columns": [
+    "Adjective",
+    "Comparative"
+   ],
+   "rows": [
+    [
+     {
+      "given": "small"
+     },
+     {
+      "answer": [
+       "smaller"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "happy"
+     },
+     {
+      "answer": [
+       "happier"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "beautiful"
+     },
+     {
+      "answer": [
+       "more beautiful"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "large"
+     },
+     {
+      "answer": [
+       "larger"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Short adjectives take -er, long ones take more, and the spelling changes with y and e. Watch out: happy becomes happier, not happyer.",
+   "id": "q20106"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which word follows a comparative adjective?",
+   "options": [
+    "too",
+    "that",
+    "then",
+    "than"
+   ],
+   "correct": 3,
+   "explanation": "Than is used to compare. Watch out: then refers to time.",
+   "id": "q20107"
+  },
+  {
+   "type": "ordering",
+   "marks": 5,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "her",
+    "She",
+    "is",
+    "than",
+    "sister",
+    "taller"
+   ],
+   "correctOrder": [
+    1,
+    2,
+    5,
+    3,
+    0,
+    4
+   ],
+   "explanation": "The comparative is followed by than.",
+   "id": "q20108"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each adjective with its comparative.",
+   "left": [
+    "fast",
+    "expensive",
+    "easy",
+    "modern"
+   ],
+   "right": [
+    "faster",
+    "more expensive",
+    "easier",
+    "more modern"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "The comparative depends on the number of syllables. Watch out: easy ends in -y, so it becomes easier.",
+   "id": "q20109"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: He is more strong than me.",
+   "accepted": [
+    "He is stronger than me.",
+    "He is stronger than me",
+    "He is stronger than I.",
+    "He is stronger than I",
+    "He is stronger than I am.",
+    "He is stronger than I am"
+   ],
+   "explanation": "Strong has one syllable, so it takes -er. Watch out: one-syllable adjectives do not take more.",
+   "id": "q20110"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many syllables does the word 'beautiful' have?",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "beau-ti-ful has three syllables, so it takes more and most. Watch out: count the sounds you hear, not the letters.",
+   "id": "q20111"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which comparatives are correct?",
+   "options": [
+    "more cold",
+    "more careful",
+    "colder",
+    "bigger",
+    "carefuller"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "explanation": "Cold is short, so colder; careful has two syllables ending in -ful, so more careful. Watch out: bigger doubles the g.",
+   "id": "q20112"
+  }
+ ]
+}

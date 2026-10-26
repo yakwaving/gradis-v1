@@ -1,0 +1,203 @@
+{
+ "title": "Tenses Quiz 6",
+ "chapter": "Tenses",
+ "description": "Read the time words and pick the tense that fits.",
+ "difficulty": "Medium",
+ "level": "Grammar",
+ "topic": "Choosing the right tense",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": false,
+ "instructions": [
+  "Tenses: Choosing the right tense.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "'She ___ in Lagos since 2018.'",
+   "options": [
+    "lives",
+    "lived",
+    "is living",
+    "has lived"
+   ],
+   "correct": 3,
+   "explanation": "Since + a starting point with an unfinished state needs the present perfect. Watch out: lives and is living do not fit since.",
+   "id": "q10601"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "'I ___ a great film last night.'",
+   "options": [
+    "have seen",
+    "had seen",
+    "saw",
+    "was seeing"
+   ],
+   "correct": 2,
+   "explanation": "Last night is a finished time, so the past simple is used. Watch out: finished times never go with the present perfect.",
+   "id": "q10602"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "'Right now, the students ___ an exam.'",
+   "options": [
+    "took",
+    "have taken",
+    "are taking",
+    "take"
+   ],
+   "correct": 2,
+   "explanation": "Right now points to the present continuous. Watch out: take, in the present simple, would describe a habit.",
+   "id": "q10603"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "'My father ___ the newspaper every morning.'",
+   "options": [
+    "has been read",
+    "reads",
+    "was reading",
+    "is reading"
+   ],
+   "correct": 1,
+   "explanation": "Every morning shows a habit, so the present simple is used. Watch out: -s is needed with he, she, it.",
+   "id": "q10604"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "'By the time we arrived, they ___.'",
+   "options": [
+    "will leave",
+    "leave",
+    "have left",
+    "had left"
+   ],
+   "correct": 3,
+   "explanation": "By the time + a past action needs the past perfect for the earlier action. Watch out: have left belongs to the present.",
+   "id": "q10605"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "'I ___ you tomorrow if I have time.'",
+   "options": [
+    "will call",
+    "was calling",
+    "have called",
+    "called"
+   ],
+   "correct": 0,
+   "explanation": "A real condition about tomorrow uses will in the main clause. Watch out: the if clause stays in the present.",
+   "id": "q10606"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "I {{1}} (live) here for ten years.",
+   "blanks": [
+    {
+     "answers": [
+      "have lived",
+      "have been living"
+     ]
+    }
+   ],
+   "explanation": "For + a length of time, up to now, needs the present perfect. Watch out: lived would mean you no longer live here.",
+   "id": "q10607"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "Yesterday at six o'clock, I {{1}} (watch) television.",
+   "blanks": [
+    {
+     "answers": [
+      "was watching"
+     ]
+    }
+   ],
+   "explanation": "An action in progress at a past moment uses the past continuous.",
+   "id": "q10608"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The word 'ago' goes with the past simple.",
+   "correct": true,
+   "explanation": "I saw him two days ago. Watch out: 'I have seen him two days ago' is wrong, because ago gives a finished time.",
+   "id": "q10609"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each time expression with its tense.",
+   "left": [
+    "at the moment",
+    "for ten years",
+    "yesterday",
+    "by next Friday"
+   ],
+   "right": [
+    "present continuous",
+    "present perfect",
+    "past simple",
+    "future perfect"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Time words are clues to the tense. Watch out: by + a future time points to the future perfect.",
+   "id": "q10610"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: I am living here since 2019.",
+   "accepted": [
+    "I have lived here since 2019.",
+    "I have lived here since 2019",
+    "I have been living here since 2019.",
+    "I have been living here since 2019"
+   ],
+   "explanation": "Since + a starting point needs the present perfect. Watch out: the present continuous cannot be used with since.",
+   "id": "q10611"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "I am knowing her since childhood.",
+    "I have known her since childhood.",
+    "I knew her since childhood.",
+    "I know her since childhood."
+   ],
+   "correct": 1,
+   "explanation": "A state that continues up to now uses the present perfect, and know is a state verb. Watch out: do not use the continuous with know.",
+   "id": "q10612"
+  }
+ ]
+}

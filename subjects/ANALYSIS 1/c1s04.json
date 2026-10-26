@@ -38,5 +38,6 @@
    "body": "Exact answers such as $\\dfrac{\\ln9}{\\ln7}$ are written `ln(9)/ln(7)`. Several solutions are separated by commas, `2, -3`."
   }
  ],
- "builds": "Logarithms"
+ "builds": "Logarithms",
+ "chapter": "Indices, Logarithm and Surds"
 }

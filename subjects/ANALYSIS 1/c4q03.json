@@ -1,5 +1,6 @@
 {
  "title": "Trigonometry Quiz 3",
+ "chapter": "Trigonometry",
  "description": "Find all solutions in the range. Missing the second solution is the usual trap.",
  "difficulty": "Medium",
  "level": "Level I",
@@ -10,7 +11,7 @@
  "instructions": [
   "Trigonometry: Solving trigonometric equations.",
   "Read each question carefully, then check your answer.",
-  "Every question has a trap. Slow down at the signs."
+  "Every question has a trap. Read every word."
  ],
  "questions": [
   {

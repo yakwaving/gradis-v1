@@ -1,0 +1,293 @@
+{
+ "title": "Comparatives and Superlatives Quiz 3",
+ "chapter": "Comparatives and Superlatives",
+ "description": "Learn the irregular adjectives and the spelling changes.",
+ "difficulty": "Medium",
+ "level": "Grammar",
+ "topic": "Spelling and irregular forms",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": false,
+ "instructions": [
+  "Comparatives and Superlatives: Spelling and irregular forms.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "grid",
+   "marks": 8,
+   "question": "Complete the table with the irregular forms.",
+   "columns": [
+    "Adjective",
+    "Comparative",
+    "Superlative"
+   ],
+   "rows": [
+    [
+     {
+      "given": "good"
+     },
+     {
+      "answer": [
+       "better"
+      ]
+     },
+     {
+      "answer": [
+       "the best",
+       "best"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "bad"
+     },
+     {
+      "answer": [
+       "worse"
+      ]
+     },
+     {
+      "answer": [
+       "the worst",
+       "worst"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "little"
+     },
+     {
+      "answer": [
+       "less"
+      ]
+     },
+     {
+      "answer": [
+       "the least",
+       "least"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "far"
+     },
+     {
+      "answer": [
+       "farther",
+       "further"
+      ]
+     },
+     {
+      "answer": [
+       "the farthest",
+       "the furthest",
+       "farthest",
+       "furthest"
+      ]
+     }
+    ]
+   ],
+   "explanation": "These adjectives do not follow the normal rules. Watch out: bad is worse, not badder.",
+   "id": "q20301"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "My cooking is badder than yours.",
+    "My cooking is worse than yours.",
+    "My cooking is worser than yours.",
+    "My cooking is more bad than yours."
+   ],
+   "correct": 1,
+   "explanation": "Bad has an irregular comparative: worse. Watch out: worser and badder do not exist.",
+   "id": "q20302"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "Double the last letter: hot, {{1}}; thin, {{2}}.",
+   "blanks": [
+    {
+     "answers": [
+      "hotter"
+     ]
+    },
+    {
+     "answers": [
+      "thinner"
+     ]
+    }
+   ],
+   "explanation": "After one vowel and one consonant, the consonant is doubled. Watch out: hoter and thiner are wrong.",
+   "id": "q20303"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "large, {{1}}; nice, {{2}}.",
+   "blanks": [
+    {
+     "answers": [
+      "larger"
+     ]
+    },
+    {
+     "answers": [
+      "nicer"
+     ]
+    }
+   ],
+   "explanation": "Adjectives ending in e add only r. Watch out: not largeer.",
+   "id": "q20304"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the comparative of 'happy'?",
+   "options": [
+    "happyier",
+    "happier",
+    "happyer",
+    "hapier"
+   ],
+   "correct": 1,
+   "explanation": "Consonant + y becomes -ier. Watch out: the y is replaced by i.",
+   "id": "q20305"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "'More better' is wrong because 'better' is already the comparative of 'good'.",
+   "correct": true,
+   "explanation": "Better is a complete comparative. Watch out: never add more to it.",
+   "id": "q20306"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the superlative of 'far' when talking about distance?",
+   "options": [
+    "the farest",
+    "the farthest",
+    "the fartherest",
+    "the most far"
+   ],
+   "correct": 1,
+   "explanation": "Far has irregular forms: farther or further, the farthest or the furthest. Watch out: the most far is not used.",
+   "id": "q20307"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: This is the most easiest exercise.",
+   "accepted": [
+    "This is the easiest exercise.",
+    "This is the easiest exercise"
+   ],
+   "explanation": "Easiest is already a superlative. Watch out: the double superlative is always wrong.",
+   "id": "q20308"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each adjective with its comparative.",
+   "left": [
+    "good",
+    "bad",
+    "little",
+    "many"
+   ],
+   "right": [
+    "better",
+    "worse",
+    "less",
+    "more"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "These are irregular and must be learned. Watch out: many and much share more.",
+   "id": "q20309"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which spelling is correct?",
+   "options": [
+    "hoter",
+    "hotier",
+    "hotter",
+    "hottter"
+   ],
+   "correct": 2,
+   "explanation": "Hot has one vowel and one consonant, so the t is doubled. Watch out: do not triple the letter.",
+   "id": "q20310"
+  },
+  {
+   "type": "ordering",
+   "marks": 5,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "anyone",
+    "He",
+    "runs",
+    "than",
+    "else",
+    "faster"
+   ],
+   "correctOrder": [
+    1,
+    2,
+    5,
+    3,
+    0,
+    4
+   ],
+   "explanation": "Fast is short and takes -er, followed by than.",
+   "id": "q20311"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which pairs are correct?",
+   "options": [
+    "good - gooder",
+    "good - better",
+    "much - muchier",
+    "bad - worse",
+    "far - farther"
+   ],
+   "correct": [
+    1,
+    3,
+    4
+   ],
+   "explanation": "The first three are real forms. Watch out: much and good are irregular, so they take no -er.",
+   "id": "q20312"
+  }
+ ]
+}

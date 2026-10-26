@@ -38,5 +38,6 @@
    "title": "worked example",
    "body": "$f(x)=2x+1$, $g(x)=x^2$. Then $f(g(x))=2x^2+1$ but $g(f(x))=(2x+1)^2$."
   }
- ]
+ ],
+ "chapter": "Functions"
 }

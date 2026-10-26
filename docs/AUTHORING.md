@@ -33,3 +33,7 @@ Write maths between dollar signs (`$x^2$`, `$$\frac{a}{b}$$`); it is drawn with 
 - `stepline` — a worked solution (`steps`: TeX strings, optional `labels`); tap the faulty step(s) (`bugs`: step numbers).
 - `stepfix` — tap the faulty step (`bug`), then choose the replacement step (`options` TeX, `correct`). Marks: 1 for the step, the rest for the fix.
 - Every tricky maths question still gets a "Watch out:" sentence (sign errors, lost ±, domain limits, chain rule...).
+
+## Notes in Practice mode
+
+Give every quiz and every summary file the same `"chapter"` text (for example `"chapter": "Tenses"`). In Study mode the summary pages appear between questions as before. In Practice mode a **NOTES** button appears on each question and opens every summary of that chapter seen so far (so the forms are always at hand, even in quizzes that have no summary of their own). Exam mode never shows notes. Quizzes without a `chapter` only show the summaries placed just before them.

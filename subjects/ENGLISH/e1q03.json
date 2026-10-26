@@ -1,0 +1,266 @@
+{
+ "title": "Tenses Quiz 3",
+ "chapter": "Tenses",
+ "description": "Choose the right past form and watch the spelling of the verbs.",
+ "difficulty": "Easy",
+ "level": "Grammar",
+ "topic": "Past simple and past continuous",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": false,
+ "instructions": [
+  "Tenses: Past simple and past continuous.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Choose the correct form: 'Yesterday I ___ to the market.'",
+   "options": [
+    "goed",
+    "going",
+    "went",
+    "gone"
+   ],
+   "correct": 2,
+   "explanation": "Go is irregular, so its past simple is went. Watch out: goed does not exist, and gone needs have or has.",
+   "id": "q10301"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which question is correct?",
+   "options": [
+    "Was she go to school?",
+    "Did she went to school?",
+    "Did she go to school?",
+    "Does she went to school?"
+   ],
+   "correct": 2,
+   "explanation": "After did, the verb returns to the base form. Watch out: the past is already shown by did.",
+   "id": "q10302"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "They {{1}} TV last night. (not watch)",
+   "blanks": [
+    {
+     "answers": [
+      "did not watch",
+      "didn't watch",
+      "didn’t watch"
+     ]
+    }
+   ],
+   "explanation": "The negative is did not + base verb. Watch out: not did not watched.",
+   "id": "q10303"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "I {{1}} (cook) when the phone {{2}} (ring).",
+   "blanks": [
+    {
+     "answers": [
+      "was cooking"
+     ]
+    },
+    {
+     "answers": [
+      "rang"
+     ]
+    }
+   ],
+   "explanation": "The longer action is in the past continuous, and the shorter action that interrupts it is in the past simple.",
+   "id": "q10304"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Complete: 'While she ___, the lights went out.'",
+   "options": [
+    "was reading",
+    "is reading",
+    "reads",
+    "has read"
+   ],
+   "correct": 0,
+   "explanation": "While introduces an action in progress, so the past continuous is needed. Watch out: the other forms do not fit a story in the past.",
+   "id": "q10305"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "'He stoped at the shop' is correctly spelled.",
+   "correct": false,
+   "explanation": "The correct spelling is stopped: the final p is doubled after a short vowel. Watch out: the same happens with plan, planned.",
+   "id": "q10306"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Write the past simple of each verb.",
+   "columns": [
+    "Verb",
+    "Past simple"
+   ],
+   "rows": [
+    [
+     {
+      "given": "play"
+     },
+     {
+      "answer": [
+       "played"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "study"
+     },
+     {
+      "answer": [
+       "studied"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "stop"
+     },
+     {
+      "answer": [
+       "stopped"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "love"
+     },
+     {
+      "answer": [
+       "loved"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Each verb follows a spelling rule: consonant + y becomes -ied, a short vowel doubles, a final e just adds d. Watch out: play keeps its y because it follows a vowel.",
+   "id": "q10307"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each verb with its past simple.",
+   "left": [
+    "buy",
+    "teach",
+    "catch",
+    "bring"
+   ],
+   "right": [
+    "bought",
+    "taught",
+    "caught",
+    "brought"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "These irregular verbs must be learned by heart. Watch out: bought and brought look alike.",
+   "id": "q10308"
+  },
+  {
+   "type": "ordering",
+   "marks": 5,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "at",
+    "We",
+    "were",
+    "football",
+    "five",
+    "playing"
+   ],
+   "correctOrder": [
+    1,
+    2,
+    5,
+    3,
+    0,
+    4
+   ],
+   "explanation": "The past continuous is was or were + -ing.",
+   "id": "q10309"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence describes an interrupted action?",
+   "options": [
+    "I have walked home since it started to rain.",
+    "I walk home every time it starts to rain.",
+    "I walked home, and then it started to rain.",
+    "I was walking home when it started to rain."
+   ],
+   "correct": 3,
+   "explanation": "The longer action (walking) is in progress when the shorter one (rain) happens. Watch out: the past simple alone shows two separate actions.",
+   "id": "q10310"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: He didn't went to school.",
+   "accepted": [
+    "He didn't go to school.",
+    "He didn't go to school",
+    "He didn’t go to school.",
+    "He didn’t go to school",
+    "He did not go to school.",
+    "He did not go to school"
+   ],
+   "explanation": "After did not, the verb is the base form go. Watch out: the past is shown only once.",
+   "id": "q10311"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which of these are irregular past simple forms?",
+   "options": [
+    "caught",
+    "worked",
+    "brought",
+    "bought",
+    "played"
+   ],
+   "correct": [
+    0,
+    2,
+    3
+   ],
+   "explanation": "Played and worked just add -ed, so they are regular. Watch out: irregular forms change the verb itself.",
+   "id": "q10312"
+  }
+ ]
+}

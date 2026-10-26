@@ -1,0 +1,193 @@
+{
+ "title": "Tenses Quiz 7",
+ "chapter": "Tenses",
+ "description": "Every question hides a trap: a false signal word, a participle or a tense that looks right.",
+ "difficulty": "Hard",
+ "level": "Grammar",
+ "topic": "Difficult: tenses",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": true,
+ "instructions": [
+  "Tenses: Difficult: tenses.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "She said she ___ the letter the day before.",
+   "options": [
+    "will post",
+    "has posted",
+    "had posted",
+    "is posting"
+   ],
+   "correct": 2,
+   "explanation": "After said in the past, the earlier action becomes the past perfect. Watch out: the day before points to an action earlier than the saying.",
+   "id": "q10701"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "'I have lived here for five years' and 'I have been living here for five years' are both correct.",
+   "correct": true,
+   "explanation": "Both describe a situation that continues up to now. Watch out: the continuous stresses the duration, but with state verbs such as know, only the simple form is used.",
+   "id": "q10702"
+  },
+  {
+   "type": "fill",
+   "marks": 2,
+   "question": "He {{1}} (study) for three hours when his friend {{2}} (call).",
+   "blanks": [
+    {
+     "answers": [
+      "had been studying"
+     ]
+    },
+    {
+     "answers": [
+      "called"
+     ]
+    }
+   ],
+   "explanation": "A long action before a past moment uses the past perfect continuous, and the later action uses the past simple. Watch out: the studying began before the call.",
+   "id": "q10703"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "'I have lost my keys' means...",
+   "options": [
+    "I lost them but found them",
+    "I will lose them soon",
+    "I still do not have them",
+    "I lose them every day"
+   ],
+   "correct": 2,
+   "explanation": "The present perfect connects the past action to now. Watch out: if I found them, I would say I lost them (past simple).",
+   "id": "q10704"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "If you finished early, we will leave.",
+    "If you finish early, we will leave.",
+    "If you finish early, we would leave.",
+    "If you will finish early, we will leave."
+   ],
+   "correct": 1,
+   "explanation": "After if, the present simple expresses a future condition. Watch out: will is never used in the if clause.",
+   "id": "q10705"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: I am studying English since January.",
+   "accepted": [
+    "I have been studying English since January.",
+    "I have been studying English since January",
+    "I have studied English since January.",
+    "I have studied English since January"
+   ],
+   "explanation": "Since + a starting point needs the present perfect or its continuous form. Watch out: the present continuous cannot go with since.",
+   "id": "q10706"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "'I have visited Rome last year' is incorrect.",
+   "reason": "The present perfect cannot be used with a finished time such as last year.",
+   "correct": "A",
+   "explanation": "Both are true and the reason explains the mistake: the correct sentence is I visited Rome last year. Watch out: a finished time needs the past simple.",
+   "id": "q10707"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "This time next week, I {{1}} (lie) on a beach.",
+   "blanks": [
+    {
+     "answers": [
+      "will be lying",
+      "'ll be lying",
+      "’ll be lying"
+     ]
+    }
+   ],
+   "explanation": "At a particular future time, an action in progress uses will be + -ing. Watch out: lie becomes lying, not lieing.",
+   "id": "q10708"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which sentences are correct?",
+   "options": [
+    "She didn't went to school today.",
+    "I have seen that film yesterday.",
+    "They had left before we arrived.",
+    "She has lived here since 2015."
+   ],
+   "correct": [
+    2,
+    3
+   ],
+   "explanation": "The first two are correct. Watch out: the other two mix a past form with the wrong auxiliary or a finished time.",
+   "id": "q10709"
+  },
+  {
+   "type": "ordering",
+   "marks": 7,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "they",
+    "gone",
+    "the",
+    "By",
+    "had",
+    "I",
+    "time",
+    "arrived"
+   ],
+   "correctOrder": [
+    3,
+    2,
+    6,
+    5,
+    7,
+    0,
+    4,
+    1
+   ],
+   "explanation": "The earlier action, they had gone, is in the past perfect. Watch out: by the time introduces the later action.",
+   "id": "q10710"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "I haven't seen her ___ Monday.",
+   "options": [
+    "for",
+    "during",
+    "since",
+    "ago"
+   ],
+   "correct": 2,
+   "explanation": "Monday is a point in time, so since is used. Watch out: for is used with a length of time.",
+   "id": "q10711"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "In 'When I was cooking, the phone rang', the phone interrupted the cooking.",
+   "correct": true,
+   "explanation": "The long action is in the past continuous and the short interrupting action is in the past simple. Watch out: swapping the tenses changes the meaning.",
+   "id": "q10712"
+  }
+ ]
+}

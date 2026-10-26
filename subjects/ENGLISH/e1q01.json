@@ -1,0 +1,272 @@
+{
+ "title": "Tenses Quiz 1",
+ "chapter": "Tenses",
+ "description": "Choose between the two present tenses and build the forms correctly.",
+ "difficulty": "Easy",
+ "level": "Grammar",
+ "topic": "Present simple and present continuous",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": false,
+ "instructions": [
+  "Tenses: Present simple and present continuous.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "She working in a bank every day.",
+    "She works in a bank every day.",
+    "She are work in a bank every day.",
+    "She work in a bank every day."
+   ],
+   "correct": 1,
+   "explanation": "With she, the present simple adds -s. Watch out: the continuous needs am, is or are plus -ing, never the bare -ing alone.",
+   "id": "q10101"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which question is correct?",
+   "options": [
+    "Is he play football on Sundays?",
+    "Does he plays football on Sundays?",
+    "Does he play football on Sundays?",
+    "Do he play football on Sundays?"
+   ],
+   "correct": 2,
+   "explanation": "After does, the verb stays in the base form. Watch out: the -s is already carried by does, so it cannot be added again.",
+   "id": "q10102"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "My brother {{1}} (watch) television every evening.",
+   "blanks": [
+    {
+     "answers": [
+      "watches"
+     ]
+    }
+   ],
+   "explanation": "Verbs ending in -ch add -es in the present simple. Watch out: not watchs.",
+   "id": "q10103"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "Look! The children {{1}} (play) in the garden.",
+   "blanks": [
+    {
+     "answers": [
+      "are playing"
+     ]
+    }
+   ],
+   "explanation": "Look! signals something happening now, so the present continuous is needed: are + playing.",
+   "id": "q10104"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "'I am knowing the answer' is correct English.",
+   "correct": false,
+   "explanation": "Know is a verb of state, so we say I know the answer. Watch out: verbs of state (know, like, want, believe) are not used in the continuous.",
+   "id": "q10105"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "I believes you.",
+    "I believe you.",
+    "I do believing you.",
+    "I am believing you."
+   ],
+   "correct": 1,
+   "explanation": "Believe is a verb of state and takes the simple form. Watch out: with I, there is no -s.",
+   "id": "q10106"
+  },
+  {
+   "type": "grid",
+   "marks": 5,
+   "question": "Complete the table with the correct forms.",
+   "columns": [
+    "Subject",
+    "Present simple",
+    "Present continuous"
+   ],
+   "rows": [
+    [
+     {
+      "given": "I"
+     },
+     {
+      "given": "work"
+     },
+     {
+      "answer": [
+       "am working"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "She"
+     },
+     {
+      "answer": [
+       "works"
+      ]
+     },
+     {
+      "given": "is working"
+     }
+    ],
+    [
+     {
+      "given": "They"
+     },
+     {
+      "given": "work"
+     },
+     {
+      "answer": [
+       "are working"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "He"
+     },
+     {
+      "answer": [
+       "goes"
+      ]
+     },
+     {
+      "answer": [
+       "is going"
+      ]
+     }
+    ]
+   ],
+   "explanation": "The present simple adds -s (-es after o) for he, she, it; the continuous is am / is / are + -ing. Watch out: go becomes goes, not gos.",
+   "id": "q10107"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each sentence with its use.",
+   "left": [
+    "The sun rises in the east.",
+    "I am reading a good book these days.",
+    "The train leaves at seven.",
+    "Listen! Someone is singing."
+   ],
+   "right": [
+    "a fact that is always true",
+    "a temporary action around now",
+    "a timetable",
+    "something happening at this moment"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Each tense matches a different idea. Watch out: the present simple can describe the future when it is a timetable.",
+   "id": "q10108"
+  },
+  {
+   "type": "ordering",
+   "marks": 4,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "She",
+    "like",
+    "does",
+    "coffee",
+    "not"
+   ],
+   "correctOrder": [
+    0,
+    2,
+    4,
+    1,
+    3
+   ],
+   "explanation": "The negative of the present simple is subject + does not + base verb.",
+   "id": "q10109"
+  },
+  {
+   "type": "multiple",
+   "marks": 3,
+   "scoring": "partial",
+   "question": "Which time words usually go with the present simple?",
+   "options": [
+    "every day",
+    "right now",
+    "always",
+    "at the moment",
+    "never"
+   ],
+   "correct": [
+    0,
+    2,
+    4
+   ],
+   "explanation": "Frequency words fit the present simple; at the moment and right now fit the present continuous. Watch out: today can fit both, so read the whole sentence.",
+   "id": "q10110"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "What is the -ing form of 'run'?",
+   "options": [
+    "runeing",
+    "runing",
+    "runninging",
+    "running"
+   ],
+   "correct": 3,
+   "explanation": "After one short vowel and a consonant, the last consonant is doubled. Watch out: sit, sitting and swim, swimming follow the same rule.",
+   "id": "q10111"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: She don't like tea.",
+   "accepted": [
+    "She doesn't like tea.",
+    "She doesn't like tea",
+    "She doesn’t like tea.",
+    "She doesn’t like tea",
+    "She does not like tea.",
+    "She does not like tea"
+   ],
+   "explanation": "With she, the helping verb is does, not do. Watch out: negative sentences keep the main verb in the base form.",
+   "id": "q10112"
+  }
+ ]
+}

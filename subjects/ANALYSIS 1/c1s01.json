@@ -39,5 +39,6 @@
    "title": "typed answers",
    "body": "Type powers with `^`: $x^{10}$ is `x^10`. Products of letters are written side by side: `x^5 y^8 z`."
   }
- ]
+ ],
+ "chapter": "Indices, Logarithm and Surds"
 }

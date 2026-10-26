@@ -7,7 +7,7 @@ function normSummary(raw,name,file){
  const blocks=Array.isArray(raw.blocks)?raw.blocks:[];
  const ok=b=>b&&SBK[b.kind]&&(typeof b.body==="string"||(Array.isArray(b.items)&&b.items.length));
  if(!raw.title||!blocks.length||!blocks.every(ok)){console.warn(name+"/"+file,"summary needs a title and blocks (kind + body or items); kinds:",Object.keys(SBK).join(", "));return null}
- return{summary:true,id:name+"/"+file,title:String(raw.title),intro:raw.intro||"",builds:raw.builds||"",at:Math.max(1,parseInt(raw.at)||1),blocks}}
+ return{summary:true,id:name+"/"+file,title:String(raw.title),intro:raw.intro||"",builds:raw.builds||"",chapter:raw.chapter||"",at:Math.max(1,parseInt(raw.at)||1),blocks}}
 /* In Study mode the summary pages are put into the question list as pages that are never graded. */
 function runQuiz(qz,mode){
  if(mode!=="study"||!qz.pre||!qz.pre.length)return qz;
@@ -16,6 +16,8 @@ function runQuiz(qz,mode){
   qz.pre.forEach(p=>{if(Math.min(p.at,n)-1===i||(i===n&&p.at-1>=n))out.push({type:"summary",marks:0,id:"s:"+p.id,title:p.title,intro:p.intro,builds:p.builds,blocks:p.blocks,explanation:"",question:""})});
   if(i<n)out.push(qz.questions[i])}
  return Object.assign({},qz,{questions:out})}
+/* Practice mode: the notes of the quiz's chapter can be opened from the NOTES button (summaries seen so far in that chapter). */
+function notesModal(){const R=S.run,L=R&&R.qz.notes;if(!L||!L.length)return;closeModal();const m=document.createElement("div");m.className="modal";m.innerHTML=`<div class="card notesm"><div class="nh"><b>Notes</b><button class="iconb" data-a="keep" aria-label="Close">${icoX}</button></div><div class="nb">${L.map(sumBody).join("")}</div></div>`;$("st").appendChild(m)}
 const qpos=R=>{const Q=R.qz.questions;let n=0,i=0;Q.forEach((q,k)=>{if(q.type!=="summary"){n++;if(k<=R.i)i=n}});return{i,n}};
 function sumBlock(b){
  const body=Array.isArray(b.items)&&b.items.length?`<ul>${b.items.map(x=>`<li>${md(x)}</li>`).join("")}</ul>`:md(b.body);

@@ -1,0 +1,209 @@
+{
+ "title": "Tenses Quiz 4",
+ "chapter": "Tenses",
+ "description": "Show which of two past actions happened first.",
+ "difficulty": "Medium",
+ "level": "Grammar",
+ "topic": "The past perfect",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": false,
+ "instructions": [
+  "Tenses: The past perfect.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence uses the past perfect correctly?",
+   "options": [
+    "When I arrived, the film had start.",
+    "When I arrived, the film has started.",
+    "When I arrived, the film was start.",
+    "When I arrived, the film had started."
+   ],
+   "correct": 3,
+   "explanation": "The film started before I arrived, so had + past participle is needed. Watch out: has started is a present tense.",
+   "id": "q10401"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "When we reached the station, the train {{1}} (leave).",
+   "blanks": [
+    {
+     "answers": [
+      "had left"
+     ]
+    }
+   ],
+   "explanation": "The train left first, so the earlier action is in the past perfect. Watch out: left alone would not show the order of events.",
+   "id": "q10402"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "'She had eaten before he arrived.' Which happened first?",
+   "options": [
+    "Neither can be known.",
+    "His arrival came first.",
+    "Her eating came first.",
+    "Both happened together."
+   ],
+   "correct": 2,
+   "explanation": "The past perfect marks the earlier action. Watch out: the action in the past simple is the later one.",
+   "id": "q10403"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "The past perfect is formed with had + past participle.",
+   "correct": true,
+   "explanation": "Had + past participle: she had left, they had finished. Watch out: had + base verb is wrong.",
+   "id": "q10404"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "'She had wrote the letter' is correct.",
+   "correct": false,
+   "explanation": "The past participle of write is written: She had written the letter. Watch out: wrote is the past simple form.",
+   "id": "q10405"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "By the time I got home, my sister {{1}} dinner. (already eat)",
+   "blanks": [
+    {
+     "answers": [
+      "had already eaten",
+      "had eaten already"
+     ]
+    }
+   ],
+   "explanation": "Eating happened before I got home, so the past perfect is used. Watch out: eat has the past participle eaten, not ate.",
+   "id": "q10406"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Choose the correct sentence.",
+   "options": [
+    "I never had seen snow before I moved here.",
+    "I have never seen snow before I moved here.",
+    "I had never seen snow before I moved here.",
+    "I had never saw snow before I moved here."
+   ],
+   "correct": 2,
+   "explanation": "Seeing snow came before the move, so had + seen. Watch out: saw is the past simple, not the participle.",
+   "id": "q10407"
+  },
+  {
+   "type": "ordering",
+   "marks": 6,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "lost",
+    "said",
+    "She",
+    "her",
+    "had",
+    "keys",
+    "she"
+   ],
+   "correctOrder": [
+    2,
+    1,
+    6,
+    4,
+    0,
+    3,
+    5
+   ],
+   "explanation": "The past perfect often appears after said, when the loss came before the speaking.",
+   "id": "q10408"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which tense is 'They had been waiting for two hours'?",
+   "options": [
+    "past perfect continuous",
+    "past continuous perfect",
+    "present perfect continuous",
+    "past perfect simple"
+   ],
+   "correct": 0,
+   "explanation": "Had been + -ing is the past perfect continuous. Watch out: it describes an action that went on until a past moment.",
+   "id": "q10409"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "I was tired because I {{1}} (work) all day.",
+   "blanks": [
+    {
+     "answers": [
+      "had been working"
+     ]
+    }
+   ],
+   "explanation": "The tiredness is the result of the longer earlier action: had been + -ing. Watch out: had worked would not stress the duration.",
+   "id": "q10410"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each form with its tense.",
+   "left": [
+    "had + past participle",
+    "was or were + verb-ing",
+    "had been + verb-ing",
+    "verb + -ed, or the second form"
+   ],
+   "right": [
+    "past perfect",
+    "past continuous",
+    "past perfect continuous",
+    "past simple"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Match the form to the name. Watch out: had alone is not enough; it needs the participle.",
+   "id": "q10411"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: When I arrived, she already left.",
+   "accepted": [
+    "When I arrived, she had already left.",
+    "When I arrived, she had already left",
+    "When I arrived, she had left already.",
+    "When I arrived, she had left already"
+   ],
+   "explanation": "She left before I arrived, so the past perfect is needed. Watch out: already belongs between had and the participle.",
+   "id": "q10412"
+  }
+ ]
+}

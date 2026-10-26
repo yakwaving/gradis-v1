@@ -1,0 +1,49 @@
+{
+ "kind": "summary",
+ "title": "Past tenses: forms and uses",
+ "intro": "Read this before the questions on the past simple, past continuous and past perfect.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "past simple",
+   "items": [
+    "**Form:** regular verbs add **-ed** (worked); irregular verbs have their own form (went, saw, bought).",
+    "**Negative:** did not + base verb: She **did not go**. (not *did not went*)",
+    "**Question:** Did + subject + base verb: **Did** she **go**?",
+    "**Use:** a finished action at a finished time: I visited Paris in 2019."
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "past continuous",
+   "items": [
+    "**Form:** was / were + verb-ing: I **was sleeping**. They **were playing**.",
+    "**Use:** an action in progress at a past moment, or the background to another action: I **was cooking** when the phone **rang**."
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "past perfect",
+   "items": [
+    "**Form:** had + past participle: She **had left** before I arrived.",
+    "**Past perfect continuous:** had been + verb-ing: He **had been working** for hours.",
+    "**Use:** the EARLIER of two past actions: When I arrived, the film **had started**."
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "spelling and irregular verbs",
+   "items": [
+    "stop, **stopped**; study, **studied**; play, **played**; love, **loved**.",
+    "buy, **bought**; teach, **taught**; catch, **caught**; bring, **brought**; think, **thought**; come, **came**; run, **ran**; drink, **drank**.",
+    "After did or did not, the verb is the base form: Did she **go**? (not *went*)."
+   ]
+  },
+  {
+   "kind": "hint",
+   "body": "While and when: the longer action uses the past continuous, the shorter action that interrupts it uses the past simple."
+  }
+ ],
+ "builds": "Present perfect",
+ "chapter": "Tenses"
+}

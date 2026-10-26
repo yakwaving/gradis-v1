@@ -1,0 +1,35 @@
+{
+ "kind": "summary",
+ "title": "Future forms",
+ "intro": "Read this before the questions on the future.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "ways to talk about the future",
+   "items": [
+    "**will + base verb:** a decision now, a prediction or a promise: I **will help** you.",
+    "**be going to + base verb:** a plan, or something we can see is about to happen: Look at the clouds! It **is going to rain**.",
+    "**present continuous:** a fixed arrangement: I **am meeting** Sam at five.",
+    "**present simple:** a timetable: The train **leaves** at nine."
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "future continuous and future perfect",
+   "items": [
+    "**Future continuous:** will be + verb-ing: At eight tomorrow I **will be studying**.",
+    "**Future perfect:** will have + past participle: By June she **will have finished** her degree."
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "the big trap",
+   "items": [
+    "After **if, when, as soon as, before, until, after**, use the PRESENT for the future: I will call you when I **arrive** (not *when I will arrive*).",
+    "will is followed by the base verb: She will **go** (not *will goes*, not *will going*)."
+   ]
+  }
+ ],
+ "builds": "Past tenses",
+ "chapter": "Tenses"
+}

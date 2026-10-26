@@ -1,0 +1,250 @@
+{
+ "title": "Comparatives and Superlatives Quiz 5",
+ "chapter": "Comparatives and Superlatives",
+ "description": "Every question hides a trap: a double form, a spelling change or a rule exception.",
+ "difficulty": "Hard",
+ "level": "Grammar",
+ "topic": "Difficult: comparatives and superlatives",
+ "timerType": "wholeQuiz",
+ "totalTime": 1200,
+ "confidence": true,
+ "instructions": [
+  "Comparatives and Superlatives: Difficult: comparatives and superlatives.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is **NOT** correct?",
+   "options": [
+    "She is the tallest girl here.",
+    "She is more taller than me.",
+    "She is more careful than me.",
+    "She is taller than me."
+   ],
+   "correct": 1,
+   "explanation": "Taller is already a comparative. Watch out: more and -er cannot be used together.",
+   "id": "q20501"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "My bag is {{1}} (heavy) than yours.",
+   "blanks": [
+    {
+     "answers": [
+      "heavier"
+     ]
+    }
+   ],
+   "explanation": "Heavy ends in consonant + y, so y becomes ier. Watch out: not heavyer.",
+   "id": "q20502"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "'Quieter' and 'more quiet' are both accepted for the two-syllable adjective 'quiet'.",
+   "correct": true,
+   "explanation": "A few two-syllable adjectives, such as quiet, clever, simple and narrow, can take both forms. Watch out: this is the exception to the syllable rule.",
+   "id": "q20503"
+  },
+  {
+   "type": "grid",
+   "marks": 8,
+   "question": "Complete the table.",
+   "columns": [
+    "Adjective",
+    "Comparative",
+    "Superlative"
+   ],
+   "rows": [
+    [
+     {
+      "given": "thin"
+     },
+     {
+      "answer": [
+       "thinner"
+      ]
+     },
+     {
+      "answer": [
+       "the thinnest",
+       "thinnest"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "late"
+     },
+     {
+      "answer": [
+       "later"
+      ]
+     },
+     {
+      "answer": [
+       "the latest",
+       "latest"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "famous"
+     },
+     {
+      "answer": [
+       "more famous"
+      ]
+     },
+     {
+      "answer": [
+       "the most famous",
+       "most famous"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "noisy"
+     },
+     {
+      "answer": [
+       "noisier"
+      ]
+     },
+     {
+      "answer": [
+       "the noisiest",
+       "noisiest"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Each adjective follows a different spelling rule. Watch out: thin doubles the n, late keeps one t, noisy changes y to i.",
+   "id": "q20504"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: He is the most tallest boy in the class.",
+   "accepted": [
+    "He is the tallest boy in the class.",
+    "He is the tallest boy in the class"
+   ],
+   "explanation": "Tallest is already a superlative. Watch out: most and -est together are wrong.",
+   "id": "q20505"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "This is easy than I expected.",
+    "This is easier than I expected.",
+    "This is the easier than I expected.",
+    "This is more easier than I expected."
+   ],
+   "correct": 1,
+   "explanation": "Easy becomes easier before than. Watch out: easy alone is not a comparative.",
+   "id": "q20506"
+  },
+  {
+   "type": "assertion",
+   "marks": 1,
+   "assertion": "'Worse' is the comparative of 'bad'.",
+   "reason": "'Bad' has an irregular comparative form.",
+   "correct": "A",
+   "explanation": "Both are true and the reason explains the first: bad does not follow the -er rule. Watch out: badder does not exist.",
+   "id": "q20507"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which is the superlative of 'good'?",
+   "options": [
+    "most good",
+    "goodest",
+    "best",
+    "betterest"
+   ],
+   "correct": 2,
+   "explanation": "Good is irregular: better, best. Watch out: the superlative also needs the in a sentence: the best student.",
+   "id": "q20508"
+  },
+  {
+   "type": "numeric",
+   "marks": 1,
+   "question": "How many syllables does the word 'dangerous' have?",
+   "correct": 3,
+   "tolerance": {
+    "mode": "absolute",
+    "value": 0
+   },
+   "explanation": "dan-ger-ous has three syllables, so it takes more and most. Watch out: count the sounds, not the letters.",
+   "id": "q20509"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which are correct?",
+   "options": [
+    "the most dangerous",
+    "the happiest",
+    "the more happy",
+    "the dangerousest"
+   ],
+   "correct": [
+    0,
+    1
+   ],
+   "explanation": "Dangerous is long, so the most dangerous; happy changes to the happiest. Watch out: -est never goes on long adjectives.",
+   "id": "q20510"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "The more I read, the most I learn.",
+    "The more I read, the more I learn.",
+    "More I read, more I learn.",
+    "The most I read, the most I learn."
+   ],
+   "correct": 1,
+   "explanation": "The pattern is the more ..., the more ... with comparatives. Watch out: most is a superlative.",
+   "id": "q20511"
+  },
+  {
+   "type": "ordering",
+   "marks": 6,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "the",
+    "is",
+    "This",
+    "best",
+    "far",
+    "answer",
+    "by"
+   ],
+   "correctOrder": [
+    2,
+    1,
+    6,
+    4,
+    0,
+    3,
+    5
+   ],
+   "explanation": "By far adds emphasis before the superlative. Watch out: the stays before best.",
+   "id": "q20512"
+  }
+ ]
+}

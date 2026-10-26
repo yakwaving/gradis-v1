@@ -1,0 +1,42 @@
+{
+ "kind": "summary",
+ "title": "Present perfect: forms and uses",
+ "intro": "Read this before the questions on the present perfect and the past participle.",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "present perfect",
+   "items": [
+    "**Form:** have / has + **past participle**: She **has finished**. I **have seen** it.",
+    "**Negative:** have / has + not + past participle: He **has not arrived** (hasn't arrived).",
+    "**Question:** Have / Has + subject + past participle: **Have** you **eaten**?",
+    "**Present perfect continuous:** have / has + **been** + verb-ing: I **have been waiting** for an hour."
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "the past participle",
+   "items": [
+    "**Regular verbs:** verb + -ed: work, worked, worked.",
+    "**Irregular verbs** must be learned: go, went, **gone**; see, saw, **seen**; write, wrote, **written**; take, took, **taken**; be, was or were, **been**; do, did, **done**; eat, ate, **eaten**; begin, began, **begun**; break, broke, **broken**; speak, spoke, **spoken**; give, gave, **given**; know, knew, **known**; buy, bought, **bought**; have, had, **had**."
+   ]
+  },
+  {
+   "kind": "remember",
+   "title": "when to use it",
+   "body": "1. Experience (ever, never): Have you ever seen a lion?\n2. A past action with a result now: I have lost my keys.\n3. A period that is not finished (this week, so far, since, for): I have lived here for five years.\n4. Recent news (just, already, yet): She has just arrived."
+  },
+  {
+   "kind": "dont",
+   "title": "the slips",
+   "items": [
+    "Never use a finished time (yesterday, last year, in 2019, two days ago) with the present perfect: **I saw him yesterday**, not *I have seen him yesterday*.",
+    "**since** + a point in time (since Monday, since 2019). **for** + a length of time (for two years).",
+    "**has gone** (is still away) is not the same as **has been** (went and came back).",
+    "**yet** goes in questions and negatives. **already** goes in positive sentences."
+   ]
+  }
+ ],
+ "builds": "Present tenses",
+ "chapter": "Tenses"
+}

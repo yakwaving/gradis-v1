@@ -37,5 +37,6 @@
    "body": "Write roots as `sqrt(2)`. Rationalised answers must have no root in the denominator."
   }
  ],
- "builds": "Laws of indices"
+ "builds": "Laws of indices",
+ "chapter": "Indices, Logarithm and Surds"
 }

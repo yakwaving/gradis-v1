@@ -1,0 +1,261 @@
+{
+ "title": "Comparatives and Superlatives Quiz 2",
+ "chapter": "Comparatives and Superlatives",
+ "description": "Use the, -est and most, and choose in or of.",
+ "difficulty": "Easy",
+ "level": "Grammar",
+ "topic": "Superlatives",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": false,
+ "instructions": [
+  "Comparatives and Superlatives: Superlatives.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "'Mount Everest is ___ mountain in the world.'",
+   "options": [
+    "most high",
+    "the higher",
+    "the highest",
+    "highest"
+   ],
+   "correct": 2,
+   "explanation": "A superlative needs the, and high is short so it adds -est. Watch out: the highest, not highest alone.",
+   "id": "q20201"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "She is the intelligentest student in the class.",
+    "She is the most intelligent student in the class.",
+    "She is the more intelligent student in the class.",
+    "She is most intelligent student in the class."
+   ],
+   "correct": 1,
+   "explanation": "Intelligent has more than two syllables, so the most is used. Watch out: -est is not added to long adjectives.",
+   "id": "q20202"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "This is {{1}} (cheap) shop in town.",
+   "blanks": [
+    {
+     "answers": [
+      "the cheapest",
+      "cheapest"
+     ]
+    }
+   ],
+   "explanation": "Cheap is short, so the cheapest. Watch out: the is needed before the superlative.",
+   "id": "q20203"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "It was {{1}} (exciting) film of the year.",
+   "blanks": [
+    {
+     "answers": [
+      "the most exciting"
+     ]
+    }
+   ],
+   "explanation": "Exciting has three syllables, so the most exciting.",
+   "id": "q20204"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "We use 'in' with a place or group (in the class) and 'of' with a number of things (of the three).",
+   "correct": true,
+   "explanation": "He is the tallest in the class; he is the tallest of the three. Watch out: of the class is not used.",
+   "id": "q20205"
+  },
+  {
+   "type": "grid",
+   "marks": 4,
+   "question": "Complete the table.",
+   "columns": [
+    "Adjective",
+    "Comparative",
+    "Superlative"
+   ],
+   "rows": [
+    [
+     {
+      "given": "tall"
+     },
+     {
+      "given": "taller"
+     },
+     {
+      "answer": [
+       "the tallest",
+       "tallest"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "busy"
+     },
+     {
+      "answer": [
+       "busier"
+      ]
+     },
+     {
+      "answer": [
+       "the busiest",
+       "busiest"
+      ]
+     }
+    ],
+    [
+     {
+      "given": "interesting"
+     },
+     {
+      "given": "more interesting"
+     },
+     {
+      "answer": [
+       "the most interesting",
+       "most interesting"
+      ]
+     }
+    ]
+   ],
+   "explanation": "Each adjective follows its own pattern. Watch out: busy changes y to i.",
+   "id": "q20206"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "When do we use 'the most'?",
+   "options": [
+    "with all adjectives of one syllable",
+    "with adjectives that are irregular",
+    "with adjectives of three syllables or more",
+    "with adjectives that end with -y"
+   ],
+   "correct": 2,
+   "explanation": "Long adjectives take most. Watch out: short adjectives take -est.",
+   "id": "q20207"
+  },
+  {
+   "type": "ordering",
+   "marks": 6,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "runner",
+    "is",
+    "She",
+    "in",
+    "fastest",
+    "school",
+    "the"
+   ],
+   "correctOrder": [
+    2,
+    1,
+    6,
+    4,
+    0,
+    3,
+    5
+   ],
+   "explanation": "The superlative is introduced by the, and the group follows with in.",
+   "id": "q20208"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each ending with its use.",
+   "left": [
+    "-est",
+    "most",
+    "-iest",
+    "the"
+   ],
+   "right": [
+    "one-syllable adjectives",
+    "long adjectives",
+    "adjectives ending in -y",
+    "always before a superlative"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "These are the building blocks of the superlative. Watch out: the is placed before the superlative.",
+   "id": "q20209"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: This is the more beautiful place I have ever seen.",
+   "accepted": [
+    "This is the most beautiful place I have ever seen.",
+    "This is the most beautiful place I have ever seen"
+   ],
+   "explanation": "A superlative uses most, not more. Watch out: more compares two things.",
+   "id": "q20210"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "It is the most long river in Africa.",
+    "It is the longest river in Africa.",
+    "It is the longer river in Africa.",
+    "It is longest river in Africa."
+   ],
+   "correct": 1,
+   "explanation": "Long is short, so the longest. Watch out: the is needed.",
+   "id": "q20211"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which are superlatives?",
+   "options": [
+    "the smallest",
+    "more useful",
+    "the most useful",
+    "smaller"
+   ],
+   "correct": [
+    0,
+    2
+   ],
+   "explanation": "A superlative has the and -est or most. Watch out: smaller and more useful are comparatives.",
+   "id": "q20212"
+  }
+ ]
+}

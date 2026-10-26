@@ -407,3 +407,11 @@ code .tk-k{color:#d6452a}code .tk-i{color:#0f8f7d}code .tk-t{color:#7a4bd6}code 
 .chk.on i{background:var(--teal);border-color:var(--teal)}.chk.on i::after{content:"";width:6px;height:12px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
 .pcode{font:800 46px ui-monospace,Menlo,Consolas,monospace;letter-spacing:.08em;margin:6px 0 10px}
 .btn[disabled]{opacity:.6;pointer-events:none}
+
+/* notes during practice */
+.chip.nt{margin-left:auto;border:0;cursor:pointer;background:var(--navy);color:#fff}
+.notesm{width:min(460px,calc(100% - 24px))!important;max-height:84%;display:flex;flex-direction:column;padding:14px!important;text-align:left!important}
+.notesm .nh{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.notesm .nh b{font-size:22px}
+.notesm .nb{overflow-y:auto;scrollbar-width:none}.notesm .nb::-webkit-scrollbar{display:none}.notesm .sumh{margin-top:0}
+.modal .notesm .card{width:auto;text-align:left;padding:18px}.notesm .sb,.notesm .sumh{text-align:left}
+.sbb b{color:#3a5fc4}

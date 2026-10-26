@@ -35,7 +35,7 @@ SCR.q=()=>{const R=S.run,q=curQ(),a=R.ans[R.i],qz=R.qz,N=qz.questions.length,ch=
 <div class="qfoot"><div class="frow">${pvB}<button class="btn" id="main" data-a="main">GOT IT ›</button></div></div></div>`;
  const lbl=R.mode==="study"?(R.i===N-1?"DONE":"NEXT ›"):R.mode==="practice"&&!R.checked?"CHECK":R.i===N-1?"FINISH":"NEXT ›";
  return `<div class="scr"><div class="qtop"><button class="iconb" data-a="quit" aria-label="Close">${icoX}</button><div class="segs">${segs}</div>${tmr}</div>
-<div class="body"><div class="qmeta"><span class="chip n">${qp.i} / ${qp.n}</span><span class="chip">${TYPES[q.type]}</span><span class="chip y">${q.marks} MARK${q.marks>1?"S":""}</span></div>
+<div class="body"><div class="qmeta"><span class="chip n">${qp.i} / ${qp.n}</span><span class="chip">${TYPES[q.type]}</span><span class="chip y">${q.marks} MARK${q.marks>1?"S":""}</span>${R.mode==="practice"&&qz.notes&&qz.notes.length?`<button class="chip nt" data-a="notes">${gicon("menu_book","width:14px;height:14px")} NOTES</button>`:""}</div>
 ${q.type==="assertion"?"":`<div class="card qcard">${q.type==="fill"?fillQ(q,a,ch,rs):md(q.question)}${img}</div>`}
 ${R.hint&&q.hint?`<div class="hbox">${gicon("lightbulb","width:18px;height:18px;display:inline-block;vertical-align:-3px;margin-right:4px")} ${md(q.hint)}</div>`:""}
 ${typeUI(q,a,ch,R)}${fb}</div>

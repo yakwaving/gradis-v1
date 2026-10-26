@@ -1,0 +1,216 @@
+{
+ "title": "Comparatives and Superlatives Quiz 4",
+ "chapter": "Comparatives and Superlatives",
+ "description": "Use as ... as, the more ... the more, and choose the correct form in context.",
+ "difficulty": "Medium",
+ "level": "Grammar",
+ "topic": "Equal comparisons and mixed forms",
+ "timerType": "wholeQuiz",
+ "totalTime": 1320,
+ "confidence": false,
+ "instructions": [
+  "Comparatives and Superlatives: Equal comparisons and mixed forms.",
+  "Read each question carefully, then check your answer.",
+  "Every question has a trap. Read every word."
+ ],
+ "questions": [
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence means the same as 'Anna is as tall as Ben'?",
+   "options": [
+    "Anna is taller than Ben.",
+    "Ben is taller than Anna.",
+    "Anna is the tallest girl.",
+    "Anna and Ben are the same height."
+   ],
+   "correct": 3,
+   "explanation": "As ... as shows equality. Watch out: it is not a comparative.",
+   "id": "q20401"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "He runs as {{1}} as I do. (fast)",
+   "blanks": [
+    {
+     "answers": [
+      "fast"
+     ]
+    }
+   ],
+   "explanation": "After as ... as, the basic adjective or adverb is used. Watch out: not faster.",
+   "id": "q20402"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "He is not as older as his brother.",
+    "He is not as old as his brother.",
+    "He is not as old than his brother.",
+    "He is not so older as his brother."
+   ],
+   "correct": 1,
+   "explanation": "Not as + basic adjective + as. Watch out: than does not go with as.",
+   "id": "q20403"
+  },
+  {
+   "type": "truefalse",
+   "marks": 1,
+   "question": "In 'as tall as', we use the basic form of the adjective, not the comparative.",
+   "correct": true,
+   "explanation": "The adjective does not change: as tall as. Watch out: as taller as is wrong.",
+   "id": "q20404"
+  },
+  {
+   "type": "fill",
+   "marks": 1,
+   "question": "The more you practise, the {{1}} you become. (good)",
+   "blanks": [
+    {
+     "answers": [
+      "better"
+     ]
+    }
+   ],
+   "explanation": "The pattern the more ..., the more ... uses comparatives. Watch out: good becomes better.",
+   "id": "q20405"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Complete: 'It is getting ___ every day.'",
+   "options": [
+    "colder and colder",
+    "cold and colder",
+    "the coldest and coldest",
+    "more cold and more cold"
+   ],
+   "correct": 0,
+   "explanation": "A change that increases uses comparative and comparative. Watch out: cold is short, so no more.",
+   "id": "q20406"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Choose the correct sentence.",
+   "options": [
+    "This is the better book I have ever read.",
+    "This is a better book I have ever read.",
+    "This is the best book I have ever read.",
+    "This is best book I have ever read."
+   ],
+   "correct": 2,
+   "explanation": "With ever, we use the superlative with the. Watch out: the better is only for two things.",
+   "id": "q20407"
+  },
+  {
+   "type": "short",
+   "marks": 1,
+   "question": "Correct the mistake: She is taller that her sister.",
+   "accepted": [
+    "She is taller than her sister.",
+    "She is taller than her sister"
+   ],
+   "explanation": "Comparatives need than, not that. Watch out: one letter changes the meaning.",
+   "id": "q20408"
+  },
+  {
+   "type": "single",
+   "marks": 1,
+   "question": "Which sentence is correct?",
+   "options": [
+    "He is youngest of the three brothers.",
+    "He is the youngest of the three brothers.",
+    "He is the most young of the three brothers.",
+    "He is the younger of the three brothers."
+   ],
+   "correct": 1,
+   "explanation": "Three or more means the superlative. Watch out: young is short, so youngest.",
+   "id": "q20409"
+  },
+  {
+   "type": "matching",
+   "marks": 4,
+   "question": "Match each structure with its use.",
+   "left": [
+    "as + adjective + as",
+    "adjective-er + than",
+    "the + adjective-est",
+    "the more ..., the more ..."
+   ],
+   "right": [
+    "two things are equal",
+    "a difference between two",
+    "the top of three or more",
+    "two changes together"
+   ],
+   "pairs": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "explanation": "Each structure has its meaning. Watch out: the superlative needs three or more things.",
+   "id": "q20410"
+  },
+  {
+   "type": "ordering",
+   "marks": 6,
+   "scoring": "adjacent",
+   "question": "Put the words in the correct order.",
+   "items": [
+    "storm",
+    "was",
+    "It",
+    "this",
+    "worst",
+    "century",
+    "the"
+   ],
+   "correctOrder": [
+    2,
+    1,
+    6,
+    4,
+    0,
+    3,
+    5
+   ],
+   "explanation": "The superlative comes after the, and the time or place follows.",
+   "id": "q20411"
+  },
+  {
+   "type": "multiple",
+   "marks": 2,
+   "scoring": "partial",
+   "question": "Which sentences are correct?",
+   "options": [
+    "He is as stronger as an ox.",
+    "This is the most cheapest of all.",
+    "This is the cheapest of all.",
+    "He is as strong as an ox."
+   ],
+   "correct": [
+    2,
+    3
+   ],
+   "explanation": "As + basic adjective + as, and one superlative marker only. Watch out: more or most plus -er or -est is wrong.",
+   "id": "q20412"
+  }
+ ]
+}

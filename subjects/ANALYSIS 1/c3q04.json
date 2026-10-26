@@ -1,5 +1,6 @@
 {
  "title": "Functions Quiz 4",
+ "chapter": "Functions",
  "description": "Even, odd and the shifts that work backwards.",
  "difficulty": "Medium",
  "level": "Level I",
@@ -10,7 +11,7 @@
  "instructions": [
   "Functions: Symmetry and transformations.",
   "Read each question carefully, then check your answer.",
-  "Every question has a trap. Slow down at the signs."
+  "Every question has a trap. Read every word."
  ],
  "questions": [
   {

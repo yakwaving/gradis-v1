@@ -1,5 +1,6 @@
 {
  "title": "Partial Fractions Quiz 1",
+ "chapter": "Partial Fractions",
  "description": "Before solving anything, learn to choose the correct form.",
  "difficulty": "Easy",
  "level": "Level I",
@@ -10,7 +11,7 @@
  "instructions": [
   "Partial Fractions: Proper or improper, and the right form.",
   "Read each question carefully, then check your answer.",
-  "Every question has a trap. Slow down at the signs."
+  "Every question has a trap. Read every word."
  ],
  "questions": [
   {

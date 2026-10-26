@@ -26,6 +26,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b
  case"quiz":S.quiz=DATA[S.subj][+v];S.mode=S.quiz.confidence?"practice":"practice";return scr("landing");
  case"landing":return scr("landing");
  case"resume":return resumeRun();
+ case"notes":return notesModal();
  case"mode":S.mode=v;return scr("landing");
  case"start":return startRun();
  case"quit":return quitModal();

@@ -43,5 +43,6 @@
    "body": "Write logarithms as `log(` (base 10), `ln(` or `log_2(8)` for another base."
   }
  ],
- "builds": "Laws of indices"
+ "builds": "Laws of indices",
+ "chapter": "Indices, Logarithm and Surds"
 }

@@ -1,0 +1,46 @@
+{
+ "kind": "summary",
+ "title": "Present tenses: forms and uses",
+ "intro": "Read this before the questions on the present tenses. Every tense has a FORM (how to build it) and a USE (when to choose it).",
+ "blocks": [
+  {
+   "kind": "formula",
+   "title": "present simple",
+   "items": [
+    "**Form:** subject + base verb. Add **-s** for he, she, it: She **works**. I **work**.",
+    "**Negative:** do / does + not + base verb: She **does not work**. They **do not work**.",
+    "**Question:** Do / Does + subject + base verb: **Does** she **work**?",
+    "**Use:** facts, habits and timetables: Water boils at 100 degrees. He plays football on Sundays."
+   ]
+  },
+  {
+   "kind": "formula",
+   "title": "present continuous",
+   "items": [
+    "**Form:** am / is / are + verb-**ing**: She **is working**. I **am working**.",
+    "**Negative:** am / is / are + not + verb-ing: They **are not working**.",
+    "**Question:** Am / Is / Are + subject + verb-ing: **Are** they **working**?",
+    "**Use:** things happening now, temporary actions, and fixed plans: Look! It **is raining**."
+   ]
+  },
+  {
+   "kind": "dont",
+   "title": "spelling rules",
+   "items": [
+    "he / she / it: add **-s** (works). After s, sh, ch, x, o add **-es**: watches, goes, fixes. Consonant + y becomes **-ies**: studies (but plays).",
+    "-ing: drop a silent **e** (make, making). After one short vowel, double the last consonant: run, **running**; sit, **sitting**.",
+    "After **does**, the verb is always the base form: She does not work (not *works*)."
+   ]
+  },
+  {
+   "kind": "remember",
+   "title": "verbs that avoid the continuous",
+   "body": "Verbs of state, such as **know, like, love, want, need, believe, own, understand**, are normally not used in the continuous. Say I **know** the answer, not I am knowing."
+  },
+  {
+   "kind": "hint",
+   "body": "Time words: **always, usually, every day, never** point to the present simple. **Now, at the moment, today, these days, look!** point to the present continuous."
+  }
+ ],
+ "chapter": "Tenses"
+}
