@@ -46,6 +46,32 @@ async function loadAll(){
 
 /* Results: saved on this device */
 function hydrate(h){const d=new Date(h.ts),t=new Date();const a=Math.max(0,Math.round((new Date(t.getFullYear(),t.getMonth(),t.getDate())-new Date(d.getFullYear(),d.getMonth(),d.getDate()))/864e5));h.ago=a;h.d=dayLbl(a,h.ts);return h}
+
+/* Day, week, streak and combo rules: one place, used by every screen */
+const dayNum=ts=>{const d=new Date(ts);return Math.round(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5)};
+const weekNum=ts=>Math.floor((dayNum(ts)+3)/7); /* calendar weeks, Monday first */
+const inWeek=(h,off)=>weekNum(h.ts)===weekNum(Date.now())-(off||0);
+let _pa=null;
+/* How many days ago was the last day (before today) on which a quiz was answered? null if none */
+function prevActiveAgo(){const k=HIST.length+":"+(HIST[0]&&HIST[0].id)+":"+dayNum(Date.now());if(_pa&&_pa.k===k)return _pa.v;let m=null;HIST.forEach(h=>{if(h.ago>0&&(m==null||h.ago<m))m=h.ago});_pa={k,v:m};return m}
+/* Day streak: consecutive days with a quiz. lit = answered today, ice = alive but not yet today, out = lost, none = never started */
+function streakInfo(){const days=[...new Set(HIST.map(h=>dayNum(h.ts)))].sort((a,b)=>a-b),t=dayNum(Date.now());
+ let best=0,run=0,prev=null;days.forEach(d=>{run=prev!=null&&d-prev===1?run+1:1;if(run>best)best=run;prev=d});
+ const last=days.length?days[days.length-1]:null,alive=last!=null&&t-last<=1,cur=alive?run:0;
+ return{cur,best:Math.max(best,cur),state:!days.length?"none":last===t?"lit":alive?"ice":"out",today:last===t}}
+/* Combo: answers in a row without a failure (wrong, partly right or blank all break it). Per quiz we keep [lead,max,end,n]:
+   lead = right answers before the first failure, max = longest run inside, end = run still going at the end, n = questions. */
+const COMBO_DAYS=3;
+function comboOf(res){let lead=0,run=0,max=0,failed=false;res.forEach(r=>{if(r.got>=r.max){run++;if(!failed)lead++;if(run>max)max=run}else{run=0;failed=true}});return[lead,max,run,res.length]}
+/* The combo across quizzes, rebuilt from results (oldest first). It ends after more than COMBO_DAYS days without answering. */
+function comboInfo(){let run=0,best=0,bestTs=null,last=null;
+ const up=(v,ts)=>{if(v>best){best=v;bestTs=ts}};
+ HIST.slice().reverse().forEach(h=>{const c=h.cb;if(!c||!c[3])return;const[lead,mx,end,n]=c;
+  if(last!=null&&dayNum(h.ts)-dayNum(last)>COMBO_DAYS)run=0;
+  if(lead===n)run+=n;else{up(run+lead,h.ts);run=end}
+  up(mx,h.ts);up(run,h.ts);last=h.ts});
+ const gap=last==null?null:dayNum(Date.now())-dayNum(last),alive=gap!=null&&gap<=COMBO_DAYS;
+ return{cur:alive?run:0,best:Math.max(best,alive?run:0),bestTs,left:alive?COMBO_DAYS-gap:0,state:last==null?"none":!alive?"out":gap>=COMBO_DAYS-1&&run>0?"fading":"live"}}
 function saveHist(){try{localStorage.setItem(K_RES,JSON.stringify(HIST.map(({ago,d,...r})=>r)))}catch(e){}}
 function loadHist(){try{const a=JSON.parse(localStorage.getItem(K_RES)||"[]");HIST=a.filter(h=>h&&h.ts&&h.p!=null).map(hydrate).sort((x,y)=>y.ts-x.ts);let fix=0;HIST.forEach(h=>{if(!h.id){h.id=legacyId(h);fix++}});if(fix)saveHist()}catch(e){HIST=[]}}
 function addResult(r){r.ts=Date.now();r.id=r.ts.toString(36)+Math.random().toString(36).slice(2,6);HIST.unshift(hydrate(r));if(HIST.length>500)HIST.length=500;saveHist()}

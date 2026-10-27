@@ -1,4 +1,4 @@
-const APP_VERSION="1.13.0";
+const APP_VERSION="1.20.0";
 /* true inside the Android app (Capacitor); false in a normal browser */
 const isNative=()=>{const C=window.Capacitor;return !!(C&&(C.isNativePlatform?C.isNativePlatform():(C.getPlatform&&C.getPlatform()!=="web")))};
 const loaderHtml=()=>'<div class="ldr" role="status" aria-label="Loading"><i class="ldp"></i><i class="ldq"></i></div>';
@@ -34,6 +34,17 @@ const fmtT=s=>Math.floor(s/60)+":"+String(Math.max(0,s%60)).padStart(2,"0");
 const stateOf=m=>m.got>=m.max?"ok":m.got>0?"part":"bad";
 const ST={ok:["Correct!","✓"],part:["Partly right","≈"],bad:["Not quite","✗"]};
 
+
+/* Illustration kit: small drawn icons (24x24) in the app's palette. Strokes draw themselves in, fills pop in. kit("check",{size:28,c:"#2fb5a3",still:true}) */
+const KIT={
+ check:o=>`<path class="dr" pathLength="1" d="M5 12.6l4.6 4.6L19.2 7" fill="none" stroke="${o.c||"#2fb5a3"}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>`,
+ cross:o=>`<path class="dr" pathLength="1" d="M6.5 6.5l11 11" fill="none" stroke="${o.c||"#ff7a59"}" stroke-width="3.4" stroke-linecap="round"/><path class="dr d2" pathLength="1" d="M17.5 6.5l-11 11" fill="none" stroke="${o.c||"#ff7a59"}" stroke-width="3.4" stroke-linecap="round"/>`,
+ star:o=>`<path class="pp" d="M12 2.8l2.8 5.9 6.4.9-4.6 4.5 1.1 6.4L12 17.4l-5.7 3.1 1.1-6.4-4.6-4.5 6.4-.9z" fill="${o.c||"#ffcb3d"}" stroke="#1c2a5e" stroke-width="1.6" stroke-linejoin="round"/>`,
+ spark:o=>`<path class="pp" d="M12 2l2.1 7.2L21.5 12l-7.4 2.8L12 22l-2.1-7.2L2.5 12l7.4-2.8z" fill="${o.c||"#ffcb3d"}" stroke="#1c2a5e" stroke-width="1.4" stroke-linejoin="round"/>`,
+ trophy:o=>`<path class="pp" d="M7 3.5h10v6a5 5 0 0 1-10 0z" fill="${o.c||"#ffcb3d"}" stroke="#1c2a5e" stroke-width="1.6" stroke-linejoin="round"/><path class="dr" pathLength="1" d="M7 5.5H3.8c0 3.4 1.4 5 3.6 5.4M17 5.5h3.2c0 3.4-1.4 5-3.6 5.4M12 14.5v3.3M8 20.5h8M9.2 17.8h5.6" fill="none" stroke="#1c2a5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>`,
+ book:o=>`<path class="pp" d="M3.5 5.5c3-1.2 6-1 8.5 1v13c-2.5-2-5.5-2.2-8.5-1z" fill="${o.c||"#5b8cff"}" stroke="#1c2a5e" stroke-width="1.6" stroke-linejoin="round"/><path class="pp d2" d="M20.5 5.5c-3-1.2-6-1-8.5 1v13c2.5-2 5.5-2.2 8.5-1z" fill="${o.c2||"#8fb0ff"}" stroke="#1c2a5e" stroke-width="1.6" stroke-linejoin="round"/>`
+};
+const kit=(n,o)=>{o=o||{};const s=o.size||24;return `<svg class="kt kt-${n}${o.still?" still":" go"}${o.cls?" "+o.cls:""}" viewBox="0 0 24 24" width="${s}" height="${s}" aria-hidden="true">${KIT[n](o)}</svg>`};
 const dayLbl=(a,ts)=>a===0?"Today":a===1?"Yesterday":a<7?a+" days ago":a<14?"Last week":new Date(ts).toLocaleDateString(undefined,{day:"numeric",month:"short"});
 const encPath=p=>encodeURI(p);
 function optText(o){return typeof o==="string"?o:(o&&o.text)||"(image)"}

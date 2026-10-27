@@ -1,6 +1,9 @@
 /* ---------- events ---------- */
 document.addEventListener("scroll",e=>{const t=e.target;if(t.id==="slr"){const i=Math.round(t.scrollLeft/(t.firstElementChild.offsetWidth+12));document.querySelectorAll("#dts i").forEach((d,k)=>d.classList.toggle("on",k===i))}},true);
-function bind(){const g=$("gi");if(g)requestAnimationFrame(()=>{const R=S.run,m=R.qz.questions.length*2;g.style.left=Math.max(0,Math.min(100,(R.cal+m)/(2*m)*100))+"%"})}
+document.addEventListener("scroll",e=>{const t=e.target;if(t.classList&&t.classList.contains("tk")){const i=Math.round(t.scrollLeft/t.clientWidth);t.parentNode.querySelectorAll(".tkd i").forEach((d,k)=>d.classList.toggle("on",k===i))}},true);
+function syncRail(){document.querySelectorAll(".cpl").forEach(p=>p.classList.toggle("on",!!document.querySelector('.qg[data-gi="'+p.dataset.gi+'"].open')))}
+function bind(){const g=$("gi");if(g)requestAnimationFrame(()=>{const R=S.run,m=R.qz.questions.length*2;g.style.left=Math.max(0,Math.min(100,(R.cal+m)/(2*m)*100))+"%"});
+ document.querySelectorAll("[data-cu]").forEach(el=>{const to=+el.dataset.cu,d=+el.dataset.d||0;if(calm()||!isFinite(to))return;const t0=performance.now()+300,D=900;el.textContent=(0).toFixed(d);const f=now=>{const k=Math.max(0,Math.min(1,(now-t0)/D)),v=1-Math.pow(1-k,3);el.textContent=(to*v).toFixed(d);if(k<1&&document.contains(el))requestAnimationFrame(f)};requestAnimationFrame(f)})}
 function save(){const b=document.querySelector(".body");if(b)S.run.keepScroll=b.scrollTop}
 document.addEventListener("input",e=>{if(e.target.id==="sq"){S.q=e.target.value;$("sl").innerHTML=subRows();return}const R=S.run;if(!R||S.scr!=="q")return;const q=curQ(),t=e.target;
  if(t.dataset.gap!=null)R.ans[R.i][+t.dataset.gap]=t.value;else if(t.id==="sh")R.ans[R.i]=t.value;else if(t.id==="nv")R.ans[R.i].v=t.value;else if(t.id==="nu")R.ans[R.i].u=t.value;else if(t.dataset.g!=null)R.ans[R.i][t.dataset.g]=t.value;else if(t.dataset.st!=null)R.ans[R.i].x[+t.dataset.st]=t.value;else if(t.dataset.fc!=null)R.ans[R.i].text[t.dataset.fc]=t.value;else if(t.dataset.bf!=null)R.ans[R.i].f=t.value;else if(t.dataset.mt!=null){mathInput(t,R.ans[R.i]);return}
@@ -13,6 +16,8 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b
  if(typeof acAction==="function"&&acAction(k,v,b))return;
  switch(k){
  case"toast":return toast(v);
+ case"tkflip":{const t=b.querySelector(".tk"),n=t.children.length,i=Math.round(t.scrollLeft/t.clientWidth);t.scrollTo({left:((i+1)%n)*t.clientWidth,behavior:calm()?"auto":"smooth"});return}
+ case"dot":{const[id,s,i]=v.split(":"),c=CH[id];if(!c)return;const p=(s==="c"?c.cur:c.prev)[+i],el=$("cd-"+id);if(!p||!el)return;el.textContent=(s==="p"?(c.pl||"Before")+" · ":"")+p.t;const svg=b.closest("svg");if(svg)svg.querySelectorAll(".dtp.sel").forEach(x=>x.classList.remove("sel"));const d=$("dt-"+id+"-"+s+"-"+i);if(d)d.classList.add("sel");return}
  case"home":S.tab="home";return scr("home");
  case"tab":S.tab=v;return scr(v==="results"?"hist":v);
  case"subjgo":{const j=v.lastIndexOf(":"),n=v.slice(0,j),f=v.slice(j+1);S.subj=n;S.from=f;return scr("list")}
@@ -22,6 +27,8 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b
  case"rsub":S.rsub=v;return scr("subres");
  case"backres":S.tab="results";return scr("hist");
  case"flt":S.flt=v;return scr("subjects");
+ case"grp":{const key=S.subj+"|"+v,el=b.closest(".qg"),o=!el.classList.contains("open");S.open=S.open||{};S.open[key]=o;el.classList.toggle("open",o);b.setAttribute("aria-expanded",o);syncRail();return}
+ case"chj":{const key=S.subj+"|";S.open=S.open||{};document.querySelectorAll(".qg").forEach(el=>{const on=el.dataset.gi===v;el.classList.toggle("open",on);S.open[key+el.dataset.gi]=on;const h=el.querySelector(".qg-h");if(h)h.setAttribute("aria-expanded",on)});syncRail();const tg=document.querySelector('.qg[data-gi="'+v+'"]');setTimeout(()=>{if(tg)tg.scrollIntoView({block:"start",behavior:calm()?"auto":"smooth"})},calm()?0:340);return}
  case"back-list":return scr("list");
  case"quiz":S.quiz=DATA[S.subj][+v];S.mode=S.quiz.confidence?"practice":"practice";return scr("landing");
  case"landing":return scr("landing");

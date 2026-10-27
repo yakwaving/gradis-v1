@@ -4,11 +4,18 @@ function startRun(){const qz=S.quiz,whole=qz.timerType==="wholeQuiz";
 function initA(q){switch(q.type){case"multiple":return[];case"fill":return q.blanks.map(()=>"");case"numeric":return{v:"",u:q.unit||""};case"matching":return{};case"ordering":return q.items.map((_,i)=>q.items.length-1-i);case"labelling":return{};case"grid":return{};case"code":return{};case"bugline":case"stepline":return[];case"bugfix":case"stepfix":return{l:null,f:null};case"math":return{v:""};case"flowchart":return{shapes:{},text:{}};case"structured":return{x:q.parts.map(()=>""),t:q.parts.map(p=>p.markScheme.map(()=>false)),show:false};default:return null}}
 function tick(){const R=S.run;if(!R||S.scr!=="q"||R.mode==="study")return;R.t++;R.left--;if(R.t%5===0)persistRun();const e=$("tm");if(e){e.lastChild.textContent=fmtT(Math.max(0,R.left));e.classList.toggle("u",R.left<=10)}
  if(R.left<=0){if(R.qz.timerType==="perQuestion"){toast("TIME UP");next(true)}else{toast("TIME UP");finish()}}}
+/* Live combo (Practice only): the combo carried in from earlier quizzes, then this quiz's answers so far. Exam hides right/wrong, so it never shows there. */
+const fbIcon=(st,f)=>st==="ok"?kit("check",{size:22,c:"#157060",still:!f}):st==="bad"?kit("cross",{size:19,c:"#b53a1e",still:!f}):ST[st][1];
+function liveCombo(R){let run=comboInfo().cur;R.res.forEach(r=>{if(r)run=r.got>=r.max?run+1:0});return run}
+function cbBar(R){if(R.mode!=="practice")return"";const n=liveCombo(R),x=R.cbx&&R.cbx.i===R.i&&R.checked?R.cbx:null,fresh=x&&!x.s;if(x)x.s=1;
+ if(x&&x.k==="end")return `<div class="cbr"><div class="cbc end${fresh?" fresh":""}">${FX.bolt("#c3cde8")}COMBO ENDED · ${x.n}</div></div>`;
+ if(n<2)return"";
+ return `<div class="cbr"><div class="cbc${x?" "+x.k:""}${fresh?" fresh":""}">${FX.bolt("#ffcb3d")}<b>${n}</b>COMBO</div></div>`}
 const curQ=()=>S.run.qz.questions[S.run.i];
 function mainAct(){const R=S.run,q=curQ();const needC=R.qz.confidence&&R.mode!=="study";
  if(R.mode==="study")return next();
  if(!R.checked&&(!answered(q,R.ans[R.i])||(needC&&R.conf[R.i]==null))){const b=$("main");b.classList.remove("nope");void b.offsetWidth;b.classList.add("nope");toast(!answered(q,R.ans[R.i])?"ANSWER FIRST":"PICK HOW SURE YOU ARE");return}
- if(R.mode==="practice"&&!R.checked){R.checked=true;R.res[R.i]=mark(q,R.ans[R.i]);renderQ();return}
+ if(R.mode==="practice"&&!R.checked){const before=liveCombo(R);R.fbx={i:R.i,s:0};R.checked=true;R.res[R.i]=mark(q,R.ans[R.i]);const after=liveCombo(R);R.cbx=after>before?{k:after>=5&&after%5===0?"ms":"up",n:after,i:R.i}:before>=3?{k:"end",n:before,i:R.i}:null;renderQ();return}
  next()}
 function prev(){const R=S.run;if(R.i<=0)return;R.i--;R.hint=false;R.ui={};R.checked=R.mode==="practice"&&!!R.res[R.i];renderQ(-1)}
 function next(force){const R=S.run;if(!R.res[R.i]||R.mode==="exam")R.res[R.i]=mark(curQ(),R.ans[R.i]);if(R.i>=R.qz.questions.length-1)return finish();R.i++;R.checked=R.mode==="practice"&&!!R.res[R.i];R.hint=false;R.ui={};if(R.qz.timerType==="perQuestion")R.left=R.qz.totalTime;renderQ(true)}
@@ -16,25 +23,26 @@ function finish(){const R=S.run;clearInterval(S.tm);R.qz.questions.forEach((q,i)
  if(R.mode==="study"){clearRun();scr("done");return}
  const got=R.res.reduce((a,r)=>a+r.got,0),max=R.res.reduce((a,r)=>a+r.max,0);R.got=got;R.max=max;R.pct=Math.round(got/max*100);
  R.cal=R.conf.length?R.qz.questions.reduce((a,q,i)=>{const c=R.conf[i];if(c==null)return a;const right=R.res[i].got>=R.res[i].max;return a+[[.5,1,2],[0,-1,-2]][right?0:1][c]},0):null;
- addResult({s:S.subj,q:R.qz.qid,t:R.qz.title,p:R.pct,got:R.got,max:R.max,m:R.mode,cal:R.cal});syncNow();clearRun();scr("result");Ads.afterQuiz(R.mode)}
+ const pb=comboInfo().best;addResult({s:S.subj,q:R.qz.qid,t:R.qz.title,p:R.pct,got:R.got,max:R.max,m:R.mode,cal:R.cal,cb:comboOf(R.res)});R.cbq=comboOf(R.res)[1];R.cbRec=comboInfo().best>pb&&comboInfo().best>=5;syncNow();clearRun();scr("result");Ads.afterQuiz(R.mode)}
 /* ---------- question screen ---------- */
 function renderQ(slide){const A=$("app"),old=slide?A.firstElementChild:null;A.innerHTML=SCR.q();if(slide)slideIn(A,old,slide!==-1);bind();persistRun();const b=document.querySelector(".body");if(b&&S.run.keepScroll){b.scrollTop=S.run.keepScroll}}
 SCR.q=()=>{const R=S.run,q=curQ(),a=R.ans[R.i],qz=R.qz,N=qz.questions.length,ch=R.checked||R.mode==="study",rs=R.res[R.i]||mark(q,a),conf=qz.confidence&&R.mode!=="study";
+ const fresh=!!(R.checked&&R.fbx&&R.fbx.i===R.i&&!R.fbx.s);if(fresh)R.fbx.s=1;
  const segs=qz.questions.map((_,i)=>{let c=i<R.i?"d":i===R.i?"cur":"";if(qz.questions[i].type==="summary")c+=" sm";else if(R.mode==="practice"&&R.res[i]&&(i<R.i||ch&&i===R.i))c=stateOf(R.res[i]);return `<i class="${c}"></i>`}).join("");
  const tmr=R.mode==="study"?`<div class="tmr" style="background:var(--blu)">STUDY</div>`:`<div class="tmr${R.left<=10?" u":""}" id="tm">${icoClock}<span>${fmtT(Math.max(0,R.left))}</span></div>`;
  const img=q.image&&q.type!=="labelling"?`<div class="qimg">${imgHtml(q.image)}</div>`:"";
  let fb="";
  if(R.mode==="study")fb=`<div class="fb study"><h3>Study mode <em>not graded</em></h3><p>${md(q.explanation)}</p><div class="ac">Answer: ${md(showC(q))}</div></div>`;
- else if(R.checked){const st=stateOf(rs);fb=`<div class="fb ${st}"><h3>${ST[st][1]} ${ST[st][0]}<em>${fmt(rs.got)}/${rs.max}</em></h3>${st!=="ok"?`<div class="ac">Answer: ${md(showC(q))}</div>`:""}<p>${md(q.explanation)}</p></div>`}
+ else if(R.checked){const st=stateOf(rs),cc=conf&&R.conf[R.i]===2?(st==="ok"?["ok","Certain and right. Nailed it."]:["bad","Certain but off. Worth a recheck."]):null;fb=`<div class="fb ${st}"><h3>${fbIcon(st,fresh)} ${ST[st][0]}<em>${fmt(rs.got)}/${rs.max}</em></h3>${cc?`<div class="cc ${cc[0]}">${cc[1]}</div>`:""}${st!=="ok"?`<div class="ac">Answer: ${md(showC(q))}</div>`:""}<p>${md(q.explanation)}</p></div>`}
  const hint=q.hint&&R.mode==="practice"&&!ch?`<button class="btn w hint" data-a="hint">HINT</button>`:"";
- const confH=conf?`<div class="conf${R.checked?" lock":""}"><span class="lbl">HOW SURE ARE YOU?</span><div class="row">${[["GUESS","+0.5 / 0",1],["FAIRLY SURE","+1 / −1",2],["CERTAIN","+2 / −2",3]].map((c,i)=>`<button class="${R.conf[R.i]===i?"on":""}" data-a="conf:${i}"><span class="bars">${[0,1,2].map(k=>`<i style="height:${5+k*4}px;${k<=i?"":"opacity:.4"}"></i>`).join("")}</span>${c[0]}<small>${c[1]}</small></button>`).join("")}</div></div>`:"";
+ const confH=conf?`<div class="conf${R.checked?" lock":""}"><span class="lbl">HOW SURE ARE YOU?</span><div class="row">${[["GUESS","+0.5 / 0",1],["FAIRLY SURE","+1 / −1",2],["CERTAIN","+2 / −2",3]].map((c,i)=>`<button class="${R.conf[R.i]===i?"on":""}${R.checked&&R.conf[R.i]===i&&i===2?(stateOf(rs)==="ok"?" cok":" cbad"):""}" data-a="conf:${i}"><span class="bars">${[0,1,2].map(k=>`<i style="height:${5+k*4}px;${k<=i?"":"opacity:.4"}"></i>`).join("")}</span>${c[0]}<small>${c[1]}</small></button>`).join("")}</div></div>`:"";
  const ready=R.checked||(answered(q,a)&&(!conf||R.conf[R.i]!=null));
  const qp=qpos(R),pvB=R.i>0&&!(R.mode==="exam"&&qz.timerType==="perQuestion")?`<button class="btn w pv" data-a="prev" aria-label="Previous">‹</button>`:"";
  if(q.type==="summary")return `<div class="scr"><div class="qtop"><button class="iconb" data-a="quit" aria-label="Close">${icoX}</button><div class="segs">${segs}</div>${tmr}</div>
 <div class="body"><div class="qmeta"><span class="chip b">SUMMARY</span><span class="chip">${qp.n} QUESTIONS AHEAD</span></div>${sumBody(q)}<div style="height:14px"></div></div>
 <div class="qfoot"><div class="frow">${pvB}<button class="btn" id="main" data-a="main">GOT IT ›</button></div></div></div>`;
  const lbl=R.mode==="study"?(R.i===N-1?"DONE":"NEXT ›"):R.mode==="practice"&&!R.checked?"CHECK":R.i===N-1?"FINISH":"NEXT ›";
- return `<div class="scr"><div class="qtop"><button class="iconb" data-a="quit" aria-label="Close">${icoX}</button><div class="segs">${segs}</div>${tmr}</div>
+ return `<div class="scr${fresh?" fxn":""}"><div class="qtop"><button class="iconb" data-a="quit" aria-label="Close">${icoX}</button><div class="segs">${segs}</div>${tmr}</div>${cbBar(R)}
 <div class="body"><div class="qmeta"><span class="chip n">${qp.i} / ${qp.n}</span><span class="chip">${TYPES[q.type]}</span><span class="chip y">${q.marks} MARK${q.marks>1?"S":""}</span>${R.mode==="practice"&&qz.notes&&qz.notes.length?`<button class="chip nt" data-a="notes">${gicon("menu_book","width:14px;height:14px")} NOTES</button>`:""}</div>
 ${q.type==="assertion"?"":`<div class="card qcard">${q.type==="fill"?fillQ(q,a,ch,rs):md(q.question)}${img}</div>`}
 ${R.hint&&q.hint?`<div class="hbox">${gicon("lightbulb","width:18px;height:18px;display:inline-block;vertical-align:-3px;margin-right:4px")} ${md(q.hint)}</div>`:""}
