@@ -1,12 +1,14 @@
 /* ---------- events ---------- */
 document.addEventListener("scroll",e=>{const t=e.target;if(t.id==="slr"){const i=Math.round(t.scrollLeft/(t.firstElementChild.offsetWidth+12));document.querySelectorAll("#dts i").forEach((d,k)=>d.classList.toggle("on",k===i))}},true);
 document.addEventListener("scroll",e=>{const t=e.target;if(t.classList&&t.classList.contains("tk")){const i=Math.round(t.scrollLeft/t.clientWidth);t.parentNode.querySelectorAll(".tkd i").forEach((d,k)=>d.classList.toggle("on",k===i))}},true);
+function ddShut(d){d.classList.remove("open");const b=d.querySelector(".ddb");if(b)b.setAttribute("aria-expanded","false")}
+document.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.classList&&e.target.classList.contains("gap")){e.preventDefault();const g=[...document.querySelectorAll(".gap")],i=g.indexOf(e.target);if(g[i+1])g[i+1].focus();else e.target.blur()}if(e.key==="Escape")document.querySelectorAll(".dd.open").forEach(ddShut)});
 function syncRail(){document.querySelectorAll(".cpl").forEach(p=>p.classList.toggle("on",!!document.querySelector('.qg[data-gi="'+p.dataset.gi+'"].open')))}
 function bind(){const g=$("gi");if(g)requestAnimationFrame(()=>{const R=S.run,m=R.qz.questions.length*2;g.style.left=Math.max(0,Math.min(100,(R.cal+m)/(2*m)*100))+"%"});
  document.querySelectorAll("[data-cu]").forEach(el=>{const to=+el.dataset.cu,d=+el.dataset.d||0;if(calm()||!isFinite(to))return;const t0=performance.now()+300,D=900;el.textContent=(0).toFixed(d);const f=now=>{const k=Math.max(0,Math.min(1,(now-t0)/D)),v=1-Math.pow(1-k,3);el.textContent=(to*v).toFixed(d);if(k<1&&document.contains(el))requestAnimationFrame(f)};requestAnimationFrame(f)})}
 function save(){const b=document.querySelector(".body");if(b)S.run.keepScroll=b.scrollTop}
 document.addEventListener("input",e=>{if(e.target.id==="sq"){S.q=e.target.value;$("sl").innerHTML=subRows();return}const R=S.run;if(!R||S.scr!=="q")return;const q=curQ(),t=e.target;
- if(t.dataset.gap!=null)R.ans[R.i][+t.dataset.gap]=t.value;else if(t.id==="sh")R.ans[R.i]=t.value;else if(t.id==="nv")R.ans[R.i].v=t.value;else if(t.id==="nu")R.ans[R.i].u=t.value;else if(t.dataset.g!=null)R.ans[R.i][t.dataset.g]=t.value;else if(t.dataset.st!=null)R.ans[R.i].x[+t.dataset.st]=t.value;else if(t.dataset.fc!=null)R.ans[R.i].text[t.dataset.fc]=t.value;else if(t.dataset.bf!=null)R.ans[R.i].f=t.value;else if(t.dataset.mt!=null){mathInput(t,R.ans[R.i]);return}
+ if(t.dataset.gap!=null){R.ans[R.i][+t.dataset.gap]=t.value;t.classList.toggle("has",!!t.value);t.style.width=gapW(t.value)+"px"}else if(t.id==="sh")R.ans[R.i]=t.value;else if(t.id==="nv")R.ans[R.i].v=t.value;else if(t.id==="nu")R.ans[R.i].u=t.value;else if(t.dataset.g!=null)R.ans[R.i][t.dataset.g]=t.value;else if(t.dataset.st!=null)R.ans[R.i].x[+t.dataset.st]=t.value;else if(t.dataset.fc!=null)R.ans[R.i].text[t.dataset.fc]=t.value;else if(t.dataset.bf!=null)R.ans[R.i].f=t.value;else if(t.dataset.mt!=null){mathInput(t,R.ans[R.i]);return}
  refreshBtn()});
 /* tapping the text box of a node that also asks for its shape selects that node's slot, so the next shape tapped lands there */
 document.addEventListener("focusin",e=>{const t=e.target,R=S.run;if(!R||S.scr!=="q"||R.checked||t.dataset.fc==null)return;const q=curQ(),n=q.nodes.find(x=>x.id===t.dataset.fc);if(!n||!fcAsk(n).includes("shape"))return;R.ui.n=n.id;document.querySelectorAll(".fn.sel").forEach(x=>x.classList.remove("sel"));t.closest(".fn").classList.add("sel")});
@@ -54,12 +56,14 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b
  const q=curQ(),a=R.ans[R.i];save();
  switch(k){
  case"main":return mainAct();
- case"hint":R.hint=true;return renderQ();
- case"conf":R.conf[R.i]=+v;return renderQ();
- case"pick":R.ans[R.i]=+v;break;
- case"tog":{const i=+v,s=a.indexOf(i);s>=0?a.splice(s,1):a.push(i);break}
- case"tf":R.ans[R.i]=v==="true";break;
- case"as":R.ans[R.i]=v;break;
+ case"ddt":{const dd=b.closest(".dd");document.querySelectorAll(".dd.open").forEach(x=>{if(x!==dd)ddShut(x)});const o=!dd.classList.contains("open");dd.classList.toggle("open",o);b.setAttribute("aria-expanded",o);if(o)setTimeout(()=>dd.scrollIntoView({block:"nearest",behavior:calm()?"auto":"smooth"}),calm()?0:260);return}
+ case"ddp":{const j=v.indexOf(":"),key=v.slice(0,j),val=v.slice(j+1),dd=b.closest(".dd");a[key]=val;dd.querySelector(".ddv").textContent=val||"–";dd.querySelectorAll(".ddo").forEach(x=>x.classList.toggle("on",x===b&&!!val));ddShut(dd);dd.classList.add("ddpick");setTimeout(()=>dd.classList.remove("ddpick"),400);refreshBtn();return}
+ case"hint":R.sx=null;R.hint=true;return renderQ();
+ case"conf":R.sx=null;R.conf[R.i]=+v;return renderQ();
+ case"pick":R.ans[R.i]=+v;R.sx={i:R.i,v:+v};break;
+ case"tog":{const i=+v,s=a.indexOf(i);s>=0?a.splice(s,1):a.push(i);R.sx={i:R.i,v:i};break}
+ case"tf":R.ans[R.i]=v==="true";R.sx={i:R.i,v:v==="true"};break;
+ case"as":R.ans[R.i]=v;R.sx={i:R.i,v};break;
  case"ml":{const i=+v;if(a[i]!=null){delete a[i];R.ui.l=null}else R.ui.l=i;break}
  case"mr":{const ri=+v,ex=Object.keys(a).find(l=>a[l]===ri);if(ex!=null){delete a[ex];break}if(R.ui.l==null){toast("TAP A TERM FIRST");return}a[R.ui.l]=ri;R.ui.l=null;break}
  case"up":case"dn":{const p=+v,t=k==="up"?p-1:p+1;if(t<0||t>=a.length)return;[a[p],a[t]]=[a[t],a[p]];break}
