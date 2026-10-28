@@ -184,14 +184,14 @@ function stepUI(q,a,ch,R){
  const fix=q.type==="stepfix",sel=fix?(a.l!=null?[a.l]:[]):a,bugs=fix?[q.bug]:q.bugs;
  const rep=fix&&a.l!=null&&a.f!=null?q.options[a.f]:null;
  const rows=q.steps.map((s,i)=>{const n=i+1,on=sel.includes(n),isb=bugs.includes(n);let c="";
-  if(ch)c=on?(isb?"ok":"bad"):isb?"miss":"";else if(on)c="sel";
+  if(ch)c=on?(isb?"ok":"bad"):isb?"miss":"";else if(on)c="sel"+sxc(R,"l"+n);
   const edited=rep!=null&&a.l===n;if(edited)c+=" ed";
   const tex=edited?rep:s,label=q.labels&&q.labels[i]?`<span class="slb">${esc(q.labels[i])}</span>`:"";
   return `<button type="button" class="sr ${c}" ${ch?"":`data-a="bl:${n}"`}><i class="sn">${n}</i><span class="sm">${label}${kx(tex,false)}</span></button>`}).join("");
  const many=!fix&&bugs.length>1;
  const note=fix?"1 · Tap the faulty step.  2 · Choose the correct step to put in its place.":many?`There are ${bugs.length} faulty steps. Tap each one. A wrong tap costs a point.`:"One step has a mistake. Tap it.";
  let out=`<div class="note">${note}</div><div class="steps">${rows}</div>`;
- if(fix)out+=q.options.map((o,i)=>{let c=a.f===i?" sel":"";if(ch)c=i===q.correct?" ok":a.f===i?" bad":"";return `<button class="opt${c}${ch?" lock":""}" data-a="bf:${i}"><span class="k">${"ABCDEF"[i]}</span><span class="oc mo">${kx(o,false)}</span></button>`}).join("")+`<div style="height:6px"></div>`;
+ if(fix)out+=q.options.map((o,i)=>{let c=a.f===i?" sel"+sxc(R,"f"+i):"";if(ch)c=i===q.correct?" ok":a.f===i?" bad":"";return `<button class="opt${c}${ch?" lock":""}" data-a="bf:${i}"><span class="k">${"ABCDEF"[i]}</span><span class="oc mo">${kx(o,false)}</span></button>`}).join("")+`<div style="height:6px"></div>`;
  else out+=`<div style="height:10px"></div>`;
  return out}
 const stepShowC=q=>q.type==="stepline"?"step"+(q.bugs.length>1?"s ":" ")+q.bugs.join(", "):"step "+q.bug+" → $"+q.options[q.correct]+"$";

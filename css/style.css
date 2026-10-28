@@ -449,7 +449,7 @@ code .tk-k{color:#d6452a}code .tk-i{color:#0f8f7d}code .tk-t{color:#7a4bd6}code 
 .qg.open .qr2{animation:krise var(--t-med) var(--e-out) both;animation-delay:calc(var(--n)*45ms + 90ms)}
 .qn2{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;color:#fff;font:800 14px 'DM Sans';flex:none}
 .qr2t{flex:1;min-width:0}.qr2t b{display:block;font-size:15.5px;line-height:1.2}
-.qr2t small{display:flex;align-items:center;gap:5px;font:700 11.5px 'DM Sans';color:var(--ink2);margin-top:2px}.qr2t .cp{text-transform:capitalize}
+.qr2t small{display:flex;align-items:center;gap:5px;font:700 11.5px 'DM Sans';color:var(--ink2);margin-top:2px}.qr2t .dfn{text-transform:capitalize}
 .qr2t .chip{margin-top:5px}
 .dfd{width:9px;height:9px;border-radius:50%;flex:none;box-shadow:0 0 0 1.5px var(--navy)}
 .qr2 .gr{width:36px;height:36px;font-size:17px}.qr2 .gr.n{font-size:9.5px;width:auto;min-width:40px;padding:0 6px}
@@ -585,3 +585,60 @@ table.g .ddb.ok{border-color:var(--ok);background:#d9f5f0}table.g .ddb.bad{borde
 .nbox:has(.nin.ok):not(:has(.nin.bad)){border-color:var(--ok)}.nbox:has(.nin.bad):not(:has(.nin.ok)){border-color:var(--bad)}.nbox:has(.nin.ok):has(.nin.bad){border-color:var(--navy)}
 .fxn .nbox:not(:has(.nin.bad)){animation:okp .5s var(--e-spring)}.fxn .nbox:has(.nin.bad){animation:kshake .45s}
 @media (prefers-reduced-motion:reduce){.fxn .gap.ok,.fxn .gap.bad,.gfix,.fxn .inp.ok,.fxn .inp.bad,.fxn .nbox{animation:none!important}.gap{transition:none}}
+
+/* v1.23: matching, ordering and labelling */
+.mt{column-gap:38px;position:relative}
+.mln{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:2}
+.mln path{fill:none;stroke-width:4;stroke-linecap:round}
+.mln path.fix{stroke-dasharray:.04 .035}
+.mln path.new{stroke-dasharray:1;stroke-dashoffset:1;animation:kdraw .45s var(--e-out) forwards}
+.mi{transition:transform var(--t-fast) var(--e-out)}.mi.act{transform:translateX(3px)}
+.mi.sn{animation:selp .34s var(--e-spring)}.mi.sn .b{animation:kpop .4s .1s var(--e-spring) both}
+.fxn .mi.ok{animation:okp .5s var(--e-spring)}.fxn .mi.bad{animation:kshake .45s}
+.ord.drag{transform:scale(1.03) rotate(-1deg)}
+.ord.settle{animation:ordset .38s var(--e-spring)}
+@keyframes ordset{from{transform:scale(1.04)}to{transform:none}}
+.fxn .ord.ok{animation:okp .5s var(--e-spring)}.fxn .ord.bad{animation:kshake .45s}
+.dia .dot.f.sn{animation:kpop .4s var(--e-spring)}
+@media (prefers-reduced-motion:reduce){.mln path.new,.mi.sn,.mi.sn .b,.fxn .mi,.ord.settle,.fxn .ord,.dia .dot.f.sn{animation:none!important}.mln path.new{stroke-dashoffset:0}}
+
+/* v1.24: code, find-the-error, maths, flowchart, table, structured */
+.cl{transition:background var(--t-fast),box-shadow var(--t-fast)}
+.cl.sel.sn{animation:clsel .38s var(--e-out)}
+@keyframes clsel{0%{background:rgba(255,180,0,.6);box-shadow:inset 10px 0 0 var(--y)}100%{background:rgba(255,180,0,.2);box-shadow:inset 4px 0 0 var(--y)}}
+.cl.ok::after,.cl.bad::after,.cl.miss::after{flex:none;margin-left:auto;padding-left:18px;font:800 15px 'DM Sans'}
+.cl.ok::after{content:"\2713";color:#7ff0dc}.cl.bad::after{content:"\2717";color:#ffb09c}.cl.miss::after{content:"\2190 the error";color:#7ff0dc;font-size:12px;letter-spacing:.06em}
+.fxn .cl.ok{animation:clok .6s var(--e-out)}.fxn .cl.bad{animation:kshake .45s}
+@keyframes clok{0%{background:rgba(47,224,196,.75)}100%{background:rgba(47,181,163,.3)}}
+.cg:not(.f){animation:gapb 1.8s ease-in-out infinite}
+.cg.sel:not(.f){animation:none;border-style:solid;background:rgba(255,255,255,.22);color:#fff}
+@keyframes gapb{50%{background:rgba(111,134,201,.38)}}
+.cg.f.sn{animation:kpop .36s var(--e-spring)}
+.fxn .cg.ok{animation:okp .5s var(--e-spring)}.fxn .cg.bad{animation:kshake .45s}
+.cbk{transition:transform var(--t-fast) var(--e-spring),box-shadow var(--t-fast)}.cbk:active{transform:translateY(2px);box-shadow:1px 1px 0 var(--sh)}
+.cbk.sel.sn{animation:selp .34s var(--e-spring)}
+.opt.codeopt.sn{animation:selp .34s var(--e-spring)}
+.sr{transition:transform var(--t-fast) var(--e-out),box-shadow var(--t-fast),background var(--t-fast)}.sr:active{transform:translate(1px,2px)}
+.sr.sel.sn{animation:selp .34s var(--e-spring)}.sr.sel.sn .sn{animation:kpop .4s var(--e-spring)}
+.fxn .sr.ok{animation:okp .5s var(--e-spring)}.fxn .sr.bad{animation:kshake .45s}
+.sr.ok::after,.sr.bad::after,.sr.miss::after{flex:none;font:800 18px 'DM Sans'}
+.sr.ok::after{content:"\2713";color:var(--teald)}.sr.bad::after{content:"\2717";color:var(--cord)}.sr.miss::after{content:"\2190";color:var(--teald)}
+.mpv{transition:border-color var(--t-med),background var(--t-med)}.mpv:focus-within,.mpv:not(:has(.mph)){border-style:solid;border-color:var(--blu)}
+.mpv.ok,.mpv.bad{border-style:solid}.fxn .mpv.ok{animation:okp .5s var(--e-spring)}.fxn .mpv.bad{animation:kshake .45s}
+.mk{transition:transform var(--t-fast) var(--e-spring),box-shadow var(--t-fast)}
+.fn .fs svg *{transition:fill var(--t-med),stroke var(--t-med)}
+.fn.slot.empty.sel .fs svg *{stroke:var(--yd);fill:#fff4cf;animation:gapb 1.2s ease-in-out infinite}
+.fn.slot.empty:not(.sel) .fs svg *{animation:gapb 2.2s ease-in-out infinite}
+.fn.sn .fs{animation:kpop .4s var(--e-spring);transform-origin:center}
+.fxn .fn.ok .fs{animation:okp .5s var(--e-spring);transform-origin:center}.fxn .fn.bad .fs{animation:kshake .45s}
+.fps{transition:transform var(--t-fast) var(--e-spring)}.fps:active{transform:translateY(2px)}
+table.g td input,table.g td .dd{transition:border-color var(--t-fast),box-shadow var(--t-fast)}
+table.g td input:focus{border-color:var(--blu);box-shadow:0 0 0 3px rgba(91,140,255,.25);outline:0}
+.fxn table.g td input.ok{animation:okp .5s var(--e-spring)}.fxn table.g td input.bad{animation:kshake .45s}
+.card.part textarea{transition:border-color var(--t-fast),box-shadow var(--t-fast)}.card.part textarea:focus{border-color:var(--blu);box-shadow:0 0 0 3px rgba(91,140,255,.25);outline:0}
+.ms button i{transition:transform var(--t-fast) var(--e-spring),background var(--t-fast)}.ms button.t i{animation:kpop .35s var(--e-spring)}
+@media (prefers-reduced-motion:reduce){.cl,.cg,.cbk,.sr,.sr .sn,.fn .fs,.fn .fs svg *,.mpv,.ms button i,.opt.codeopt{animation:none!important}}
+
+/* v1.25: chapter names, sample subjects */
+.qg-nm{display:block;font:800 14px/1.25 'DM Sans';font-style:normal;color:var(--navy);margin:1px 0 2px}
+.az{transition:none}

@@ -65,29 +65,44 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b
  case"tf":R.ans[R.i]=v==="true";R.sx={i:R.i,v:v==="true"};break;
  case"as":R.ans[R.i]=v;R.sx={i:R.i,v};break;
  case"ml":{const i=+v;if(a[i]!=null){delete a[i];R.ui.l=null}else R.ui.l=i;break}
- case"mr":{const ri=+v,ex=Object.keys(a).find(l=>a[l]===ri);if(ex!=null){delete a[ex];break}if(R.ui.l==null){toast("TAP A TERM FIRST");return}a[R.ui.l]=ri;R.ui.l=null;break}
- case"up":case"dn":{const p=+v,t=k==="up"?p-1:p+1;if(t<0||t>=a.length)return;[a[p],a[t]]=[a[t],a[p]];break}
- case"lab":R.ui.l=R.ui.l===v?null:v;if(R.ui.l&&R.ui.t!=null){a[R.ui.t]=v;R.ui.l=null;R.ui.t=null}break;
- case"dot":{const i=+v;if(a[i]){delete a[i];break}if(R.ui.l){Object.keys(a).forEach(x=>{if(a[x]===R.ui.l)delete a[x]});a[i]=R.ui.l;R.ui.l=null}else{R.ui.t=R.ui.t===i?null:i;toast("NOW PICK A LABEL")}break}
- case"cb":{const i=+v;if(R.ui.g!=null){Object.keys(a).forEach(x=>{if(a[x]===i)delete a[x]});a[R.ui.g]=i;R.ui.g=null;R.ui.b=null}else R.ui.b=R.ui.b===i?null:i;break}
- case"cg":{const i=+v;if(a[i]!=null){delete a[i];break}if(R.ui.b!=null){a[i]=R.ui.b;R.ui.b=null}else{R.ui.g=R.ui.g===i?null:i;toast("NOW PICK A BLOCK")}break}
+ case"mr":{const ri=+v,ex=Object.keys(a).find(l=>a[l]===ri);if(ex!=null){delete a[ex];break}if(R.ui.l==null){toast("TAP A TERM FIRST");return}R.mx={l:R.ui.l,s:0};R.sx={i:R.i,v:R.ui.l};a[R.ui.l]=ri;R.ui.l=null;break}
+ case"up":case"dn":{const p=+v,t=k==="up"?p-1:p+1;if(t<0||t>=a.length)return;ORDP=ordRects();[a[p],a[t]]=[a[t],a[p]];buzz(6);break}
+ case"lab":R.ui.l=R.ui.l===v?null:v;if(R.ui.l&&R.ui.t!=null){a[R.ui.t]=v;R.sx={i:R.i,v:R.ui.t};R.ui.l=null;R.ui.t=null}break;
+ case"dot":{const i=+v;if(a[i]){delete a[i];break}if(R.ui.l){Object.keys(a).forEach(x=>{if(a[x]===R.ui.l)delete a[x]});a[i]=R.ui.l;R.sx={i:R.i,v:i};R.ui.l=null}else{R.ui.t=R.ui.t===i?null:i;toast("NOW PICK A LABEL")}break}
+ case"cb":{const i=+v;R.sx={i:R.i,v:R.ui.g!=null?"g"+R.ui.g:"b"+i};if(R.ui.g!=null){Object.keys(a).forEach(x=>{if(a[x]===i)delete a[x]});a[R.ui.g]=i;R.ui.g=null;R.ui.b=null}else R.ui.b=R.ui.b===i?null:i;break}
+ case"cg":{const i=+v;if(a[i]!=null){delete a[i];break}if(R.ui.b!=null){a[i]=R.ui.b;R.sx={i:R.i,v:"g"+i};R.ui.b=null}else{R.ui.g=R.ui.g===i?null:i;toast("NOW PICK A BLOCK")}break}
  case"fcn":{if(a.shapes[v]){delete a.shapes[v];break}R.ui.n=R.ui.n===v?null:v;break}
- case"fcs":{let id=R.ui.n;if(!id){const f=q.nodes.filter(n=>fcAsk(n).includes("shape")&&!a.shapes[n.id]);if(f.length===1)id=f[0].id}if(!id){toast("TAP A DASHED SLOT FIRST");return}a.shapes[id]=v;R.ui.n=null;break}
+ case"fcs":{let id=R.ui.n;if(!id){const f=q.nodes.filter(n=>fcAsk(n).includes("shape")&&!a.shapes[n.id]);if(f.length===1)id=f[0].id}if(!id){toast("TAP A DASHED SLOT FIRST");return}a.shapes[id]=v;R.sx={i:R.i,v:"n"+id};R.ui.n=null;break}
  case"mk":mathKey(v,a);return;
  case"prev":return prev();
- case"bl":{const n=+v;if(q.type==="bugfix"||q.type==="stepfix")a.l=a.l===n?null:n;else{const s=a.indexOf(n);if(s>=0)a.splice(s,1);else{if(q.bugs.length===1)a.length=0;a.push(n)}}break}
- case"bf":a.f=+v;break;
+ case"bl":{const n=+v;R.sx={i:R.i,v:"l"+n};if(q.type==="bugfix"||q.type==="stepfix")a.l=a.l===n?null:n;else{const s=a.indexOf(n);if(s>=0)a.splice(s,1);else{if(q.bugs.length===1)a.length=0;a.push(n)}}break}
+ case"bf":a.f=+v;R.sx={i:R.i,v:"f"+v};break;
  case"scheme":a.show=true;break;
  case"tick":{const[i,kk]=v.split(":").map(Number);a.t[i][kk]=!a.t[i][kk];break}
  default:return}
  renderQ()});
 function quitModal(){const m=document.createElement("div");m.className="modal";m.innerHTML=`<div class="card"><h3>Leave this quiz?</h3><p>Your progress in this attempt will be lost.</p><button class="btn" data-a="keep">KEEP GOING</button><button class="btn w" data-a="leave" style="margin-bottom:0">LEAVE QUIZ</button></div>`;$("st").appendChild(m)}
-/* drag to reorder */
-let drag=null;
-document.addEventListener("pointerdown",e=>{const h=e.target.closest("[data-h]");if(!h||S.scr!=="q")return;const R=S.run;drag={pos:+h.dataset.h};e.preventDefault();redrawOrd()});
-function redrawOrd(){const R=S.run,q=curQ();$("ol").innerHTML=ordHtml(q,R.ans[R.i],false,drag?drag.pos:-1)}
-document.addEventListener("pointermove",e=>{if(!drag)return;const R=S.run,a=R.ans[R.i],rows=[...document.querySelectorAll("#ol .ord")];const y=e.clientY;let t=drag.pos;rows.forEach((r,i)=>{const b=r.getBoundingClientRect();if(y>=b.top&&y<=b.bottom)t=i});if(t!==drag.pos){const [it]=a.splice(drag.pos,1);a.splice(t,0,it);drag.pos=t;redrawOrd()}});
-["pointerup","pointercancel"].forEach(ev=>document.addEventListener(ev,()=>{if(drag){drag=null;redrawOrd()}}));
+/* drag to reorder: rows glide to their new places (FLIP), the lifted row follows the finger and settles with a spring when dropped */
+let drag=null,ORDP=null;
+const stk=()=>{const s=$("st");return s.getBoundingClientRect().width/s.offsetWidth||1};
+const buzz=n=>{try{navigator.vibrate&&navigator.vibrate(n)}catch(e){}};
+function ordRects(){const m={};document.querySelectorAll("#ol .ord").forEach(r=>{m[r.dataset.it]=r.getBoundingClientRect().top});return m}
+function ordFlip(){const P=ORDP;ORDP=null;if(!P||calm())return;const k=stk(),rows=[...document.querySelectorAll("#ol .ord")];
+ rows.forEach(r=>{if(r.classList.contains("drag"))return;const d=(P[r.dataset.it]-r.getBoundingClientRect().top)/k;if(!d)return;r.style.transition="none";r.style.transform=`translateY(${d}px)`});
+ void document.body.offsetHeight;
+ rows.forEach(r=>{if(!r.style.transform)return;r.style.transition="transform .32s cubic-bezier(.34,1.4,.64,1)";r.style.transform="";setTimeout(()=>{r.style.transition=""},360)})}
+document.addEventListener("pointerdown",e=>{const h=e.target.closest("[data-h]");if(!h||S.scr!=="q")return;drag={pos:+h.dataset.h};e.preventDefault();buzz(8);redrawOrd()});
+function redrawOrd(){const R=S.run,q=curQ();ORDP=ordRects();$("ol").innerHTML=ordHtml(q,R.ans[R.i],false,drag?drag.pos:-1);ordFlip()}
+document.addEventListener("pointermove",e=>{if(!drag)return;const R=S.run,a=R.ans[R.i],rows=[...document.querySelectorAll("#ol .ord")];const y=e.clientY;let t=drag.pos;rows.forEach((r,i)=>{const b=r.getBoundingClientRect();if(y>=b.top&&y<=b.bottom)t=i});if(t!==drag.pos){const [it]=a.splice(drag.pos,1);a.splice(t,0,it);drag.pos=t;buzz(5);redrawOrd()}});
+["pointerup","pointercancel"].forEach(ev=>document.addEventListener(ev,()=>{if(drag){const p=drag.pos;drag=null;redrawOrd();const el=document.querySelector('#ol .ord[data-pos="'+p+'"]');if(el&&!calm())el.classList.add("settle")}}));
+/* matching: a coloured line joins each pair (it draws itself when you make the pair); after checking, wrong pairs show the right line dashed in green */
+function matchLines(){const mt=document.querySelector(".mt"),R=S.run;if(!mt||!R||S.scr!=="q")return;const q=curQ(),a=R.ans[R.i],svg=mt.querySelector(".mln");if(!svg)return;
+ const mr=mt.getBoundingClientRect(),k=stk(),ch=R.checked;let h="";
+ const pt=(l,r)=>{const L=mt.querySelector('[data-a="ml:'+l+'"]'),Rr=mt.querySelector('[data-a="mr:'+r+'"]');if(!L||!Rr)return null;const lb=L.getBoundingClientRect(),rb=Rr.getBoundingClientRect();return[(lb.right-mr.left)/k,(lb.top+lb.height/2-mr.top)/k,(rb.left-mr.left)/k,(rb.top+rb.height/2-mr.top)/k]};
+ const path=(p,col,cls)=>{const mx=(p[0]+p[2])/2;return `<path class="${cls||""}" pathLength="1" d="M${p[0]},${p[1]} C${mx},${p[1]} ${mx},${p[3]} ${p[2]},${p[3]}" stroke="${col}"/><circle cx="${p[0]}" cy="${p[1]}" r="5" fill="${col}"/><circle cx="${p[2]}" cy="${p[3]}" r="5" fill="${col}"/>`};
+ if(ch)q.pairs.forEach(([l,r])=>{if(a[l]!==r){const p=pt(l,r);if(p)h+=path(p,"#2fb5a3","fix")}});
+ Object.entries(a).forEach(([l,r])=>{const p=pt(l,r);if(!p)return;const fresh=!ch&&R.mx&&R.mx.l==l&&!R.mx.s;const ok=q.pairs.some(([x,y])=>x==l&&y===r);h+=path(p,ch?(ok?"#2fb5a3":"#ff7a59"):MC[l],fresh?"new":"")});
+ if(R.mx)R.mx.s=1;svg.innerHTML=h}
 function settingsModal(){modal(`<h3>Settings</h3><p>Gradis ${APP_VERSION} · ${navigator.onLine?"online":"offline"}${HIST.length?" · "+HIST.length+" result"+(HIST.length>1?"s":"")+" saved":""}</p>${deferredPrompt?'<button class="btn" data-a="install">INSTALL APP</button>':""}${AC.cfg?'<button class="btn" data-a="account" style="background:#fff;box-shadow:1px 1px 0 var(--sh),2px 2px 0 var(--sh),3px 3px 0 var(--sh),4px 4px 0 var(--sh)">ACCOUNT &amp; SYNC</button>':""}<button class="btn w" data-a="export">EXPORT RESULTS</button><button class="btn w" data-a="clear">CLEAR RESULTS</button><button class="btn w" data-a="keep" style="margin-bottom:0">CLOSE</button>`)}
 /* maths keypad: keep the cursor in the text box while keys are tapped */
 document.addEventListener("pointerdown",e=>{if(e.target.closest&&e.target.closest(".mk"))e.preventDefault()});

@@ -1,4 +1,4 @@
-const APP_VERSION="1.22.0";
+const APP_VERSION="1.25.0";
 /* true inside the Android app (Capacitor); false in a normal browser */
 const isNative=()=>{const C=window.Capacitor;return !!(C&&(C.isNativePlatform?C.isNativePlatform():(C.getPlatform&&C.getPlatform()!=="web")))};
 const loaderHtml=()=>'<div class="ldr" role="status" aria-label="Loading"><i class="ldp"></i><i class="ldq"></i></div>';

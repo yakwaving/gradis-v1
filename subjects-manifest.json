@@ -139,6 +139,7 @@
     },
     "Quiz Types": {
       "description": "One quiz for each question type",
+      "sample": true,
       "color": "#5b8cff",
       "dark": "#3a5fc4",
       "icon": "check",

@@ -78,9 +78,9 @@ const flowLine=(q,a,right)=>flowAsked(q).map((n,i)=>(i+1)+") "+fcAsk(n).map(k=>k
 /* ---------- code blocks ---------- */
 function codeUI(q,a,ch,R){
  const used=Object.values(a);
- const gap=n=>{const i=n-1,v=a[i];let c=v!=null?" f":"";if(ch)c+=codeOk(q,a,i)?" ok":" bad";if(R.ui.g===i)c+=" sel";return `<button class="cg${c}" data-a="cg:${i}">${v!=null?esc(q.blocks[v]):n}</button>`};
+ const gap=n=>{const i=n-1,v=a[i];let c=v!=null?" f":"";if(ch)c+=codeOk(q,a,i)?" ok":" bad";if(R.ui.g===i)c+=" sel";return `<button class="cg${c}${v!=null?sxc(R,"g"+i):""}" data-a="cg:${i}">${v!=null?esc(q.blocks[v]):n}</button>`};
  return `<div class="note">Tap a block, then the gap it belongs in. Tap a filled gap to take its block back.</div>${codePanel(q.code,{lang:q.language,gap})}`
- +`<div class="tray">${q.blocks.map((b,i)=>used.includes(i)?"":`<button class="cbk${R.ui.b===i?" sel":""}" data-a="cb:${i}">${esc(b)}</button>`).join("")||'<span class="note" style="margin:auto">All blocks placed</span>'}</div>`
+ +`<div class="tray">${q.blocks.map((b,i)=>used.includes(i)?"":`<button class="cbk${R.ui.b===i?" sel"+sxc(R,"b"+i):""}" data-a="cb:${i}">${esc(b)}</button>`).join("")||'<span class="note" style="margin:auto">All blocks placed</span>'}</div>`
  +`<div style="height:14px"></div>`}
 
 /* ---------- find the error / fix the code ---------- */
@@ -89,7 +89,7 @@ function bugUI(q,a,ch,R){
  let text=q.code.replace(/\n$/,"");const ftxt=fix?bfFixText(q,a):"";
  if(fix&&a.l!=null&&ftxt.trim()){const L=text.split("\n"),ind=(L[a.l-1].match(/^\s*/)||[""])[0];L[a.l-1]=ind+ftxt.trim();text=L.join("\n")}
  const line=n=>{const on=sel.includes(n),isb=bugs.includes(n);let c="";
-  if(ch)c=on?(isb?"ok":"bad"):isb?"miss":"";else if(on)c="sel";
+  if(ch)c=on?(isb?"ok":"bad"):isb?"miss":"";else if(on)c="sel"+sxc(R,"l"+n);
   if(fix&&on&&ftxt.trim())c+=" ed";
   return{cls:c,attr:ch?"":`data-a="bl:${n}"`}};
  const many=!fix&&bugs.length>1;
@@ -97,7 +97,7 @@ function bugUI(q,a,ch,R){
  let out=`<div class="note">${note}</div>${codePanel(text,{lang:q.language,line})}`;
  if(fix){
   if(q.accepted)out+=`<div class="note" style="margin-top:4px">Spaces and capitals don't matter</div><input class="inp mono${ch?(bfFixOk(q,a)?" ok":" bad"):""}" data-bf="1" placeholder="Corrected line" value="${esc(a.f||"")}" ${ch?"readonly":""} autocomplete="off" autocapitalize="off" spellcheck="false">`;
-  else out+=q.options.map((o,i)=>{let c=a.f===i?" sel":"";if(ch)c=i===q.correct?" ok":a.f===i?" bad":"";return `<button class="opt codeopt${c}${ch?" lock":""}" data-a="bf:${i}"><span class="k">${"ABCDEF"[i]}</span><span class="oc">${hl(o)}</span></button>`}).join("");
+  else out+=q.options.map((o,i)=>{let c=a.f===i?" sel"+sxc(R,"f"+i):"";if(ch)c=i===q.correct?" ok":a.f===i?" bad":"";return `<button class="opt codeopt${c}${ch?" lock":""}" data-a="bf:${i}"><span class="k">${"ABCDEF"[i]}</span><span class="oc">${hl(o)}</span></button>`}).join("");
   out+=`<div style="height:6px"></div>`}
  return out}
 
@@ -121,7 +121,7 @@ function flowUI(q,a,ch,R){
   return `<polyline points="${d}" class="fep" marker-end="url(#fca)"/>${lb}`}).join("");
  const nodes=q.nodes.map(n=>{
   const[w,h]=fcSize(n),ask=fcAsk(n),aS=ask.includes("shape"),aT=ask.includes("text"),shp=aS?(a.shapes||{})[n.id]:n.shape;
-  let c=ask.length?" ask":"";if(aS)c+=" slot"+(shp?"":" empty");if(R.ui.n===n.id)c+=" sel";
+  let c=ask.length?" ask":"";if(aS)c+=" slot"+(shp?"":" empty");if(R.ui.n===n.id)c+=" sel";if(shp&&aS)c+=sxc(R,"n"+n.id);
   if(ch&&ask.length)c+=ask.every(k=>fcOk(n,k,a))?" ok":" bad";
   const badge=ask.length?`<i class="fnb">${++num}</i>`:"";
   const txt=aT?`<input class="fcin${ch?(fcOk(n,"text",a)?" ok":" bad"):""}" data-fc="${esc(n.id)}" value="${esc((a.text||{})[n.id]||"")}" ${ch?"readonly":""} autocomplete="off" autocapitalize="off" aria-label="Text for shape ${num}">`:esc(n.text||"");

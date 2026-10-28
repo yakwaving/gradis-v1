@@ -37,3 +37,11 @@ Write maths between dollar signs (`$x^2$`, `$$\frac{a}{b}$$`); it is drawn with 
 ## Notes in Practice mode
 
 Give every quiz and every summary file the same `"chapter"` text (for example `"chapter": "Tenses"`). In Study mode the summary pages appear between questions as before. In Practice mode a **NOTES** button appears on each question and opens every summary of that chapter seen so far (so the forms are always at hand, even in quizzes that have no summary of their own). Exam mode never shows notes. Quizzes without a `chapter` only show the summaries placed just before them.
+
+## Subject options in `subjects-manifest.json`
+
+Besides `description`, `color`, `dark`, `icon` and `quizzes`, a subject can have:
+
+- `"sample": true` — shows a SAMPLE tag and lists the subject under SAMPLES at the bottom of the Subjects tab (use it for demo content such as *Quiz Types*).
+- `"hidden": true` — leaves the subject out of the Subjects tab entirely (its files stay in the manifest).
+- `"chapters": { "Chapter 1": "Introduction to algorithms", "Chapter 2": "Flowcharts" }` — optional names for chapters. The key is the chapter text of the quizzes (their `"chapter"` field, or the title before "Quiz N"). The name shows under the chapter heading and on the Continue card. Chapters you leave out keep their plain title.
