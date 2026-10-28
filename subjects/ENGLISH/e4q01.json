@@ -1,0 +1,302 @@
+{
+  "title": "Passive Voice Quiz 1",
+  "chapter": "Passive Voice",
+  "description": "Build the passive of the present simple, past simple and future with be and the past participle.",
+  "difficulty": "Easy",
+  "level": "Grammar",
+  "topic": "Simple tenses in the passive",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Passive Voice: Simple tenses in the passive.",
+    "Read each question carefully, then check your answer.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is the passive of 'They speak English here'?",
+      "options": [
+        "English speaks here.",
+        "English is speak here.",
+        "English is spoken here.",
+        "English are spoken here."
+      ],
+      "correct": 2,
+      "explanation": "Present simple passive: am / is / are + past participle, so English is spoken here. Watch out: English is a singular subject, so the helper is is, not are.",
+      "id": "q40101"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is correct?",
+      "options": [
+        "The keys were found yesterday.",
+        "The keys was found yesterday.",
+        "The keys were find yesterday.",
+        "The keys did found yesterday."
+      ],
+      "correct": 0,
+      "explanation": "The keys is plural, so be is were, and found is the participle. Watch out: be agrees with the new subject, not with the old one.",
+      "id": "q40102"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "Cars {{1}} (make) here. This car {{2}} (make) last year.",
+      "blanks": [
+        {
+          "answers": [
+            "are made"
+          ]
+        },
+        {
+          "answers": [
+            "was made"
+          ]
+        }
+      ],
+      "explanation": "Here and every day point to the present simple passive (are made). Last year points to the past simple passive (was made). Watch out: the second helper is singular, because this car is singular.",
+      "id": "q40103"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "The result {{1}} (announce) tomorrow. Use will.",
+      "blanks": [
+        {
+          "answers": [
+            "will be announced",
+            "'ll be announced",
+            "’ll be announced"
+          ]
+        }
+      ],
+      "explanation": "Future passive: will + be + past participle. Watch out: be stays in the base form after will.",
+      "id": "q40104"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'The keys was found' is correct.",
+      "correct": false,
+      "explanation": "The subject is the keys, which is plural, so the sentence is The keys were found. Watch out: the verb agrees with the new subject.",
+      "id": "q40105"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is the passive of 'Someone stole my bike'?",
+      "options": [
+        "My bike is stolen.",
+        "My bike was stole.",
+        "My bike stole.",
+        "My bike was stolen."
+      ],
+      "correct": 3,
+      "explanation": "Past simple passive: was + past participle. Watch out: the participle of steal is stolen, not stole.",
+      "id": "q40106"
+    },
+    {
+      "type": "grid",
+      "marks": 5,
+      "question": "Choose the missing helper in each passive sentence.",
+      "columns": [
+        "Active, then passive",
+        "Helper"
+      ],
+      "rows": [
+        [
+          {
+            "given": "They make cars here. Cars ___ made here."
+          },
+          {
+            "answer": [
+              "are"
+            ],
+            "choices": [
+              "are",
+              "is",
+              "were",
+              "will be"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "Someone cleaned the room. The room ___ cleaned."
+          },
+          {
+            "answer": [
+              "was"
+            ],
+            "choices": [
+              "is",
+              "was",
+              "were",
+              "has been"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "They will repair the road. The road ___ repaired."
+          },
+          {
+            "answer": [
+              "will be"
+            ],
+            "choices": [
+              "will be",
+              "will",
+              "is",
+              "was"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "They sell milk here. Milk ___ sold here."
+          },
+          {
+            "answer": [
+              "is"
+            ],
+            "choices": [
+              "are",
+              "is",
+              "was",
+              "will be"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "Thieves stole the paintings. The paintings ___ stolen."
+          },
+          {
+            "answer": [
+              "were"
+            ],
+            "choices": [
+              "was",
+              "is",
+              "were",
+              "are"
+            ]
+          }
+        ]
+      ],
+      "explanation": "The tense of the active verb decides the helper. Watch out: milk is singular and paintings is plural.",
+      "id": "q40107"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each tense with its passive formula.",
+      "left": [
+        "Present simple",
+        "Past simple",
+        "Future with will",
+        "be going to"
+      ],
+      "right": [
+        "am / is / are + past participle",
+        "was / were + past participle",
+        "will be + past participle",
+        "am / is / are going to be + past participle"
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "explanation": "Be takes the tense and the main verb becomes a past participle. Watch out: going to stays in the passive, and be follows it.",
+      "id": "q40108"
+    },
+    {
+      "type": "ordering",
+      "marks": 5,
+      "question": "Put the words in the correct order.",
+      "items": [
+        "was",
+        "The",
+        "built",
+        "bridge",
+        "in",
+        "1990"
+      ],
+      "correctOrder": [
+        1,
+        3,
+        0,
+        2,
+        4,
+        5
+      ],
+      "scoring": "adjacent",
+      "explanation": "The subject comes first, then was, then the participle, then the time phrase. Watch out: built is the participle, not the base form.",
+      "id": "q40109"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which sentences are correct?",
+      "options": [
+        "The window was broken last night.",
+        "English is speak in Canada.",
+        "The cakes were baked by Maria.",
+        "The report will be sent tomorrow.",
+        "The house is build next year."
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "scoring": "partial",
+      "explanation": "The correct sentences use the right form of be and a past participle. Watch out: speak and build are base forms, so they cannot follow be.",
+      "id": "q40110"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is in the passive?",
+      "options": [
+        "The teacher gave us homework.",
+        "We were given homework.",
+        "We gave the homework.",
+        "The teacher is giving homework."
+      ],
+      "correct": 1,
+      "explanation": "We were given homework puts the receiver of the action first, with was / were + participle. Watch out: The teacher is giving homework is active, even though it is in a continuous tense.",
+      "id": "q40111"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake: The cake was eat by the children.",
+      "accepted": [
+        "The cake was eaten by the children.",
+        "The cake was eaten by the children"
+      ],
+      "explanation": "The passive needs the past participle: eaten. Watch out: eat is the base form and ate is the past form.",
+      "id": "q40112"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "summary",
+  "title": "Perfect tenses: negatives, questions and little words",
+  "intro": "Read this before the questions on the present perfect and the present perfect continuous.",
+  "blocks": [
+    {
+      "kind": "formula",
+      "title": "present perfect",
+      "items": [
+        "**Negative:** subject + **have / has** + not + past participle: She **hasn't seen** it.",
+        "**Question:** **Have / Has** + subject + past participle: **Has** she **seen** it?",
+        "**Continuous negative:** have / has + not + **been** + verb-ing: I **haven't been sleeping**.",
+        "**Continuous question:** **Have / Has** + subject + **been** + verb-ing: **Have** you **been waiting**?"
+      ]
+    },
+    {
+      "kind": "format",
+      "title": "where the little words go",
+      "items": [
+        "**never, just, already, always:** between the helper and the participle: I have **never** seen it. She has **already** left.",
+        "**ever:** in questions, after the subject: Have you **ever** been to Rome?",
+        "**yet:** at the END, in questions and negatives: He hasn't called **yet**. Has he called **yet**?",
+        "**How long** + have / has + subject + participle: **How long have** you **lived** here?"
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "the slips",
+      "items": [
+        "**One negative per clause:** I **have never** seen it, or I **haven't ever** seen it. Not *I haven't never seen it*.",
+        "**yet** goes with questions and negatives; **already** goes with positive sentences.",
+        "A finished time (yesterday, last year, two days ago) needs the past simple: **Did** you see it yesterday? Not *Have you seen it yesterday?*",
+        "For a situation that continues, ask with the perfect: **How long have you lived** here? Not *How long do you live here?*"
+      ]
+    }
+  ],
+  "builds": "Past tenses: negatives and questions",
+  "chapter": "Negatives and Questions"
+}

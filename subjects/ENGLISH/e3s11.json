@@ -1,0 +1,48 @@
+{
+  "kind": "summary",
+  "title": "Question words, subject questions and short answers",
+  "intro": "Read this before the questions on question words and on how to answer yes / no questions.",
+  "blocks": [
+    {
+      "kind": "format",
+      "title": "questions with a question word",
+      "items": [
+        "**Question word** + first helper + subject + rest: **Where does** she **work**? **What were** you **doing**? **How long have** they **lived** here?",
+        "The question word is placed in front. The helper still goes before the subject, and the verb is still in its normal form after the helper."
+      ]
+    },
+    {
+      "kind": "remember",
+      "title": "subject questions: NO helper",
+      "items": [
+        "When **who, what or which** is the subject, the question keeps statement order and uses no do / does / did: **Who called** you? (not *Who did call you?*) **What happened**?",
+        "Compare: **Who** did Anna call? (Anna calls someone, so who is the object, and did is needed) and **Who** called Anna? (who is the subject, so no did).",
+        "In the present simple the verb keeps its -s: **Who lives** here? **Who wants** coffee? If the question already has a helper, that helper stays: **Who has taken** my pen?"
+      ]
+    },
+    {
+      "kind": "format",
+      "title": "short answers",
+      "items": [
+        "Repeat only the FIRST helper: **Do** you like tea? Yes, I **do**. No, I **don't**.",
+        "**Is** she ready? Yes, she **is**. No, she **isn't**. **Have** you finished? Yes, I **have**. No, I **haven't**.",
+        "A positive short answer is never shortened: Yes, I **am** (not *Yes, I'm*). Yes, she **is** (not *Yes, she's*).",
+        "**Will** you come? Yes, I **will**. No, I **won't**."
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "word order slips",
+      "items": [
+        "Keep the helper before the subject: **Where does she live?** Not *Where she lives?* and not *Where does she lives?*",
+        "In an indirect question the order goes back to a statement, with no does or did: **Do you know where she lives?** Not *Do you know where does she live?*"
+      ]
+    },
+    {
+      "kind": "hint",
+      "body": "Check a question in this order: question word, helper, subject, main verb. Skip the helper only when the question word IS the subject."
+    }
+  ],
+  "builds": "Future forms: negatives and questions",
+  "chapter": "Negatives and Questions"
+}

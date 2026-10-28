@@ -1,0 +1,48 @@
+{
+  "kind": "summary",
+  "title": "Hard cases in the passive",
+  "intro": "Read this before the difficult quiz. These traps hide in the verb type, not in the tense.",
+  "blocks": [
+    {
+      "kind": "formula",
+      "title": "two objects",
+      "items": [
+        "Verbs such as give, send, show, offer, tell and teach take two objects: She **gave** me a book.",
+        "Two passives are possible: **I was given** a book. / **A book was given** to me.",
+        "The person is usually the subject: **I was given** a book is more natural than *A book was given me*."
+      ]
+    },
+    {
+      "kind": "remember",
+      "title": "no passive",
+      "items": [
+        "**Intransitive verbs** (no object) have no passive: happen, arrive, die, sleep, appear. *The accident was happened* is wrong. Say The accident **happened**.",
+        "**State verbs** such as have (possession), fit, suit, resemble and cost are not used in the passive: *A car is had by her* is wrong."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "it is said that",
+      "items": [
+        "**It is said / believed / thought / reported that** + clause: **It is believed that** the thief escaped.",
+        "The same idea with the person as subject: The thief **is believed to have escaped**. He **is said to be** rich.",
+        "**to be** for the same time as the main verb, **to have + participle** for an earlier time."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "get and have",
+      "items": [
+        "**get + past participle** is informal and describes something that happens to you: She **got hired**. The vase **got broken**.",
+        "**have + object + past participle** is a service done for you: I **had** my hair **cut**. She **is having** her car **repaired**.",
+        "Use the real participle: *I had my hair cutted* is wrong. Say **cut**."
+      ]
+    },
+    {
+      "kind": "hint",
+      "body": "Before you build a passive, check that the active verb has an object. No object, no passive."
+    }
+  ],
+  "builds": "Turning an active sentence into the passive",
+  "chapter": "Passive Voice"
+}

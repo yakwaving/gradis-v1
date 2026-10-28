@@ -1,0 +1,49 @@
+{
+  "kind": "summary",
+  "title": "Turning an active sentence into the passive",
+  "intro": "Read this before the questions on conversion, negatives, questions and the by-phrase.",
+  "blocks": [
+    {
+      "kind": "remember",
+      "title": "four steps",
+      "items": [
+        "1. Find the **object** of the active sentence.",
+        "2. Make it the **subject**. Object pronouns change: me, him, her, us, them become I, he, she, we, they.",
+        "3. Write **be in the same tense** as the active verb, then the **past participle**. Be agrees with the new subject.",
+        "4. Add the old subject with **by** only if it matters."
+      ]
+    },
+    {
+      "kind": "example",
+      "title": "one sentence for each tense",
+      "items": [
+        "Present simple: They **make** cars here. → Cars **are made** here.",
+        "Past simple: They **built** the house in 1990. → The house **was built** in 1990.",
+        "Present continuous: Anna **is painting** the wall. → The wall **is being painted** by Anna.",
+        "Present perfect: Someone **has taken** my bag. → My bag **has been taken**.",
+        "Future: They **will open** the shop soon. → The shop **will be opened** soon.",
+        "Modal: You **must wear** a helmet. → A helmet **must be worn**."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "negatives and questions",
+      "items": [
+        "**Negative:** first helper + not: The letter **wasn't sent**. The room **hasn't been cleaned**. The task **won't be done**.",
+        "**Question:** first helper in front of the subject: **Was** the letter **sent**? **Has** the room **been cleaned**? **Will** the task **be done**?",
+        "**With a question word:** **When was** the window **broken**? **Where were** the photos **taken**?"
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "the by-phrase",
+      "items": [
+        "**Drop the doer** when it is they, someone, people, you or obvious: Someone stole my car → My car **was stolen**.",
+        "**Keep by + doer** when it is new or important: *Hamlet* **was written by** Shakespeare.",
+        "The by-phrase goes last, and a pronoun there is an object pronoun: **by him**, **by her**, **by them**."
+      ]
+    }
+  ],
+  "builds": "Modal verbs, infinitives and -ing forms in the passive",
+  "chapter": "Passive Voice"
+}

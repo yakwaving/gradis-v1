@@ -1,0 +1,300 @@
+{
+  "title": "Negatives and Questions Quiz 1",
+  "chapter": "Negatives and Questions",
+  "description": "Use do, does, am, is and are to make present tense negatives and questions.",
+  "difficulty": "Easy",
+  "level": "Grammar",
+  "topic": "Present simple and present continuous",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Negatives and Questions: Present simple and present continuous.",
+    "Read each question carefully, then check your answer.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is correct?",
+      "options": [
+        "Does she works in a bank?",
+        "Do she work in a bank?",
+        "Does she work in a bank?",
+        "Is she work in a bank?"
+      ],
+      "correct": 2,
+      "explanation": "Does takes the -s, so the main verb goes back to the base form: Does she work. Watch out: does + works is the most common slip.",
+      "id": "q30101"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Make the negative: 'He plays tennis on Sundays.'",
+      "options": [
+        "He doesn't play tennis on Sundays.",
+        "He doesn't plays tennis on Sundays.",
+        "He don't play tennis on Sundays.",
+        "He doesn't playing tennis on Sundays."
+      ],
+      "correct": 0,
+      "explanation": "Present simple negative: does not + base verb. Watch out: the -s of plays disappears because doesn't carries it.",
+      "id": "q30102"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "{{1}} they {{2}} (watch) the match now?",
+      "blanks": [
+        {
+          "answers": [
+            "Are"
+          ]
+        },
+        {
+          "answers": [
+            "watching"
+          ]
+        }
+      ],
+      "explanation": "Now points to the present continuous, so the question uses Are + subject + verb-ing. Watch out: do is not added when the helper is already be.",
+      "id": "q30103"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "She {{1}} (not / like) coffee.",
+      "blanks": [
+        {
+          "answers": [
+            "doesn't like",
+            "doesn’t like",
+            "does not like"
+          ]
+        }
+      ],
+      "explanation": "Present simple negative with she: does not + base verb. Watch out: not likes, because does already carries the -s.",
+      "id": "q30104"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'Do you be tired?' is correct.",
+      "correct": false,
+      "explanation": "With be as the main verb the question is Are you tired? Watch out: be is its own helper and never takes do.",
+      "id": "q30105"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which question is correct?",
+      "options": [
+        "Do you listening to me?",
+        "Are you listen to me?",
+        "Does you listening to me?",
+        "Are you listening to me?"
+      ],
+      "correct": 3,
+      "explanation": "Present continuous question: Are + subject + verb-ing. Watch out: do / does never goes before a verb-ing form.",
+      "id": "q30106"
+    },
+    {
+      "type": "grid",
+      "marks": 5,
+      "question": "Choose the correct helper to make each sentence negative.",
+      "columns": [
+        "Sentence",
+        "Helper"
+      ],
+      "rows": [
+        [
+          {
+            "given": "She ___ eat meat."
+          },
+          {
+            "answer": [
+              "does not"
+            ],
+            "choices": [
+              "does not",
+              "do not",
+              "is not",
+              "am not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "They ___ watching TV."
+          },
+          {
+            "answer": [
+              "are not"
+            ],
+            "choices": [
+              "do not",
+              "are not",
+              "is not",
+              "does not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "I ___ working today."
+          },
+          {
+            "answer": [
+              "am not"
+            ],
+            "choices": [
+              "am not",
+              "do not",
+              "is not",
+              "are not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "The shops ___ open on Sundays."
+          },
+          {
+            "answer": [
+              "do not"
+            ],
+            "choices": [
+              "does not",
+              "is not",
+              "do not",
+              "are not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "It ___ raining now."
+          },
+          {
+            "answer": [
+              "is not"
+            ],
+            "choices": [
+              "does not",
+              "is not",
+              "are not",
+              "do not"
+            ]
+          }
+        ]
+      ],
+      "explanation": "The subject and the tense decide the helper. Watch out: I takes am not, and plural subjects in the present simple take do not.",
+      "id": "q30107"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each sentence with its question.",
+      "left": [
+        "She lives here.",
+        "They are leaving.",
+        "He is a pilot.",
+        "We need help."
+      ],
+      "right": [
+        "Is he a pilot?",
+        "Do we need help?",
+        "Are they leaving?",
+        "Does she live here?"
+      ],
+      "pairs": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "explanation": "Find the helper first, then put it before the subject. Watch out: He is a pilot has be, so there is no do or does.",
+      "id": "q30108"
+    },
+    {
+      "type": "ordering",
+      "marks": 4,
+      "question": "Put the words in the correct order to make a question.",
+      "items": [
+        "listening",
+        "Are",
+        "to",
+        "you",
+        "music"
+      ],
+      "correctOrder": [
+        1,
+        3,
+        0,
+        2,
+        4
+      ],
+      "scoring": "adjacent",
+      "explanation": "The helper Are comes first, then the subject, then the -ing verb. Watch out: the subject you goes between Are and listening.",
+      "id": "q30109"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which sentences are correct?",
+      "options": [
+        "She doesn't like spicy food.",
+        "Does he plays the guitar?",
+        "They aren't studying now.",
+        "I don't going to school today.",
+        "Is it raining outside?"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "scoring": "partial",
+      "explanation": "Three sentences use the right helper and the right verb form. Watch out: the other two keep an -s after does or add don't before a verb-ing form.",
+      "id": "q30110"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "In which sentence does the negative need NO do or does?",
+      "options": [
+        "He works here.",
+        "She is happy.",
+        "They play chess.",
+        "I know him."
+      ],
+      "correct": 1,
+      "explanation": "She is happy becomes She isn't happy, because be is its own helper. Watch out: all the other verbs need don't or doesn't.",
+      "id": "q30111"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake: Does she likes pizza?",
+      "accepted": [
+        "Does she like pizza?",
+        "Does she like pizza"
+      ],
+      "explanation": "After does the verb is in the base form: Does she like pizza? Watch out: the -s belongs to does, not to the verb.",
+      "id": "q30112"
+    }
+  ]
+}

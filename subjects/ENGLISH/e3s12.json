@@ -1,0 +1,47 @@
+{
+  "kind": "summary",
+  "title": "Hard cases: negative words, negative questions and inversion",
+  "intro": "Read this before the difficult quiz. These traps hide in the helper, not in the main verb.",
+  "blocks": [
+    {
+      "kind": "remember",
+      "title": "five checks",
+      "items": [
+        "1. Find the FIRST helper, or add do / does / did if there is none.",
+        "2. In a question put it before the subject. In a negative put **not** after it.",
+        "3. After do / does / did the verb is the **base form**: no -s, no -ed, no participle.",
+        "4. Use **one** negative per clause.",
+        "5. If a question word is the subject, use **no helper**."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "negative words",
+      "items": [
+        "**some** becomes **any** in negatives and questions: I don't have **any** money. Do you have **any** money?",
+        "**One negative only:** I don't see **anybody**, or I see **nobody**. Not *I don't see nobody*.",
+        "never, nobody, nothing, no, none and hardly are already negative, so they never take n't or not: She has **never** been. Not *She hasn't never been*."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "negative questions",
+      "items": [
+        "The short form travels with the helper, in front of the subject: **Isn't** she coming? **Haven't** you finished? **Hadn't** they left?",
+        "The formal version keeps **not** after the subject: **Is she not** coming? **Have you not** finished? Both versions mean the same.",
+        "Only the helper moves: **Hadn't** she **been** waiting?"
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "inversion after negative adverbs",
+      "items": [
+        "A negative adverb at the front of a sentence pulls the helper in front of the subject, as in a question: **Never have** I seen such a crowd. **Seldom do** we eat out.",
+        "**Hardly had** she sat down when the phone rang. **Not only did** he sing, he also danced.",
+        "Do / does / did are added if there is no other helper: **Rarely did** he complain."
+      ]
+    }
+  ],
+  "builds": "Question words, subject questions and short answers",
+  "chapter": "Negatives and Questions"
+}

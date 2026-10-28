@@ -1,0 +1,44 @@
+{
+  "kind": "summary",
+  "title": "Future forms: negatives and questions",
+  "intro": "Read this before the questions on will, going to and the future continuous and perfect.",
+  "blocks": [
+    {
+      "kind": "formula",
+      "title": "will",
+      "items": [
+        "**Negative:** subject + **will not (won't)** + base verb: I **won't tell** anyone.",
+        "**Question:** **Will** + subject + base verb: **Will** you **help** me?",
+        "will never takes -s, -ing or to: *She won't goes*, *Will she to go?* and *Do you will help?* are all wrong."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "be going to",
+      "items": [
+        "**Negative:** subject + **am / is / are** + not + **going to** + base verb: It **isn't going to** rain.",
+        "**Question:** **Am / Is / Are** + subject + **going to** + base verb: **Are** you **going to** buy it?",
+        "**Use:** a plan, or something we can see is about to happen."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "future continuous and future perfect",
+      "items": [
+        "**Future continuous:** She **won't be working**. **Will** she **be working**?",
+        "**Future perfect:** They **won't have finished**. **Will** they **have finished**?",
+        "Only will moves. **be** and **have** stay behind the subject."
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "after if, when, until",
+      "items": [
+        "After **if, when, as soon as, before, until**, use the PRESENT, even in negatives: If you **don't hurry**, you will miss the bus. Not *If you won't hurry*.",
+        "I won't leave until you **arrive**. Not *until you will arrive* and not *until you don't arrive*."
+      ]
+    }
+  ],
+  "builds": "Perfect tenses: negatives, questions and little words",
+  "chapter": "Negatives and Questions"
+}

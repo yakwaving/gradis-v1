@@ -1,0 +1,187 @@
+{
+  "title": "Passive Voice Quiz 5",
+  "chapter": "Passive Voice",
+  "description": "Every question hides a trap: two objects, intransitive verbs, rare structures or an unusual passive.",
+  "difficulty": "Hard",
+  "level": "Grammar",
+  "topic": "Difficult: the passive",
+  "timerType": "wholeQuiz",
+  "totalTime": 1200,
+  "confidence": true,
+  "instructions": [
+    "Passive Voice: Difficult: the passive.",
+    "Read each question carefully, then check your answer.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is the passive of 'She gave me a book', with the person as the subject?",
+      "options": [
+        "I gave a book.",
+        "I was gave a book.",
+        "I was given a book.",
+        "A book was given I."
+      ],
+      "correct": 2,
+      "explanation": "The person me becomes the subject I, and gave becomes was given. Watch out: was gave uses the past form after be.",
+      "id": "q40501"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'The accident was happened yesterday' is correct.",
+      "correct": false,
+      "explanation": "Happen has no object, so it has no passive: The accident happened yesterday. Watch out: intransitive verbs are never used in the passive.",
+      "id": "q40502"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "It is believed that he escaped last night. = He {{1}} (believe) {{2}} (escape) last night.",
+      "blanks": [
+        {
+          "answers": [
+            "is believed"
+          ]
+        },
+        {
+          "answers": [
+            "to have escaped"
+          ]
+        }
+      ],
+      "explanation": "The impersonal passive becomes He is believed to have escaped, because the escape is earlier than the belief. Watch out: to escape would refer to the same time as the belief.",
+      "id": "q40503"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "I had my hair ___ yesterday.",
+      "options": [
+        "cut",
+        "cutted",
+        "cutting",
+        "to cut"
+      ],
+      "correct": 0,
+      "explanation": "Have + object + past participle describes a service done for you, and the participle of cut is cut. Watch out: cut does not take -ed.",
+      "id": "q40504"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence cannot be turned into the passive?",
+      "options": [
+        "She drives a car.",
+        "She bought a car.",
+        "She is selling a car.",
+        "She has a car."
+      ],
+      "correct": 3,
+      "explanation": "Have meaning possession is a state verb and has no passive. Watch out: drives, bought and is selling all have objects and can be passive.",
+      "id": "q40505"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake (past simple): The thieves were been arrested.",
+      "accepted": [
+        "The thieves were arrested.",
+        "The thieves were arrested"
+      ],
+      "explanation": "The past simple passive is were + past participle, with no been. Watch out: been belongs to the perfect tenses.",
+      "id": "q40506"
+    },
+    {
+      "type": "assertion",
+      "marks": 1,
+      "assertion": "The passive of 'They are building a school' is 'A school is built'.",
+      "reason": "In the continuous tenses the passive adds being before the past participle.",
+      "correct": "D",
+      "explanation": "The reason is true, and it shows why the assertion is false: the passive of They are building a school is A school is being built. Watch out: is built alone would be the present simple passive.",
+      "id": "q40507"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "The report {{1}} (finish) by Friday. Use the future perfect passive.",
+      "blanks": [
+        {
+          "answers": [
+            "will have been finished"
+          ]
+        }
+      ],
+      "explanation": "Future perfect passive: will have been + past participle. Watch out: all three helpers are needed.",
+      "id": "q40508"
+    },
+    {
+      "type": "multiple",
+      "marks": 2,
+      "question": "Which sentences are correct?",
+      "options": [
+        "The film is been shown now.",
+        "He is said to be a spy.",
+        "I had my car repair.",
+        "She was given a prize."
+      ],
+      "correct": [
+        1,
+        3
+      ],
+      "scoring": "partial",
+      "explanation": "The correct sentences use the impersonal passive, or be with a participle. Watch out: is been and repair are wrong forms after be and have.",
+      "id": "q40509"
+    },
+    {
+      "type": "ordering",
+      "marks": 6,
+      "question": "Put the words in the correct order.",
+      "items": [
+        "by Friday",
+        "been",
+        "The",
+        "should",
+        "finished",
+        "work",
+        "have"
+      ],
+      "correctOrder": [
+        2,
+        5,
+        3,
+        6,
+        1,
+        4,
+        0
+      ],
+      "scoring": "adjacent",
+      "explanation": "The modal comes first, then have, then been, then the participle. Watch out: by Friday stays together at the end.",
+      "id": "q40510"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence uses the get-passive?",
+      "options": [
+        "The vase did break.",
+        "The vase got broken.",
+        "The vase was breaking.",
+        "The vase has broke."
+      ],
+      "correct": 1,
+      "explanation": "Get + past participle is an informal passive: The vase got broken. Watch out: did break and has broke are active forms, and was breaking is the past continuous.",
+      "id": "q40511"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'The prize was won by her' and 'She won the prize' describe the same event.",
+      "correct": true,
+      "explanation": "Both describe the same fact, and only the focus changes. Watch out: the passive puts the prize first, so it stresses what happened to it.",
+      "id": "q40512"
+    }
+  ]
+}

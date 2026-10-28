@@ -1,0 +1,298 @@
+{
+  "title": "Passive Voice Quiz 3",
+  "chapter": "Passive Voice",
+  "description": "Use modal + be, modal + have been, to be and being in the passive.",
+  "difficulty": "Medium",
+  "level": "Grammar",
+  "topic": "Modal verbs in the passive",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Passive Voice: Modal verbs in the passive.",
+    "Read each question carefully, then check your answer.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is the passive of 'You must lock the door'?",
+      "options": [
+        "The door must locked.",
+        "The door must been locked.",
+        "The door must be locked.",
+        "The door must be lock."
+      ],
+      "correct": 2,
+      "explanation": "Modal passive: modal + be + past participle. Watch out: be stays in the base form after must.",
+      "id": "q40301"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is the passive of 'They should have finished the work'?",
+      "options": [
+        "The work should have been finished.",
+        "The work should be finished have.",
+        "The work should has been finished.",
+        "The work should have being finished."
+      ],
+      "correct": 0,
+      "explanation": "Past modal passive: modal + have + been + past participle. Watch out: have stays in the base form after should.",
+      "id": "q40302"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "Tickets can {{1}} {{2}} (buy) online.",
+      "blanks": [
+        {
+          "answers": [
+            "be"
+          ]
+        },
+        {
+          "answers": [
+            "bought"
+          ]
+        }
+      ],
+      "explanation": "After can the passive uses be and a past participle. Watch out: the participle of buy is bought.",
+      "id": "q40303"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "The window {{1}} (must / break) by someone during the night. (I am sure.)",
+      "blanks": [
+        {
+          "answers": [
+            "must have been broken"
+          ]
+        }
+      ],
+      "explanation": "A deduction about the past uses modal + have been + participle: must have been broken. Watch out: be alone would refer to now.",
+      "id": "q40304"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'The report can been finished today' is correct.",
+      "correct": false,
+      "explanation": "After a modal the verb is be, so the sentence is The report can be finished today. Watch out: been belongs after have, not after a modal.",
+      "id": "q40305"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is a correct negative passive?",
+      "options": [
+        "Mistakes shouldn't been made.",
+        "Mistakes don't should be made.",
+        "Mistakes shouldn't made.",
+        "Mistakes shouldn't be made."
+      ],
+      "correct": 3,
+      "explanation": "The negative modal goes in front of be: shouldn't be made. Watch out: don't should is not possible, and the participle is still needed.",
+      "id": "q40306"
+    },
+    {
+      "type": "grid",
+      "marks": 5,
+      "question": "Choose the missing form after the modal.",
+      "columns": [
+        "Active, then passive",
+        "Missing words"
+      ],
+      "rows": [
+        [
+          {
+            "given": "You can see the stars. The stars can ___ seen."
+          },
+          {
+            "answer": [
+              "be"
+            ],
+            "choices": [
+              "be",
+              "been",
+              "have been",
+              "being"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "They might have lost it. It might ___ lost."
+          },
+          {
+            "answer": [
+              "have been"
+            ],
+            "choices": [
+              "be",
+              "been",
+              "have been",
+              "being"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "We must pay the bill. The bill must ___ paid."
+          },
+          {
+            "answer": [
+              "be"
+            ],
+            "choices": [
+              "be",
+              "been",
+              "have been",
+              "being"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "Someone should have told her. She should ___ told."
+          },
+          {
+            "answer": [
+              "have been"
+            ],
+            "choices": [
+              "be",
+              "been",
+              "have been",
+              "being"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "They will have to sell it. It will have to ___ sold."
+          },
+          {
+            "answer": [
+              "be"
+            ],
+            "choices": [
+              "be",
+              "been",
+              "have been",
+              "being"
+            ]
+          }
+        ]
+      ],
+      "explanation": "Now needs be, and the past needs have been. Watch out: will have to is followed by be.",
+      "id": "q40307"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each verb form with its passive pattern.",
+      "left": [
+        "Modal, now",
+        "Modal, past",
+        "Infinitive",
+        "-ing form"
+      ],
+      "right": [
+        "modal + be + past participle",
+        "modal + have been + past participle",
+        "to be + past participle",
+        "being + past participle"
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "explanation": "Every pattern ends in a past participle. Watch out: being is used after a preposition, and to be after verbs such as want.",
+      "id": "q40308"
+    },
+    {
+      "type": "ordering",
+      "marks": 4,
+      "question": "Put the words in the correct order.",
+      "items": [
+        "be",
+        "The",
+        "signed",
+        "must",
+        "form"
+      ],
+      "correctOrder": [
+        1,
+        4,
+        3,
+        0,
+        2
+      ],
+      "scoring": "adjacent",
+      "explanation": "The subject, then the modal, then be, then the participle. Watch out: be comes before signed.",
+      "id": "q40309"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "She left the party without ___ seen.",
+      "options": [
+        "be",
+        "being",
+        "to be",
+        "been"
+      ],
+      "correct": 1,
+      "explanation": "After a preposition the -ing form is used: without being seen. Watch out: to be and be are not possible after without.",
+      "id": "q40310"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which sentences are correct?",
+      "options": [
+        "The work must have be done.",
+        "The door can't be opened.",
+        "The match might been cancelled.",
+        "Seats should be booked early.",
+        "The letter could have been lost."
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "scoring": "partial",
+      "explanation": "The correct sentences use be after the modal, or have been for the past. Watch out: have be and might been use the wrong form.",
+      "id": "q40311"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake: The cake can be ate by everyone.",
+      "accepted": [
+        "The cake can be eaten by everyone.",
+        "The cake can be eaten by everyone"
+      ],
+      "explanation": "After be the passive needs a past participle: eaten. Watch out: ate is the past simple form.",
+      "id": "q40312"
+    }
+  ]
+}

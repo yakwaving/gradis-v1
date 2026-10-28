@@ -1,0 +1,288 @@
+{
+  "title": "Negatives and Questions Quiz 2",
+  "chapter": "Negatives and Questions",
+  "description": "Form negatives and questions with did, was, were and had, and keep the verb in the right form.",
+  "difficulty": "Medium",
+  "level": "Grammar",
+  "topic": "Past simple, past continuous and past perfect",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Negatives and Questions: Past simple, past continuous and past perfect.",
+    "Read each question carefully, then check your answer.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which question is correct?",
+      "options": [
+        "Did you saw the film?",
+        "Do you saw the film?",
+        "Did you see the film?",
+        "Were you see the film?"
+      ],
+      "correct": 2,
+      "explanation": "Did takes the past form, so the main verb is the base form: see. Watch out: Did you saw is wrong because the past tense is marked twice.",
+      "id": "q30201"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Make the negative: 'We went to the cinema.'",
+      "options": [
+        "We didn't go to the cinema.",
+        "We didn't went to the cinema.",
+        "We don't go to the cinema.",
+        "We not went to the cinema."
+      ],
+      "correct": 0,
+      "explanation": "Past simple negative: did not + base verb. Watch out: went returns to go after didn't.",
+      "id": "q30202"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "{{1}} it {{2}} (rain) when you left?",
+      "blanks": [
+        {
+          "answers": [
+            "Was"
+          ]
+        },
+        {
+          "answers": [
+            "raining"
+          ]
+        }
+      ],
+      "explanation": "When you left gives a moment in the past, so the question is past continuous: Was it raining? Watch out: was is already the helper, so did is not added.",
+      "id": "q30203"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "They {{1}} (not / arrive) before the film started.",
+      "blanks": [
+        {
+          "answers": [
+            "hadn't arrived",
+            "hadn’t arrived",
+            "had not arrived"
+          ]
+        }
+      ],
+      "explanation": "The earlier past action takes the past perfect negative: had not + past participle. Watch out: not didn't arrive, which would not show which action came first.",
+      "id": "q30204"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'Did she was late?' is correct.",
+      "correct": false,
+      "explanation": "The question is Was she late? Watch out: was and were are helpers themselves, so did is never added.",
+      "id": "q30205"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which question is correct?",
+      "options": [
+        "Did they had left before you arrived?",
+        "Have they left before you arrived?",
+        "Were they left before you arrived?",
+        "Had they left before you arrived?"
+      ],
+      "correct": 3,
+      "explanation": "The past perfect question is Had + subject + past participle. Watch out: did never combines with had + participle.",
+      "id": "q30206"
+    },
+    {
+      "type": "grid",
+      "marks": 4,
+      "question": "Choose the correct negative helper.",
+      "columns": [
+        "Sentence",
+        "Helper"
+      ],
+      "rows": [
+        [
+          {
+            "given": "He ___ play football yesterday."
+          },
+          {
+            "answer": [
+              "did not"
+            ],
+            "choices": [
+              "did not",
+              "was not",
+              "had not",
+              "does not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "We ___ sleeping at ten."
+          },
+          {
+            "answer": [
+              "were not"
+            ],
+            "choices": [
+              "did not",
+              "was not",
+              "were not",
+              "had not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "She ___ eaten before we arrived."
+          },
+          {
+            "answer": [
+              "had not"
+            ],
+            "choices": [
+              "had not",
+              "did not",
+              "was not",
+              "were not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "I ___ at home last night."
+          },
+          {
+            "answer": [
+              "was not"
+            ],
+            "choices": [
+              "were not",
+              "did not",
+              "had not",
+              "was not"
+            ]
+          }
+        ]
+      ],
+      "explanation": "Each sentence has a clue: yesterday for the past simple, at ten for the past continuous, before we arrived for the past perfect, last night for was. Watch out: was not is used with I, he, she and it.",
+      "id": "q30207"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each sentence with its question.",
+      "left": [
+        "She was cooking.",
+        "He had left.",
+        "They visited Rome.",
+        "I was late."
+      ],
+      "right": [
+        "Did they visit Rome?",
+        "Was she cooking?",
+        "Had he left?",
+        "Was I late?"
+      ],
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "explanation": "Move the first helper in front of the subject. Watch out: They visited Rome has no helper, so did is added and visited becomes visit.",
+      "id": "q30208"
+    },
+    {
+      "type": "ordering",
+      "marks": 4,
+      "question": "Put the words in the correct order to make a question.",
+      "items": [
+        "train",
+        "Had",
+        "already",
+        "left",
+        "the"
+      ],
+      "correctOrder": [
+        1,
+        4,
+        0,
+        2,
+        3
+      ],
+      "scoring": "adjacent",
+      "explanation": "Had goes first, then the subject, then the adverb and the participle. Watch out: the participle left stays after already.",
+      "id": "q30209"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which sentences are correct?",
+      "options": [
+        "Did he call you last night?",
+        "She wasn't listening to me.",
+        "I didn't saw him.",
+        "Had you eaten before the show?",
+        "Was they waiting outside?"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "scoring": "partial",
+      "explanation": "Only the sentences with the right helper and verb form are correct. Watch out: didn't saw and was they break the rules for did and plural subjects.",
+      "id": "q30210"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence has a mistake?",
+      "options": [
+        "Didn't he phone you?",
+        "Did you had breakfast?",
+        "Weren't they sleeping?",
+        "Hadn't she finished?"
+      ],
+      "correct": 1,
+      "explanation": "Did you had breakfast? is wrong, and the correct question is Did you have breakfast? Watch out: negative questions such as Didn't he phone you? are correct.",
+      "id": "q30211"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake: He didn't came to the party.",
+      "accepted": [
+        "He didn't come to the party.",
+        "He didn't come to the party",
+        "He didn’t come to the party.",
+        "He didn’t come to the party",
+        "He did not come to the party.",
+        "He did not come to the party"
+      ],
+      "explanation": "After didn't the verb is in the base form: He didn't come. Watch out: the past is already marked in didn't.",
+      "id": "q30212"
+    }
+  ]
+}

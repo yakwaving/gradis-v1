@@ -1,0 +1,305 @@
+{
+  "title": "Passive Voice Quiz 4",
+  "chapter": "Passive Voice",
+  "description": "Turn active sentences into the passive, and make passive negatives and questions.",
+  "difficulty": "Medium",
+  "level": "Grammar",
+  "topic": "Active to passive, negatives and questions",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Passive Voice: Active to passive, negatives and questions.",
+    "Read each question carefully, then check your answer.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is the passive of 'She saw him'?",
+      "options": [
+        "Him was seen by her.",
+        "He saw by her.",
+        "He was seen by her.",
+        "He was seen her."
+      ],
+      "correct": 2,
+      "explanation": "The object him becomes the subject he, and the doer becomes an object pronoun after by. Watch out: him cannot be a subject.",
+      "id": "q40401"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Make the negative: 'The letter was sent.'",
+      "options": [
+        "The letter wasn't sent.",
+        "The letter didn't sent.",
+        "The letter wasn't send.",
+        "The letter didn't be sent."
+      ],
+      "correct": 0,
+      "explanation": "The negative adds not after the first helper: wasn't sent. Watch out: did is never added in the passive.",
+      "id": "q40402"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "{{1}} the room {{2}} (clean) yet? Use the present perfect passive.",
+      "blanks": [
+        {
+          "answers": [
+            "Has"
+          ]
+        },
+        {
+          "answers": [
+            "been cleaned"
+          ]
+        }
+      ],
+      "explanation": "The question puts Has in front of the subject, and been cleaned stays after it. Watch out: only the first helper moves.",
+      "id": "q40403"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "When {{1}} the window {{2}} (break)?",
+      "blanks": [
+        {
+          "answers": [
+            "was"
+          ]
+        },
+        {
+          "answers": [
+            "broken"
+          ]
+        }
+      ],
+      "explanation": "Past simple passive question: When + was + subject + participle. Watch out: the participle of break is broken.",
+      "id": "q40404"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "In 'Hamlet was written by Shakespeare', the by-phrase can be dropped without losing information.",
+      "correct": false,
+      "explanation": "The doer is the important new information here, so by Shakespeare stays. Watch out: the by-phrase is dropped only when the doer is unknown or unimportant.",
+      "id": "q40405"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which question is correct?",
+      "options": [
+        "Did the letter sent yesterday?",
+        "Was sent the letter yesterday?",
+        "Was the letter send yesterday?",
+        "Was the letter sent yesterday?"
+      ],
+      "correct": 3,
+      "explanation": "Was goes in front of the subject, and the participle follows. Watch out: did is not used, and the participle cannot be the base form.",
+      "id": "q40406"
+    },
+    {
+      "type": "grid",
+      "marks": 5,
+      "question": "Choose the passive verb group.",
+      "columns": [
+        "Active, then passive",
+        "Verb group"
+      ],
+      "rows": [
+        [
+          {
+            "given": "The chef cooks the meal. The meal ___ by the chef."
+          },
+          {
+            "answer": [
+              "is cooked"
+            ],
+            "choices": [
+              "is cooked",
+              "cooks",
+              "is cooking",
+              "was cooked"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "Anna is painting the wall. The wall ___ by Anna."
+          },
+          {
+            "answer": [
+              "is being painted"
+            ],
+            "choices": [
+              "is painted",
+              "is being painted",
+              "has been painted",
+              "was painting"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "Someone has stolen my phone. My phone ___."
+          },
+          {
+            "answer": [
+              "has been stolen"
+            ],
+            "choices": [
+              "was stolen",
+              "is being stolen",
+              "has been stolen",
+              "has stolen"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "They will open the shop. The shop ___."
+          },
+          {
+            "answer": [
+              "will be opened"
+            ],
+            "choices": [
+              "will open",
+              "will be opened",
+              "is opened",
+              "was opened"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "Workers built the bridge. The bridge ___ by workers."
+          },
+          {
+            "answer": [
+              "was built"
+            ],
+            "choices": [
+              "is built",
+              "built",
+              "was built",
+              "has been built"
+            ]
+          }
+        ]
+      ],
+      "explanation": "Keep the tense of the active verb. Watch out: the continuous needs being and the perfect needs been.",
+      "id": "q40407"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each active sentence with its passive.",
+      "left": [
+        "Someone cleaned the room.",
+        "Someone is cleaning the room.",
+        "Someone has cleaned the room.",
+        "Someone will clean the room."
+      ],
+      "right": [
+        "The room was cleaned.",
+        "The room is being cleaned.",
+        "The room has been cleaned.",
+        "The room will be cleaned."
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "explanation": "The tense stays the same, and be carries it. Watch out: is cleaning becomes is being cleaned, and has cleaned becomes has been cleaned.",
+      "id": "q40408"
+    },
+    {
+      "type": "ordering",
+      "marks": 4,
+      "question": "Put the words in the correct order to make a question.",
+      "items": [
+        "window",
+        "When",
+        "broken",
+        "was",
+        "the"
+      ],
+      "correctOrder": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "scoring": "adjacent",
+      "explanation": "The question word comes first, then was, then the subject, then the participle. Watch out: was moves in front of the subject.",
+      "id": "q40409"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which sentences are correct?",
+      "options": [
+        "Was the cake eaten?",
+        "The room didn't cleaned.",
+        "Has the work been finished?",
+        "Did the letter be sent?",
+        "The window wasn't broken by me."
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "scoring": "partial",
+      "explanation": "The correct sentences keep the helper before the subject in questions, or add not after the helper. Watch out: didn't and did cannot be used with a passive verb.",
+      "id": "q40410"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Why is the doer left out in 'My bag was stolen'?",
+      "options": [
+        "The verb is irregular.",
+        "The thief is unknown.",
+        "The sentence is negative.",
+        "The object is plural."
+      ],
+      "correct": 1,
+      "explanation": "The thief is unknown, so there is nothing to put after by. Watch out: the verb being irregular or negative has nothing to do with it.",
+      "id": "q40411"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Turn into the passive: 'They cancelled the match.'",
+      "accepted": [
+        "The match was cancelled.",
+        "The match was cancelled",
+        "The match was cancelled by them.",
+        "The match was cancelled by them"
+      ],
+      "explanation": "The object the match becomes the subject, and cancelled becomes was cancelled. Watch out: the tense stays the past simple, so it is was, not has been.",
+      "id": "q40412"
+    }
+  ]
+}

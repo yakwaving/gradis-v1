@@ -1,0 +1,56 @@
+{
+  "kind": "summary",
+  "title": "The passive: the rule and the simple tenses",
+  "intro": "Read this before the questions on the passive. The object of the active sentence becomes the subject, and the doer, if it is mentioned, moves to the end with by.",
+  "blocks": [
+    {
+      "kind": "remember",
+      "title": "the rule",
+      "items": [
+        "**Active:** doer + verb + object: The chef **cooked** the meal.",
+        "**Passive:** object + **be** + **past participle**: The meal **was cooked** by the chef.",
+        "**The tense does not change.** Be carries the tense of the active verb, and the main verb becomes a past participle.",
+        "**Use the passive** when the doer is unknown, unimportant or obvious, or when the action or its result matters more: My bike **was stolen**. English **is spoken** here."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "present simple passive",
+      "items": [
+        "**Form:** am / is / are + past participle: Cars **are made** here. I **am paid** on Fridays.",
+        "**Active:** They make cars here.",
+        "**Negative and question:** English **isn't spoken** here. **Is** English **spoken** here?"
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "past simple passive",
+      "items": [
+        "**Form:** was / were + past participle: The window **was broken**. The keys **were found**.",
+        "**Active:** Someone broke the window.",
+        "**Negative and question:** The keys **weren't found**. **Were** the keys **found**?"
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "future passive",
+      "items": [
+        "**will + be + past participle:** The result **will be announced** tomorrow. (Active: They will announce the result.)",
+        "**be going to + be + past participle:** The bridge **is going to be repaired**.",
+        "**Negative and question:** It **won't be announced**. **Will** it **be announced**?"
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "the slips",
+      "items": [
+        "**be agrees with the NEW subject:** The keys **were** found (not *The keys was found*).",
+        "Use the **past participle**, not the base form or the past form: *The cake was eat* and *The cake was ate* are wrong. Say **eaten**.",
+        "Never add do / did: *The window did broken* is wrong.",
+        "Irregular participles: make, **made**; write, **written**; steal, **stolen**; break, **broken**; build, **built**; sell, **sold**; take, **taken**; see, **seen**."
+      ]
+    }
+  ],
+  "builds": "The golden rule",
+  "chapter": "Passive Voice"
+}

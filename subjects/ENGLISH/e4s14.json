@@ -1,0 +1,45 @@
+{
+  "kind": "summary",
+  "title": "Continuous and perfect tenses in the passive",
+  "intro": "Read this before the questions on the continuous and perfect passive.",
+  "blocks": [
+    {
+      "kind": "remember",
+      "title": "the pattern",
+      "items": [
+        "**Continuous tenses add BEING:** be + **being** + past participle.",
+        "**Perfect tenses add BEEN:** have + **been** + past participle.",
+        "The last word is always the past participle. The passive adds exactly one form of be: is, **is being**, **has been**."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "continuous passive",
+      "items": [
+        "**Present continuous:** am / is / are **being** + past participle: The road **is being repaired**. (Active: They are repairing the road.)",
+        "**Past continuous:** was / were **being** + past participle: The room **was being cleaned** when I arrived. (Active: Someone was cleaning the room.)",
+        "**Negative and question:** The road **isn't being repaired**. **Is** the road **being repaired**?"
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "perfect passive",
+      "items": [
+        "**Present perfect:** have / has **been** + past participle: The letter **has been sent**. (Active: Someone has sent the letter.)",
+        "**Past perfect:** had **been** + past participle: The film **had been cancelled** before we arrived.",
+        "**Future perfect:** will have **been** + past participle: The work **will have been finished** by Friday.",
+        "**Negative and question:** It **hasn't been sent**. **Has** it **been sent**? Only the first helper moves."
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "rare forms",
+      "items": [
+        "The future continuous passive (*will be being done*) and the perfect continuous passive (*has been being done*) are very rare. Choose the present perfect passive or another structure instead.",
+        "Do not mix the two: *has being sent* and *is been repaired* are wrong."
+      ]
+    }
+  ],
+  "builds": "The passive: the rule and the simple tenses",
+  "chapter": "Passive Voice"
+}

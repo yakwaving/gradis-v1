@@ -1,0 +1,59 @@
+{
+  "kind": "summary",
+  "title": "The golden rule: negatives and questions (present tenses)",
+  "intro": "Read this before the questions. Negatives and questions use the same helper verb, called the AUXILIARY. Learn where it goes and every tense follows.",
+  "blocks": [
+    {
+      "kind": "remember",
+      "title": "the golden rule",
+      "items": [
+        "**Negative:** subject + FIRST helper + **not** + the rest: She **is not** working. They **have not** finished.",
+        "**Question:** FIRST helper + subject + the rest: **Is** she working? **Have** they finished?",
+        "Only the FIRST helper moves or takes not. Later helpers and the main verb stay where they are: She has **not** been working. **Has** she been working?",
+        "No helper in the positive sentence? Add **do / does / did**. This happens only in the present simple and the past simple."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "present simple",
+      "items": [
+        "**Positive:** I / you / we / they **work**. He / she / it **works**.",
+        "**Negative:** subject + **do not (don't)** / **does not (doesn't)** + base verb: She **doesn't work**.",
+        "**Question:** **Do** / **Does** + subject + base verb: **Does** she **work**?",
+        "**Use:** facts, habits and timetables. The -s moves into does, so the verb goes back to the base form: *She doesn't works* and *Does she works?* are wrong."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "present continuous",
+      "items": [
+        "**Negative:** subject + **am / is / are** + not + verb-ing: He **isn't** sleeping. I **am not** sleeping.",
+        "**Question:** **Am / Is / Are** + subject + verb-ing: **Are** you listening?",
+        "The helper is already be, so do / does is NOT added: *Do you listening?* is wrong.",
+        "**Use:** actions happening now, temporary situations and fixed plans."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "be, have and the modal verbs",
+      "items": [
+        "**be as a main verb** is its own helper: She **is not** a doctor. **Is** she a doctor? (not *Does she be a doctor?*)",
+        "**Modal verbs** (can, must, should, may) are helpers too: She **can't** swim. **Can** she swim? After a modal, the verb stays in the base form.",
+        "**have** as a main verb usually takes do / does: **Do** you **have** a car? She **doesn't have** a car."
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "short forms",
+      "items": [
+        "do not = **don't**, does not = **doesn't**, did not = **didn't**, is not = **isn't**, are not = **aren't**, was not = **wasn't**, were not = **weren't**, have not = **haven't**, has not = **hasn't**, had not = **hadn't**, will not = **won't**, cannot = **can't**.",
+        "**am not** has no short form in standard English: write **I'm not** (not *I amn't*). In a question, use **Aren't I?**"
+      ]
+    },
+    {
+      "kind": "hint",
+      "body": "Make a question in two moves: (1) find the first helper, or add do / does / did if there is none, (2) put it in front of the subject. Make a negative in one move: put **not** straight after the first helper."
+    }
+  ],
+  "chapter": "Negatives and Questions"
+}

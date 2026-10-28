@@ -1,0 +1,300 @@
+{
+  "title": "Passive Voice Quiz 2",
+  "chapter": "Passive Voice",
+  "description": "Add being for the continuous tenses and been for the perfect tenses.",
+  "difficulty": "Medium",
+  "level": "Grammar",
+  "topic": "Continuous and perfect tenses in the passive",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Passive Voice: Continuous and perfect tenses in the passive.",
+    "Read each question carefully, then check your answer.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is the passive of 'They are repairing the road'?",
+      "options": [
+        "The road is repaired.",
+        "The road is been repaired.",
+        "The road is being repaired.",
+        "The road being repaired."
+      ],
+      "correct": 2,
+      "explanation": "Present continuous passive: am / is / are being + past participle. Watch out: being, not been, belongs to the continuous.",
+      "id": "q40201"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is the passive of 'Someone has taken my bag'?",
+      "options": [
+        "My bag has been taken.",
+        "My bag has being taken.",
+        "My bag was been taken.",
+        "My bag has taken."
+      ],
+      "correct": 0,
+      "explanation": "Present perfect passive: have / has + been + past participle. Watch out: been is used with the perfect, and being with the continuous.",
+      "id": "q40202"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "The room {{1}} (clean) when I arrived. Use the past continuous.",
+      "blanks": [
+        {
+          "answers": [
+            "was being cleaned"
+          ]
+        }
+      ],
+      "explanation": "Past continuous passive: was / were + being + past participle. Watch out: the room is singular, so the helper is was.",
+      "id": "q40203"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "By Friday the work {{1}} (finish) and the workers {{2}} (pay). Use the future perfect.",
+      "blanks": [
+        {
+          "answers": [
+            "will have been finished"
+          ]
+        },
+        {
+          "answers": [
+            "will have been paid"
+          ]
+        }
+      ],
+      "explanation": "Future perfect passive: will have been + past participle. Watch out: the participle of pay is paid, not payed.",
+      "id": "q40204"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'The film has being cancelled' is correct.",
+      "correct": false,
+      "explanation": "The present perfect passive is has been cancelled. Watch out: being belongs to the continuous tenses only.",
+      "id": "q40205"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is correct?",
+      "options": [
+        "The work will be finished been by Friday.",
+        "The work will have being finished by Friday.",
+        "The work has will been finished by Friday.",
+        "The work will have been finished by Friday."
+      ],
+      "correct": 3,
+      "explanation": "Future perfect passive: will have been + participle. Watch out: the helpers keep their order, will then have then been.",
+      "id": "q40206"
+    },
+    {
+      "type": "grid",
+      "marks": 5,
+      "question": "Choose the missing word: being or been.",
+      "columns": [
+        "Sentence",
+        "Missing word"
+      ],
+      "rows": [
+        [
+          {
+            "given": "The road is ___ repaired."
+          },
+          {
+            "answer": [
+              "being"
+            ],
+            "choices": [
+              "been",
+              "being",
+              "be",
+              "is"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "The letter has ___ sent."
+          },
+          {
+            "answer": [
+              "been"
+            ],
+            "choices": [
+              "been",
+              "being",
+              "be",
+              "is"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "The cakes were ___ baked when we came."
+          },
+          {
+            "answer": [
+              "being"
+            ],
+            "choices": [
+              "been",
+              "being",
+              "be",
+              "is"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "The film had ___ cancelled."
+          },
+          {
+            "answer": [
+              "been"
+            ],
+            "choices": [
+              "been",
+              "being",
+              "be",
+              "is"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "The work will have ___ done."
+          },
+          {
+            "answer": [
+              "been"
+            ],
+            "choices": [
+              "been",
+              "being",
+              "be",
+              "is"
+            ]
+          }
+        ]
+      ],
+      "explanation": "The continuous passive uses being, and the perfect passive uses been. Watch out: a time clue such as when we came shows an action in progress.",
+      "id": "q40207"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each tense with its passive formula.",
+      "left": [
+        "Present continuous",
+        "Past continuous",
+        "Present perfect",
+        "Past perfect"
+      ],
+      "right": [
+        "am / is / are being + past participle",
+        "was / were being + past participle",
+        "have / has been + past participle",
+        "had been + past participle"
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "explanation": "Continuous tenses add being, and perfect tenses add been. Watch out: have / has and had are the helpers of the perfect, not of the continuous.",
+      "id": "q40208"
+    },
+    {
+      "type": "ordering",
+      "marks": 4,
+      "question": "Put the words in the correct order.",
+      "items": [
+        "being",
+        "The",
+        "painted",
+        "house",
+        "is"
+      ],
+      "correctOrder": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "scoring": "adjacent",
+      "explanation": "The subject, then is, then being, then the participle. Watch out: being goes between is and painted.",
+      "id": "q40209"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which sentences are correct?",
+      "options": [
+        "The house is being painting.",
+        "The film has been cancelled.",
+        "The tables are being cleaned.",
+        "The bridge has be finished.",
+        "A new bridge was being built."
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "scoring": "partial",
+      "explanation": "Correct passives have the right form of be, then being or been where needed. Watch out: is being painting and has be finished use the wrong form after be or have.",
+      "id": "q40210"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which active sentence matches 'The cars were being washed'?",
+      "options": [
+        "Someone had washed the cars.",
+        "Someone was washing the cars.",
+        "Someone washed the cars.",
+        "Someone is washing the cars."
+      ],
+      "correct": 1,
+      "explanation": "Were being washed is the past continuous passive, so the active verb is was washing. Watch out: had washed would give the past perfect passive.",
+      "id": "q40211"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake: The window has broken by the boys.",
+      "accepted": [
+        "The window has been broken by the boys.",
+        "The window has been broken by the boys",
+        "The window was broken by the boys.",
+        "The window was broken by the boys"
+      ],
+      "explanation": "A passive with by needs been and a participle: has been broken, or the past simple was broken. Watch out: has broken is active, so it cannot take by the boys.",
+      "id": "q40212"
+    }
+  ]
+}

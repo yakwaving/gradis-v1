@@ -1,0 +1,189 @@
+{
+  "title": "Negatives and Questions Quiz 6",
+  "chapter": "Negatives and Questions",
+  "description": "Every question hides a trap: a double negative, an extra helper, inversion or an embedded question.",
+  "difficulty": "Hard",
+  "level": "Grammar",
+  "topic": "Difficult: negatives and questions",
+  "timerType": "wholeQuiz",
+  "totalTime": 1200,
+  "confidence": true,
+  "instructions": [
+    "Negatives and Questions: Difficult: negatives and questions.",
+    "Read each question carefully, then check your answer.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is correct?",
+      "options": [
+        "I didn't see nobody at the party.",
+        "I not saw anybody at the party.",
+        "I didn't see anybody at the party.",
+        "I didn't saw anybody at the party."
+      ],
+      "correct": 2,
+      "explanation": "Anybody works with a negative verb, and didn't takes the base form: I didn't see anybody. Watch out: nobody after didn't gives a double negative.",
+      "id": "q30601"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'Hadn't she been waiting long?' is a correct negative question.",
+      "correct": true,
+      "explanation": "Only had moves, and its short form goes with it: Hadn't she been waiting? Watch out: been and waiting stay after the subject.",
+      "id": "q30602"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "How long {{1}} he {{2}} (wait) when the bus finally came? Use the past perfect continuous.",
+      "blanks": [
+        {
+          "answers": [
+            "had"
+          ]
+        },
+        {
+          "answers": [
+            "been waiting"
+          ]
+        }
+      ],
+      "explanation": "The past perfect continuous question is Had + subject + been + verb-ing. Watch out: only had moves in front of he.",
+      "id": "q30603"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is correct?",
+      "options": [
+        "Never have I seen such a crowd.",
+        "Never I have seen such a crowd.",
+        "Never I saw have such a crowd.",
+        "Never did I seen such a crowd."
+      ],
+      "correct": 0,
+      "explanation": "A negative adverb at the front pulls the helper before the subject: Never have I seen. Watch out: Never I have seen keeps statement order.",
+      "id": "q30604"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which question is correct?",
+      "options": [
+        "Who has my pen taken?",
+        "Who has took my pen?",
+        "Who taken my pen?",
+        "Who has taken my pen?"
+      ],
+      "correct": 3,
+      "explanation": "Who is the subject, so has stays as the helper and no other helper is added: Who has taken my pen? Watch out: the participle of take is taken, not took.",
+      "id": "q30605"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake: Did he had finished before you arrived?",
+      "accepted": [
+        "Had he finished before you arrived?",
+        "Had he finished before you arrived"
+      ],
+      "explanation": "The past perfect question is Had + subject + participle. Watch out: did and had never go together here.",
+      "id": "q30606"
+    },
+    {
+      "type": "assertion",
+      "marks": 1,
+      "assertion": "In 'Who rang you?', no helper (do / does / did) is needed.",
+      "reason": "Who is the subject of the verb.",
+      "correct": "A",
+      "explanation": "The reason explains the assertion: who is the subject of rang, so the question needs no helper. Watch out: if who were the object, as in Who did you ring?, did would be needed.",
+      "id": "q30607"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "If you {{1}} (not / hurry), you will miss the train.",
+      "blanks": [
+        {
+          "answers": [
+            "don't hurry",
+            "don’t hurry",
+            "do not hurry"
+          ]
+        }
+      ],
+      "explanation": "After if, the present simple is used, including in the negative. Watch out: if you won't hurry is wrong.",
+      "id": "q30608"
+    },
+    {
+      "type": "multiple",
+      "marks": 2,
+      "question": "Which sentences are correct?",
+      "options": [
+        "Hardly had she sat down when it rang.",
+        "Isn't she coming?",
+        "Doesn't she knows him?",
+        "Did you not went home?"
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "scoring": "partial",
+      "explanation": "A negative adverb such as hardly pulls had in front of the subject, and a negative question keeps the helper before the subject. Watch out: after doesn't or didn't the verb is in the base form.",
+      "id": "q30609"
+    },
+    {
+      "type": "ordering",
+      "marks": 6,
+      "question": "Put the words in the correct order to make a sentence.",
+      "items": [
+        "such",
+        "we",
+        "Seldom",
+        "film",
+        "have",
+        "seen",
+        "a"
+      ],
+      "correctOrder": [
+        2,
+        4,
+        1,
+        5,
+        0,
+        6,
+        3
+      ],
+      "scoring": "adjacent",
+      "explanation": "Seldom is a negative adverb, so the helper have goes before the subject we. Watch out: such a film stays together at the end.",
+      "id": "q30610"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is correct?",
+      "options": [
+        "I didn't know where was the station.",
+        "I didn't know where the station was.",
+        "I didn't know where did the station was.",
+        "I didn't knew where the station was."
+      ],
+      "correct": 1,
+      "explanation": "An indirect question keeps statement order: where the station was. Watch out: did and was do not belong in a statement clause.",
+      "id": "q30611"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'Isn't she coming?' and 'Is she not coming?' have the same meaning.",
+      "correct": true,
+      "explanation": "Both are negative questions. The full not in the second is more formal. Watch out: in the short form, n't travels in front of the subject with the helper.",
+      "id": "q30612"
+    }
+  ]
+}

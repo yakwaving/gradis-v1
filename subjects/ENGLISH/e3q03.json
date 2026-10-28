@@ -1,0 +1,309 @@
+{
+  "title": "Negatives and Questions Quiz 3",
+  "chapter": "Negatives and Questions",
+  "description": "Place have, has, been and the little words never, ever, yet and already correctly.",
+  "difficulty": "Medium",
+  "level": "Grammar",
+  "topic": "Present perfect and present perfect continuous",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Negatives and Questions: Present perfect and present perfect continuous.",
+    "Read each question carefully, then check your answer.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is correct?",
+      "options": [
+        "I never have seen snow.",
+        "Never I have seen snow.",
+        "I have never seen snow.",
+        "I have seen never snow."
+      ],
+      "correct": 2,
+      "explanation": "Never goes between have and the past participle: I have never seen snow. Watch out: never does not go before have in a normal statement.",
+      "id": "q30301"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which question is correct?",
+      "options": [
+        "Has she finished her homework yet?",
+        "Does she finished her homework yet?",
+        "Has she finish her homework yet?",
+        "Have she finished her homework yet?"
+      ],
+      "correct": 0,
+      "explanation": "Present perfect question: Has + subject + past participle, with yet at the end. Watch out: does and have she do not fit the perfect.",
+      "id": "q30302"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "{{1}} you ever {{2}} (be) to Japan?",
+      "blanks": [
+        {
+          "answers": [
+            "Have"
+          ]
+        },
+        {
+          "answers": [
+            "been"
+          ]
+        }
+      ],
+      "explanation": "Experience questions use Have + subject + ever + past participle. Watch out: the participle of be is been, not was.",
+      "id": "q30303"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "He {{1}} (not / call) me yet.",
+      "blanks": [
+        {
+          "answers": [
+            "hasn't called",
+            "hasn’t called",
+            "has not called"
+          ]
+        }
+      ],
+      "explanation": "Present perfect negative: has not + past participle, and yet goes at the end. Watch out: with he the helper is has, not have.",
+      "id": "q30304"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'I haven't never been there' is correct.",
+      "correct": false,
+      "explanation": "A clause needs only one negative: I have never been there, or I haven't ever been there. Watch out: never already contains the negative.",
+      "id": "q30305"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which question is correct?",
+      "options": [
+        "Have you eaten yesterday?",
+        "Do you eat yesterday?",
+        "Were you eaten yesterday?",
+        "Did you eat yesterday?"
+      ],
+      "correct": 3,
+      "explanation": "Yesterday is a finished time, so the past simple is needed: Did you eat yesterday? Watch out: a finished time word never goes with the present perfect.",
+      "id": "q30306"
+    },
+    {
+      "type": "grid",
+      "marks": 5,
+      "question": "Choose the correct negative helper.",
+      "columns": [
+        "Sentence",
+        "Helper"
+      ],
+      "rows": [
+        [
+          {
+            "given": "I ___ seen her since Monday."
+          },
+          {
+            "answer": [
+              "have not"
+            ],
+            "choices": [
+              "have not",
+              "has not",
+              "had not",
+              "did not",
+              "will not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "He ___ finished the report so far."
+          },
+          {
+            "answer": [
+              "has not"
+            ],
+            "choices": [
+              "have not",
+              "has not",
+              "had not",
+              "did not",
+              "will not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "They ___ arrived before the film started."
+          },
+          {
+            "answer": [
+              "had not"
+            ],
+            "choices": [
+              "have not",
+              "has not",
+              "had not",
+              "did not",
+              "will not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "We ___ go there last year."
+          },
+          {
+            "answer": [
+              "did not"
+            ],
+            "choices": [
+              "have not",
+              "has not",
+              "had not",
+              "did not",
+              "will not"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "She ___ be late tomorrow."
+          },
+          {
+            "answer": [
+              "will not"
+            ],
+            "choices": [
+              "have not",
+              "has not",
+              "had not",
+              "did not",
+              "will not"
+            ]
+          }
+        ]
+      ],
+      "explanation": "Time clues decide the helper: since Monday and so far for the present perfect, before the film started for the past perfect, last year for the past simple, tomorrow for will. Watch out: have goes with I, has goes with he.",
+      "id": "q30307"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each tense and form with its formula.",
+      "left": [
+        "Present perfect, negative",
+        "Present perfect, question",
+        "Continuous, negative",
+        "Continuous, question"
+      ],
+      "right": [
+        "have / has + not + past participle",
+        "Have / Has + subject + past participle",
+        "have / has + not + been + verb-ing",
+        "Have / Has + subject + been + verb-ing"
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "explanation": "The continuous forms add been before the verb-ing. Watch out: only have / has moves in the question, and been stays after the subject.",
+      "id": "q30308"
+    },
+    {
+      "type": "ordering",
+      "marks": 5,
+      "question": "Put the words in the correct order to make a question.",
+      "items": [
+        "been",
+        "you",
+        "How",
+        "have",
+        "long",
+        "waiting"
+      ],
+      "correctOrder": [
+        2,
+        4,
+        3,
+        1,
+        0,
+        5
+      ],
+      "scoring": "adjacent",
+      "explanation": "The question word comes first, then have, then the subject, then been waiting. Watch out: long stays with how.",
+      "id": "q30309"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "You want to know the length of time she has been in London. Which question is correct?",
+      "options": [
+        "How long does she be in London?",
+        "How long has she been in London?",
+        "How long did she been in London?",
+        "How long is she been in London?"
+      ],
+      "correct": 1,
+      "explanation": "A situation that continues up to now is asked with the perfect: How long has she been in London? Watch out: be never takes does or did.",
+      "id": "q30310"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which sentences are correct?",
+      "options": [
+        "I haven't saw her today.",
+        "She hasn't been sleeping well.",
+        "Have you been waiting long?",
+        "Has you ever visited Peru?",
+        "Hasn't he called yet?"
+      ],
+      "correct": [
+        1,
+        2,
+        4
+      ],
+      "scoring": "partial",
+      "explanation": "The correct sentences use have / has + participle, or been + verb-ing. Watch out: Has you needs have, and saw is not a participle.",
+      "id": "q30311"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake: Have you finished already your homework?",
+      "accepted": [
+        "Have you already finished your homework?",
+        "Have you already finished your homework",
+        "Have you finished your homework already?",
+        "Have you finished your homework already"
+      ],
+      "explanation": "Already goes after have, or at the end of the question. Watch out: it cannot come between the participle and its object.",
+      "id": "q30312"
+    }
+  ]
+}

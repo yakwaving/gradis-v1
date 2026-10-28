@@ -1,0 +1,47 @@
+{
+  "kind": "summary",
+  "title": "Past tenses: negatives and questions",
+  "intro": "Read this before the questions on the past simple, past continuous and past perfect.",
+  "blocks": [
+    {
+      "kind": "formula",
+      "title": "past simple",
+      "items": [
+        "**Negative:** subject + **did not (didn't)** + base verb: She **didn't go**.",
+        "**Question:** **Did** + subject + base verb: **Did** she **go**?",
+        "The past form moves into did, so the main verb returns to the base form: She went, but She **didn't go** (not *didn't went*) and **Did** she **go**? (not *Did she went?*).",
+        "**be** has no did: She **wasn't** late. **Was** she late? (not *Did she was late?*)"
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "past continuous",
+      "items": [
+        "**Negative:** subject + **was / were** + not + verb-ing: They **weren't playing**.",
+        "**Question:** **Was / Were** + subject + verb-ing: **Were** they **playing**?",
+        "**Use:** an action in progress at a past moment: What **were** you **doing** at nine?"
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "past perfect",
+      "items": [
+        "**Negative:** subject + **had not (hadn't)** + past participle: He **hadn't left**.",
+        "**Question:** **Had** + subject + past participle: **Had** he **left**?",
+        "**Past perfect continuous:** He **hadn't been working**. **Had** she **been waiting**? Only had moves; been and the -ing verb stay behind the subject.",
+        "**Use:** the EARLIER of two past actions: **Had** the film **started** when you arrived?"
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "the two big traps",
+      "items": [
+        "**did + past form** is wrong: *Did you saw it?* becomes **Did you see it?**",
+        "**did + had** is wrong for the past perfect: *Did she had left?* becomes **Had she left?** The helper is already had.",
+        "do / did is never added in the past continuous or in the perfect tenses."
+      ]
+    }
+  ],
+  "builds": "The golden rule",
+  "chapter": "Negatives and Questions"
+}

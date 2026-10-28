@@ -1,0 +1,41 @@
+{
+  "kind": "summary",
+  "title": "Modal verbs, infinitives and -ing forms in the passive",
+  "intro": "Read this before the questions on modal verbs and other verb forms in the passive.",
+  "blocks": [
+    {
+      "kind": "formula",
+      "title": "modal + be + past participle",
+      "items": [
+        "**can, could, must, should, may, might, would, will:** modal + **be** + past participle: The door **must be locked**. Tickets **can be bought** online. (Active: You must lock the door.)",
+        "**Negative:** The door **mustn't be left** open. Mistakes **shouldn't be made**.",
+        "**Question:** modal + subject + be + participle: **Can** tickets **be bought** online?",
+        "After a modal the verb be stays in the BASE form: *can been bought* and *can being bought* are wrong."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "past modals: modal + have been + past participle",
+      "items": [
+        "The window **must have been broken** during the night.",
+        "The work **should have been finished** yesterday. (Active: Someone should have finished the work yesterday.)",
+        "**Negative and question:** It **couldn't have been done**. **Could** it **have been done**?"
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "infinitive and -ing form",
+      "items": [
+        "**to be + past participle:** She wants **to be invited**. The form has **to be signed**.",
+        "**being + past participle:** He hates **being laughed at**. She left without **being seen**.",
+        "After a preposition (without, before, after, of) use **being**: *without to be seen* is wrong."
+      ]
+    },
+    {
+      "kind": "hint",
+      "body": "Say the modal, then ask: now or the past? Now gives **be + participle**. The past gives **have been + participle**."
+    }
+  ],
+  "builds": "Continuous and perfect tenses in the passive",
+  "chapter": "Passive Voice"
+}
