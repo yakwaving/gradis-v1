@@ -1,0 +1,46 @@
+{
+  "kind": "summary",
+  "title": "Reported questions, commands and requests",
+  "intro": "Read this before the questions on reported questions, commands and requests.",
+  "blocks": [
+    {
+      "kind": "formula",
+      "title": "yes / no questions",
+      "items": [
+        "**asked** + **if / whether** + subject + verb: 'Do you like tea?' → She asked **if** I **liked** tea.",
+        "The word order is a STATEMENT: no do / does / did, no question mark, and the usual tense and pronoun changes.",
+        "'Has he arrived?' → She asked **whether** he **had arrived**."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "questions with a question word",
+      "items": [
+        "**asked** + question word + subject + verb: 'Where **do** you live?' → She asked **where I lived**. Not *where did I live*.",
+        "'What **is** your name?' → He asked **what my name was**. Not *what was my name*.",
+        "If the question word is the subject, the order does not change: 'Who called?' → She asked **who had called**."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "commands and requests",
+      "items": [
+        "**Command:** told + person + **to** + verb: 'Close the door,' she told him. → She told him **to close** the door.",
+        "**Negative command:** told + person + **not to** + verb: 'Don't be late,' he told us. → He told us **not to be** late.",
+        "**Request:** asked + person + **to** + verb: 'Please help me,' she said to Tom. → She asked Tom **to help** her."
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "the slips",
+      "items": [
+        "*She asked where did I live* keeps the question order. Say **where I lived**.",
+        "*He asked me did I know* has no if. Say **if I knew**.",
+        "*He told me don't touch it* keeps the command. Say **not to touch it**.",
+        "*I asked him that he help me* is wrong. Say **to help** me."
+      ]
+    }
+  ],
+  "builds": "Pronouns, time words and place words",
+  "chapter": "Reported Speech"
+}

@@ -5,10 +5,10 @@
    "flowchart": a flowchart drawn from data; each node can ask for its shape, its text, or both. */
 
 /* ---------- the code panel: line numbers, colours, indentation kept, long lines scroll ---------- */
-const KW=new Set("if then else elseif endif while do enddo endwhile for from to step endfor repeat until case of endcase default other function procedure returns return begin end start stop let constant const var type record array file call and or not xor mod div goto structure endstructure as declare".split(" "));
+const KW=new Set("if then else elseif endif while do enddo endwhile for from to step endfor repeat until case of endcase default other function procedure returns return begin end start stop let constant const var type record array file call and or not xor mod div goto structure endstructure as declare program uses downto in".split(" "));
 const KIO=new Set("read readln input write writeln display output print".split(" "));
 const KTY=new Set("integer real string character char boolean number".split(" "));
-function hl(t){return String(t).replace(/(\{\{\d+\}\})|(\/\/.*|~[^~]*~)|("[^"]*"|'[^']*'|“[^”]*”|‘[^’]*’)|(\d+(?:\.\d+)?)|([A-Za-z_][A-Za-z_0-9]*)(\s*\()?|(←|<=|>=|<>|:=|\.\.|[-+*\/=<>%])|([\s\S])/g,
+function hl(t){return String(t).replace(/(\{\{\d+\}\})|(\/\/.*|~[^~]*~|\{[^{}\n]*\})|("[^"]*"|'[^']*'|“[^”]*”|‘[^’]*’)|(\d+(?:\.\d+)?)|([A-Za-z_][A-Za-z_0-9]*)(\s*\()?|(←|<=|>=|<>|:=|\.\.|[-+*\/=<>%])|([\s\S])/g,
  (m,g,cm,st,nu,id,par,op)=>{
   if(g)return m;
   if(cm)return `<span class="tk-c">${esc(m)}</span>`;

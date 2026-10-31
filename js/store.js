@@ -36,7 +36,7 @@ async function loadAll(){
   const entries=Object.entries(man.subjects||{});
   entries.forEach(([name,val],i)=>{const m=Array.isArray(val)?{quizzes:val}:(val||{}),p=PAL[i%PAL.length];
     const hex=v=>/^#[0-9a-f]{3,8}$/i.test(v||"")?v:null;
-    SUBJ.push({n:name,c:hex(m.color)||p[0],d:hex(m.dark)||p[1],ic:ICONS[m.icon]||null,g:m.glyph||name[0].toUpperCase(),desc:m.description||"",files:m.quizzes||[],sample:!!m.sample,hidden:!!m.hidden,chn:(m.chapters&&typeof m.chapters==="object"&&!Array.isArray(m.chapters))?m.chapters:{}});DATA[name]=[]});
+    SUBJ.push({n:name,c:hex(m.color)||p[0],d:hex(m.dark)||p[1],ic:ICONS[m.icon]||null,g:m.glyph||name[0].toUpperCase(),desc:m.description||"",files:m.quizzes||[],book:typeof m.book==="string"?m.book:"",sample:!!m.sample,hidden:!!m.hidden,chn:(m.chapters&&typeof m.chapters==="object"&&!Array.isArray(m.chapters))?m.chapters:{}});DATA[name]=[]});
   const imgs=new Set();
   await Promise.all(SUBJ.map(async s=>{
     const got=await Promise.all(s.files.map(async f=>{try{const raw=await getJSON(`subjects/${s.n}/${f}.json`);imagePaths(raw,imgs);return raw.kind==="summary"?normSummary(raw,s.n,f):normQuiz(raw,s.n,f)}catch(e){console.warn("could not load quiz",s.n,f,e.message);S.warn++;return null}}));

@@ -1,0 +1,309 @@
+{
+  "title": "Reported Speech Quiz 4",
+  "chapter": "Reported Speech",
+  "description": "Report commands and requests, and choose the right reporting verb and its pattern.",
+  "difficulty": "Medium",
+  "level": "Grammar",
+  "topic": "Commands, requests and reporting verbs",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Reported Speech: Commands, requests and reporting verbs.",
+    "Use the standard rule: the reporting verb is in the past and the situation is over, unless a question says otherwise.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Report this: 'Close the door,' she told him.",
+      "options": [
+        "She told him close the door.",
+        "She told him that he closed the door.",
+        "She told him to close the door.",
+        "She told him he to close the door."
+      ],
+      "correct": 2,
+      "explanation": "A command becomes told + person + to + verb. Watch out: the imperative has no subject, so you cannot add he.",
+      "id": "q50401"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Report this: 'Don't be late,' he told us.",
+      "options": [
+        "He told us not to be late.",
+        "He told us don't to be late.",
+        "He told us to don't be late.",
+        "He told us no to be late."
+      ],
+      "correct": 0,
+      "explanation": "A negative command is told + person + not to + verb. Watch out: don't does not stay in the report.",
+      "id": "q50402"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "'Please help me,' she said to Tom. → She {{1}} Tom {{2}} help her.",
+      "blanks": [
+        {
+          "answers": [
+            "asked"
+          ]
+        },
+        {
+          "answers": [
+            "to"
+          ]
+        }
+      ],
+      "explanation": "A request is asked + person + to + verb. Watch out: said cannot be followed by a person + to.",
+      "id": "q50403"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "'I promise I'll call,' he said. → He {{1}} to call.",
+      "blanks": [
+        {
+          "answers": [
+            "promised"
+          ]
+        }
+      ],
+      "explanation": "Promise takes a to-infinitive directly. Watch out: said to call is not possible.",
+      "id": "q50404"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'She suggested me to go' is correct.",
+      "correct": false,
+      "explanation": "Suggest takes -ing or a that-clause: She suggested going, or She suggested that I go. Watch out: suggest never takes person + to.",
+      "id": "q50405"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Report this: 'Let's go to the beach,' he said.",
+      "options": [
+        "He said us to go to the beach.",
+        "He suggested to go to the beach.",
+        "He suggested us going to the beach.",
+        "He suggested going to the beach."
+      ],
+      "correct": 3,
+      "explanation": "Let's becomes suggest + -ing. Watch out: suggested us going and suggested to go are both wrong.",
+      "id": "q50406"
+    },
+    {
+      "type": "grid",
+      "marks": 5,
+      "question": "Choose the reporting verb that fits the words.",
+      "columns": [
+        "Direct speech",
+        "Reporting verb"
+      ],
+      "rows": [
+        [
+          {
+            "given": "'Thank you for your help,' she said."
+          },
+          {
+            "answer": [
+              "thanked"
+            ],
+            "choices": [
+              "advised",
+              "warned",
+              "apologised",
+              "thanked",
+              "invited"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "'I'm sorry I'm late,' he said."
+          },
+          {
+            "answer": [
+              "apologised"
+            ],
+            "choices": [
+              "advised",
+              "warned",
+              "apologised",
+              "thanked",
+              "invited"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "'You should see a doctor,' she said to him."
+          },
+          {
+            "answer": [
+              "advised"
+            ],
+            "choices": [
+              "advised",
+              "warned",
+              "apologised",
+              "thanked",
+              "invited"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "'Be careful! The floor is wet,' he said to us."
+          },
+          {
+            "answer": [
+              "warned"
+            ],
+            "choices": [
+              "advised",
+              "warned",
+              "apologised",
+              "thanked",
+              "invited"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "'Would you like to come to my party?' she said to us."
+          },
+          {
+            "answer": [
+              "invited"
+            ],
+            "choices": [
+              "advised",
+              "warned",
+              "apologised",
+              "thanked",
+              "invited"
+            ]
+          }
+        ]
+      ],
+      "explanation": "Each direct sentence shows a function: thanking, apologising, advising, warning or inviting. Watch out: advised gives a suggestion, while warned shows danger.",
+      "id": "q50407"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each pattern with an example.",
+      "left": [
+        "verb + to-infinitive",
+        "verb + person + to-infinitive",
+        "verb + -ing form",
+        "verb + that-clause"
+      ],
+      "right": [
+        "promised to call",
+        "advised her to go",
+        "suggested going out",
+        "explained that he was late"
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "explanation": "Each reporting verb has its own pattern. Watch out: advise needs a person before to, but promise does not.",
+      "id": "q50408"
+    },
+    {
+      "type": "ordering",
+      "marks": 6,
+      "question": "Put the words in the correct order.",
+      "items": [
+        "told",
+        "not",
+        "She",
+        "to",
+        "him",
+        "be",
+        "late"
+      ],
+      "correctOrder": [
+        2,
+        0,
+        4,
+        1,
+        3,
+        5,
+        6
+      ],
+      "scoring": "adjacent",
+      "explanation": "The subject, the verb told, the person, then not to and the verb. Watch out: not comes before to.",
+      "id": "q50409"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is correct?",
+      "options": [
+        "He said me to wait outside.",
+        "He told me to wait outside.",
+        "He told that I wait outside.",
+        "He said to wait me outside."
+      ],
+      "correct": 1,
+      "explanation": "Tell takes a person and to: He told me to wait outside. Watch out: said me and told that do not fit a command.",
+      "id": "q50410"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which sentences are correct?",
+      "options": [
+        "She warned me don't touch it.",
+        "She advised me to rest.",
+        "He suggested to stay home.",
+        "He denied breaking the vase.",
+        "They promised to come."
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "scoring": "partial",
+      "explanation": "Advise needs a person, promise takes to, and deny takes -ing. Watch out: suggested to stay and warned me don't keep the wrong pattern.",
+      "id": "q50411"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Report this: 'Sit down,' the teacher told the boy.",
+      "accepted": [
+        "The teacher told the boy to sit down.",
+        "The teacher told the boy to sit down",
+        "The teacher told him to sit down.",
+        "The teacher told him to sit down"
+      ],
+      "explanation": "The command becomes told + person + to + verb. Watch out: the boy may become him.",
+      "id": "q50412"
+    }
+  ]
+}

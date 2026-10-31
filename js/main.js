@@ -29,7 +29,7 @@ async function boot(){
 function goBack(){
  if(document.querySelector(".modal")){closeModal();return true}
  if(S.scr==="q"){quitModal();return true}
- const b=document.querySelector('[data-a="backlist"],[data-a="back-list"],[data-a="backres"],[data-a="acback"]');if(b){b.click();return true}
+ const b=document.querySelector('[data-a="backlist"],[data-a="back-list"],[data-a="backres"],[data-a="acback"],[data-a="bookback"]');if(b){b.click();return true}
  if(S.scr==="review"){scr("result");return true}
  if(["result","done","subjects","hist","subres","list","landing","error"].includes(S.scr)){S.tab="home";scr("home");return true}
  return false}

@@ -1,7 +1,7 @@
 /* Gradis service worker: makes the app work offline.
    To release an update: change VERSION below, then upload the files. Installed apps offer a "New version ready" prompt. */
-const VERSION="gradis-1.27.0";
-const SHELL=["./", "vendor/katex/katex.min.js", "vendor/katex/katex.min.css", "vendor/katex/fonts/KaTeX_AMS-Regular.woff2", "vendor/katex/fonts/KaTeX_Main-Bold.woff2", "vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2", "vendor/katex/fonts/KaTeX_Main-Italic.woff2", "vendor/katex/fonts/KaTeX_Main-Regular.woff2", "vendor/katex/fonts/KaTeX_Math-Italic.woff2", "vendor/katex/fonts/KaTeX_Size1-Regular.woff2", "vendor/katex/fonts/KaTeX_Size2-Regular.woff2", "index.html", "manifest.webmanifest", "css/fonts.css", "css/style.css", "js/icons-material.js", "js/icons.js", "js/util.js", "js/ads-config.js", "js/ads.js", "js/logo.js", "js/store.js", "js/marking.js", "js/screens.js", "js/qcode.js", "js/qmath.js", "js/summary.js", "js/quiz.js", "js/account.js", "js/events.js", "js/main.js", "fonts/DMSans-Medium.woff2", "fonts/DMSans-Bold.woff2", "fonts/DMSans-ExtraBold.woff2", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
+const VERSION="gradis-1.29.0";
+const SHELL=["./", "vendor/katex/katex.min.js", "vendor/katex/katex.min.css", "vendor/katex/fonts/KaTeX_AMS-Regular.woff2", "vendor/katex/fonts/KaTeX_Main-Bold.woff2", "vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2", "vendor/katex/fonts/KaTeX_Main-Italic.woff2", "vendor/katex/fonts/KaTeX_Main-Regular.woff2", "vendor/katex/fonts/KaTeX_Math-Italic.woff2", "vendor/katex/fonts/KaTeX_Size1-Regular.woff2", "vendor/katex/fonts/KaTeX_Size2-Regular.woff2", "index.html", "manifest.webmanifest", "css/fonts.css", "css/style.css", "js/icons-material.js", "js/icons.js", "js/util.js", "js/ads-config.js", "js/ads.js", "js/logo.js", "js/store.js", "js/marking.js", "js/screens.js", "js/book.js", "js/qcode.js", "js/qmath.js", "js/summary.js", "js/quiz.js", "js/account.js", "js/events.js", "js/main.js", "fonts/DMSans-Medium.woff2", "fonts/DMSans-Bold.woff2", "fonts/DMSans-ExtraBold.woff2", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
 const MANIFEST="subjects-manifest.json";
 const imagePaths=(o,out)=>{if(Array.isArray(o))o.forEach(x=>imagePaths(x,out));else if(o&&typeof o==="object")for(const[k,v]of Object.entries(o)){if(k==="image"&&typeof v==="string")out.add(v);else imagePaths(v,out)}return out};
 self.addEventListener("install",e=>e.waitUntil((async()=>{
@@ -10,6 +10,7 @@ self.addEventListener("install",e=>e.waitUntil((async()=>{
   try{
     const mr=await fetch(MANIFEST,{cache:"reload"});await c.put(MANIFEST,mr.clone());const m=await mr.json();const imgs=new Set();
     for(const[name,v]of Object.entries(m.subjects||{})){const list=Array.isArray(v)?v:(v.quizzes||[]);
+      if(v&&typeof v.book==="string"){const bu=encodeURI(v.book);try{const r=await fetch(bu,{cache:"reload"});if(r.ok)await c.put(bu,r)}catch(_){}}
       for(const q of list){const u=encodeURI("subjects/"+name+"/"+q+".json");
         try{const r=await fetch(u,{cache:"reload"});if(r.ok){await c.put(u,r.clone());imagePaths(await r.json(),imgs)}}catch(_){}}}
     for(const p of imgs){const u=encodeURI(p);try{const r=await fetch(u,{cache:"reload"});if(r.ok)await c.put(u,r)}catch(_){}}

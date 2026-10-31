@@ -16,6 +16,7 @@ document.addEventListener("change",e=>{const R=S.run;if(R&&S.scr==="q"&&e.target
 function refreshBtn(){const R=S.run,q=curQ(),b=$("main");if(!b)return;const conf=R.qz.confidence&&R.mode!=="study";b.classList.toggle("off",!(answered(q,R.ans[R.i])&&(!conf||R.conf[R.i]!=null)))}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b)return;const [k,...r]=b.dataset.a.split(":"),v=r.join(":"),R=S.run;
  if(typeof acAction==="function"&&acAction(k,v,b))return;
+ if(typeof bookAction==="function"&&bookAction(k,v,b))return;
  switch(k){
  case"toast":return toast(v);
  case"tkflip":{const t=b.querySelector(".tk"),n=t.children.length,i=Math.round(t.scrollLeft/t.clientWidth);t.scrollTo({left:((i+1)%n)*t.clientWidth,behavior:calm()?"auto":"smooth"});return}

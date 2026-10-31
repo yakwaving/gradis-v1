@@ -1,0 +1,41 @@
+{
+  "kind": "summary",
+  "title": "Hard cases in reported speech",
+  "intro": "Read this before the difficult quiz. These traps hide in the situation, not in the tense table.",
+  "blocks": [
+    {
+      "kind": "remember",
+      "title": "no backshift",
+      "items": [
+        "**Reporting verb in the present or present perfect:** She **says** she is tired. He **has said** he is busy.",
+        "**General truths and facts that are still true:** The teacher said the earth **goes** round the sun.",
+        "**Past perfect stays:** 'I had met her.' → He said he **had met** her.",
+        "**Modals that already look back:** would, could, might, should, ought to do not change: 'You should rest.' → She said I **should** rest."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "conditionals",
+      "items": [
+        "**First conditional moves one step:** 'If I **see** her, I **will** tell her.' → He said that if he **saw** her, he **would** tell her.",
+        "**Second conditional stays:** 'If I **were** rich, I **would** travel.' → She said that if she **were** rich, she **would** travel.",
+        "**Third conditional stays:** 'If I **had known**, I **would have come**.' → He said that if he **had known**, he **would have come**."
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "two readings",
+      "items": [
+        "**had + participle** in a report can come from **two** direct forms: 'I **saw** him.' and 'I **have seen** him.' both become He said he **had seen** him.",
+        "**must** as an obligation becomes **had to**, but **must** as a deduction stays: 'It **must** be true.' → She said it **must** be true.",
+        "**used to** does not change: 'I **used to** smoke.' → He said he **used to** smoke."
+      ]
+    },
+    {
+      "kind": "hint",
+      "body": "For a difficult report, work in four steps: (1) the reporting verb, (2) the verb tense, (3) pronouns, (4) time and place words."
+    }
+  ],
+  "builds": "Reporting verbs and special words",
+  "chapter": "Reported Speech"
+}

@@ -1,0 +1,306 @@
+{
+  "title": "Reported Speech Quiz 2",
+  "chapter": "Reported Speech",
+  "description": "Change the pronouns, the time words and the place words when the point of view changes.",
+  "difficulty": "Medium",
+  "level": "Grammar",
+  "topic": "Pronouns, time words and place words",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Reported Speech: Pronouns, time words and place words.",
+    "Imagine that every report is made on a later day and in a different place.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "'I will see you tomorrow,' Ann said to Tom. Which report is correct?",
+      "options": [
+        "Ann told Tom she would see you the next day.",
+        "Ann told Tom I would see him tomorrow.",
+        "Ann told Tom she would see him the next day.",
+        "Ann told Tom she will see him tomorrow."
+      ],
+      "correct": 2,
+      "explanation": "I becomes she, you becomes him, will becomes would, and tomorrow becomes the next day. Watch out: you cannot stay, because the listener is now he.",
+      "id": "q50201"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "'We are leaving now,' they said. They said ___",
+      "options": [
+        "they were leaving then.",
+        "we were leaving now.",
+        "they are leaving then.",
+        "they were leaving now."
+      ],
+      "correct": 0,
+      "explanation": "We becomes they, are leaving becomes were leaving, and now becomes then. Watch out: we and now both point to the old situation.",
+      "id": "q50202"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "'I lost my bag here yesterday,' he said. → He said he {{1}} his bag {{2}} the day before.",
+      "blanks": [
+        {
+          "answers": [
+            "had lost"
+          ]
+        },
+        {
+          "answers": [
+            "there"
+          ]
+        }
+      ],
+      "explanation": "Lost becomes had lost, here becomes there, and yesterday becomes the day before. Watch out: here does not stay when the place changes.",
+      "id": "q50203"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "'We will visit our aunt next week,' they said. → They said they would visit their aunt {{1}}.",
+      "blanks": [
+        {
+          "answers": [
+            "the following week",
+            "the week after",
+            "the next week"
+          ]
+        }
+      ],
+      "explanation": "Next week becomes the following week or the week after. Watch out: next week stays only when the report is made in the same week.",
+      "id": "q50204"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "In 'I lost my keys,' said Tom, the word my becomes his in the report.",
+      "correct": true,
+      "explanation": "The possessive follows the speaker, so my becomes his. Watch out: it stays my only when Tom himself makes the report.",
+      "id": "q50205"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Report this: 'I met him two days ago,' she said.",
+      "options": [
+        "She said she met him two days ago.",
+        "She said she had met him two days after.",
+        "She said she had met him in two days.",
+        "She said she had met him two days before."
+      ],
+      "correct": 3,
+      "explanation": "Ago becomes before, and met becomes had met. Watch out: after would point forward, not back.",
+      "id": "q50206"
+    },
+    {
+      "type": "grid",
+      "marks": 5,
+      "question": "Choose the reported time word or phrase.",
+      "columns": [
+        "Direct speech",
+        "Reported speech"
+      ],
+      "rows": [
+        [
+          {
+            "given": "now"
+          },
+          {
+            "answer": [
+              "then"
+            ],
+            "choices": [
+              "then",
+              "now",
+              "that day",
+              "before"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "today"
+          },
+          {
+            "answer": [
+              "that day"
+            ],
+            "choices": [
+              "that day",
+              "today",
+              "the day before",
+              "the next day"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "yesterday"
+          },
+          {
+            "answer": [
+              "the day before"
+            ],
+            "choices": [
+              "the day before",
+              "the next day",
+              "that day",
+              "yesterday"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "tomorrow"
+          },
+          {
+            "answer": [
+              "the next day"
+            ],
+            "choices": [
+              "the day before",
+              "the next day",
+              "that day",
+              "then"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "last week"
+          },
+          {
+            "answer": [
+              "the week before"
+            ],
+            "choices": [
+              "the week before",
+              "the next week",
+              "that week",
+              "last week"
+            ]
+          }
+        ]
+      ],
+      "explanation": "Time words are measured from the moment of speaking, so they move away from now. Watch out: tomorrow becomes the next day, and yesterday becomes the day before.",
+      "id": "q50207"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each word with its reported form.",
+      "left": [
+        "here",
+        "this",
+        "these",
+        "ago"
+      ],
+      "right": [
+        "there",
+        "that",
+        "those",
+        "before"
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "explanation": "Words of place and distance move away from the speaker. Watch out: ago becomes before, not after.",
+      "id": "q50208"
+    },
+    {
+      "type": "ordering",
+      "marks": 5,
+      "question": "Put the words in the correct order.",
+      "items": [
+        "would",
+        "said",
+        "come",
+        "She",
+        "she",
+        "the next day"
+      ],
+      "correctOrder": [
+        3,
+        1,
+        4,
+        0,
+        2,
+        5
+      ],
+      "scoring": "adjacent",
+      "explanation": "The subject, the reporting verb, then the clause with would and the time phrase last. Watch out: the next day goes at the end.",
+      "id": "q50209"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "'You are late,' Tom said to Ann. Tom told Ann that ___ late.",
+      "options": [
+        "you were",
+        "she was",
+        "he was",
+        "I was"
+      ],
+      "correct": 1,
+      "explanation": "You refers to Ann, so for a third-person reporter it becomes she, and are becomes was. Watch out: you would stay only if Ann herself made the report.",
+      "id": "q50210"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which changes are correct?",
+      "options": [
+        "yesterday → the next day",
+        "my → his or her",
+        "today → this day",
+        "we → they",
+        "here → there"
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "scoring": "partial",
+      "explanation": "Pronouns follow the speaker and time words move back. Watch out: yesterday cannot become the next day, and today does not become this day.",
+      "id": "q50211"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake (the report is made a week later): He said he would come tomorrow.",
+      "accepted": [
+        "He said he would come the next day.",
+        "He said he would come the next day",
+        "He said he would come the following day.",
+        "He said he would come the following day",
+        "He said he would come the day after.",
+        "He said he would come the day after"
+      ],
+      "explanation": "Tomorrow becomes the next day or the following day. Watch out: tomorrow would point to a day after the report.",
+      "id": "q50212"
+    }
+  ]
+}

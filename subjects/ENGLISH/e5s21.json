@@ -1,0 +1,42 @@
+{
+  "kind": "summary",
+  "title": "Reporting verbs and special words",
+  "intro": "Read this before the questions. A good reporter chooses a verb that shows what the speaker meant. Each verb has its own pattern.",
+  "blocks": [
+    {
+      "kind": "formula",
+      "title": "four patterns",
+      "items": [
+        "**verb + to-infinitive:** promise, offer, refuse, agree, threaten, decide: 'I'll call you,' he said. → He **promised to call** me.",
+        "**verb + person + to-infinitive:** advise, warn, remind, invite, order, ask, tell, encourage: 'You should rest.' → She **advised me to rest**.",
+        "**verb + -ing form:** suggest, admit, deny, apologise for, insist on: 'I didn't break it.' → He **denied breaking** it.",
+        "**verb + that-clause:** explain, claim, complain, announce, add, admit, say: 'The bus is late.' → She **explained that** the bus was late."
+      ]
+    },
+    {
+      "kind": "format",
+      "title": "words that become a verb",
+      "items": [
+        "'Thank you for the gift.' → She **thanked** me for the gift.",
+        "'I'm sorry I'm late.' → He **apologised for** being late.",
+        "'Congratulations!' → She **congratulated** him.",
+        "'Let's go to the beach.' → He **suggested going** to the beach. (or **suggested that we go**)",
+        "'Would you like to come?' → She **invited** me to come.",
+        "'Be careful! The floor is wet.' → He **warned** us that the floor was wet. (or **warned us to be careful**)",
+        "'Yes, I will.' → He **agreed**. 'No, I won't.' → He **refused**."
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "the slips",
+      "items": [
+        "**suggest** never takes a person + to: *She suggested me to go* is wrong. Say She suggested **that I go** or She suggested **going**.",
+        "**warn / advise / remind** need a person: *He warned to be careful* is wrong. Say He warned **me** to be careful.",
+        "**promise / offer / refuse** take **to** straight away: He **promised to** call. Not *He promised me to call* for a plain promise.",
+        "After **deny, admit, suggest** use -ing: She **denied taking** the money."
+      ]
+    }
+  ],
+  "builds": "Reported questions, commands and requests",
+  "chapter": "Reported Speech"
+}

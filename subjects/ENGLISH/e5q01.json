@@ -1,0 +1,308 @@
+{
+  "title": "Reported Speech Quiz 1",
+  "chapter": "Reported Speech",
+  "description": "Move the verb one step back, change the modal verbs, and choose between said and told.",
+  "difficulty": "Easy",
+  "level": "Grammar",
+  "topic": "Reported statements: tenses, say and tell",
+  "timerType": "wholeQuiz",
+  "totalTime": 1320,
+  "confidence": false,
+  "instructions": [
+    "Reported Speech: Reported statements: tenses, say and tell.",
+    "Use the standard rule: the reporting verb is in the past and the situation is over, unless a question says otherwise.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Report this: 'I am tired,' she said.",
+      "options": [
+        "She said she is tired.",
+        "She said she had been tired.",
+        "She said she was tired.",
+        "She said I was tired."
+      ],
+      "correct": 2,
+      "explanation": "The present simple becomes the past simple, and I becomes she. Watch out: is would keep the present, and had been tired would go back two steps.",
+      "id": "q50101"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Report this: 'We have finished,' they said.",
+      "options": [
+        "They said they had finished.",
+        "They said we had finished.",
+        "They said they have finished.",
+        "They said they would finish."
+      ],
+      "correct": 0,
+      "explanation": "The present perfect becomes the past perfect, and we becomes they. Watch out: the pronoun we cannot stay when the speakers are they.",
+      "id": "q50102"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "'I can drive, and I will help,' he said. → He said that he {{1}} drive and {{2}} help.",
+      "blanks": [
+        {
+          "answers": [
+            "could"
+          ]
+        },
+        {
+          "answers": [
+            "would"
+          ]
+        }
+      ],
+      "explanation": "Can becomes could and will becomes would. Watch out: both modals move back together.",
+      "id": "q50103"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "'I may be late,' he said. → He said he {{1}} be late.",
+      "blanks": [
+        {
+          "answers": [
+            "might"
+          ]
+        }
+      ],
+      "explanation": "May becomes might in reported speech. Watch out: may would stay in the present.",
+      "id": "q50104"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'I am reading,' she said. → She said she had been reading.",
+      "correct": false,
+      "explanation": "The present continuous becomes the past continuous: She said she was reading. Watch out: had been reading is two steps back.",
+      "id": "q50105"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which sentence is correct?",
+      "options": [
+        "She said me she was ill.",
+        "She told she was ill.",
+        "She told to me she was ill.",
+        "She told me she was ill."
+      ],
+      "correct": 3,
+      "explanation": "Told needs a person straight after it: She told me she was ill. Watch out: said me and told to me are both wrong.",
+      "id": "q50106"
+    },
+    {
+      "type": "grid",
+      "marks": 5,
+      "question": "Choose the reported verb form.",
+      "columns": [
+        "Direct speech",
+        "Reported speech"
+      ],
+      "rows": [
+        [
+          {
+            "given": "works"
+          },
+          {
+            "answer": [
+              "worked"
+            ],
+            "choices": [
+              "worked",
+              "had worked",
+              "works",
+              "was working"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "is working"
+          },
+          {
+            "answer": [
+              "was working"
+            ],
+            "choices": [
+              "worked",
+              "was working",
+              "had been working",
+              "is working"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "has worked"
+          },
+          {
+            "answer": [
+              "had worked"
+            ],
+            "choices": [
+              "had worked",
+              "worked",
+              "has worked",
+              "would work"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "will work"
+          },
+          {
+            "answer": [
+              "would work"
+            ],
+            "choices": [
+              "will work",
+              "would work",
+              "worked",
+              "had worked"
+            ]
+          }
+        ],
+        [
+          {
+            "given": "can work"
+          },
+          {
+            "answer": [
+              "could work"
+            ],
+            "choices": [
+              "can work",
+              "could work",
+              "would work",
+              "worked"
+            ]
+          }
+        ]
+      ],
+      "explanation": "Each verb goes one step back. Watch out: will becomes would, and can becomes could.",
+      "id": "q50107"
+    },
+    {
+      "type": "matching",
+      "marks": 4,
+      "question": "Match each modal verb with its reported form.",
+      "left": [
+        "can",
+        "may",
+        "will",
+        "must"
+      ],
+      "right": [
+        "could",
+        "might",
+        "would",
+        "had to"
+      ],
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "explanation": "Each modal has its own partner. Watch out: must becomes had to, not musted.",
+      "id": "q50108"
+    },
+    {
+      "type": "ordering",
+      "marks": 4,
+      "question": "Put the words in the correct order.",
+      "items": [
+        "said",
+        "She",
+        "tired",
+        "was",
+        "she"
+      ],
+      "correctOrder": [
+        1,
+        0,
+        4,
+        3,
+        2
+      ],
+      "scoring": "adjacent",
+      "explanation": "The subject comes first, then the reporting verb, then the clause. Watch out: the clause keeps statement order.",
+      "id": "q50109"
+    },
+    {
+      "type": "multiple",
+      "marks": 3,
+      "question": "Which sentences are correct?",
+      "options": [
+        "She told me she has finished.",
+        "He said he was hungry.",
+        "He said me he was late.",
+        "They said they would come.",
+        "She told us she had lost her keys."
+      ],
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "scoring": "partial",
+      "explanation": "A past reporting verb needs the backshift, and told needs a person. Watch out: has finished and said me break these rules.",
+      "id": "q50110"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Which report is correct? 'I am tired,' she says.",
+      "options": [
+        "She says she was tired.",
+        "She says she is tired.",
+        "She says she had been tired.",
+        "She says she would be tired."
+      ],
+      "correct": 1,
+      "explanation": "When the reporting verb is in the present, the tense does not change: She says she is tired. Watch out: backshift only follows a past reporting verb.",
+      "id": "q50111"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake: She said me that she was tired.",
+      "accepted": [
+        "She told me that she was tired.",
+        "She told me that she was tired",
+        "She told me she was tired.",
+        "She told me she was tired",
+        "She said that she was tired.",
+        "She said that she was tired",
+        "She said she was tired.",
+        "She said she was tired",
+        "She said to me that she was tired.",
+        "She said to me that she was tired",
+        "She said to me she was tired.",
+        "She said to me she was tired"
+      ],
+      "explanation": "Said has no person after it, so use told me or remove me: She told me that she was tired. Watch out: said to me is possible, but said me is not.",
+      "id": "q50112"
+    }
+  ]
+}

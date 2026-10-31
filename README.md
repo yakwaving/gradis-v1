@@ -47,6 +47,10 @@ Icons available: `check`, `book`, `flask`, `chip`, `calc`. Without an icon the s
 
 A question with a mistake (unknown type, missing field) is skipped, and the app shows a small notice. Details are in the browser console.
 
+## Add a master book
+
+A subject can have one reference book, opened by a blue MASTER BOOK button at the bottom of its quiz list. Write it as a markdown file and add `"book": "subjects/<Subject>/master-book.md"` to the subject in `subjects-manifest.json`. The format is in `docs/AUTHORING.md`.
+
 ## Release an update
 
 1. Change the `VERSION` line at the top of `sw.js` (for example `gradis-1.0.1`) and the `APP_VERSION` line in `js/util.js`.

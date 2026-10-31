@@ -1,0 +1,54 @@
+{
+  "kind": "summary",
+  "title": "Reported statements: the tense changes and say / tell",
+  "intro": "Read this before the questions. In reported speech you give the idea of what someone said, not the exact words. When the reporting verb is in the past, the verb goes one step back in time.",
+  "blocks": [
+    {
+      "kind": "remember",
+      "title": "direct and reported",
+      "items": [
+        "**Direct:** 'I **am** tired,' she said. The exact words, in quotation marks.",
+        "**Reported:** She said (that) she **was** tired. No quotation marks, and **that** is optional.",
+        "Three things change together: the **tense**, the **pronouns** and the **time and place words**."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "the tense steps",
+      "items": [
+        "**Present simple → past simple:** 'I **work** here.' → She said she **worked** there.",
+        "**Present continuous → past continuous:** 'I **am working**.' → She said she **was working**.",
+        "**Present perfect → past perfect:** 'I **have finished**.' → She said she **had finished**.",
+        "**Present perfect continuous → past perfect continuous:** 'I **have been waiting**.' → She said she **had been waiting**.",
+        "**Past simple → past perfect:** 'I **lost** my keys.' → She said she **had lost** her keys.",
+        "**Past continuous → past perfect continuous:** 'I **was sleeping**.' → She said she **had been sleeping**."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "modal verbs",
+      "items": [
+        "**will → would:** 'I **will** call.' → He said he **would** call.",
+        "**can → could:** 'I **can** swim.' → She said she **could** swim.",
+        "**may → might:** 'I **may** be late.' → He said he **might** be late.",
+        "**shall → should:** 'What **shall** I do?' → She asked what she **should** do.",
+        "**must → had to** (an obligation): 'I **must** go.' → He said he **had to** go.",
+        "**am / is / are going to → was / were going to:** 'I'm going to leave.' → She said she **was going to** leave."
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "say and tell",
+      "items": [
+        "**said** has no person after it: She **said** (that) she was ill. With a person, use **said to**: She said **to me** that she was ill.",
+        "**told** always needs a person: She **told me** (that) she was ill. Not *She told that* and not *She said me*.",
+        "Fixed phrases with tell take no that: **tell the truth, tell a lie, tell a story, tell the time**."
+      ]
+    },
+    {
+      "kind": "hint",
+      "body": "Ask one question: is the reporting verb in the PAST? If it is, move every verb one step back. If it is present (**She says** she is tired), nothing changes."
+    }
+  ],
+  "chapter": "Reported Speech"
+}

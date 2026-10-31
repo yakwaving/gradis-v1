@@ -1,0 +1,195 @@
+{
+  "title": "Reported Speech Quiz 5",
+  "chapter": "Reported Speech",
+  "description": "Every question hides a trap: a present reporting verb, a conditional, a modal that stays or a double reading.",
+  "difficulty": "Hard",
+  "level": "Grammar",
+  "topic": "Difficult: reported speech",
+  "timerType": "wholeQuiz",
+  "totalTime": 1200,
+  "confidence": true,
+  "instructions": [
+    "Reported Speech: Difficult: reported speech.",
+    "Use the standard rule: the reporting verb is in the past and the situation is over, unless a question says otherwise.",
+    "Every question has a trap. Read every word."
+  ],
+  "questions": [
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Report this: 'I have been waiting for an hour,' she said.",
+      "options": [
+        "she has been waiting for an hour.",
+        "she had waiting for an hour.",
+        "she had been waiting for an hour.",
+        "she would be waiting for an hour."
+      ],
+      "correct": 2,
+      "explanation": "The present perfect continuous becomes the past perfect continuous. Watch out: would be waiting changes the meaning to the future.",
+      "id": "q50501"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'The teacher said the earth goes round the sun' is correct, because a general truth need not be backshifted.",
+      "correct": true,
+      "explanation": "A fact that is always true can keep the present tense. Watch out: this is the exception to the backshift rule.",
+      "id": "q50502"
+    },
+    {
+      "type": "fill",
+      "marks": 2,
+      "question": "'If I see her, I will tell her,' he said. → He said that if he {{1}} her, he {{2}} tell her.",
+      "blanks": [
+        {
+          "answers": [
+            "saw"
+          ]
+        },
+        {
+          "answers": [
+            "would"
+          ]
+        }
+      ],
+      "explanation": "The first conditional moves one step back: see becomes saw and will becomes would. Watch out: both verbs move.",
+      "id": "q50503"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "'If I were rich, I would travel,' she said. → She said that if she ___ rich, she would travel.",
+      "options": [
+        "were",
+        "had been",
+        "would be",
+        "is"
+      ],
+      "correct": 0,
+      "explanation": "The second conditional does not change: were. Watch out: had been is the third conditional.",
+      "id": "q50504"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "'You should rest,' she said. → She told me that I ___ rest.",
+      "options": [
+        "would",
+        "had to",
+        "must",
+        "should"
+      ],
+      "correct": 3,
+      "explanation": "Should is already a backshifted form, so it does not change. Watch out: had to would turn advice into an obligation.",
+      "id": "q50505"
+    },
+    {
+      "type": "short",
+      "marks": 1,
+      "question": "Correct the mistake: He told he would come the next day.",
+      "accepted": [
+        "He said he would come the next day.",
+        "He said he would come the next day",
+        "He told me he would come the next day.",
+        "He told me he would come the next day",
+        "He told her he would come the next day.",
+        "He told her he would come the next day",
+        "He told us he would come the next day.",
+        "He told us he would come the next day",
+        "He told them he would come the next day.",
+        "He told them he would come the next day"
+      ],
+      "explanation": "Told needs a person: He told me he would come, or he said he would come. Watch out: tell without a person is always wrong.",
+      "id": "q50506"
+    },
+    {
+      "type": "assertion",
+      "marks": 1,
+      "assertion": "'Tomorrow' usually becomes 'the next day' when the report is made later.",
+      "reason": "Time words are measured from the moment of speaking, which is now in the past.",
+      "correct": "A",
+      "explanation": "Both statements are true, and the reason explains the assertion: time words are measured from the speaking moment, which is now in the past. Watch out: if the report is made on the same day, tomorrow can stay.",
+      "id": "q50507"
+    },
+    {
+      "type": "fill",
+      "marks": 1,
+      "question": "'I saw him last week,' she said. → She said she {{1}} him the week before.",
+      "blanks": [
+        {
+          "answers": [
+            "had seen"
+          ]
+        }
+      ],
+      "explanation": "The past simple becomes the past perfect, and last week becomes the week before. Watch out: both changes are needed.",
+      "id": "q50508"
+    },
+    {
+      "type": "multiple",
+      "marks": 2,
+      "question": "Which sentences are correct?",
+      "options": [
+        "He told me that he had lost his keys.",
+        "She asked if I could help her.",
+        "He said me that he was ill.",
+        "She asked me where was the station."
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "scoring": "partial",
+      "explanation": "The correct reports use told + person and statement order. Watch out: said me and where was keep the original structure.",
+      "id": "q50509"
+    },
+    {
+      "type": "ordering",
+      "marks": 6,
+      "question": "Put the words in the correct order.",
+      "items": [
+        "the day before",
+        "told",
+        "She",
+        "finished",
+        "me",
+        "had",
+        "she"
+      ],
+      "correctOrder": [
+        2,
+        1,
+        4,
+        6,
+        5,
+        3,
+        0
+      ],
+      "scoring": "adjacent",
+      "explanation": "The reporting clause, then the clause with had finished, then the time phrase. Watch out: the day before goes last.",
+      "id": "q50510"
+    },
+    {
+      "type": "single",
+      "marks": 1,
+      "question": "Report this: 'Don't touch it!' he shouted.",
+      "options": [
+        "He warned me don't touch it.",
+        "He warned me not to touch it.",
+        "He suggested me not to touch it.",
+        "He warned that I not touch it."
+      ],
+      "correct": 1,
+      "explanation": "Warn + person + not to + verb. Watch out: the imperative cannot stay, and suggested me to is wrong.",
+      "id": "q50511"
+    },
+    {
+      "type": "truefalse",
+      "marks": 1,
+      "question": "'He said he had been there' can report either 'I was there' or 'I have been there'.",
+      "correct": true,
+      "explanation": "Both the past simple and the present perfect become the past perfect. Watch out: the report alone cannot tell you which one was said.",
+      "id": "q50512"
+    }
+  ]
+}

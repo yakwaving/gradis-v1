@@ -1,0 +1,49 @@
+{
+  "kind": "summary",
+  "title": "Pronouns, time words and place words",
+  "intro": "Read this before the questions. The reporter looks at the sentence from a different person, time and place, so the words that point to them change.",
+  "blocks": [
+    {
+      "kind": "formula",
+      "title": "personal and possessive pronouns",
+      "items": [
+        "Pronouns follow the **speaker** and the **listener**, as seen by the reporter: 'I like **my** job,' said Tom. → Tom said **he** liked **his** job.",
+        "**I → he / she**, **me → him / her**, **my → his / her**, **mine → his / hers**.",
+        "**we → they**, **us → them**, **our → their**, **ours → theirs**.",
+        "**you** depends on who is listening: 'You are late,' Tom said to Ann. → Tom told Ann **she** was late. If the reporter is the listener, you becomes **I**: Tom told me **I** was late.",
+        "If the reporter is the speaker, nothing changes: 'I like my job,' said Tom. → (Tom, later) I said **I** liked **my** job."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "demonstratives and place words",
+      "items": [
+        "**this → that**: 'I like this book.' → She said she liked **that** book.",
+        "**these → those**, **here → there**.",
+        "**come → go** and **bring → take** when the movement is now away from the reporter.",
+        "**Relative pronouns** (who, which, that, whose) do **not** change: 'The man who called is here.' → She said the man **who** had called was there."
+      ]
+    },
+    {
+      "kind": "formula",
+      "title": "time words",
+      "items": [
+        "**now → then** (or at that moment); **today → that day**; **tonight → that night**.",
+        "**yesterday → the day before** (the previous day); **tomorrow → the next day** (the following day).",
+        "**last week → the week before** (the previous week); **next week → the following week** (the week after).",
+        "**ago → before**: two days **ago** → two days **before**.",
+        "**the day before yesterday → two days before**; **the day after tomorrow → in two days' time** (or two days later)."
+      ]
+    },
+    {
+      "kind": "dont",
+      "title": "when nothing changes",
+      "items": [
+        "If you report **at the same time and in the same place**, the time and place words can stay: 'I'll do it **today**,' she said. → (the same day) She said she'd do it **today**.",
+        "Never mix the two worlds: *She said she would come tomorrow* is wrong if the report is made later. Use **the next day**."
+      ]
+    }
+  ],
+  "builds": "Reported statements: the tense changes and say / tell",
+  "chapter": "Reported Speech"
+}

@@ -48,7 +48,8 @@
         "ch04q10",
         "ch04q11",
         "ch04q12"
-      ]
+      ],
+      "book": "subjects/FUNDAMENTALS OF ALGORITHMS/master-book.md"
     },
     "ANALYSIS 1": {
       "description": "Mathematics \u00b7 Software Engineering Level I",
@@ -150,6 +151,16 @@
         "e4q04",
         "e4s17",
         "e4q05",
+        "e5s18",
+        "e5q01",
+        "e5s19",
+        "e5q02",
+        "e5s20",
+        "e5q03",
+        "e5s21",
+        "e5q04",
+        "e5s22",
+        "e5q05",
         "e2s05",
         "e2q01",
         "e2q02",

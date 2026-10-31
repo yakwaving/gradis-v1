@@ -45,3 +45,31 @@ Besides `description`, `color`, `dark`, `icon` and `quizzes`, a subject can have
 - `"sample": true` — shows a SAMPLE tag and lists the subject under SAMPLES at the bottom of the Subjects tab (use it for demo content such as *Quiz Types*).
 - `"hidden": true` — leaves the subject out of the Subjects tab entirely (its files stay in the manifest).
 - `"chapters": { "Chapter 1": "Introduction to algorithms", "Chapter 2": "Flowcharts" }` — optional names for chapters. The key is the chapter text of the quizzes (their `"chapter"` field, or the title before "Quiz N"). The name shows under the chapter heading and on the Continue card. Chapters you leave out keep their plain title.
+
+## Master book (optional, one per subject)
+
+A master book is a reference book for a subject: one markdown file, opened from a blue **MASTER BOOK** button at the bottom of the subject's quiz list. A subject with no book shows no button.
+
+To add one, write the file and name it on the subject in `subjects-manifest.json`:
+
+```json
+"FUNDAMENTALS OF ALGORITHMS": {
+  "book": "subjects/FUNDAMENTALS OF ALGORITHMS/master-book.md",
+  "quizzes": [ ... ]
+}
+```
+
+What the reader understands:
+
+| Markdown | Shown as |
+|---|---|
+| `# Title`, then one line | the title and subtitle in the book's header |
+| `## 1. Section` | a tappable section row (the number is optional); sections open and close |
+| `### Sub-heading` | a sub-heading inside the section |
+| paragraphs, `- ` bullets, `1. ` lists | text and lists |
+| `\| a \| b \|` tables with a `\|---\|---\|` line | scrollable tables |
+| a fenced block tagged `pascal` | a code panel with colours and line numbers (`text` is labelled Pseudocode) |
+| `**bold**`, `` `inline code` `` | bold and code, also inside tables and lists |
+| a paragraph starting `**Trap:` or `**Traps:` | a yellow warning box |
+
+The book has a search box that filters its sections. The file is saved for offline use when the app installs, so a book you add or change needs a new `VERSION` in `sw.js`, like any other file.
